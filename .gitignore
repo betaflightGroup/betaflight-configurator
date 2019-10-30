@@ -27,3 +27,5 @@ nbproject/
 # Eclipse
 .project
 .settings/
+
+*.css.d.ts

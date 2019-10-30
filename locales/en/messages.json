@@ -1902,6 +1902,9 @@
     "receiverChannelMapTitle": {
         "message": "You can define your own channel map by clicking inside the box"
     },
+    "receiverCalibration": {
+        "message": "Calibrate RX"
+    },
     "receiverRssiChannel": {
         "message": "RSSI Channel"
     },
@@ -1936,7 +1939,15 @@
     "receiverMspEnableButton": {
         "message": "Enable controls"
     },
-
+    "receiverRxRangeChannel": {
+        "message": "RX Range Channel"
+    },
+    "receiverRxRangeMin": {
+        "message": "Min"
+    },
+    "receiverRxRangeMax": {
+        "message": "Max"
+    },
     "auxiliaryHelp": {
         "message": "Configure modes here using a combination of ranges and/or links to other modes (links supported on BF 4.0 and later). Use <strong>ranges</strong> to define the switches on your transmitter and corresponding mode assignments. A receiver channel that gives a reading between a range min/max will activate the mode. Use a <strong>link</strong> to activate a mode when another mode is activated. <strong>Exceptions:</strong> ARM cannot be linked to or from another mode, modes cannot be linked to other modes that are configured with a link (chained links). Multiple ranges/links can be used to activate any mode. If there is more than one range/link defined for a mode, each of them can be set to <strong>AND</strong> or <strong>OR</strong>. A mode will be activated when:<br />- ALL <strong>AND</strong> ranges/links are active; OR<br />- at least one <strong>OR</strong> range/link is active.<br /><br />Remember to save your settings using the Save button."
     },

@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "bluebird": "^3.5.5",
+    "classnames": "^2.2.6",
     "i18next": "^17.0.11",
     "i18next-xhr-backend": "^3.1.1",
     "inflection": "1.12.0",
@@ -55,8 +56,11 @@
     "universal-ga": "^1.2.0"
   },
   "devDependencies": {
+    "@types/react": "^16.9.10",
+    "@types/react-dom": "^16.9.2",
     "chai": "^4.2.0",
     "command-exists": "^1.2.8",
+    "css-loader": "^1.0.1",
     "del": "^5.0.0",
     "follow-redirects": "^1.6.1",
     "fs-extra": "^8.1.0",
@@ -77,12 +81,18 @@
     "mocha": "^6.1.4",
     "nw-builder": "^3.5.7",
     "os": "^0.1.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "rpm-builder": "^1.0.0",
     "sinon": "^7.2.3",
     "sinon-chai": "^3.3.0",
+    "style-loader": "^0.23.1",
     "targz": "^1.0.1",
     "temp": "^0.9.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.6.4",
     "vinyl-source-stream": "^2.0.0",
+    "webpack": "^4.41.2",
     "yarn": "^1.17.3"
   },
   "optionalDependencies": {

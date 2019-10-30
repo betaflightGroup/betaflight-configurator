@@ -51,6 +51,7 @@ var TRANSPONDER;
 var RC_DEADBAND_CONFIG;
 var SENSOR_ALIGNMENT;
 var RX_CONFIG;
+var RXRANGE_CONFIG;
 var FAILSAFE_CONFIG;
 var GPS_RESCUE;
 var RXFAIL_CONFIG;
@@ -482,6 +483,8 @@ var FC = {
             rcSmoothingAutoSmoothness:    0,
             usbCdcHidType:                0,
         };
+
+        RXRANGE_CONFIG = [];
 
         FAILSAFE_CONFIG = {
             failsafe_delay:                 0,

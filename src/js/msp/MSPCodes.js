@@ -171,5 +171,8 @@ var MSPCodes = {
 
     MSP_EEPROM_WRITE:               250,
     MSP_DEBUGMSG:                   253, // Not used
-    MSP_DEBUG:                      254
+    MSP_DEBUG:                      254,
+
+    MSP_RXRANGE_CONFIG:             231,
+    MSP_SET_RXRANGE_CONFIG:         232
 };

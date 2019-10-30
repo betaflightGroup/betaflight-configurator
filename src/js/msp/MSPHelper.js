@@ -944,6 +944,16 @@ MspHelper.prototype.process_data = function(dataHandler) {
                 
                 break;
 
+            case MSPCodes.MSP_RXRANGE_CONFIG:
+                const rxRangeChannelCount = data.byteLength / 4;
+
+                RXRANGE_CONFIG = [...Array(rxRangeChannelCount).keys()].map(() => [
+                    data.readU16(),
+                    data.readU16()
+                ]);
+
+                break;
+
             case MSPCodes.MSP_FAILSAFE_CONFIG:
                 FAILSAFE_CONFIG.failsafe_delay = data.readU8();
                 FAILSAFE_CONFIG.failsafe_off_delay = data.readU8();
@@ -1483,6 +1493,9 @@ MspHelper.prototype.process_data = function(dataHandler) {
             case MSPCodes.MSP_SET_RTC:
                 console.log('Real time clock set');
                 break;
+            case MSPCodes.MSP_SET_RXRANGE_CONFIG:
+                console.log('RX Range saved');
+                break;
 
             case MSPCodes.MSP_MULTIPLE_MSP:
 
@@ -1638,11 +1651,6 @@ MspHelper.prototype.crunch = function(code) {
                 buffer.push16(RC_tuning.roll_rate_limit);
                 buffer.push16(RC_tuning.pitch_rate_limit);
                 buffer.push16(RC_tuning.yaw_rate_limit);
-            }
-            break;
-        case MSPCodes.MSP_SET_RX_MAP:
-            for (var i = 0; i < RC_MAP.length; i++) {
-                buffer.push8(RC_MAP[i]);
             }
             break;
         case MSPCodes.MSP_SET_ACC_TRIM:

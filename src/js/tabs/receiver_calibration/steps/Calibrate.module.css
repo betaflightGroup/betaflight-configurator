@@ -1,0 +1,74 @@
+.Calibrate {
+
+}
+
+.txChannelWrapper {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.txChannel {
+
+}
+
+.meter {
+  margin: 0 auto;
+  width: 500px;
+  height: 20px;
+  position: relative;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 3px;
+}
+
+.fill {
+  position: absolute;
+  top: 0;
+  height: 20px;
+  border-radius: 3px;
+}
+
+.fill.fill0 {
+  background-color: #f1453d;
+}
+
+.fill.fill1 {
+  background-color: #673fb4;
+}
+
+.fill.fill2 {
+  background-color: #2b98f0;
+}
+
+.fill.fill3 {
+  background-color: #1fbcd2;
+}
+
+
+.label {
+  position: absolute;
+  width: 500px;
+  height: 20px;
+  border: 1px solid silver;
+  border-radius: 3px;
+  line-height: 20px;
+}
+
+.matchedChannel {
+  color: green;
+  float: left;
+}
+
+.ChannelDetect {
+  text-align: center;
+}
+
+.ChannelDetect p {
+  font-size: 20px;
+}
+
+.restartButton {
+  margin-right: 20px;
+}
+
+.nextButton {}

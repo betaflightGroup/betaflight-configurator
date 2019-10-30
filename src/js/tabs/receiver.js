@@ -1,5 +1,29 @@
 'use strict';
 
+var RCMapLetters = ['A', 'E', 'R', 'T', '1', '2', '3', '4'];
+
+function rxMapLettersToNumber(letters) {
+    return letters.split('').map(letter => RCMapLetters.indexOf(letter));
+}
+
+function serializeRxMap(map) {
+    const buffer = [];
+    map.forEach(map => {
+        buffer.push8(map)
+    });
+    return buffer;
+}
+
+function serializeRxRange(range) {
+    const buffer = [];
+    buffer.push8(range.length);
+    range.forEach(([min, max]) => {
+        buffer.push16(min);
+        buffer.push16(max);
+    });
+    return buffer;
+}
+
 TABS.receiver = {
     rateChartHeight: 117,
     useSuperExpo: false,
@@ -40,7 +64,7 @@ TABS.receiver.initialize = function (callback) {
     }
 
     function load_rx_config() {
-        var next_callback = load_mixer_config;
+        var next_callback = load_rxrange_config;
         if (semver.gte(CONFIG.apiVersion, "1.20.0")) {
             MSP.send_message(MSPCodes.MSP_RX_CONFIG, false, false, next_callback);
         } else {
@@ -50,6 +74,15 @@ TABS.receiver.initialize = function (callback) {
 
     function load_mixer_config() {
         MSP.send_message(MSPCodes.MSP_MIXER_CONFIG, false, false, load_html);
+    }
+
+    function load_rxrange_config() {
+        var next_callback = load_mixer_config;
+        if (semver.gte(CONFIG.apiVersion, "1.43.0")) {
+            MSP.send_message(MSPCodes.MSP_RXRANGE_CONFIG, false, false, next_callback);
+        } else {
+            next_callback();
+        }
     }
 
     function load_html() {
@@ -83,6 +116,22 @@ TABS.receiver.initialize = function (callback) {
             $('.sticks input[name="stick_min"]').val(RX_CONFIG.stick_min);
             $('.sticks input[name="stick_center"]').val(RX_CONFIG.stick_center);
             $('.sticks input[name="stick_max"]').val(RX_CONFIG.stick_max);
+
+        }
+
+        if (semver.gte(CONFIG.apiVersion, "1.43.0")) {
+            const elems = RXRANGE_CONFIG.map(([min, max], idx) => {
+                const PWM_PULSE_MIN = 750;
+                const PWM_PULSE_MAX = 2250;
+                return `<tr>
+                            <td>ch${idx+1}</td>
+                            <td><input type="number" name="rxrange_min" min="${PWM_PULSE_MIN}" max="${PWM_PULSE_MAX}" value="${min}" /></td>
+                            <td><input type="number" name="rxrange_max" min="${PWM_PULSE_MIN}" max="${PWM_PULSE_MAX}" value="${max}" /></td>
+                        </tr>`;
+            });
+            $('.rxrange .rxrange_channels').html(elems);
+        } else {
+            $('.rxrange').hide();
         }
 
         if (semver.gte(CONFIG.apiVersion, "1.20.0")) {
@@ -161,21 +210,13 @@ TABS.receiver.initialize = function (callback) {
         $(window).on('resize', tab.resize).resize(); // trigger so labels get correctly aligned on creation
 
         // handle rcmap & rssi aux channel
-        var RC_MAP_Letters = ['A', 'E', 'R', 'T', '1', '2', '3', '4'];
-
-        var strBuffer = [];
-        for (var i = 0; i < RC_MAP.length; i++) {
-            strBuffer[RC_MAP[i]] = RC_MAP_Letters[i];
-        }
-
-        // reconstruct
-        var str = strBuffer.join('');
+        const rxMap = RC_MAP.map(channel => RCMapLetters[channel]).join('');
 
         // set current value
-        $('input[name="rcmap"]').val(str);
+        $('input[name="rcmap"]').val(rxMap);
 
         // validation / filter
-        var last_valid = str;
+        const lastValid = rxMap;
 
         $('input[name="rcmap"]').on('input', function () {
             var val = $(this).val();
@@ -192,22 +233,22 @@ TABS.receiver.initialize = function (callback) {
                 strBuffer = val.split(''),
                 duplicityBuffer = [];
 
-            if (val.length != 8) {
-                $(this).val(last_valid);
+            if (val.length !== 8) {
+                $(this).val(lastValid);
                 return false;
             }
 
             // check if characters inside are all valid, also check for duplicity
             for (var i = 0; i < val.length; i++) {
-                if (RC_MAP_Letters.indexOf(strBuffer[i]) < 0) {
-                    $(this).val(last_valid);
+                if (RCMapLetters.indexOf(strBuffer[i]) < 0) {
+                    $(this).val(lastValid);
                     return false;
                 }
 
                 if (duplicityBuffer.indexOf(strBuffer[i]) < 0) {
                     duplicityBuffer.push(strBuffer[i]);
                 } else {
-                    $(this).val(last_valid);
+                    $(this).val(lastValid);
                     return false;
                 }
             }
@@ -217,6 +258,12 @@ TABS.receiver.initialize = function (callback) {
         $('select[name="rcmap_helper"]').val(0); // go out of bounds
         $('select[name="rcmap_helper"]').change(function () {
             $('input[name="rcmap"]').val($(this).val());
+        });
+
+        $('#calibrate_btn').click(() => {
+            TABS.receiver.cleanup();
+
+            $('#content').load("./tabs/receiver_calibration.html");
         });
 
         // rssi
@@ -248,21 +295,24 @@ TABS.receiver.initialize = function (callback) {
                 RC_DEADBAND_CONFIG.deadband3d_throttle = ($('.deadband input[name="3ddeadbandthrottle"]').val());
             }
 
-            // catch rc map
-            var RC_MAP_Letters = ['A', 'E', 'R', 'T', '1', '2', '3', '4'];
-            var strBuffer = $('input[name="rcmap"]').val().split('');
-
-            for (var i = 0; i < RC_MAP.length; i++) {
-                RC_MAP[i] = strBuffer.indexOf(RC_MAP_Letters[i]);
-            }
+            RC_MAP = rxMapLettersToNumber($('input[name="rcmap"]').val());
 
             // catch rssi aux
             RSSI_CONFIG.channel = parseInt($('select[name="rssi_channel"]').val());
 
-
             if (semver.gte(CONFIG.apiVersion, "1.20.0")) {
                 RX_CONFIG.rcInterpolation = parseInt($('select[name="rcInterpolation-select"]').val());
                 RX_CONFIG.rcInterpolationInterval = parseInt($('input[name="rcInterpolationInterval-number"]').val());
+            }
+
+            if (semver.gte(CONFIG.apiVersion, "1.40.0")) {
+                RXRANGE_CONFIG = RXRANGE_CONFIG.map((config, idx) => {
+                    const elem = $('.rxrange .rxrange_channels tr').get(idx);
+                    return [
+                        $('[name=rxrange_min]', elem).val(),
+                        $('[name=rxrange_max]', elem).val()
+                    ]
+                })
             }
 
             function save_rssi_config() {
@@ -279,9 +329,18 @@ TABS.receiver.initialize = function (callback) {
             }
 
             function save_rx_config() {
-                var next_callback = save_to_eeprom;
+                var next_callback = save_rxrange_config;
                 if (semver.gte(CONFIG.apiVersion, "1.20.0")) {
                     MSP.send_message(MSPCodes.MSP_SET_RX_CONFIG, mspHelper.crunch(MSPCodes.MSP_SET_RX_CONFIG), false, next_callback);
+                } else {
+                    next_callback();
+                }
+            }
+
+            function save_rxrange_config() {
+                var next_callback = save_to_eeprom;
+                if (semver.gte(CONFIG.apiVersion, "1.43.0")) {
+                    MSP.send_message(MSPCodes.MSP_SET_RXRANGE_CONFIG, serializeRxRange(RXRANGE_CONFIG), false, next_callback);
                 } else {
                     next_callback();
                 }
@@ -293,7 +352,7 @@ TABS.receiver.initialize = function (callback) {
                 });
             }
 
-            MSP.send_message(MSPCodes.MSP_SET_RX_MAP, mspHelper.crunch(MSPCodes.MSP_SET_RX_MAP), false, save_rssi_config);
+            MSP.send_message(MSPCodes.MSP_SET_RX_MAP, serializeRxMap(RC_MAP), false, save_rssi_config);
         });
 
         $("a.sticks").click(function() {
@@ -312,7 +371,7 @@ TABS.receiver.initialize = function (callback) {
             }, function(createdWindow) {
                 // Give the window a callback it can use to send the channels (otherwise it can't see those objects)
                 createdWindow.contentWindow.setRawRx = function(channels) {
-                    if (CONFIGURATOR.connectionValid && GUI.active_tab != 'cli') {
+                    if (CONFIGURATOR.connectionValid && GUI.active_tab !== 'cli') {
                         mspHelper.setRawRx(channels);
                         return true;
                     } else {

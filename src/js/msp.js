@@ -144,6 +144,9 @@ var MSP = {
             this.listeners.push(listener);
         }
     },
+    removeListener: function(listener) {
+        this.listeners = this.listeners.filter(l => l !== listener);
+    },
     clearListeners: function() {
         this.listeners = [];  
     },
