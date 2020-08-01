@@ -1,0 +1,1495 @@
+{
+    "error": {
+        "message": "Chyba: {{errorMessage}}"
+    },
+    "errorTitle": {
+        "message": "Chyba"
+    },
+    "warningTitle": {
+        "message": "Varování"
+    },
+    "noticeTitle": {
+        "message": "Oznámení"
+    },
+    "operationNotSupported": {
+        "message": "Tato operace není podporována Vašim hardwarem."
+    },
+    "storageDeviceNotReady": {
+        "message": "Toto úložiště není připraveno. Pokud je to microSD karta, ujistěte se, že je správně rozpoznána Vaší řídící jednotkou."
+    },
+    "options_title": {
+        "message": "Možnosti aplikace"
+    },
+    "connect": {
+        "message": "Připojit"
+    },
+    "connecting": {
+        "message": "Připojování"
+    },
+    "disconnect": {
+        "message": "Odpojit"
+    },
+    "portsSelectManual": {
+        "message": "Manuální výběr"
+    },
+    "portOverrideText": {
+        "message": "Port:"
+    },
+    "autoConnect": {
+        "message": "Připojovat automaticky"
+    },
+    "close": {
+        "message": "Zavřít"
+    },
+    "autoConnectEnabled": {
+        "message": "Připojovat automaticky: Zapnuto - Konfigurátor se pokusí o automatické připojení při detekci nového portu"
+    },
+    "autoConnectDisabled": {
+        "message": "Připojovat automaticky: Vypnuto - Uživatel musí sám vybrat správný port a kliknout \"Připojit\""
+    },
+    "expertMode": {
+        "message": "Povolit mód Expert"
+    },
+    "expertModeDescription": {
+        "message": "Ukázat nevydané a možná nestabilní verze"
+    },
+    "permanentExpertMode": {
+        "message": "Trvale povolit Expert mód"
+    },
+    "rememberLastTab": {
+        "message": "Znovu otevřít poslední záložku po připojení"
+    },
+    "analyticsOptOut": {
+        "message": "Neúčastnit se anonymního sběru dat o používání"
+    },
+    "sensorDataFlashNotFound": {
+        "message": "Paměťový čip <br>nenalezen",
+        "description": "Text of the dataflash image in the header of the page."
+    },
+    "sensorDataFlashFreeSpace": {
+        "message": "Paměť: volné místo",
+        "description": "Text of the dataflash image in the header of the page."
+    },
+    "sensorStatusGyro": {
+        "message": "Gyroskop"
+    },
+    "sensorStatusGyroShort": {
+        "message": "Gyro",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusAccel": {
+        "message": "Akcelerometr"
+    },
+    "sensorStatusAccelShort": {
+        "message": "Akcel",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusMag": {
+        "message": "Kompas"
+    },
+    "sensorStatusMagShort": {
+        "message": "Komp",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusBaro": {
+        "message": "Barometr"
+    },
+    "sensorStatusBaroShort": {
+        "message": "Baro",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusGPS": {
+        "message": "GPS"
+    },
+    "sensorStatusGPSShort": {
+        "message": "GPS",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusSonar": {
+        "message": "Sonar / Dálkoměr"
+    },
+    "sensorStatusSonarShort": {
+        "message": "Sonar",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "checkForConfiguratorUnstableVersions": {
+        "message": "Zobrazit oznámení o aktualizacích pro nestabilní verze konfigurátoru"
+    },
+    "configuratorUpdateWebsite": {
+        "message": "Jít na stránku vydavatele programu"
+    },
+    "deviceRebooting": {
+        "message": "Zařízení - <span class=\"message-negative\">restartuje se</span>"
+    },
+    "deviceReady": {
+        "message": "Zařízení - <span class=\"message-positive\">připraveno</span>"
+    },
+    "backupFileIncompatible": {
+        "message": "Záložní soubor byl vytvořen pro předchozí verzi konfigurátoru a je nekompatibilní s touto verzí konfigurátoru. Omlouváme se"
+    },
+    "backupFileUnmigratable": {
+        "message": "Záložní soubor byl generován předchozí verzí konfigurátoru a není přenositelný. Omlouváme se."
+    },
+    "configMigrationFrom": {
+        "message": "Přenášený konfigurační soubor vygenerovaný konfigurátem: $1"
+    },
+    "configMigratedTo": {
+        "message": "Konfigurace přenesena do konfigurátu: $1"
+    },
+    "configMigrationSuccessful": {
+        "message": "Přenos konfigurace dokončen a použit: $1"
+    },
+    "tabFirmwareFlasher": {
+        "message": "Aktualizace firmwaru"
+    },
+    "tabLanding": {
+        "message": "Vítejte"
+    },
+    "tabHelp": {
+        "message": "Dokumentace a podpora"
+    },
+    "tabSetup": {
+        "message": "Nastavení"
+    },
+    "tabSetupOSD": {
+        "message": "Nastavení OSD displeje"
+    },
+    "tabConfiguration": {
+        "message": "Konfigurace"
+    },
+    "tabPorts": {
+        "message": "Porty"
+    },
+    "tabPidTuning": {
+        "message": "Ladění PID"
+    },
+    "tabReceiver": {
+        "message": "Přijímač"
+    },
+    "tabModeSelection": {
+        "message": "Výběr módu"
+    },
+    "tabServos": {
+        "message": "Serva"
+    },
+    "tabFailsafe": {
+        "message": "Pojistka proti poruchám (Failsafe)"
+    },
+    "tabTransponder": {
+        "message": "Závodní odpovídač"
+    },
+    "tabOsd": {
+        "message": "OSD displej"
+    },
+    "tabPower": {
+        "message": "Nápájení & baterie"
+    },
+    "tabGPS": {
+        "message": "GPS"
+    },
+    "tabMotorTesting": {
+        "message": "Motory"
+    },
+    "tabLedStrip": {
+        "message": "LED pásek"
+    },
+    "tabRawSensorData": {
+        "message": "Senzory"
+    },
+    "tabCLI": {
+        "message": "Manuální příkazový řádek (CLI)"
+    },
+    "tabLogging": {
+        "message": "Tethered logování"
+    },
+    "tabOnboardLogging": {
+        "message": "Černá skřínka (Blackbox)"
+    },
+    "tabAdjustments": {
+        "message": "Seřízení"
+    },
+    "tabAuxiliary": {
+        "message": "Módy"
+    },
+    "logActionHide": {
+        "message": "Skrýt log"
+    },
+    "logActionShow": {
+        "message": "Zobrazit log"
+    },
+    "serialPortOpened": {
+        "message": "Sériový port <span class=\"message-positive\">úspěšně</span> připojen s ID: $1"
+    },
+    "serialPortOpenFail": {
+        "message": "<span class=\"message-negative\">Nepodařilo se</span> připojit sériový port"
+    },
+    "serialPortClosedOk": {
+        "message": "Sériový port <span class=\"message-positive\">úspěšně</span> odpojen"
+    },
+    "serialPortClosedFail": {
+        "message": "<span class=\"message-negative\">Nepodařilo se</span> odpojit sériový port"
+    },
+    "serialUnrecoverable": {
+        "message": "Nezotavitelné <span class=\"message-negative\">selhání</span> sériového připojení, odpojuji..."
+    },
+    "usbDeviceOpened": {
+        "message": "USB zařízení <span class=\"message-positive\">úspěšně</span> připojeno s ID: $1"
+    },
+    "usbDeviceOpenFail": {
+        "message": "<span class=\"message-negative\">Nepodařilo se</span> připojit USB zařízení!"
+    },
+    "usbDeviceClosed": {
+        "message": "USB zařízení <span class=\"message-positive\">úspěšně</span> odpojeno"
+    },
+    "usbDeviceCloseFail": {
+        "message": "<span class=\"message-negative\">Nepodařilo se</span> odpojit USB zařízení"
+    },
+    "usbDeviceUdevNotice": {
+        "message": "Jsou <strong>udev pravidla</strong> správně nainstalovány? Pokyny naleznete v dokumentaci"
+    },
+    "stm32UsbDfuNotFound": {
+        "message": "USB DFU nenalezeno"
+    },
+    "stm32TimedOut": {
+        "message": "STM32 - vypršení časového limitu, programování: SELHALO"
+    },
+    "stm32WrongResponse": {
+        "message": "STM32 komunikace selhala kvůli chybné odpovědi, očekáváno: $1 (0x$2) přijato: $3 (0x$4)"
+    },
+    "stm32ContactingBootloader": {
+        "message": "Kontaktuji bootloader ...."
+    },
+    "stm32ContactingBootloaderFailed": {
+        "message": "Komunikace s bootloaderem byla neúspěšná"
+    },
+    "stm32ResponseBootloaderFailed": {
+        "message": "Bootloader neodpovědel, programování: NEÚSPĚCH"
+    },
+    "stm32GlobalEraseExtended": {
+        "message": "Provádění kompletního vymazání čipu (prostřednictvím rozšířeného vymazání) ..."
+    },
+    "stm32LocalEraseExtended": {
+        "message": "Provádění částečného vymazání (prostřednictvím rozšířeného vymazání) ..."
+    },
+    "stm32GlobalErase": {
+        "message": "Provádění kompletního vymazání čipu ..."
+    },
+    "stm32LocalErase": {
+        "message": "Provádění částečného vymazání ..."
+    },
+    "stm32Erase": {
+        "message": "Mazání ..."
+    },
+    "stm32Flashing": {
+        "message": "Nahrávání ..."
+    },
+    "stm32Verifying": {
+        "message": "Ověřování ..."
+    },
+    "stm32ProgrammingSuccessful": {
+        "message": "Instalace: ÚSPĚŠNÁ"
+    },
+    "stm32ProgrammingFailed": {
+        "message": "Instalace: NEÚSPĚŠNÁ"
+    },
+    "stm32NotReadProtected": {
+        "message": "Ochrana před čtením neaktivní"
+    },
+    "stm32ReadProtected": {
+        "message": "Zdá se, že deska má ochranu proti čtení. Vypínám ochranu. Neodpojujte desku!"
+    },
+    "stm32UnprotectSuccessful": {
+        "message": "Ochrana úspěšně vypnuta."
+    },
+    "stm32UnprotectUnplug": {
+        "message": "VYŽADOVÁNA AKCE: Odpojte řídící jednotku a znovu ji připojte v DFU režimu pro zopakování zápisu!"
+    },
+    "stm32UnprotectFailed": {
+        "message": "Nastala chyba při vypnutí ochrany desky"
+    },
+    "stm32UnprotectInitFailed": {
+        "message": "Chyba při inicializaci rutiny pro vypnutí ochrany"
+    },
+    "noConfigurationReceived": {
+        "message": "Během <span class=\"message-negative\">10 vteřin</span> nebyla přijata žádná konfigurace, komunikace <span class=\"message-negative\">selhala</span>"
+    },
+    "firmwareVersionNotSupported": {
+        "message": "Tato verze firmwaru <span class=\"message-negative\">není podporována</span>. Prosím upgradujte na firmware, který podporuje API ve verzi <strong>$1</strong> nebo vyšší. Použijte CLI pro zálohování před aktualizací firmwaru. Postup pro CLI zálohu/obnovení je v dokumentaci.<br />Alternativně můžete použít starší verzi konfigurátoru, pokud nejste připraveni firmware aktualizovat."
+    },
+    "firmwareUpgradeRequired": {
+        "message": "Firmware na tomto zařízení vyžaduje aktualizaci na novější verzi. Použijte CLI režim pro zálohování před instalací. Procedura CLI zálohování a obnovení je popsána v dokumentaci.<br />Můžete také stáhnout starší verzi konfigurátoru, pokud nechcete provést aktualizaci."
+    },
+    "infoVersions": {
+        "message": "Spuštěno - OS: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Konfigurátor: <strong>{{configuratorVersion}}</strong>",
+        "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
+    },
+    "buildServerLoaded": {
+        "message": "Načteny informace o $1 z buildovacího serveru."
+    },
+    "buildServerUsingCached": {
+        "message": "Použít informace o verzi z mezipaměti pro $1."
+    },
+    "releaseCheckLoaded": {
+        "message": "Načteny informace o verzi pro $1 z GitHubu."
+    },
+    "releaseCheckFailed": {
+        "message": "<b>GitHub požadavek na verzi $1 selhal, používám informace z mezipaměti. Důvod: <code>$2</code></b>"
+    },
+    "releaseCheckCached": {
+        "message": "Používám informace z mezipaměti pro verzi $1."
+    },
+    "releaseCheckNoInfo": {
+        "message": "Nejsou dostupné žádné informace o verzi $1."
+    },
+    "tabSwitchConnectionRequired": {
+        "message": "Je potřeba se <strong>připojit</strong> než budete moci zobrazit některou ze záložek."
+    },
+    "tabSwitchWaitForOperation": {
+        "message": "Momentálně tuto akci <span class=\"message-negative\">nelze provést</span>, prosím vyčkejte na dokončení současné operace ..."
+    },
+    "tabSwitchUpgradeRequired": {
+        "message": "Před použitím záložky $1 musíte <strong>aktualizovat</strong> firmware na nejnovější verzi Betaflight."
+    },
+    "firmwareVersion": {
+        "message": "Verze firmwaru: <strong>$1</strong>"
+    },
+    "apiVersionReceived": {
+        "message": "MultiWii API verze: <strong>$1</strong>"
+    },
+    "uniqueDeviceIdReceived": {
+        "message": "Jedinečné ID zařízení: <strong>0x$1</strong>"
+    },
+    "craftNameReceived": {
+        "message": "Jméno letounu: <strong>$1</strong>"
+    },
+    "armingDisabled": {
+        "message": "<strong>Odjištění zakázáno</strong>"
+    },
+    "armingEnabled": {
+        "message": "<strong>Odjištění povoleno</strong>"
+    },
+    "runawayTakeoffPreventionDisabled": {
+        "message": "<strong>Předejití nekontrolovanému vzletu dočasně vypnuto</strong>"
+    },
+    "runawayTakeoffPreventionEnabled": {
+        "message": "<strong>Ochrana proti nekontrolovanému startu zapnuta</strong>"
+    },
+    "boardInfoReceived": {
+        "message": "Deska: <strong>$1</strong>, verze: <strong>$2</strong>"
+    },
+    "buildInfoReceived": {
+        "message": "Aktuálně používaný firmware vydán: <strong>$1</strong>"
+    },
+    "fcInfoReceived": {
+        "message": "Info o řídící jednotce, identifikátor: <strong>$1</strong>, verze: <strong>$2</strong>"
+    },
+    "versionLabelTarget": {
+        "message": "Cíl"
+    },
+    "versionLabelFirmware": {
+        "message": "Firmware"
+    },
+    "versionLabelConfigurator": {
+        "message": "Konfigurátor"
+    },
+    "notifications_app_just_updated_to_version": {
+        "message": "Aplikace právě aktualizována na verzi: $1"
+    },
+    "notifications_click_here_to_start_app": {
+        "message": "Klikněte zde pro start aplikace"
+    },
+    "statusbar_port_utilization": {
+        "message": "Využití portu:"
+    },
+    "statusbar_usage_download": {
+        "message": "D: $1%"
+    },
+    "statusbar_usage_upload": {
+        "message": "U: $1%"
+    },
+    "statusbar_packet_error": {
+        "message": "Chybné pakety:"
+    },
+    "statusbar_i2c_error": {
+        "message": "I2C chyb:"
+    },
+    "statusbar_cycle_time": {
+        "message": "Čas cyklu:"
+    },
+    "statusbar_cpu_load": {
+        "message": "Zatížení CPU: $1%"
+    },
+    "dfu_connect_message": {
+        "message": "Prosím, použijte utilitu pro flashování firmwaru pro přístup k DFU zařízením"
+    },
+    "dfu_erased_kilobytes": {
+        "message": "<span class=\"message-positive\">Úspěšně</span> vymazáno $1 kB paměti"
+    },
+    "dfu_device_flash_info": {
+        "message": "Detekováno zařízení s celkovou velikostí paměti $1 KiB"
+    },
+    "dfu_error_image_size": {
+        "message": "<span class=\"message-negative\">Chyba</span>: Načtená bitová kopie je větší než velikost dostupné paměti na čipu! Bitová kopie: $1 KiB, limit = $2 KiB"
+    },
+    "eeprom_saved_ok": {
+        "message": "EEPROM <span class=\"message-positive\">uložena</span>"
+    },
+    "defaultWelcomeIntro": {
+        "message": "Vítejte v <strong>Betaflight Konfigurátoru<strong>, nástroji pro snadnou aktualizaci, nastavení a laďení vašeho FC."
+    },
+    "defaultWelcomeHead": {
+        "message": "Hardware"
+    },
+    "defaultContributingHead": {
+        "message": "Spolupráce"
+    },
+    "defaultChangelogHead": {
+        "message": "Konfigurátor - Seznam změn"
+    },
+    "defaultButtonFirmwareFlasher": {
+        "message": "Aktualizace firmwaru"
+    },
+    "defaultDonateHead": {
+        "message": "Poznámka k Open Source / sponzorským darům"
+    },
+    "defaultDonate": {
+        "message": "Přispějte"
+    },
+    "defaultSponsorsHead": {
+        "message": "Sponzoři"
+    },
+    "defaultDocumentationHead": {
+        "message": "Dokumentace / Manuál"
+    },
+    "defaultDocumentation": {
+        "message": "Dokumentace k Betaflightu je dostupná v poznámkách k verzím a na wiki.<br /><br />"
+    },
+    "defaultSupportHead": {
+        "message": "Podpora"
+    },
+    "defaultSupportSubline1": {
+        "message": "Zdroje podpory"
+    },
+    "defaultSupportSubline2": {
+        "message": "Vývojář"
+    },
+    "defaultSupport": {
+        "message": "Pro pomoc a radu si nejprve projděte fóra nebo kontaktujte svého dodavatele.<br /><br />"
+    },
+    "initialSetupBackupAndRestoreApiVersion": {
+        "message": "<span class=\"message-negative\">Funkce zálohování a obnovení zakázána.</span> Používáte firmware s API verzí <span class=\"message-negative\">$1</span>, záloha a obnovení vyžadují <span class=\"message-positive\">$2</span>. Prosím zálohujte Vaší konfiguraci pomocí CLI a přečtěte si dokumentaci Betaflight pro další postup."
+    },
+    "initialSetupButtonCalibrateAccel": {
+        "message": "Kalibrovat akcelerometr"
+    },
+    "initialSetupCalibrateAccelText": {
+        "message": "Položte řídící jednotku nebo dron na <strong>vodorovný</strong> povrch, spusťte kalibraci a zajistěte, aby během kalibrace nedošlo k jejich pohybu"
+    },
+    "initialSetupButtonCalibrateMag": {
+        "message": "Kalibrovat magnetometr"
+    },
+    "initialSetupCalibrateMagText": {
+        "message": "Otočte multikoptérou alespoň o <strong>360</strong> stupňů ve všech osách, máte na to 30 sekund"
+    },
+    "initialSetupButtonCalibratingText": {
+        "message": "Kalibruje se..."
+    },
+    "initialSetupButtonReset": {
+        "message": "Resetovat nastavení"
+    },
+    "initialSetupResetText": {
+        "message": "Obnovit <strong>výchozí</strong> nastavení"
+    },
+    "initialSetupButtonBackup": {
+        "message": "Zálohovat"
+    },
+    "initialSetupButtonRestore": {
+        "message": "Obnovit"
+    },
+    "initialSetupButtonRebootBootloader": {
+        "message": "Aktivovat Boot Loader / DFU"
+    },
+    "initialSetupBackupRestoreText": {
+        "message": "<strong>Zálohujte</strong> si Vaše nastavení pro případ nehody, nastavení <strong>CLI</strong> <span class=\"message-negative\">není</span> zahrnuto - Pro zahrnutí použijte příkaz 'diff all' v CLI."
+    },
+    "initialSetupRebootBootloaderText": {
+        "message": "Restartujte do <strong> boot loader / DFU</strong> režimu."
+    },
+    "initialSetupBackupSuccess": {
+        "message": "Záloha <span class=\"message-positive\">úspěšně</span> uložena"
+    },
+    "initialSetupRestoreSuccess": {
+        "message": "Konfigurace <span class=\"message-positive\">úspěšně</span> obnovena"
+    },
+    "initialSetupButtonResetZaxis": {
+        "message": "Reset osy Z, posun: 0 stupňů"
+    },
+    "initialSetupButtonResetZaxisValue": {
+        "message": "Reset osy Z, odchylka: $1 stupňů"
+    },
+    "initialSetupThrottleHead": {
+        "message": "Nastavení plynu"
+    },
+    "initialSetupMinimum": {
+        "message": "Minimum:"
+    },
+    "initialSetupMaximum": {
+        "message": "Maximum:"
+    },
+    "initialSetupFailsafe": {
+        "message": "Pojistka proti poruchám (Failsafe):"
+    },
+    "initialSetupBatteryHead": {
+        "message": "Baterie"
+    },
+    "initialSetupMinCellV": {
+        "message": "Min. napětí článku:"
+    },
+    "initialSetupMaxCellV": {
+        "message": "Max. napětí článku:"
+    },
+    "initialSetupVoltageScale": {
+        "message": "Měřítko napětí:"
+    },
+    "initialSetupAccelTrimsHead": {
+        "message": "Trimy akcelerometru"
+    },
+    "initialSetupPitch": {
+        "message": "Sklon:"
+    },
+    "initialSetupRoll": {
+        "message": "Náklon:"
+    },
+    "initialSetupMagHead": {
+        "message": "Magnetometr"
+    },
+    "initialSetupInfoHead": {
+        "message": "Informace"
+    },
+    "initialSetupBattery": {
+        "message": "Napětí baterie:"
+    },
+    "initialSetupBatteryValue": {
+        "message": "$1 V"
+    },
+    "initialSetupDrawn": {
+        "message": "Spotřebovaná kapacita:"
+    },
+    "initialSetupDrawing": {
+        "message": "Odběr proudu:"
+    },
+    "initialSetupBatteryMahValue": {
+        "message": "$1 mAh"
+    },
+    "initialSetupBatteryAValue": {
+        "message": "$1 A"
+    },
+    "initialSetupRSSI": {
+        "message": "RSSI:"
+    },
+    "initialSetupRSSIValue": {
+        "message": "$1 %"
+    },
+    "initialSetupArmingDisableFlags": {
+        "message": "Problémy odjištění:"
+    },
+    "initialSetupArmingAllowed": {
+        "message": "Odjištění povoleno"
+    },
+    "initialSetupGPSHead": {
+        "message": "GPS"
+    },
+    "initialSetupInstrumentsHead": {
+        "message": "Přístroje"
+    },
+    "initialSetupButtonSave": {
+        "message": "Uložit"
+    },
+    "initialSetupModel": {
+        "message": "Model: $1"
+    },
+    "initialSetupAttitude": {
+        "message": "$1°"
+    },
+    "initialSetupAccelCalibStarted": {
+        "message": "Kalibrace akcelerometru zahájena"
+    },
+    "initialSetupAccelCalibEnded": {
+        "message": "Kalibrace akcelerometru <span class=\"message-positive\">dokončena</span>"
+    },
+    "initialSetupMagCalibStarted": {
+        "message": "Kalibrace magnetometru zahájena"
+    },
+    "initialSetupMagCalibEnded": {
+        "message": "Kalibrace magnetometru <span class=\"message-positive\">dokončena</span>"
+    },
+    "initialSetupSettingsRestored": {
+        "message": "<strong>Výchozí hodnoty</strong> byly obnoveny"
+    },
+    "initialSetupEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">uložena</span>"
+    },
+    "featureNone": {
+        "message": "&lt;Vyber Jedno&gt;"
+    },
+    "featureRX_PPM": {
+        "message": "PPM RX vstup"
+    },
+    "featureVBAT": {
+        "message": "Monitorování napětí baterie"
+    },
+    "featureINFLIGHT_ACC_CAL": {
+        "message": "Kalibrace horizontu za letu"
+    },
+    "featureMOTOR_STOP": {
+        "message": "Odjištěný dron automaticky nezapne motory"
+    },
+    "featureSERVO_TILT": {
+        "message": "Gimbal ze serva"
+    },
+    "featureSOFTSERIAL": {
+        "message": "Povolit sériové porty CPU"
+    },
+    "featureGPS": {
+        "message": "GPS pro navigaci a telemetrii"
+    },
+    "featureSONAR": {
+        "message": "Sonar"
+    },
+    "featureTELEMETRY": {
+        "message": "Výstup telemetrie"
+    },
+    "featureCURRENT_METER": {
+        "message": "Monitorování proudu baterie"
+    },
+    "feature3D": {
+        "message": "3D mód (pro použití s obousměrnými ESC)"
+    },
+    "featureRX_PARALLEL_PWM": {
+        "message": "Vstup PWM (jeden drát na kanál)"
+    },
+    "featureRSSI_ADC": {
+        "message": "Analogový RSSI vstup"
+    },
+    "featureLED_STRIP": {
+        "message": "Podpora vícebarevných LED pásků"
+    },
+    "featureDISPLAY": {
+        "message": "OLED obrazovka jako displej"
+    },
+    "featureDISPLAYTip": {
+        "message": "Pokud je tato funkce zapnuta a není připojen žádný displej (nebo není žádný displej zapnutý, bude letový ovladač čekat cca. 10 sekund při každém restartu"
+    },
+    "featureONESHOT125": {
+        "message": "Podpora ESC protokolu ONESHOT"
+    },
+    "featureONESHOT125Tip": {
+        "message": "Než zapnete tuto funkci, odpojte baterii a sundejte vrtule"
+    },
+    "featureBLACKBOX": {
+        "message": "Černá skřínky - nahrávání letu"
+    },
+    "featureBLACKBOXTip": {
+        "message": "Po zapnutí nastavte na záložce Blackbox."
+    },
+    "featureRX_SPI": {
+        "message": "Podpora SPI RX"
+    },
+    "featureCHANNEL_FORWARDING": {
+        "message": "Předat aux kanály servo výstupům"
+    },
+    "featureTRANSPONDER": {
+        "message": "Závodní odpovídač"
+    },
+    "featureTRANSPONDERTip": {
+        "message": "Po nastavení konfigurujte pomocí záložky Závodní odpovídač."
+    },
+    "featureAIRMODE": {
+        "message": "Trvale zapnout Airmode"
+    },
+    "featureSDCARD": {
+        "message": "Podpora SD karty (pro logování)"
+    },
+    "featureOSD": {
+        "message": "Informace na obrazovce"
+    },
+    "featureVTX": {
+        "message": "Video vysílač"
+    },
+    "configurationFeatureEnabled": {
+        "message": "Povoleno"
+    },
+    "configurationFeatureName": {
+        "message": "Funkce"
+    },
+    "configurationFeatureDescription": {
+        "message": "Popis"
+    },
+    "configurationMixer": {
+        "message": "Nastavení motorů"
+    },
+    "configurationFeatures": {
+        "message": "Další funkce"
+    },
+    "configurationReceiver": {
+        "message": "Přijímač"
+    },
+    "configurationReceiverMode": {
+        "message": "Mód přijímače"
+    },
+    "configurationRSSI": {
+        "message": "RSSI (síla signálu)"
+    },
+    "configurationEscFeatures": {
+        "message": "ESC/nastavení motorů"
+    },
+    "configurationFeaturesHelp": {
+        "message": "<strong>Poznámka:</strong> ne všechny kombinace jsou letuschopné. Když systém FC zjistí, že je konfigurace špatná, nastavení bude resetováno.<br /><strong>Poznámka:</strong> Nastavte porty <span class=\"message-negative\">před</span> povolením funkcí, které je budou používat."
+    },
+    "configurationBoardAlignment": {
+        "message": "Orientace desky a senzorů"
+    },
+    "configurationBoardAlignmentRoll": {
+        "message": "Stupňů náklonu"
+    },
+    "configurationBoardAlignmentPitch": {
+        "message": "Stupňů sklonu"
+    },
+    "configurationBoardAlignmentYaw": {
+        "message": "Stupňů otočení"
+    },
+    "configurationSensorAlignmentGyro": {
+        "message": "Poloha gyroskopu"
+    },
+    "configurationSensorAlignmentAcc": {
+        "message": "Poloha akcelerometru"
+    },
+    "configurationSensorAlignmentMag": {
+        "message": "Poloha kompasu"
+    },
+    "configurationSensorAlignmentDefaultOption": {
+        "message": "Výchozí"
+    },
+    "configurationAccelTrims": {
+        "message": "Trimy akcelerometru"
+    },
+    "configurationAccelTrimRoll": {
+        "message": "Trim náklonu akcelerometru"
+    },
+    "configurationAccelTrimPitch": {
+        "message": "Trim sklonu akcelerometru"
+    },
+    "configurationArming": {
+        "message": "Odjištění"
+    },
+    "configurationReverseMotorSwitch": {
+        "message": "Směr motorů je opačný"
+    },
+    "configurationDigitalIdlePercent": {
+        "message": "Volnoběh motorů [percent]"
+    },
+    "configurationThrottleMinimum": {
+        "message": "Minimální plyn (Nejnižší ESC hodnota, když je odjištěno)"
+    },
+    "configurationThrottleMaximum": {
+        "message": "Maximální plyn (Nejvyšší ESC hodnota, když je odjištěno)"
+    },
+    "configurationDshotBeeper": {
+        "message": "Nastavení ESC Dshot bzučáku"
+    },
+    "configurationDshotBeaconTone": {
+        "message": "Použít motory/ESC jako bzučák"
+    },
+    "configurationBeeper": {
+        "message": "Nastavení bzučáku"
+    },
+    "beeperGYRO_CALIBRATED": {
+        "message": "Pípnutí po kalibraci gyroskopu"
+    },
+    "beeperDISARMING": {
+        "message": "Pípnout, když se zajistí řídící jednotka"
+    },
+    "beeperARMING": {
+        "message": "Pípnout, když se dron odjistí"
+    },
+    "beeperARMING_GPS_FIX": {
+        "message": "Pípnout speciální tón, když se odjišťuje FC a GPS je zaměřeno"
+    },
+    "beeperBAT_CRIT_LOW": {
+        "message": "Delší varovné pípání, když má baterie kriticky nízké napětí (opakované)"
+    },
+    "beeperBAT_LOW": {
+        "message": "Varovné pípání, když se baterie vybíjí (opakované)"
+    },
+    "beeperGPS_STATUS": {
+        "message": "Použít počet pípnutí k indikaci, kolik GPS satelitů bylo nalezeno"
+    },
+    "beeperRX_SET": {
+        "message": "Pípnout, když je vybrán AUX kanál pro bzučák"
+    },
+    "beeperREADY_BEEP": {
+        "message": "Zahrát melodii, když GPS najde polohu a je připravené"
+    },
+    "beeperDISARM_REPEAT": {
+        "message": "Pípání, když je páka držena v pozici zajištění dronu"
+    },
+    "configuration3d": {
+        "message": "Funkce pro 3D ESC/Motor"
+    },
+    "configurationSystem": {
+        "message": "Konfigurace systému"
+    },
+    "configurationCalculatedCyclesSec": {
+        "message": "Cyklů/s [Hz]"
+    },
+    "configurationLoopTimeHelp": {
+        "message": "<strong>Poznámka:</strong> Ujistěte se, že FC zvládne fungovat na takové frekvenci! Ověřte stabilitu provozu. Změna může vyžadovat úpravu PID hodnot. TIP: zakažte akcelerometr a další senzory pro zvýšení výkonu CPU."
+    },
+    "configurationGPS": {
+        "message": "GPS"
+    },
+    "configurationGPSProtocol": {
+        "message": "Protokol"
+    },
+    "configurationGPSBaudrate": {
+        "message": "Frekvence"
+    },
+    "configurationGPSAutoBaud": {
+        "message": "Automatická frekvence"
+    },
+    "configurationGPSAutoConfig": {
+        "message": "Auto Config"
+    },
+    "configurationButtonSave": {
+        "message": "Uložit a restartovat"
+    },
+    "portsIdentifier": {
+        "message": "Identifikátor"
+    },
+    "portsConfiguration": {
+        "message": "Konfigurace/MSP"
+    },
+    "portsSerialRx": {
+        "message": "Sériový Rx"
+    },
+    "portsSensorIn": {
+        "message": "Vstup čidla"
+    },
+    "portsTelemetryOut": {
+        "message": "Výstup telemetrie"
+    },
+    "portsPeripherals": {
+        "message": "Periferie"
+    },
+    "portsHelp": {
+        "message": "<strong>Poznámka:</strong> ne všechny kombinace jsou letuschopné. Když systém řídící jednotky zjistí, že je konfigurace neplatná, nastavení bude resetováno."
+    },
+    "portsMSPHelp": {
+        "message": "<strong>Poznámka:</strong> <span class=\"message-negative\">Nezakazujte</span> MSP na prvním sériovém protu, pokud nevíte, co děláte. Pro opravu může být nutné přeinstalování firmware a všechna nastavení by byla resetována."
+    },
+    "portsFirmwareUpgradeRequired": {
+        "message": "Upgrade firmware <span class=\"message-negative\">vyžadován</span>. Nastavení sériových portů u firmware &lt; 1.8.0 není podporované."
+    },
+    "portsButtonSave": {
+        "message": "Uložit a restartovat"
+    },
+    "portsTelemetryDisabled": {
+        "message": "Zakázáno"
+    },
+    "portsFunction_MSP": {
+        "message": "MSP"
+    },
+    "portsFunction_GPS": {
+        "message": "GPS"
+    },
+    "portsFunction_TELEMETRY_FRSKY": {
+        "message": "FrSky"
+    },
+    "portsFunction_TELEMETRY_HOTT": {
+        "message": "HoTT"
+    },
+    "portsFunction_TELEMETRY_LTM": {
+        "message": "LTM"
+    },
+    "portsFunction_TELEMETRY_MAVLINK": {
+        "message": "MAVLink"
+    },
+    "portsFunction_TELEMETRY_MSP": {
+        "message": "MSP"
+    },
+    "portsFunction_TELEMETRY_SMARTPORT": {
+        "message": "SmartPort"
+    },
+    "portsFunction_TELEMETRY_IBUS": {
+        "message": "iBUS"
+    },
+    "portsFunction_TELEMETRY_JETIXBUS": {
+        "message": "JETIXBUS"
+    },
+    "portsFunction_TELEMETRY_CRSF": {
+        "message": "CRSF"
+    },
+    "portsFunction_TELEMETRY_SRXL": {
+        "message": "SRXL"
+    },
+    "portsFunction_ESC_SENSOR": {
+        "message": "ESC"
+    },
+    "portsFunction_RX_SERIAL": {
+        "message": "Sériový RX"
+    },
+    "portsFunction_BLACKBOX": {
+        "message": "Blackbox logování"
+    },
+    "pidTuningProfileOption": {
+        "message": "Profil $1"
+    },
+    "pidTuningRateProfileOption": {
+        "message": "Profil poměrů $1"
+    },
+    "pidTuningSubTabFilter": {
+        "message": "Nastavení filtrů"
+    },
+    "pidTuningShowAllPids": {
+        "message": "Zobrazit všechna PID"
+    },
+    "pidTuningHideUnusedPids": {
+        "message": "Skrýt nepoužívané PID"
+    },
+    "pidTuningAntiGravityModeOptionSmooth": {
+        "message": "Plynulá",
+        "description": "One of the modes of anti gravity"
+    },
+    "pidTuningAntiGravityModeOptionStep": {
+        "message": "Kroková",
+        "description": "One of the modes of anti gravity"
+    },
+    "receiverRcSmoothing": {
+        "message": "Vyhlazování vstupů příjmače"
+    },
+    "receiverRcSmoothingAuto": {
+        "message": "Auto"
+    },
+    "receiverRcSmoothingManual": {
+        "message": "Manuální"
+    },
+    "receiverRcSmoothingInterpolation": {
+        "message": "Interpolace"
+    },
+    "receiverRcSmoothingFilter": {
+        "message": "Filtr"
+    },
+    "receiverRcInputType": {
+        "message": "Typ vstupního filtru"
+    },
+    "receiverRcSmoothingDerivativeTypeOff": {
+        "message": "Vypnuto"
+    },
+    "receiverRcSmoothingChannel": {
+        "message": "Vyhlazování kanálů"
+    },
+    "receiverRcInterpolationOff": {
+        "message": "Vypnuto"
+    },
+    "receiverRcSmoothingType": {
+        "message": "Typ vyhlazování"
+    },
+    "receiverRcInterpolationDefault": {
+        "message": "Profil"
+    },
+    "receiverRcInterpolationAuto": {
+        "message": "Auto"
+    },
+    "receiverRcInterpolationManual": {
+        "message": "Manuální"
+    },
+    "pidTuningProportional": {
+        "message": "Proporciální"
+    },
+    "pidTuningIntegral": {
+        "message": "Integrál"
+    },
+    "pidTuningDerivative": {
+        "message": "Derivace"
+    },
+    "pidTuningRcRate": {
+        "message": "RC poměr"
+    },
+    "pidTuningMaxVel": {
+        "message": "Max rychlost [°/s]"
+    },
+    "pidTuningRate": {
+        "message": "Poměr"
+    },
+    "pidTuningSuperRate": {
+        "message": "Super poměr"
+    },
+    "pidTuningRcExpo": {
+        "message": "RC Exponent"
+    },
+    "pidTuningTPA": {
+        "message": "TPA"
+    },
+    "pidTuningFilter": {
+        "message": "Filtr"
+    },
+    "pidTuningFilterFrequency": {
+        "message": "Frekvence"
+    },
+    "throttle": {
+        "message": "Plyn"
+    },
+    "receiverStickMin": {
+        "message": "Limit \"stažené páky\""
+    },
+    "receiverStickCenter": {
+        "message": "Střed pák"
+    },
+    "receiverStickMax": {
+        "message": "Limit \"páka na plno\""
+    },
+    "receiverDeadband": {
+        "message": "Deadzóna RC"
+    },
+    "receiverYawDeadband": {
+        "message": "Deadzóna zatáčení"
+    },
+    "recevier3dDeadbandThrottle": {
+        "message": "Deadzóna 3D plynu"
+    },
+    "receiverChannelMap": {
+        "message": "Mapování kanálů"
+    },
+    "receiverChannelMapTitle": {
+        "message": "Kliknutím do pole můžete nastavit vlastní mapování kanálů"
+    },
+    "receiverRssiChannel": {
+        "message": "Kanál RSSI"
+    },
+    "receiverRssiChannelDisabledOption": {
+        "message": "Zakázáno"
+    },
+    "receiverButtonSticks": {
+        "message": "Ovládací páky"
+    },
+    "receiverModelPreview": {
+        "message": "Náhled"
+    },
+    "receiverMspEnableButton": {
+        "message": "Povolit ovládání"
+    },
+    "auxiliaryMin": {
+        "message": "Min"
+    },
+    "auxiliaryMax": {
+        "message": "Max"
+    },
+    "auxiliaryAddRange": {
+        "message": "Přidat rozsah"
+    },
+    "auxiliaryButtonSave": {
+        "message": "Uložit"
+    },
+    "auxiliaryAutoChannelSelect": {
+        "message": "AUTO"
+    },
+    "adjustmentsColumnEnable": {
+        "message": "Pokud je povoleno"
+    },
+    "adjustmentsColumnUsingSlot": {
+        "message": "používá slot"
+    },
+    "adjustmentsColumnWhenChannel": {
+        "message": "když kanál"
+    },
+    "adjustmentsColumnIsInRange": {
+        "message": "je v rozsahu"
+    },
+    "adjustmentsColumnThenApplyFunction": {
+        "message": "pak použít"
+    },
+    "adjustmentsColumnViaChannel": {
+        "message": "kanálem"
+    },
+    "adjustmentsSlot0": {
+        "message": "Slot 1"
+    },
+    "adjustmentsSlot1": {
+        "message": "Slot 2"
+    },
+    "adjustmentsSlot2": {
+        "message": "Slot 3"
+    },
+    "adjustmentsSlot3": {
+        "message": "Slot 4"
+    },
+    "adjustmentsMin": {
+        "message": "Min"
+    },
+    "adjustmentsMax": {
+        "message": "Max"
+    },
+    "adjustmentsFunction0": {
+        "message": "Žádné změny"
+    },
+    "adjustmentsSave": {
+        "message": "Uložit"
+    },
+    "transponderNotSupported": {
+        "message": "Firmware Vaší řídící jednotky nepodporuje funkci odpovídače."
+    },
+    "transponderConfigurationType": {
+        "message": "Typ odpovídače"
+    },
+    "transponderType0": {
+        "message": "Nic"
+    },
+    "transponderType1": {
+        "message": "iLap"
+    },
+    "transponderType3": {
+        "message": "ERLT"
+    },
+    "transponderConfiguration1": {
+        "message": "Konfigurace iLap"
+    },
+    "transponderConfiguration2": {
+        "message": "Konfigurace aRCiTimeru"
+    },
+    "transponderConfiguration3": {
+        "message": "Konfigurace ERLT"
+    },
+    "transponderData1": {
+        "message": "Data"
+    },
+    "transponderData2": {
+        "message": "ID odpovídače"
+    },
+    "transponderData3": {
+        "message": "ID odpovídače"
+    },
+    "transponderDataHelp1": {
+        "message": "Pouze hexadecimální znaky, 0-9, A-F"
+    },
+    "transponderDataHelp3": {
+        "message": "Vyberte ERLT ID 0-63"
+    },
+    "transponderButtonSave": {
+        "message": "Uložit"
+    },
+    "transponderButtonSaveReboot": {
+        "message": "Uložit a restartovat"
+    },
+    "transponderDataInvalid": {
+        "message": "Data odpovídače jsou <span class=\"message-negative\">neplatná</span>"
+    },
+    "transponderEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">uložena</span>"
+    },
+    "servosFirmwareUpgradeRequired": {
+        "message": "Serva vyžadují firmware &gt; 1.10.0."
+    },
+    "servosChangeDirection": {
+        "message": "Změňte směr v TX na odpovídající"
+    },
+    "servosName": {
+        "message": "Název"
+    },
+    "servosMid": {
+        "message": "MID"
+    },
+    "servosMin": {
+        "message": "MIN"
+    },
+    "servosMax": {
+        "message": "MAX"
+    },
+    "servosAngleAtMin": {
+        "message": "Min úhel"
+    },
+    "servosAngleAtMax": {
+        "message": "Max úhel"
+    },
+    "servosDirectionAndRate": {
+        "message": "Směr a poměr"
+    },
+    "servosButtonSave": {
+        "message": "Uložit"
+    },
+    "servosNormal": {
+        "message": "Normální"
+    },
+    "servosReverse": {
+        "message": "Obráceně"
+    },
+    "motorsVoltage": {
+        "message": "Napětí:"
+    },
+    "motorsADrawing": {
+        "message": "Proud:"
+    },
+    "motorsmAhDrawn": {
+        "message": "Spotřebováno:"
+    },
+    "motorsVoltageValue": {
+        "message": "$1 V"
+    },
+    "motorsADrawingValue": {
+        "message": "$1 A"
+    },
+    "motorsmAhDrawnValue": {
+        "message": "$1 mAh"
+    },
+    "motorsText": {
+        "message": "Motory"
+    },
+    "motorNumber1": {
+        "message": "Motor - 1"
+    },
+    "motorNumber2": {
+        "message": "Motor - 2"
+    },
+    "motorNumber3": {
+        "message": "Motor - 3"
+    },
+    "motorNumber4": {
+        "message": "Motor - 4"
+    },
+    "motorNumber5": {
+        "message": "Motor - 5"
+    },
+    "motorNumber6": {
+        "message": "Motor - 6"
+    },
+    "motorNumber7": {
+        "message": "Motor - 7"
+    },
+    "motorNumber8": {
+        "message": "Motor - 8"
+    },
+    "servosText": {
+        "message": "Serva"
+    },
+    "servoNumber1": {
+        "message": "Servo - 1"
+    },
+    "servoNumber2": {
+        "message": "Servo - 2"
+    },
+    "servoNumber3": {
+        "message": "Servo - 3"
+    },
+    "servoNumber4": {
+        "message": "Servo - 4"
+    },
+    "servoNumber5": {
+        "message": "Servo - 5"
+    },
+    "servoNumber6": {
+        "message": "Servo - 6"
+    },
+    "servoNumber7": {
+        "message": "Servo - 7"
+    },
+    "servoNumber8": {
+        "message": "Servo - 8"
+    },
+    "motorsResetMaximumButton": {
+        "message": "Reset"
+    },
+    "motorsSensorGyroSelect": {
+        "message": "gyroskop"
+    },
+    "motorsNotice": {
+        "message": "<strong>Upozornění před testem motorů/odjištěním:</strong><br />Posunutím sliderů nebo odjištěním dronu způsobíte <strong>roztočení motorů</strong>.<br />Abyste předešli zraněním, <strong class=\"message-negative\">sundejte VŠECHNY vrtule</strong>, než použijete tuto funkci.<br />Zapnutím módu testu motorů se dočasně vypne funkce pro ochranu před nekontrolovaným startem, aby se mohly spustit motory bez vrtulí.<br />"
+    },
+    "motorsEnableControl": {
+        "message": "<strong>Rozumím rizikům</strong>, všechny vrtule jsem sundal - chci začít testovat motory."
+    },
+    "sensorsRefresh": {
+        "message": "Obnovit:"
+    },
+    "sensorsScale": {
+        "message": "Měřítko:"
+    },
+    "cliClearOutputHistoryBtn": {
+        "message": "Vymazat historii výstupu"
+    },
+    "blackboxMaybeSupported": {
+        "message": "Firmware vaší řídící jednotky je příliš starý a nepodporuje tuto funkci, nebo je funkce Blackbox zakázaná v nastavení."
+    },
+    "blackboxConfiguration": {
+        "message": "Nastavení Blackboxu"
+    },
+    "blackboxButtonSave": {
+        "message": "Uložit a restartovat"
+    },
+    "blackboxLoggingNone": {
+        "message": "Bez záznamu"
+    },
+    "sdcardNote": {
+        "message": "Záznamy z letů můžou být uloženy na SD kartu vloženou ve vašem FC."
+    },
+    "sdcardStatusNoCard": {
+        "message": "Není vložena žádná karta"
+    },
+    "firmwareFlasherNoReboot": {
+        "message": "Bez restartu"
+    },
+    "firmwareFlasherOnlineSelectBoardDescription": {
+        "message": "Vyberte desku pro zobrazení dostupných verzí firmware - Vyberte vhodnou verzi firmware pro vaši desku."
+    },
+    "firmwareFlasherOnlineSelectFirmwareVersionDescription": {
+        "message": "Vyberte verzi firmware pro vaši desku."
+    },
+    "firmwareFlasherNoRebootDescription": {
+        "message": "Povolte, pokud je vaše deska v boot režimu. Tzn. pokud jste zapnuli FC se zkratovanými bootloader piny, nebo jste drželi tlačítko BOOT."
+    },
+    "firmwareFlasherFullChipErase": {
+        "message": "Kompletní vymazání paměti"
+    },
+    "firmwareFlasherFullChipEraseDescription": {
+        "message": "Vymaže všechna data uložená na desce."
+    },
+    "firmwareFlasherManualBaudDescription": {
+        "message": "Manuální výběr přenosové rychlosti pro desky, které nepodporují výchozí rychlost, nebo pro instalaci přes Bluetooth. <br /><span class=\"message-negative\">Poznámka:</span> Nepoužívá se, pokud se instaluje přes USB DFU režim"
+    },
+    "firmwareFlasherShowDevelopmentReleases": {
+        "message": "Zobrazit nestabilní verze"
+    },
+    "firmwareFlasherShowDevelopmentReleasesDescription": {
+        "message": "Zobrazit ke stabilním verzím i verze nestabilní"
+    },
+    "firmwareFlasherOptionLabelBuildTypeReleaseCandidate": {
+        "message": "Stabilní a nestabilní verze"
+    },
+    "firmwareFlasherOptionLabelSelectFirmwareVersionFor": {
+        "message": "Zvolte verzi firmwaru pro"
+    },
+    "controlAxisRoll": {
+        "message": "Náklon [A]"
+    },
+    "controlAxisPitch": {
+        "message": "Sklon [E]"
+    },
+    "controlAxisYaw": {
+        "message": "Zatáčení [R]"
+    },
+    "controlAxisThrottle": {
+        "message": "Plyn [T]"
+    },
+    "controlAxisAux1": {
+        "message": "AUX 1"
+    },
+    "controlAxisAux2": {
+        "message": "AUX 2"
+    },
+    "controlAxisAux3": {
+        "message": "AUX 3"
+    },
+    "controlAxisAux4": {
+        "message": "AUX 4"
+    },
+    "pidTuningBasic": {
+        "message": "Základní/Acro"
+    },
+    "pidTuningLevel": {
+        "message": "Acro/Horizont"
+    },
+    "pidTuningHorizon": {
+        "message": "Horizont"
+    },
+    "pidTuningAngle": {
+        "message": "Acro"
+    },
+    "pidTuningAcroTrainerAngleLimitHelp": {
+        "message": "Přidá nový režim omezující úhly náklonu pro piloty, kteří se učí létat v režimu acro. Rozsah je 10-80 a musí být aktivován pomocí přepínače v $t(tabAuxiliary.message)."
+    },
+    "failsafeKillSwitchItem": {
+        "message": "Failsafe Kill Switch (nastavení Failsafe v záložce módů)"
+    },
+    "powerBatteryVoltageMeterSource": {
+        "message": "Typ voltmetru"
+    },
+    "powerBatteryCurrentMeterSource": {
+        "message": "Typ ampérmetru"
+    },
+    "powerBatteryCurrentMeterTypeNone": {
+        "message": "Žádný"
+    },
+    "powerBatteryMinimum": {
+        "message": "Minimální napětí článku"
+    },
+    "powerBatteryMaximum": {
+        "message": "Maximální napětí článku"
+    },
+    "powerBatteryWarning": {
+        "message": "Výstraha při napětí článku"
+    },
+    "powerVoltageValue": {
+        "message": "$1 V"
+    },
+    "powerAmperageValue": {
+        "message": "$1 A"
+    },
+    "powerVoltageId10": {
+        "message": "Baterie"
+    },
+    "powerAmperageHead": {
+        "message": "Ampérmetr"
+    },
+    "powerMahValue": {
+        "message": "$1 mAh"
+    },
+    "powerStateHead": {
+        "message": "Stav napájení"
+    },
+    "powerBatteryConnected": {
+        "message": "Připojeno"
+    },
+    "powerBatteryConnectedValueNo": {
+        "message": "Ne"
+    },
+    "powerBatteryVoltage": {
+        "message": "Napětí"
+    },
+    "powerBatteryCurrentDrawn": {
+        "message": "mAh použito"
+    },
+    "powerBatteryAmperage": {
+        "message": "Proud"
+    },
+    "powerBatteryCapacity": {
+        "message": "Kapacita (mAh)"
+    },
+    "osdSetupTitle": {
+        "message": "OSD"
+    },
+    "osdDescElementCraftName": {
+        "message": "Jméno dronu nastavené v záložce Konfigurace"
+    },
+    "pidTuningProfile": {
+        "message": "Profil"
+    },
+    "onboardLoggingBlackbox": {
+        "message": "Blackbox logovací zařízení"
+    },
+    "onboardLoggingRateOfLogging": {
+        "message": "Rychlost záznamu Blackboxu"
+    },
+    "onboardLoggingSerialLogger": {
+        "message": "Externí logovací zařízení"
+    },
+    "onboardLoggingMsc": {
+        "message": "Režim velkokapacitní paměti"
+    },
+    "onboardLoggingMscNote": {
+        "message": "Restartujte do <strong>režimu velkokapacitní paměti (MSC)</strong>. Po aktivaci MSC režimu bude karta vložená ve vašem FC připojena k PC jako flashdisk. Poté si můžete stáhnout soubory záznamů stáhnout do PC. Až budete mít záznamy stažené, bezpečně odpojte jednotku od Windows a restartujte FC pro vypnutí MSC režimu."
+    },
+    "onboardLoggingMscNotReady": {
+        "message": "Zařízení není připravené, není možné aktivovat režim velkokapacitní paměti."
+    },
+    "flashTab": {
+        "message": "Aktualizovat firmware"
+    }
+}

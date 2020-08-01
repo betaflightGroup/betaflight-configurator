@@ -82,6 +82,9 @@
     "analyticsOptOut": {
         "message": "Desactiveu la col·lecció anònima de dades d’estadístiques"
     },
+    "cordovaForceComputerUI": {
+        "message": "Utilitzeu la interfície dels ordinadors en lloc de la interfície dels telèfons"
+    },
     "language_changed": {
         "message": "S'ha desat el canvi d'idioma"
     },
@@ -206,6 +209,9 @@
     },
     "tabHelp": {
         "message": "Documentació i suport"
+    },
+    "tabOptions": {
+        "message": "Opcions"
     },
     "tabSetup": {
         "message": "Configuració"
@@ -403,7 +409,7 @@
         "message": "Aquest firmware <span class=\"message-negative\">no està suportat</span>. Siusplau, actualitza al firmware que suporti la versió api <strong>$1</strong> o millor. Utilitza el CLI per fer una còpia de seguretat abans de flashejar. La còpia i restauració al CLI està explicada a la documentació.<br />També pots fer servir una versió antiga del configurador si no estàs llest per actualitzar."
     },
     "firmwareTypeNotSupported": {
-        "message": "El firmware NO - Cleanflight/Betaflight <span class=\"message-negative\">no està suportat</span>, excepte pel mode CLI."
+        "message": "El firmware NO - Betaflight <span class=\"message-negative\">no està suportat</span>, excepte pel mode CLI."
     },
     "firmwareUpgradeRequired": {
         "message": "El firmware d'aquest dispositiu necessita ser actualitzat a una versió superior. Utilitza el CLI per fer una còpia de seguretat abans de flashejar. El procediment està explicat a la documentació.<br />D'altra banda pots descarregar i fer servir una versió antiga del configurador si no estàs preparat per actualitzar."
@@ -554,7 +560,7 @@
         "message": "Maquinari"
     },
     "defaultWelcomeText": {
-        "message": "L’aplicació és compatible amb tot el maquinari que pot executar Betaflight. Comproveu la pestanya Flash per trobar una llista completa del maquinari.<br /><br /><a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\" rel=\"noopener noreferrer\">Descarregar visualizador de registre de Betaflight Blackbox</a><br /><br />El codi font del firmware es pot descarregar des de <a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\" rel=\"noopeener noreferrer\">aquí</a>< br />Els últims <b>controladors STM USB VCP</b> es poden descarregar des de <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\" rel=\"noopener noreferrer\">aquí</a><br />Per al maquinari existent que utilitza un convertidor USB a sèrie CP210x:<br />Els últims <b>controladors CP210x</b> es poden descarregar de <a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers \"target=\"_ blank\" rel=\"noopener noreferrer\">aquí</a><br />El darrer <b>Zadig</b> del controlador de Windows USB es pot descarregar de <a href=\"http://zadig.akeo.ie/\" target=\"_blank\" rel=\"noopener noreferrer\">aquí</a><br />"
+        "message": "L’aplicació és compatible amb tot el maquinari que pot executar Betaflight. Comproveu la pestanya Flash per trobar una llista completa del maquinari.<br /><br /><a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\" rel=\"noopener noreferrer\">Descarregar visualizador de registre de Betaflight Blackbox</a><br /><br />El codi font del firmware es pot descarregar des de <a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\" rel=\"noopeener noreferrer\">aquí</a><br />Els últims <b>controladors STM USB VCP</b> es poden descarregar des de <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\" rel=\"noopener noreferrer\">aquí</a><br />Per al maquinari existent que utilitza un convertidor USB a sèrie CP210x:<br />Els últims <b>controladors CP210x</b> es poden descarregar de <a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers \"target=\"_ blank\" rel=\"noopener noreferrer\">aquí</a><br />El darrer <b>Zadig</b> del controlador de Windows USB es pot descarregar des de <a href=\"http://zadig.akeo.ie/\" target=\"_blank\" rel=\"noopener noreferrer\">aquí</a><br />"
     },
     "defaultContributingHead": {
         "message": "Contribuir"
@@ -1353,6 +1359,15 @@
     "configurationButtonSave": {
         "message": "Desa i Reinicia"
     },
+    "dialogDynFiltersChangeTitle": {
+        "message": "Valors del filtre dinàmic de banda eliminada (Notch) han canviat"
+    },
+    "dialogDynFiltersChangeNote": {
+        "message": "<span class=\"message-negative\"><b>ADVERTIMENT: alguns valors dinàmics de tall s’han canviat als valors predeterminats</b></span> perquè s’ha activat/desactivat el filtratge RPM.<br> Comproveu abans de volar."
+    },
+    "dialogDynFiltersConfirm": {
+        "message": "OK"
+    },
     "portsIdentifier": {
         "message": "Identificador"
     },
@@ -1649,6 +1664,33 @@
     },
     "pidTuningDtermSetpointTransitionWarning": {
         "message": "<span class=\"message-negative\"><strong>$t(warningTitle.message):</strong> Es desaconsella l'ús d'una transició de punt de partida D superior a 0 i inferior a 0,1. Si ho fa, pot generar inestabilitat i una menor capacitat de resposta a mesura que els sticks passen pel punt central.</span>"
+    },
+    "pidTuningFfInterpolateSp": {
+        "message": "Interpolar FF"
+    },
+    "pidTuningFfInterpolateSpHelp": {
+        "message": "Les següents opcions permeten afinar el ritme de cursa/agressiu a suau/HD.<br><br> Modalitat: ajustat a NoAverage per a cursa, Mitja 2 per a cursa/freestyle ràpid, Mitjana a 3 per a enregistrament en HD, Mitjana 4 per a cinema HD suau.<br><br> Suavitat: limita la quantitat de canvis que pot fer qualsevol pas de ràdio entrant, augmentar per obtenir un senyal de FF més suau, disminueix per respostes de FF més agressives.<br><br> Potencia: ajuda a superar el retard del motor amb moviments rápid dels sticks, pot augmentar el jitter. Prova 10 per HD, 20 per cursa. Fins a 30 poden ser útils per a quads de baixa autoritat, però poden causar micro bots o jitter."
+    },
+    "pidTuningFfInterpolate": {
+        "message": "Mode"
+    },
+    "pidTuningFfInterpolateSpOptionNoAverage": {
+        "message": "Sense mitja"
+    },
+    "pidTuningFfInterpolateSpOptionAverage2": {
+        "message": "Mitjana 2"
+    },
+    "pidTuningFfInterpolateSpOptionAverage3": {
+        "message": "Mitjana 3"
+    },
+    "pidTuningFfInterpolateSpOptionAverage4": {
+        "message": "Mitjana 4"
+    },
+    "pidTuningFfSmoothFactor": {
+        "message": "Suavitat"
+    },
+    "pidTuningFfBoost": {
+        "message": "Potenciador"
     },
     "pidTuningProportional": {
         "message": "Proporcional"
@@ -3453,6 +3495,9 @@
     "pidTuningDTermLowpassDynType": {
         "message": "Tipus filtre Passa-baixos dinàmic 1 del D Term"
     },
+    "pidTuningDTermLowpassDynExpo": {
+        "message": "D Term filtre passa-baixos dinàmic 1 curva Expo"
+    },
     "pidTuningDTermNotchFiltersGroup": {
         "message": "Filtres Notch D Term"
     },
@@ -3473,6 +3518,15 @@
     },
     "pidTuningVbatPidCompensationHelp": {
         "message": "Incrementa el valors de PIDs per compensar la caiguda del voltatge de bateria. Aquest donarà característiques de vol constants durant el vol. La quantitat de compensació que s'aplica es calcula per el valor de voltatge màxim de ceŀla definit a la pestanya de configuració, assegura't que és correcte."
+    },
+    "pidTuningVbatSagCompensation": {
+        "message": "Compensació del Battery Sag"
+    },
+    "pidTuningVbatSagCompensationHelp": {
+        "message": "Ofereix un accelerador constant i el rendiment PID sobre el rang de tensió de la bateria que es pot utilitzar compensant el descens de la bateria. El valor de la compensació pot variar entre el 0 i el 100%. Es recomana una compensació completa (100%). <br><br>Visita <a href =\"https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes#dynamic-battery-sag-compensation\"target=\"_ blank\" rel=\"noopener noreferrer\"> aquesta entrada de wiki</a> per obtenir més informació."
+    },
+    "pidTuningVbatSagValue": {
+        "message": "%"
     },
     "pidTuningItermRotation": {
         "message": "Rotació I Term"
@@ -5561,5 +5615,74 @@
     "gpsSbasNone": {
         "message": "Cap",
         "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "dialogFileNameTitle": {
+        "message": "Nom d’arxiu"
+    },
+    "dialogFileNameDescription": {
+        "message": "El fitxer es desarà a la carpeta \"{{folder}}\" de l'emmagatzematge intern."
+    },
+    "dialogFileAlreadyExistsTitle": {
+        "message": "Aquest fitxer ja existeix!"
+    },
+    "dialogFileAlreadyExistsDescription": {
+        "message": "Sobreescriure?"
+    },
+    "cordovaCheckingWebview": {
+        "message": "Comprovant aplicacions de visualització web ..."
+    },
+    "cordovaIncompatibleWebview": {
+        "message": "Visor web incompatible"
+    },
+    "cordovaWebviewTroubleshootingMsg": {
+        "message": "Per utilitzar el configurador, heu d'actualitzar el visor web del dispositiu."
+    },
+    "cordovaWebviewTroubleshootingMsg2": {
+        "message": "L’eina següent té la finalitat d’ajudar-vos a instal·lar un nou visor web o a actualitzar una visor web ja instal·lat."
+    },
+    "cordovaAvailableWebviews": {
+        "message": "Aplicacions de visualització web disponibles al vostre dispositiu"
+    },
+    "cordovaWebviewInstall": {
+        "message": "Instal·lant l’aplicació <b>{{app}}</b> pot resoldre aquest problema de compatibilitat."
+    },
+    "cordovaWebviewInstallBtn": {
+        "message": "Instal·leu des de Google Play Store"
+    },
+    "cordovaWebviewUninstall": {
+        "message": "Desinstal·lar l’aplicació <b>{{app}}</b> pot resoldre aquest problema de compatibilitat. Si no podeu desinstal·lar-lo, intenteu desactivar-lo de l'aplicació de configuració."
+    },
+    "cordovaWebviewUninstallBtn1": {
+        "message": "Desinstal·leu de Google Play Store"
+    },
+    "cordovaWebviewUninstallBtn2": {
+        "message": "Desinstal·leu / desactiveu la configuració"
+    },
+    "cordovaWebviewUpdate": {
+        "message": "L'actualització de l '<b>{{app}}</b> aplicació pot resoldre aquest problema de compatibilitat."
+    },
+    "cordovaWebviewUpdateBtn": {
+        "message": "Actualitza des de Google Play Store"
+    },
+    "cordovaWebviewEnable": {
+        "message": "Aneu a la pestanya d'informació del vostre dispositiu a la configuració i toqueu deu vegades el número de versió de creació per habilitar \"Opcions de desenvolupador\". Després d'això, busqueu i aneu a les opcions de desenvolupador i seleccioneu <b>{{app}}</b> com a proveïdor de visor web."
+    },
+    "cordovaWebviewEnableBtn": {
+        "message": "Obre configuració"
+    },
+    "cordovaWebviewIncompatible": {
+        "message": "Sembla que el vostre dispositiu no és compatible. Proveu de cercar altres maneres d’actualitzar el vostre visor web"
+    },
+    "cordovaNoWebview": {
+        "message": "No s’ha instal·lat / activat cap aplicació de visualització web"
+    },
+    "cordovaWebviewUsed": {
+        "message": "utilitzat"
+    },
+    "cordovaExitAppTitle": {
+        "message": "Confirmació"
+    },
+    "cordovaExitAppMessage": {
+        "message": "Esteu segur que voleu tancar el configurador?"
     }
 }

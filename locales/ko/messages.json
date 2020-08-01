@@ -82,6 +82,9 @@
     "analyticsOptOut": {
         "message": "익명화된 통계 데이타 수집 선택 해제"
     },
+    "cordovaForceComputerUI": {
+        "message": "폰 인터페이스 대신 컴퓨터 인터페이스 사용"
+    },
     "language_changed": {
         "message": "언어 변경이 저장됨"
     },
@@ -266,6 +269,9 @@
     },
     "tabHelp": {
         "message": "문서 & 지원"
+    },
+    "tabOptions": {
+        "message": "옵션"
     },
     "tabSetup": {
         "message": "설정"
@@ -463,7 +469,7 @@
         "message": "이 펌웨어 버전은 <span class=\"message-negative\">지원하지 않습니다</span>. API 버전 <strong>$1</strong> 이상을 지원하는 펌웨어로 업그레이드하십시오. 플래시하기 전에 CLI를 사용하여 백업하십시오. CLI 백업/복원 절차는 문서를 참고하십시오.<br />또는 업그레이드 준비가 되지 않은 경우 이전 버전의 컨피규레이터를 다운로드하여 사용하십시오."
     },
     "firmwareTypeNotSupported": {
-        "message": "클린플라이트/베타플라이트 펌웨어가 아닌 경우, CLI 모드를 제외하고 <span class=\"message-negative\">지원되지 않습니다.</span>"
+        "message": "베타플라이트 펌웨어가 아닌 경우, CLI 모드를 제외하고 <span class=\"message-negative\">지원되지 않습니다.</span>"
     },
     "firmwareUpgradeRequired": {
         "message": "이 기기의 펌웨어는 최신 버전으로 업그레이드해야합니다. 플래시하기 전에 CLI를 사용하여 백업하십시오. CLI 백업/복원 절차는 문서를 참고하십시오. <br />또는 업그레이드 준비가 되지 않은 경우 이전 버전의 컨피규레이터를 다운로드하여 사용하십시오."
@@ -1413,6 +1419,15 @@
     "configurationButtonSave": {
         "message": "저장 및 재부팅"
     },
+    "dialogDynFiltersChangeTitle": {
+        "message": "다이나믹 노치 값 변경"
+    },
+    "dialogDynFiltersChangeNote": {
+        "message": "<span class=\"message-negative\"><b>경고: 일부 다이나믹 노치 값이 기본값으로 변경되었습니다.</b></span> RPM 필터링이 활성화/비활성화되었기 때문에<br> 비행 전 반드시 확인하십시오."
+    },
+    "dialogDynFiltersConfirm": {
+        "message": "확인"
+    },
     "portsIdentifier": {
         "message": "식별자"
     },
@@ -1709,6 +1724,33 @@
     },
     "pidTuningDtermSetpointTransitionWarning": {
         "message": "<span class=\"message-negative\"><strong>$t(warningTitle.message):</strong> 0 보다 크고 0.1 보다 작은 D 설정값 전환의 사용은 불안정을 유발시킬 수 있으며, 중립포인트에서 만나는 스틱의 반응성이 감소될 수 있습니다.</span>"
+    },
+    "pidTuningFfInterpolateSp": {
+        "message": "FF 보간"
+    },
+    "pidTuningFfInterpolateSpHelp": {
+        "message": "다음 옵션은 레이스/공격부터 스무드/HD까지 피드포워드를 미세 조정한다.<br><br> 모드: 레이스의 경우 평균안함, 레이스/빠른 프리스타일의 경우 평균 2, HD 레코딩의 경우 평균 3, HD 씨네마틱 부드러움의 경우 평균 4로 설정하세요.<br><br> 부드러움: 입력되는 라디오 스텝 어느 하나라도 변화량을 제한하며, 부드러운 FF 신호를 위해 증가시키고, 보다 공격적인 FF 응답을 위해 감소시키세요.<br><br>부스트: 빠른 스틱 입력으로 운동 장애를 극복하는 데 도움이 되며, 지터를 증가시킬 수 있습니다. HD는 10, 레이서는 20. 최대 30은 낮은 권한 쿼드에 유용할 수 있지만 미세한 오버슈트 또는 지터를 발생시킬 수 있습니다."
+    },
+    "pidTuningFfInterpolate": {
+        "message": "모드"
+    },
+    "pidTuningFfInterpolateSpOptionNoAverage": {
+        "message": "평균안함"
+    },
+    "pidTuningFfInterpolateSpOptionAverage2": {
+        "message": "평균 2"
+    },
+    "pidTuningFfInterpolateSpOptionAverage3": {
+        "message": "평균 3"
+    },
+    "pidTuningFfInterpolateSpOptionAverage4": {
+        "message": "평균 4"
+    },
+    "pidTuningFfSmoothFactor": {
+        "message": "부드러움"
+    },
+    "pidTuningFfBoost": {
+        "message": "부스트"
     },
     "pidTuningProportional": {
         "message": "P(비례)"
@@ -3513,6 +3555,9 @@
     "pidTuningDTermLowpassDynType": {
         "message": "D 텀 저역통과 1 다이나믹 필터 형식"
     },
+    "pidTuningDTermLowpassDynExpo": {
+        "message": "D 텀 저역통과 1 다이나믹 곡선 엑스포"
+    },
     "pidTuningDTermNotchFiltersGroup": {
         "message": "D 텀 노치 필터"
     },
@@ -3533,6 +3578,15 @@
     },
     "pidTuningVbatPidCompensationHelp": {
         "message": "Vbat이 낮아질 때 이를 보충하기 위해 PID 값을 증가시킵니다. 이것은 비행 내내 보다 일정한 비행 특성을 줄 것입니다. 적용되는 보정량은 $t(tabPower.message) 페이지에서 설정된 $t(powerBatteryMaximum.message)에서 계산되므로 적절한 값으로 설정되어 있는지 확인하십시오."
+    },
+    "pidTuningVbatSagCompensation": {
+        "message": "Vbat 처짐 보상"
+    },
+    "pidTuningVbatSagCompensationHelp": {
+        "message": "배터리 처짐을 보상하여 사용 가능한 배터리 전압 범위에 걸쳐 스로틀 및 PID 성능을 일관되게 제공합니다. 보상은 0~100% 사이에서 변동될 수 있습니다. 전체 보상(100%)을 권장합니다.<br><br>더 많은 정보는 <a href=\"https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes#dynamic-battery-sag-compensation\"target=\"_blank\" rel=\"noopener noreferrer\">이 위키 엔트리</a>를 방문하십시오."
+    },
+    "pidTuningVbatSagValue": {
+        "message": "%"
     },
     "pidTuningItermRotation": {
         "message": "I 텀 회전"
@@ -5621,5 +5675,74 @@
     "gpsSbasNone": {
         "message": "없음",
         "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "dialogFileNameTitle": {
+        "message": "파일 이름"
+    },
+    "dialogFileNameDescription": {
+        "message": "파일은 당신의 내부 저장소에 있는 '{{folder}}'폴더에 저장됩니다."
+    },
+    "dialogFileAlreadyExistsTitle": {
+        "message": "이 파일이 이미 존재 합니다!"
+    },
+    "dialogFileAlreadyExistsDescription": {
+        "message": "덮어쓰기 하시겠습니까?"
+    },
+    "cordovaCheckingWebview": {
+        "message": "웹뷰 응용 프로그램 확인중 ..."
+    },
+    "cordovaIncompatibleWebview": {
+        "message": "호환 되지 않는 웹뷰"
+    },
+    "cordovaWebviewTroubleshootingMsg": {
+        "message": "컨피규레이터를 사용하기 위해서 장치의 웹뷰를 업데이트해야 합니다."
+    },
+    "cordovaWebviewTroubleshootingMsg2": {
+        "message": "아래 도구는 새 웹뷰를 설치하거나 이미 설치된 웹뷰를 업데이트하는 데 도움을 줄 것입니다."
+    },
+    "cordovaAvailableWebviews": {
+        "message": "장치에서 사용 가능한 웹뷰 응용 프로그램"
+    },
+    "cordovaWebviewInstall": {
+        "message": "<b>{{app}}</b> 앱을 설치하면 이 호환성 문제를 해결할 수 있습니다."
+    },
+    "cordovaWebviewInstallBtn": {
+        "message": "구글 플레이 스토어에서 설치"
+    },
+    "cordovaWebviewUninstall": {
+        "message": "<b>{{app}}</b> 앱을 제거하면 이 호환성 문제가 해결될 수 있습니다. 제거할 수 없는 경우 설정 앱에서 비활성화해 보십시오."
+    },
+    "cordovaWebviewUninstallBtn1": {
+        "message": "구글 플레이 스토어에서 제거"
+    },
+    "cordovaWebviewUninstallBtn2": {
+        "message": "설정에서 제거 / 비활성화"
+    },
+    "cordovaWebviewUpdate": {
+        "message": "<b>{{app}}</b> 앱을 업데이트하면 이 호환성 문제를 해결할 수 있습니다."
+    },
+    "cordovaWebviewUpdateBtn": {
+        "message": "구글 플레이 스토어에서 업데이트"
+    },
+    "cordovaWebviewEnable": {
+        "message": "설정에서 디바이스에 대한 정보 탭으로 이동하여 빌드 버전 번호를 10번 눌러 '개발자 옵션'을 활성화하십시오. 그런 다음 개발자 옵션을 검색하고 들어가 웹뷰 제공자로 <b>{{app}}</b>를 선택하십시오."
+    },
+    "cordovaWebviewEnableBtn": {
+        "message": "설정 열기"
+    },
+    "cordovaWebviewIncompatible": {
+        "message": "장치가 호환되지 않는 것 같습니다. 웹뷰를 업데이트하는 다른 방법을 검색하는 것을 시도하십시오."
+    },
+    "cordovaNoWebview": {
+        "message": "웹뷰 응용 프로그램이 설치 / 활성화되지 않음"
+    },
+    "cordovaWebviewUsed": {
+        "message": "사용됨"
+    },
+    "cordovaExitAppTitle": {
+        "message": "확인"
+    },
+    "cordovaExitAppMessage": {
+        "message": "정말 컨피규레이터를 종료하시겠습니까?"
     }
 }

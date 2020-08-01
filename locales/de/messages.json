@@ -85,6 +85,9 @@
     "analyticsOptOut": {
         "message": "Keine anonymisierte Erhebung von Statistikdaten"
     },
+    "cordovaForceComputerUI": {
+        "message": "Computerschnittstelle anstelle der Telefonschnittstelle verwenden"
+    },
     "language_changed": {
         "message": "Sprache geändert"
     },
@@ -201,6 +204,9 @@
     },
     "tabHelp": {
         "message": "Dokumentation & Hilfe"
+    },
+    "tabOptions": {
+        "message": "Optionen"
     },
     "tabSetup": {
         "message": "Einrichtung"
@@ -393,9 +399,6 @@
     },
     "firmwareVersionNotSupported": {
         "message": "Die Firmware Version wird  <span class=\"message-negative\">nicht unterstützt</span>. Bitte auf eine Firmware updaten die API Version <strong>$1</strong> oder höher untersützt. Bitte die Kommandozeile vor dem Flashen für ein Backup nutzen. <br />Alternativ bitte eine alte Version des Konfigurators downloaden"
-    },
-    "firmwareTypeNotSupported": {
-        "message": "Nicht Betaflight/Cleanfight Firmware wird <span class=\"message-negative\">nicht unterstützt</span> mit Ausnahme vom CLI Modus."
     },
     "resetToCustomDefaultsDialog": {
         "message": "Es sind benutzerdefinierte Standards für diesen Flightcontroller verfügbar. Normalerweise funktioniert ein Flightcontroller nicht ordnungsgemäß, wenn keine benutzerdefinierten Standardeinstellungen angewendet werden. <br /> Möchten sie die benutzerdefinierten Standardeinstellungen anwenden?"
@@ -1162,7 +1165,7 @@
         "message": "Bitte wählen Sie ein für Ihren ESC geeignetes Motorausgabeprotokoll. $t(escProtocolDisabledMessage.message)"
     },
     "escProtocolDisabledMessage": {
-        "message": "<strong>Achtung:</strong> Wenn Sie ein nicht von Ihren ESCs unterstütztes Motorausgabeprotokoll auswählen, kann es dazu führen, dass sich <strong>ihre Motoren beginnen zu  dehen, sobald eine Batterie angeschlossen wird</strong>. Aus diesem Grund <strong>Achten Sie immer darauf, die Propeller zu entfernen nachdem Sie das Motorausgabeprotokoll</strong> gewechselt haben, bevor Sie zum ersten Mal eine Batterie anschließen."
+        "message": "<strong>Achtung:</strong> Wenn Sie ein nicht von Ihren ESCs unterstütztes Motorausgabeprotokoll auswählen, kann es dazu führen, dass <strong>ihre Motoren sich sofort drehen, sobald eine Batterie angeschlossen wird</strong>. Aus diesem Grund <strong>Achten Sie immer darauf, die Propeller zu entfernen nachdem Sie das Motorausgabeprotokoll</strong> gewechselt haben, bevor Sie zum ersten Mal eine Batterie anschließen."
     },
     "configurationDshotBeeper": {
         "message": "Dshot Beacon Konfiguration"
@@ -2721,6 +2724,9 @@
     },
     "firmwareFlasherButtonDownloading": {
         "message": "Herunterladen..."
+    },
+    "firmwareFlasherExitDfu": {
+        "message": "Bootloader-Modus verlassen"
     },
     "firmwareFlasherFlashFirmware": {
         "message": "Firmware flashen"
@@ -5424,6 +5430,9 @@
     "darkTheme": {
         "message": "Dunkles Design verwenden"
     },
+    "pidTuningRcExpoRaceflight": {
+        "message": "Exponentiell"
+    },
     "pidTuningRateRaceflight": {
         "message": "Acro+"
     },
@@ -5452,5 +5461,26 @@
     "gpsSbasIndianGAGAN": {
         "message": "Indisches GAGAN",
         "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "dialogFileNameTitle": {
+        "message": "Dateiname"
+    },
+    "dialogFileNameDescription": {
+        "message": "Die Datei wird im '{{folder}}' Ordner in Ihrem internen Speicher abgelegt."
+    },
+    "dialogFileAlreadyExistsTitle": {
+        "message": "Diese Datei existiert bereits!"
+    },
+    "dialogFileAlreadyExistsDescription": {
+        "message": "Überschreiben?"
+    },
+    "cordovaCheckingWebview": {
+        "message": "Webview-Anwendungen werden überprüft..."
+    },
+    "cordovaIncompatibleWebview": {
+        "message": "Inkompatible Webansicht"
+    },
+    "cordovaWebviewTroubleshootingMsg": {
+        "message": "Sie müssen die Webansicht Ihres Geräts aktualisieren, um den Konfigurator verwenden zu können."
     }
 }

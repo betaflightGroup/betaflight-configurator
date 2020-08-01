@@ -401,9 +401,6 @@
     "firmwareVersionNotSupported": {
         "message": "A firmware verzió nem <span class=\"message-negative\">támogatott</span>. Frissítse olyanra, ami támogatja legalább a <strong>$1</strong> API verziót. Használja a CLI-t biztonsági mentés készítésére égetés előtt. A CLI biztonsági mentés/visszatöltés leírását a dokumentációban találja.<br />Ha nem akar frissíteni, használja a konfigurátor egy régebbi verzióját."
     },
-    "firmwareTypeNotSupported": {
-        "message": "Nincs - CLI mód kivételével a Cleanflight/Betaflight firmware <span class=\"message-negative\">nem támogatott</span>."
-    },
     "firmwareUpgradeRequired": {
         "message": "Az eszközön található firmware-t frissíteni kell. Használja a CLI-t biztonsági mentés készítésére égetés előtt. A CLI biztonsági mentés/visszatöltés leírását a dokumentációban találja.<br />Ha nem akar frissíteni, használja a konfigurátor egy régebbi verzióját."
     },

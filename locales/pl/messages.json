@@ -82,6 +82,9 @@
     "analyticsOptOut": {
         "message": "Zrezygnuj ze zbierania danych statystycznych"
     },
+    "cordovaForceComputerUI": {
+        "message": "Użyj interfejsu komputera zamiast interfejsu telefonu"
+    },
     "language_changed": {
         "message": "Zapisano zmianę języka"
     },
@@ -147,6 +150,12 @@
     },
     "checkForConfiguratorUnstableVersions": {
         "message": "Pokaż powiadomienia o aktualizacji dla niestabilnych wersji konfiguratora."
+    },
+    "configuratorUpdateNotice": {
+        "message": "Używasz przestarzałej wersji <b>Konfiguratora Betaflight</b>.<br>$t(configuratorUpdateHelp.message)"
+    },
+    "configuratorUpdateHelp": {
+        "message": "Używanie nowszej wersji oprogramowania z przestarzałą wersją Konfiguratora oznacza, że zmiana niektórych ustawień spowoduje <strong>Uszkodzenie konfiguracji oprogramowania kontrolera i uziemienie maszyny</strong>. Ponadto niektóre funkcje oprogramowania będą konfigurowalne tylko przez konsolę (CLI).<br><strong>Wersja konfiguratora Betaflight <b>$1</b> jest dostępna do pobrania online</strong>, odwiedź <a href=\"$2\" target=\"_blank\" rel=\"noopener noreferrer\">tę stronę</a>, aby pobrać i zainstalować najnowszą wersję z poprawkami i ulepszeniami.<br>Zamknij okno konfiguratora przed aktualizacją."
     },
     "configuratorUpdateWebsite": {
         "message": "Idź do strony z aktualizacjami"
@@ -388,9 +397,6 @@
     "firmwareVersionNotSupported": {
         "message": "Ta wersja oprogramowania kontrolera <span class=\"message-negative\">nie jest wspierana</span>. Proszę uaktualnij oprogramowaniedo wersji, która wspiera API <strong>$1</strong>, lub wyższej. Użyj CLI, aby zgrać bieżącą konfigurację. Opis zgrywania/przywrócenia konfiguracji opisany jest w dokumentacji.<br />Możesz nieże pobrać starszą wersję konfiguratora, jeżeli nie chcesz aktualizować oprogramowania kontrolera lotu."
     },
-    "firmwareTypeNotSupported": {
-        "message": "Oprogramowanie nie będące Cleanflight/Betaflight <span class=\"message-negative\">nie jest wspierane</span>, z wyjątkiem trybu CLI."
-    },
     "firmwareUpgradeRequired": {
         "message": "Oprogramowanie tego kontrolera lotu wymaga aktualizacji do nowszej wersji. Użyj CLI, aby zgrać bieżącą konfigurację. Opis zgrywania/przywrócenia konfiguracji opisany jest w dokumentacji.<br />Możesz nieże pobrać starszą wersję konfiguratora, jeżeli nie chcesz aktualizować oprogramowania kontrolera lotu."
     },
@@ -399,6 +405,21 @@
     },
     "resetToCustomDefaultsAccept": {
         "message": "Zastosuj niestandardowe ustawienia domyślne"
+    },
+    "reportProblemsDialogHeader": {
+        "message": "Wykryto następujące <strong>problemy z konfiguracją</strong>:"
+    },
+    "reportProblemsDialogFooter": {
+        "message": "Napraw<strong> te problemy przed próbą latania swoim statkiem powietrznym </strong>."
+    },
+    "reportProblemsDialogAPI_VERSION_MAX_SUPPORTED": {
+        "message": "<strong>wersja konfiguratora, której używasz ($3) jest starsza niż oprogramowanie, którego używasz ($4)</strong>.<br>$t(configuratorUpdateHelp.message)"
+    },
+    "reportProblemsDialogMOTOR_PROTOCOL_DISABLED": {
+        "message": "<strong>nie wybrano protokołu sterowania silnika/ów</strong>.Wybierz protokół sterowania silnika odpowiedni dla twoich ESC w '$t(configurationEscFeatures.message)' na karcie '$t(tabConfiguration.message)'. $t(escProtocolDisabledMessage.message)"
+    },
+    "reportProblemsDialogACC_NEEDS_CALIBRATION": {
+        "message": "<strong>akcelerometr jest włączony, ale nie jest skalibrowany</strong>. Jeśli planujesz użyć akcelerometru, proszę postąpić zgodnie z instrukcją dla '$t(initialSetupButtonCalibrateAccel.message)' w zakładce '$t(tabSetup.message)'. Jeśli jakakolwiek funkcja wymagająca akcelerometru (tryb automatycznego poziomowania, automatyczny powrót do domu na podstawie GPS, . .) jest włączona, uzbrojenie jednostki latającej będzie niemożliwe aż do chwili gdy akcelerometr zostanie skalibrowany. Jeśli nie planujesz używać akcelerometru, zaleca się wyłączenie go w '$t(configurationSystem.message)' w zakładce '$t(tabConfiguration.message)'."
     },
     "infoVersions": {
         "message": "Działający - OS: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Konfigurator: <strong>{{configuratorVersion}}</strong>",
@@ -524,8 +545,17 @@
     "defaultWelcomeHead": {
         "message": "Sprzęt"
     },
+    "defaultWelcomeText": {
+        "message": "Aplikacja obsługuje wszystkie urządzenia, które pracują z Betaflight. Sprawdź zakładkę programowania \"Flash\", aby uzyskać pełną listę wspieranego sprzętu.<br /><br /> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\">Pobierz przeglądarkę logów Betaflight \"Betaflight Blackbox Log Viewer\"</a><br /><br />Kod źródłowy można pobrać <a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\">tutaj</a><br /><br />Najnowszy <b>sterownik USB VCP</b> można pobrać <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\">tutaj</a><br />Dla starszego sprzętu używającego konwertera CP210x USB do portu szeregowego:<br />Najnowszy <b>sterownik CP210x</b> można pobrać <a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\">tutaj</a><br />Najnowszy program <b>Zadig</b> do instalacji sterownika USB Windows można pobrać <a href=\"http://zadig.akeo.ie/\" target=\"_blank\">tutaj</a><br />"
+    },
     "defaultContributingHead": {
         "message": "Współtworzenie"
+    },
+    "defaultContributingText": {
+        "message": "Jeśli chcesz pomóc ulepszyć Betaflight, możesz to robić na wiele sposobów, możesz pomóc swoją wiedzą:<br /><ul><li>korzystania z Betaflight do tworzenia lub aktualizowania treści na <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">naszej Wiki</a>, lub odpowiadania na pytania innych użytkowników na forach internetowych;</li><li><a href=\"https://github.com/betaflight/betaflight/blob/master/docs/development/Development.md\" target=\"_blank\" rel=\"noopener noreferrer\">wnosząc wkład na rzecz oprogramowania i konfiguratora</a> - nowe funkcje, poprawki, ulepszenia;</li><li>testowanie <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">nowych funkcji i poprawek</a> i dostarczanie informacji zwrotnych;</li><li>pomoc innym użytkownikom w rozwiązywaniu problemów, które zgłosili w <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">naszym systemie śledzenia problemów</a>oraz uczestniczenie w dyskusjach na temat wniosków o nowe funkcjonalności;</li><li><a href=\"https://github.com/betaflight/betaflight/tree/master/README.md#Translators\" target=\"_blank\" rel=\"noopener noreferrer\">tłumaczenie</a> Konfigurator Betaflight na nowy język lub pomoc w utrzymaniu istniejących tłumaczeń.</li></ul>"
+    },
+    "defaultFacebookText": {
+        "message": "Mamy również <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">grupę na Facebooku</a>.<br />Dołącz do nas aby porozmawiać o Betaflight, spytać o konfigurację lub po prostu spędzić czas z innymi pilotami."
     },
     "defaultChangelogHead": {
         "message": "Wykaz zmian w konfiguratorze"
@@ -536,8 +566,15 @@
     "defaultDonateHead": {
         "message": "Open Source / Informacja o darowiznach"
     },
+    "defaultDonateText": {
+        "message": "<p><strong>Betaflight</strong> to oprogramowanie kontrolera lotu jest na licencji <strong>open source</strong> i jest dostępne <strong>za darmo</strong> dla wszystkich użytkowników.</p><p>Jeśli używasz Betaflight lub Konfiguratora Betaflight oraz uważasz je za przydatne, rozważ <strong>wsparcie</strong> jego rozwoju poprzez darowiznę.</p>"
+    },
     "defaultDonateBottom": {
         "message": "<p>Jeśli chcesz wspierać nas finansowo na bieżąco, powinieneś rozważyć możliwość zostania naszym sponsorem $t(patreonLink.message)</p>"
+    },
+    "patreonLink": {
+        "message": "<a href=\"https://www.patreon.com/betaflight\" target=\"_blank\" rel=\"noopener noreferrer\">Patreon</a>",
+        "description": "Patreon is name, and should not require translation"
     },
     "defaultDonate": {
         "message": "Dotacja"
@@ -551,6 +588,12 @@
     "defaultDocumentation": {
         "message": "Dokumentacja Betaflight dostępna jest w formie do wydania oraz w formie elektronicznej.<br /><br />"
     },
+    "defaultDocumentation1": {
+        "message": "Wikipedia Betaflight jest świetnym źródłem informacji, można je znaleźć <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">tutaj</a>."
+    },
+    "defaultDocumentation2": {
+        "message": "Dokumentację zmian do wydanego oprogramowania możesz przeczytać na stronie GitHub, <a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\" rel=\"noopener noreferrer\">tutaj</a>."
+    },
     "defaultSupportHead": {
         "message": "Pomoc"
     },
@@ -562,6 +605,21 @@
     },
     "defaultSupport": {
         "message": "Aby uzyskać pomoc, przeszukaj fora lub odwiedź stronę internetową<br /><br />"
+    },
+    "defaultSupport1": {
+        "message": "<a href=\"http://www.rcgroups.com/forums/showthread.php?t=2464844&page=1\" target=\"_blank\" rel=\"noopener noreferrer\">Wątek na forum RC Groups</a>"
+    },
+    "defaultSupport2": {
+        "message": "<a href=\"http://betaflight.info\" target=\"_blank\" rel=\"noopener noreferrer\">Betaflight Wiki</a>"
+    },
+    "defaultSupport3": {
+        "message": "<a href=\"https://www.youtube.com/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\" rel=\"noopener noreferrer\">Filmy o Betaflight autorstwa Joshuy Bardwell </a>"
+    },
+    "defaultSupport4": {
+        "message": "<a href=\"https://github.com/Betaflight\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a>"
+    },
+    "defaultSupport5": {
+        "message": "<a href=\"https://slack.betaflight.com\" target=\"_blank\" rel=\"noopener noreferrer\">Deweloperzy Betaflight na platformie slack</a>"
     },
     "initialSetupBackupAndRestoreApiVersion": {
         "message": "<span class=\"message-negative\">Zapis i odtwarzanie konfiguracji jest wyłączone.</span> Posiadasz oprogramowanieFC z API w wersji <span class=\"message-negative\">$1</span>. Zapis i odtwarzanie konfiguracji wymaga wersji<span class=\"message-positive\">$2</span>. Prosimy, zapisz swoją konfigurację za pomocą CLI. Opis procedury znajdziesz w dokumentacji Betaflight."
@@ -792,6 +850,10 @@
         "message": "Akcelerometr nie został skalibrowany i są włączone funkcje, które na nim polegają. Skalibruj akcelerometr.",
         "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
     },
+    "initialSetupArmingDisableFlagsTooltipMOTOR_PROTO": {
+        "message": "Nie ma wybranego protokołu sterowania silnika",
+        "description": "Message that pops up to describe the MOTOR_PROTO arming disable flag"
+    },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Jedna z pozostałych flag rozbrojenia jest aktywna podczas uzbrajania",
         "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
@@ -937,6 +999,12 @@
     "featureVTX": {
         "message": "Nadajnik wideo"
     },
+    "featureANTI_GRAVITY": {
+        "message": "włącz tryb anty-grawitacja na stałe"
+    },
+    "featureANTI_GRAVITYTip": {
+        "message": "Jeśli ta opcja jest wyłączona, tryb anty-grawitacja może być włączany za pomocą przełącznika."
+    },
     "featureDYNAMIC_FILTER": {
         "message": "Dynamiczny filtr Notch dla żyroskopu"
     },
@@ -1072,6 +1140,9 @@
     "configurationDigitalIdlePercent": {
         "message": "Wartość przepustnicy dla bezczynnego silnika [percent]"
     },
+    "configurationDigitalIdlePercentHelp": {
+        "message": "Wartość „DShot idle” to procentowa wartość maksymalnego gazu wysyłanego do ESC, gdy gaz znajduje się w położeniu minimalnej wartości gdy maszyna jest uzbrojona. Zwiększ go, aby zyskać większą prędkość biegu jałowego i uniknąć desynchronizacji. Zbyt wysoka wartość spowoduje uczucie pływającej maszyny."
+    },
     "configurationMotorPoles": {
         "message": "Bieguny silnika",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1079,6 +1150,10 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (liczba magnesów na dzwonku silnika)",
         "description": "One of the fields of the ESC/Motor configuration"
+    },
+    "configurationMotorPolesHelp": {
+        "message": "Liczba biegunów to ilość magnesów na wirniku silnika. Proszę nie liczyć żłobków stojana gdzie są nawinięte uzwojenia silnika. Silniki 5 calowe mają zazwyczaj 14 magnesów, 3 calowe lub mniejsze mają często 12 magnesów.",
+        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Minimum przepustnicy (Najniższa wartość ESC gdy uzbrojony)"
@@ -1094,6 +1169,12 @@
     },
     "configurationThrottleMinimumCommandHelp": {
         "message": "Jest to wartość wysyłana do ESC, w chwili rozbrojenia modelu. Ustaw tę wartość aby zatrzymać silniki (1000 dla większości układów ESC)."
+    },
+    "configurationEscProtocolDisabled": {
+        "message": "Proszę wybrać protokół sterujący silnikiem odpowiedni dla ESC. $t(escProtocolDisabledMessage.message)"
+    },
+    "escProtocolDisabledMessage": {
+        "message": "<strong>Uwaga:</strong> Wybranie protokołu sterowania silnika, który nie jest obsługiwany przez ESC, może doprowadzić do niekontrolowanego wysterowania silnika przez ESC. <strong>Silnik może wystartować samoczynnie jak tylko bateria zostanie podłączona</strong>. Z tego powodu <strong>zawsze upewnij się, że nie ma zamontowanych śmigieł przy pierwszym podłączeniu baterii po zmianie protokołu sterującego silnikami</strong>."
     },
     "configurationDshotBeeper": {
         "message": "Konfiguracja sygnału radiowego Dshot"
@@ -1354,6 +1435,9 @@
     "portsFunction_RUNCAM_DEVICE_CONTROL": {
         "message": "Kamera (RunCam Protocol)"
     },
+    "portsFunction_FRSKY_OSD": {
+        "message": "OSD (Protokół FrSky)"
+    },
     "pidTuningProfileOption": {
         "message": "Profil $1"
     },
@@ -1428,6 +1512,10 @@
     "pidTuningDMinFeatureHelp": {
         "message": "D Min umożliwia osiągnięcie niższego poziomu D w normalnym locie i wyższego poziomu w przypadku szybkich manewrów, które mogą powodować przewrócenie modelu nieie jak flipy i beczki, podnosi on również D podczas naporu powietrza na ster kierunku podczas lotu. Maximum dostosowuje D do maksymalnej wartości i opiera się na wskazaniach żyroskopu aby określić agresywność manewrów. Wyprzedzenie sprawia, że ​​D używa wartości określonej wcześniej przez użytkownika, zamiast żyroskopu do określania ostrych manewrów.",
         "description": "D Min feature helpicon message"
+    },
+    "pidTuningDMinHelp": {
+        "message": "Kontroluje siłę tłumienia (D-term) w normalnym locie do przodu. <br> Przy włączonym D_min, podczas lotu zmienia się aktywność D. W normalnym locie do przodu następuje przyrost wartości D_min. Podczas agresywnych manewrów lub podczas podmuchów powietrza na ster kierunku, aktywny zysk D zwiększa się do wartości określonych po lewej stronie. <br><br> Pełne zyski są osiągane przy ostrym wychyleniu drążka, ale tylko częściowe są osiągane podczas podmuchów powietrza na ster kierunku. <br> Dostosuj wzmocnienie i przyspieszenie D_Min, aby kontrolować czułość i czas wzmocnienia.",
+        "description": "D Min helpicon message on PID table titlebar"
     },
     "pidTuningPidSettings": {
         "message": "Ustawienia regulatora PID"
@@ -1554,6 +1642,12 @@
     "pidTuningDtermSetpointTransitionWarning": {
         "message": "<span class = \"message-negative\"> <strong> $t(warningTitle.message): </strong> Odradza się stosowania wartości zadanej D większej niż 0 i mniejszej niż 0,1. Takie postępowanie może prowadzić do niestabilności i zmniejszenia reakcji drążka, gdy drążki przekroczą punkt środkowy. </span>"
     },
+    "pidTuningFfInterpolateSp": {
+        "message": "Interpolacja FF"
+    },
+    "pidTuningFfInterpolate": {
+        "message": "Tryb"
+    },
     "pidTuningProportional": {
         "message": "Proporcjonalny"
     },
@@ -1571,6 +1665,9 @@
     "pidTuningDerivative": {
         "message": "Pochodna"
     },
+    "pidTuningDMax": {
+        "message": "D Max"
+    },
     "pidTuningDerivativeHelp": {
         "message": "Kontroluje z jaką siłą odbywać ma się korekta ruch drona przy KAŻDEJ zmianie kierunku. Kiedy drążki są poruszane, D-term tłumi polecenie. W przypadku wpływu zewnętrznego ( dryfowanie  lub porywy wiatru) D-term tłumi wpływ. <br> <br> Wyższe wzmocnienie zapewnia większe tłumienie i zmniejsza nadmiar P-term i FF. <br> D-term jest BARDZO wrażliwy na wibracje wysokiej częstotliwości które zakłócają  pracę żyroskopu  (zakłócenia zwiększają się od 10 do 100x). <br> <br> Wibracje o wysokiej częstotliwości mogą powodować grzanie się silników co może doprowadzić do ich zniszczenia, jeśli wzmocnienie D jest zbyt wysokie lub wibracje żyroskopowe  nie są dobrze filtrowane (patrz w zakładce Filtr). <br> <br> D-term jest podobny do amortyzatora, ale ma negatywną właściwość wzmacniania szumu żyroskopowego wysokiej częstotliwości.",
         "description": "Derivative Term helpicon message on PID table titlebar"
@@ -1581,6 +1678,9 @@
     "pidTuningFeedforwardHelp": {
         "message": "To dodatkowy termin pchający (sprężynowy) oparty na użyciu drążka. FF pomaga P-termowi popychać model do stosowanych ruchów drążka. <br> <br> P-term pcha w oparciu o różnicę między zadaną wartością zadaną (stopni / sek) a odczytem żyroskopu bieżącej prędkości obrotowej (stopnie/sek.). FF popycha w oparciu o nakazaną zmianę samych drążków. <br> <br> Wyższe wartości (zyski) spowodują ostrzejszą reakcję maszyny na użycie drążka. <br> Zbyt wysokie wartości mogą spowodować pewne problemy, zwiększone wydzielanie ciepła przez (gdy silniki nie są w stanie nadążyć za szybkością zmian). <br> Niższe lub zerowe (0) wartości spowodują wolniejszą i płynniejszą reakcję na użycie drążka.",
         "description": "Feedforward Term helpicon message on PID table titlebar"
+    },
+    "pidTuningMaxRateWarning": {
+        "message": "<span class=\"message-negative\"><b>Uwaga:</b></span> bardzo wysokie parametry mogą skutkować desynchronizacją przy szybkim zwalnianiu maszyny."
     },
     "pidTuningRcRate": {
         "message": "RC Rate"
@@ -2043,8 +2143,17 @@
     "transponderDataHelp1": {
         "message": "Tylko cyfry szesnastkowe, 0-9, A-F"
     },
+    "transponderHelp1": {
+        "message": "Skonfiguruj swój kod transpondera tutaj. Uwaga:  Tylko poprawne kody będą rozpoznane przez system mierzenia czasu podczas wyścigu. Poprawne kody można uzyskać na stronie <a href=\"http://seriouslypro.com/transponder-codes\" target=\"_blank\" rel=\"noopener noreferrer\">Seriously Pro</a>."
+    },
+    "transponderHelp2": {
+        "message": "Aby uzyskać więcej informacji odwiedź stronę <a href=\"http://www.arcitimer.com/\" title=\"aRCiTimer\" target=\"_blank\" rel=\"noopener noreferrer\">aRCiTimer</a>"
+    },
     "transponderDataHelp3": {
         "message": "Wybierz ERLT ID 0-63"
+    },
+    "transponderHelp3": {
+        "message": "Aby uzyskać więcej informacji odwiedź stronę <a href=\"https://github.com/polyvision/EasyRaceLapTimer\" title=\"aRCiTimer\" target=\"_blank\" rel=\"noopener noreferrer\">EasyRaceLapTimer</a>"
     },
     "transponderButtonSave": {
         "message": "Zapisz"
@@ -2494,6 +2603,9 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "Informacja o wydaniu"
     },
+    "firmwareFlasherReleaseManufacturer": {
+        "message": "ID Producenta:"
+    },
     "firmwareFlasherReleaseVersion": {
         "message": "Wersja:"
     },
@@ -2511,6 +2623,15 @@
     },
     "firmwareFlasherReleaseFile": {
         "message": "Binarnie:"
+    },
+    "firmwareFlasherUnifiedTargetName": {
+        "message": "Ujednolicony kontroller:"
+    },
+    "firmwareFlasherUnifiedTargetFileUrl": {
+        "message": "Pokaż konfigurację."
+    },
+    "firmwareFlasherUnifiedTargetDate": {
+        "message": "Data:"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Pobierz ręcznie."
@@ -2659,6 +2780,9 @@
     "firmwareFlasherRecoveryHead": {
         "message": "<strong>Odzyskiwanie / Utracono komunikacje</strong>"
     },
+    "firmwareFlasherRecoveryText": {
+        "message": "Jeśli straciłeś możliwość łączenia się z kontrolerem lotu, zastosuj te kroki:<ul><li>Odłącz zasilanie</li><li>Zaznacz 'Nie restartuj', oraz zaznacz 'Całkowite wyczyszczenie pamięci'.</li><li>Zewrzyj piny BOOT lub trzymaj wciśnięty przycisk BOOT na kontrolerze lotu.</li><li>Podłącz zasilanie(gdy poprawnie wykonasz tą czynność dioda LED nie powinna migać).</li><li>Zainstaluj sterowniki STM32 i Zadig jeśli są potrzebne (zobacz <a href=\"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\"target=\"_blank\">USB Flashing</a> w dokumentacji Betaflight).</li><li>Zamknij Konfigurator i wszystkie okna przeglądarki Chrome, Włącz na nowo konfigurator.</li><li>Załaduj aktualną wersję oprogramowania użyj ręcznej prędkości transmisji - sprawdź w dokumentacji twojego kontrolera.</li><li>Zdejmij zworkę ze zwartych pinów BOOT.</li><li>Odłącz zasilanie.</li><li>Włącz zasilanie (LED powinien migać).</li><li>Podłącz się z konfiguratorem w trybie normalnym.</li></ul>"
+    },
     "firmwareFlasherButtonLeave": {
         "message": "Urzyj opcji wgrywania oprogramowania"
     },
@@ -2706,6 +2830,15 @@
     },
     "firmwareFlasherFlashTrigger": {
         "message": "Wykryto: <strong>$1</strong> -Wgrywanie po wykryciu połączenia"
+    },
+    "unstableFirmwareAcknoledgementDialog": {
+        "message": "Zamierzasz wgrać <strong>deweloperską kompilację oprogramowania układowego</strong>. Ciągle trwają prace nad tą wersją, a którakolwiek z poniższych sytuacji może mieć miejsce:<strong><ul><li>oprogramowanie w ogóle nie działa;</li><li>oprogramowanie ma problemy ze sterowaniem lotu;</li><li>występują problemy z bezpieczeństwem oprogramowania, na przykład podczas lotu</li><li>oprogramowanie może spowodować, że kontroler lotu stanie się nieodpowiedzialny, lub doprowadzi do uszkodzenia(maszyny lub czyjegoś zdrowia)</li></ul></strong>Jeśli kontynuujesz wgrywanie tego oprogramowania, <strong>ponosisz pełną odpowiedzialność za ryzyko którejkolwiek z powyższych sytuacji</strong>. Ponadto przyznajesz, że dokonasz <strong>dokładnych testów funkcji ze zdjętymi śmigłami</strong> przed jakimikolwiek próbami latania na tym oprogramowaniu."
+    },
+    "unstableFirmwareAcknoledgementAcknowledge": {
+        "message": "Przeczytałem powyższe i <strong>Biorę pełną odpowiedzialność<strong> za wgrywanie niestabilnego oprogramowania"
+    },
+    "unstableFirmwareAcknoledgementFlash": {
+        "message": "Wgraj"
     },
     "firmwareFlasherPreviousDevice": {
         "message": "Wykryto: <strong>$1</strong> - urządzenie nie odpowiada, podłącz się ponownie, aby spróbować ponownie"
@@ -3069,6 +3202,21 @@
     "pidTuningLevelHelp": {
         "message": "Poniższe wartości zmieniają zachowanie trybów lotu ANGLE i HORIZON. Różne sterowniki PID obsługują wartości w inny sposób. Sprawdź dokumentację."
     },
+    "pidTuningMotorOutputLimit": {
+        "message": "Limit wyjściowy silnika"
+    },
+    "pidTuningMotorLimit": {
+        "message": "Współczynnik skali [%]"
+    },
+    "pidTuningMotorLimitHelp": {
+        "message": "Polecenie tłumienia silnika przez ustawienie (procentowej) wartości liniowej. Zmniejsza prąd ESC i grzanie się silnika podczas używania baterii o wyższej liczbie komórek, np. przy użyciu akumulatora 6S, na maszynie zbudowanej i dostrojonej dla akumulatora 4S, spróbuj ustawić wartość na 66%; gdy używasz baterii 4S na jednostce przeznaczonej do 3S, spróbuj 75%.<br>Zawsze upewnij się, że wszystkie twoje komponenty mogą obsługiwać napięcie baterii, której używasz."
+    },
+    "pidTuningCellCount": {
+        "message": "Liczba ogniw"
+    },
+    "pidTuningCellCountHelp": {
+        "message": "Automatycznie aktywuje profil, który ma liczbę ogniw równą podłączonej baterii."
+    },
     "pidTuningNonProfileFilterSettings": {
         "message": "Ustawienia filtra niezależne od profilu"
     },
@@ -3155,6 +3303,10 @@
     "pidTuningMasterSliderHelp": {
         "message": "Zasadniczo większe modele wymagają wyższych wartości PID ze względu na niższy stosunek mocy do masy. <br> <br> Mniejsze modele (mikro) wymagają mniejszych wartości PID ze względu na wyższy stosunek mocy do masy. <br> <br> Wyższe wartości są dla większych modeli. Niższe wartości dotyczą mniejszych modeli.",
         "description": "Master gain tuning slider helpicon message"
+    },
+    "pidTuningPDRatioSliderHelp": {
+        "message": "Względnie wysokie D tłumi reakcje drążka i może powodować nagrzewanie się silników, ale powinno pomóc kontrolować oscylacje P oraz poprawić stabilizacje. <br> <br> Relatywnie niske D zapewnia szybszą reakcję drążka, ale może powodować znoszenie jednostki latającej.",
+        "description": "PD balance tuning slider helpicon message"
     },
     "pidTuningPDGainSliderHelp": {
         "message": "Niskie wzmocnienie członów P i D może powodować większe oscylacje typu \"propwash\" w silnikach. Zbyt niska wartość wzmocnień tych parametrów może powodować niestabilność maszyny. <br><br> Parametry P i D działają w parze w w celu minimalizacji oscylacji \"propwash\".<br><br> Wysokie wartości tych parametrów mogą powodować grzanie się silników poprzez duże oscylacje wysterowania silnika które mogą wystąpić podczas płynnego lotu na wprost. Co jest powodowane wysokim parametrem D.",
@@ -3316,6 +3468,12 @@
     "pidTuningVbatPidCompensationHelp": {
         "message": "Zwiększa wartości PID, aby zrekompensować spadek Vbat. Zapewni to bardziej stałą charakterystykę podczas całego lotu. Zastosowana rekompensata jest obliczana na podstawie wartości $t(powerBatteryMaximum.message) ustawionej na stronie $t(tabPower.message), więc upewnij się, że jest ustawiona tak jak byś tego chciał."
     },
+    "pidTuningVbatSagCompensation": {
+        "message": "Kompensacja opadania napięcia baterii"
+    },
+    "pidTuningVbatSagCompensationHelp": {
+        "message": "Daje jednostajną wydajność przepustnicy i PID-ów w zakresie użytecznego napięcia akumulatora poprzez kompensację spadku napięcia baterii (Vbat sag). Zakres kompensacji może wynosić od 0 do 100 %. Zalecana jest pełna kompensacja (100%).<br><br>Odwiedź <a href=\"https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes#dynamic-battery-sag-compensation\"target=\"_blank\" rel=\"noopener noreferrer\">wpis na wiki</a>, aby uzyskać więcej informacji."
+    },
     "pidTuningItermRotation": {
         "message": "I Term Rotation"
     },
@@ -3364,6 +3522,9 @@
         "message": "Odcięcie",
         "description": "Cutoff value of the I Term Relax"
     },
+    "pidTuningItermRelaxCutoffHelp": {
+        "message": "Niższe wartości tłumią odbicie zwrotne po nagłych zwrotach/przewrotach w niewielkich czterowirnikowcach, wysokie wartości zwiększają dokładność szybkich zwrotów w maszynach wyścigowych.<br>Ustaw na 30-40 dla maszyn wyścigowych, 15 dla maszyn typu freestyle, 10 dla cięższych maszyn, 3-5 dla klasy X."
+    },
     "pidTuningAbsoluteControlGain": {
         "message": "Kontrola całkowita"
     },
@@ -3376,6 +3537,9 @@
     "pidTuningThrottleBoostHelp": {
         "message": "Ta funkcja umożliwia chwilowe przyspieszenie przepustnicy przy szybkich ruchach drążka, co zwiększa moment przyspieszenia silników, zapewniając znacznie szybszą reakcję przepustnicy."
     },
+    "pidTuningIdleMinRpm": {
+        "message": "Dynamiczna wartość biegu jałowego [* 100 rpm]"
+    },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Limit kąta trybu treningowego akrobatycznego"
     },
@@ -3384,6 +3548,9 @@
     },
     "pidTuningIntegratedYaw": {
         "message": "Zintegrowane odchylenie Yaw"
+    },
+    "pidTuningIntegratedYawCaution": {
+        "message": "<span class=\"message-negative\">UWAGA</span>: jeśli włączysz tę funkcję, musisz odpowiednio dostosować PID dla osi Odchylenia \"YAW\". Więcej informacji znajdziesz<a href=\"https://github.com/betaflight/betaflight/wiki/Integrated-Yaw\" target=\"_blank\" rel=\"noopener noreferrer\">tutaj</a>"
     },
     "pidTuningIntegratedYawHelp": {
         "message": "Zintegrowany Yaw jest funkcją która koryguje podstawowy błąd w sterowaniu maszyny: gdy osie pitch i roll są sterowane przez różnicowy sygnał z przepustnicy(gazu), śmigła także generują różnicę w osi Yaw. Zintegrowany Yaw poprawia to poprzez dodane wyjścia sygnału pid(Yaw) przed przekierowaniem sygnału do miksera sygnału. To działanie normalizuje pracę Pid-a. Teraz możliwe jest dostrajanie tego czynnika tak jak każdej innej osi. Wymaga to bezwzględnego sterowania, ponieważ nie używa zintegrowanego Yaw."
@@ -3816,6 +3983,9 @@
     },
     "osdSetupUnsupportedNote1": {
         "message": "Twój kontroler lotu nie odpowiada na komendy OSD. Prawdopodobnie oznacza to że nie ma zintegrowanego OSD BetaFlight."
+    },
+    "osdSetupUnsupportedNote2": {
+        "message": "Zauważ, że niektóre kontrolery lotu mają na pokładzie układ <a href=\"https://www.youtube.com/watch?v=ikKH_6SQ-Tk\" target=\"_blank\" rel=\"noopener noreferrer\">MinimOSD</a>, który można programować i konfigurować w <a href=\"https://github.com/ShikOfTheRa/scarab-osd/releases/latest\" target='_blank'>scarab-osd</a>, jednakże przez ten interfejs nie można skonfigurować MinimOSD."
     },
     "osdSetupProfilesTitle": {
         "message": "Numer profilu OSD",
@@ -4430,6 +4600,13 @@
     },
     "osdDescElementCameraFrame": {
         "message": "Dodaje regulowany element obrysowy przeznaczony do reprezentowania pola widzenia kamery HD pilota dla ramy wizualnej.<br><br>Możesz dostosować szerokość i wysokość w wierszu poleceń za pomocą 'osd_camera_frame_width' i 'osd_camera_frame_height'"
+    },
+    "osdTextElementEfficiency": {
+        "message": "Sprawność baterii",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEfficiency": {
+        "message": "Chwilowe zużycie baterii w mAh / odległość. (Wymaga dobrego sygnału GPS)"
     },
     "osdTextElementUnknown": {
         "message": "Nieznane $1",
@@ -5137,6 +5314,10 @@
         "message": "Dwukierunkowy DShot (wymaga aby oprogramowanieESC wspierało tą funkcje)",
         "description": "Feature for the ESC/Motor"
     },
+    "configurationDshotBidirHelp": {
+        "message": "ESC wysyła dane zwrotne do Kontrolera lotu przez kanał telemetrii DShot. Co jest wymagane przez funkcje Filtrowania RPM i dynamiczną wartość gazu spoczynkowego \"dynamic IDLE\". <br><br>Uwaga: Wymagany jest ESC który posiada takie funkcje w oprogramowaniu np. JESC, Jazzmac, BLHeli-32.",
+        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
+    },
     "configurationGyroSyncDenom": {
         "message": "Częstotliwość aktualizacji z żyroskopu"
     },
@@ -5320,5 +5501,83 @@
     },
     "darkTheme": {
         "message": "Włącz ciemny motyw"
+    },
+    "pidTuningRatesType": {
+        "message": "Profil szybkości(rates)"
+    },
+    "pidTuningRatesTypeTip": {
+        "message": "Zmiana typu szybkości zmieni krzywą szybkości i sposób jej ustawienia"
+    },
+    "pidTuningRcRateRaceflight": {
+        "message": "Profil szybkości"
+    },
+    "pidTuningRcExpoRaceflight": {
+        "message": "Expo"
+    },
+    "pidTuningRateRaceflight": {
+        "message": "Acro+"
+    },
+    "pidTuningRcExpoKISS": {
+        "message": "Krzywa RC"
+    },
+    "pidTuningRateQuickRates": {
+        "message": "Max Rate"
+    },
+    "pidTuningRcRateActual": {
+        "message": "Czułość środkowa"
+    },
+    "dialogRatesTypeTitle": {
+        "message": "Zmiana profilu szybkości(rates)"
+    },
+    "dialogRatesTypeNote": {
+        "message": "<span class=\"message-negative\"><b>OSTRZEŻENIE: Zmieniasz profil szybkości(rates).</b></span> Jeśli zmienisz profil szybkości, twoje aktualne profile zostaną zastąpione domyślną charakterystyką."
+    },
+    "dialogRatesTypeConfirm": {
+        "message": "Zmień"
+    },
+    "gpsSbasAutoDetect": {
+        "message": "Autowykrywanie",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasEuropeanEGNOS": {
+        "message": "Europejski EGNOS (wspomagający systemy GPS i GLONASS)",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNorthAmericanWAAS": {
+        "message": "WAAS(System nawigacji powietrznej)",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasJapaneseMSAS": {
+        "message": "Japoński MSAS(wspiera DGPS - różnicowy sygnał gps)",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasIndianGAGAN": {
+        "message": "Indyjski GAGAN (rozszerzona nawigacja wspomagana GPS-em)",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNone": {
+        "message": "Brak",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "cordovaWebviewInstall": {
+        "message": "Instalacja aplikacji <b>{{app}}</b> może rozwiązać ten problem z kompatybilnością."
+    },
+    "cordovaWebviewUninstall": {
+        "message": "Odinstalowanie aplikacji <b>{{app}}</b> może rozwiązać ten problem z kompatybilnością. Jeśli nie możesz go odinstalować, spróbuj go wyłączyć z poziomu ustawień aplikacji."
+    },
+    "cordovaWebviewUninstallBtn1": {
+        "message": "Odinstaluj ze sklepu Google Play Store"
+    },
+    "cordovaWebviewUninstallBtn2": {
+        "message": "Odinstaluj / Wyłącz w ustawieniach"
+    },
+    "cordovaWebviewUpdate": {
+        "message": "Aktualizacja aplikacji <b>{{app}}</b> może rozwiązać ten problem z kompatybilnością."
+    },
+    "cordovaWebviewUpdateBtn": {
+        "message": "Aktualizuj ze sklepu Google Play Store"
+    },
+    "cordovaWebviewEnable": {
+        "message": "Przejdź do zakładki z informacjami o twoim urządzeniu mobilnym i naciśnij 10 razy numer wersji kompilacji - aby włączyć 'Opcje programisty'. Następnie odszukaj i przejdź do opcji programisty i wybierz <b>{{app}}</b> jako dostawcę widoku internetowego."
     }
 }

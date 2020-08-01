@@ -82,6 +82,9 @@
     "analyticsOptOut": {
         "message": "No participar en la recogida anónima de datos estadísticos"
     },
+    "cordovaForceComputerUI": {
+        "message": "Usar interfaz para ordenador en lugar de la de teléfono"
+    },
     "language_changed": {
         "message": "Cambio de idioma guardado"
     },
@@ -146,7 +149,7 @@
         "description": "Text of the image in the top sensors icons. Please keep it short."
     },
     "checkForConfiguratorUnstableVersions": {
-        "message": "Mostrar notificaciones de actualizaciones para versiones no estables del configurador"
+        "message": "Mostrar notificación de actualización para versiones no estables del configurador"
     },
     "configuratorUpdateNotice": {
         "message": "Estás utilizando una versión desactualizada de <b>Betaflight Configurator</b>.<br>$t(configuratorUpdateHelp.message)"
@@ -198,6 +201,9 @@
     },
     "tabHelp": {
         "message": "Documentación y Soporte"
+    },
+    "tabOptions": {
+        "message": "Opciones"
     },
     "tabSetup": {
         "message": "Ajuste"
@@ -395,7 +401,7 @@
         "message": "Esta versión de firmware <span class=\"message-negative\">no está soportada</span>. Por favor actualiza a un firmware con soporte para el api versión <strong>$1</strong> o superior. Usa CLI para realizar un copia de seguridad antes de la instalación. El proceso de copia/restauración usando CLI está en la documentación.<br />Como alternativa puedes descargar y usar una versión anterior del configurador si no estás listo para actualizar."
     },
     "firmwareTypeNotSupported": {
-        "message": "No - Cleanflight/Betaflight firmware <span class=\"message-negative\"> no soportado</span>, excepto modo CLI."
+        "message": "No-Betaflight firmware <span class=\"message-negative\"> no soportado</span>, excepto modo CLI."
     },
     "firmwareUpgradeRequired": {
         "message": "El firmware de este dispositivo necesita actualizarse a una nueva versión. Use CLI para hacer una copia de seguridad antes de flashear. El proceso de copia/restauración con CLI está en la documentación.<br />Alternativamente puede descargar y usar una versión anterior del configurador si no está preparado para actualizar."
@@ -1345,6 +1351,15 @@
     "configurationButtonSave": {
         "message": "Guardar y Reiniciar"
     },
+    "dialogDynFiltersChangeTitle": {
+        "message": "Cambio en valores de Notch Dinámico"
+    },
+    "dialogDynFiltersChangeNote": {
+        "message": "<span class=\"message-negative\"><b>ATENCIÓN: Algunos valores del notch dinámico se han cambiado a valores por defecto</b></span> porque el filtro RPM ha sido activado/desactivado.<br>Por favor, verifícalos antes de volar."
+    },
+    "dialogDynFiltersConfirm": {
+        "message": "Aceptar"
+    },
     "portsIdentifier": {
         "message": "Identificador"
     },
@@ -1641,6 +1656,33 @@
     },
     "pidTuningDtermSetpointTransitionWarning": {
         "message": "<span class=\"message-negative\"><strong>$t(warningTitle.message):</strong> El uso de un Punto de Ajuste de Transición de D mayor que 0 y menor que 0.1 está altamente desaconsejado. Puede causar inestabilidad y reducir la respuesta de los controles al cruzar el punto central.</span>"
+    },
+    "pidTuningFfInterpolateSp": {
+        "message": "Interpolar FF"
+    },
+    "pidTuningFfInterpolateSpHelp": {
+        "message": "Las siguientes opciones ajustan la prealimentación (FF) desde carrera/agresiva a suave/HD.<br><br> Modo: establecido a No promedio para carrera, Promedio 2 para la carrera/freestyle rápido, Promedio de 3 para grabaciones HD, Promedio 4 para suavidad cinematográfica HD.<br><br> Suavizado: limita la cantidad de cambio que cualquier paso de radio entrante puede realizar, incrementar para una señal FF más suave, disminuir para respuestas FF más agresivas.<br><br> Impulso: ayuda a superar el retraso del motor cuando hay entradas de los mandos rápidas, aunque puede provocar inestabilidad en la señal. Prueba 10 para HD, 20 para carreras. Hasta 30 puede ser útil para quads de baja autoridad, pero puede causar micro sobregiro o inestabilidad."
+    },
+    "pidTuningFfInterpolate": {
+        "message": "Modo"
+    },
+    "pidTuningFfInterpolateSpOptionNoAverage": {
+        "message": "No promediar"
+    },
+    "pidTuningFfInterpolateSpOptionAverage2": {
+        "message": "Promediar 2"
+    },
+    "pidTuningFfInterpolateSpOptionAverage3": {
+        "message": "Promediar 3"
+    },
+    "pidTuningFfInterpolateSpOptionAverage4": {
+        "message": "Promediar 4"
+    },
+    "pidTuningFfSmoothFactor": {
+        "message": "Suavizado"
+    },
+    "pidTuningFfBoost": {
+        "message": "Impulso"
     },
     "pidTuningProportional": {
         "message": "Proporcional (P)"
@@ -3445,6 +3487,9 @@
     "pidTuningDTermLowpassDynType": {
         "message": "D Term Paso Bajo 1 Dinámico Tipo de Filtro"
     },
+    "pidTuningDTermLowpassDynExpo": {
+        "message": "D Term Paso Bajo 1 Dinámico Expo de la Curva"
+    },
     "pidTuningDTermNotchFiltersGroup": {
         "message": "Filtros Notch del D Term"
     },
@@ -3465,6 +3510,15 @@
     },
     "pidTuningVbatPidCompensationHelp": {
         "message": "Incrementa los valores del PID para compensar cuando la Vbat está baja. Esto proporciona características de vuelo más constantes durante el vuelo. La cantidad de compensación que se aplica se calcula a partir del $t(powerBatteryMaximum.message) indicado en la página de $t(tabPower.message), así que asegúrate de que tiene un valor apropiado."
+    },
+    "pidTuningVbatSagCompensation": {
+        "message": "Compensación de Caída de Tensión"
+    },
+    "pidTuningVbatSagCompensationHelp": {
+        "message": "Proporciona un rendimiento consistente del acelerador y del PID sobre el rango de voltaje de la batería utilizable al compensar la caída de tensión. La cantidad de compensación puede variar entre el 0 y el 100 %. Se recomienda compensación completa (100%).<br><br>Visita <a href=\"https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes#dynamic-battery-sag-compensation\"target=\"_blank\" rel=\"noopener noreferrer\">esta entrada de la wiki</a> para más información."
+    },
+    "pidTuningVbatSagValue": {
+        "message": "%"
     },
     "pidTuningItermRotation": {
         "message": "Rotación Término I"
@@ -5553,5 +5607,74 @@
     "gpsSbasNone": {
         "message": "Ninguno",
         "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "dialogFileNameTitle": {
+        "message": "Nombre del archivo"
+    },
+    "dialogFileNameDescription": {
+        "message": "El archivo se guardará en la carpeta '{{folder}}' en su almacenamiento interno."
+    },
+    "dialogFileAlreadyExistsTitle": {
+        "message": "¡Este archivo ya existe!"
+    },
+    "dialogFileAlreadyExistsDescription": {
+        "message": "¿Desea sobrescribir?"
+    },
+    "cordovaCheckingWebview": {
+        "message": "Comprobando aplicaciones webview..."
+    },
+    "cordovaIncompatibleWebview": {
+        "message": "Webview incompatible"
+    },
+    "cordovaWebviewTroubleshootingMsg": {
+        "message": "Debes actualizar el webview de tu dispositivo para poder usar el configurador."
+    },
+    "cordovaWebviewTroubleshootingMsg2": {
+        "message": "La siguiente herramienta está diseñada para ayudarte a instalar un nuevo webview o a actualizar el webview ya instalado."
+    },
+    "cordovaAvailableWebviews": {
+        "message": "Aplicaciones webview disponibles en tu dispositivo"
+    },
+    "cordovaWebviewInstall": {
+        "message": "Instalar la aplicación <b>{{app}}</b> puede resolver este problema de compatibilidad."
+    },
+    "cordovaWebviewInstallBtn": {
+        "message": "Instalar desde Google Play Store"
+    },
+    "cordovaWebviewUninstall": {
+        "message": "Desinstalar la aplicación <b>{{app}}</b> puede ayudar a solucionar este problema de compatibilidad. Si no eres capaz de desinstalarla, intenta desactivarla desde los ajustes de la aplicación."
+    },
+    "cordovaWebviewUninstallBtn1": {
+        "message": "Desinstalar de Google Play Store"
+    },
+    "cordovaWebviewUninstallBtn2": {
+        "message": "Desinstalar / desactivar desde los ajustes"
+    },
+    "cordovaWebviewUpdate": {
+        "message": "Actualizar la aplicación <b>{{app}}</b> puede ayudar a resolver este problema de compatibilidad."
+    },
+    "cordovaWebviewUpdateBtn": {
+        "message": "Actualizar desde el Google Play Store"
+    },
+    "cordovaWebviewEnable": {
+        "message": "Ve a la pestaña de información acerca de tu dispositivo en los ajustes y pulsa 10 veces en el número de compilación para activar las 'Opciones para desarrolladores'. Después de esto, busca en las opciones para desarrolladores y selecciona <b>{{app}}</b> como implementación de webview."
+    },
+    "cordovaWebviewEnableBtn": {
+        "message": "Abrir configuración"
+    },
+    "cordovaWebviewIncompatible": {
+        "message": "Tu dispositivo no parece compatible. Intenta buscar otros modos de actualizar tu webview"
+    },
+    "cordovaNoWebview": {
+        "message": "No hay una aplicación webview instalada / activada"
+    },
+    "cordovaWebviewUsed": {
+        "message": "usado"
+    },
+    "cordovaExitAppTitle": {
+        "message": "Confirmación"
+    },
+    "cordovaExitAppMessage": {
+        "message": "¿Realmente quieres cerrar el configurador?"
     }
 }

@@ -328,9 +328,6 @@
     "firmwareVersionNotSupported": {
         "message": "Firmware ini adalah versi<span class=\"message-negative\">tidak didukung</span>. Silahkan perbarui ke firmware yang mendukung versi api<strong>$1</strong>atau lebih tinggi. Gunakan CLI untuk backup sebelum flashing. Prosedur backup/restore CLI ada di dokumentasi.<br />Atau unduh dan gunakan Betaflight versi lama jika anda belum siap untuk upgrade."
     },
-    "firmwareTypeNotSupported": {
-        "message": "Firmware selain Cleanflight/Betaflight <span class=\"message-negative\">tidak didukung</span>, kecuali untuk mode CLI."
-    },
     "firmwareUpgradeRequired": {
         "message": "Firmware pada perangkat ini perlu ditingkatkan ke versi yang lebih baru. Gunakan CLI untuk backup sebelum flashing. Prosedur backup/restore CLI ada di dokumentasi.<br />Atau unduh dan gunakan Betaflight versi lama jika anda belum siap untuk upgrade."
     },

@@ -1,0 +1,441 @@
+{
+    "yes": {
+        "message": "Ναι",
+        "description": "General Yes message to be used across the application"
+    },
+    "no": {
+        "message": "Όχι",
+        "description": "General No message to be used across the application"
+    },
+    "on": {
+        "message": "Ενεργό"
+    },
+    "off": {
+        "message": "Ανενεργό"
+    },
+    "auto": {
+        "message": "Αυτόματο"
+    },
+    "error": {
+        "message": "Σφάλμα: {{errorMessage}}"
+    },
+    "errorTitle": {
+        "message": "Σφάλμα"
+    },
+    "warningTitle": {
+        "message": "Προσοχή"
+    },
+    "noticeTitle": {
+        "message": "Σημείωση"
+    },
+    "operationNotSupported": {
+        "message": "Αυτή η λειτουργία δεν υποστηρίζεται από τη συσκευή σας."
+    },
+    "storageDeviceNotReady": {
+        "message": "Η συσκευή αποθήκευσης δεν είναι έτοιμη. Εάν χρησιμοποιείτε κάρτα μνήμης microSD βεβαιωθείτε ότι όντως αναγνωρίζεται από τον ελεγκτή πτήσης σας."
+    },
+    "options_title": {
+        "message": "Επιλογές εφαρμογής"
+    },
+    "connect": {
+        "message": "Σύνδεση"
+    },
+    "connecting": {
+        "message": "Σύνδεση σε εξέλιξη"
+    },
+    "disconnect": {
+        "message": "Αποσύνδεση"
+    },
+    "portsSelectManual": {
+        "message": "Χειροκίνητη επιλογή"
+    },
+    "portOverrideText": {
+        "message": "Θύρα:"
+    },
+    "autoConnect": {
+        "message": "Αυτόματη σύνδεση"
+    },
+    "close": {
+        "message": "Κλείσιμο"
+    },
+    "cancel": {
+        "message": "Ακύρωση"
+    },
+    "autoConnectEnabled": {
+        "message": "Αυτόματη σύνδεση: Ενεργοποιημένη - Ο διαμορφωτής επιχειρεί αυτόματη σύνδεση όταν εντοπιστεί νέα θήρα"
+    },
+    "autoConnectDisabled": {
+        "message": "Αυτόματη σύνδεση: Απενεργοποιημένη - Ο χρήστης πρέπει να επιλέξει τη σωστή σειριακή θύρα και να πατήσει το κουμπί «Σύνδεση»"
+    },
+    "expertMode": {
+        "message": "Ενεργοποίηση λειτουργίας εμπειρογνωμόνων"
+    },
+    "expertModeDescription": {
+        "message": "Εμφάνιση ακυκλοφόρητων και ενδεχομένως ασταθών εκδόσεων"
+    },
+    "permanentExpertMode": {
+        "message": "Μόνιμη ενεργοποίηση Λειτουργίας Εμπειρογνωμόνων"
+    },
+    "rememberLastTab": {
+        "message": "Επαναφόρτωση τελευταίας καρτέλας κατά τη σύνδεση"
+    },
+    "analyticsOptOut": {
+        "message": "Απαλλαγή από την περισυλλογή ανωνυμοποιημένων στατιστικών δεδομένων"
+    },
+    "language_changed": {
+        "message": "Η γλώσσα άλλαξε"
+    },
+    "language_choice_message": {
+        "message": "Αλλαγή γλώσσας:",
+        "description": "Try and be brief"
+    },
+    "language_default": {
+        "message": "Προεπιλογή Συστήματος"
+    },
+    "language_default_pretty": {
+        "message": "Προεπιλογή Συστήματος ($t(detectedLanguage))"
+    },
+    "sensorDataFlashNotFound": {
+        "message": "Ο μικροελεγκτής γρήγορης μνήμης δεδομένων <br>δεν βρέθηκε",
+        "description": "Text of the dataflash image in the header of the page."
+    },
+    "sensorDataFlashFreeSpace": {
+        "message": "Γρήγορη μνήμη δεδομένων: Διαθέσιμη χωρητικότητα",
+        "description": "Text of the dataflash image in the header of the page."
+    },
+    "sensorStatusGyro": {
+        "message": "Γυροσκόπιο"
+    },
+    "sensorStatusGyroShort": {
+        "message": "Γυροσκ",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusAccel": {
+        "message": "Επιταχυνσιόμετρο"
+    },
+    "sensorStatusAccelShort": {
+        "message": "Επιτάχ",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusMag": {
+        "message": "Μαγνητόμετρο"
+    },
+    "sensorStatusMagShort": {
+        "message": "Μαγντμ",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusBaro": {
+        "message": "Βαρόμετρο"
+    },
+    "sensorStatusBaroShort": {
+        "message": "Βαρομτ",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusGPS": {
+        "message": "GPS"
+    },
+    "sensorStatusGPSShort": {
+        "message": "GPS",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusSonar": {
+        "message": "Σόναρ / Ανιχνευτής εμβέλειας"
+    },
+    "sensorStatusSonarShort": {
+        "message": "Σόναρ",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "checkForConfiguratorUnstableVersions": {
+        "message": "Εμφάνιση ειδοποιήσεων για ασταθείς εκδόσεις του διαμορφωτή"
+    },
+    "configuratorUpdateNotice": {
+        "message": "Χρησιμοποιείται μια ξεπερασμένη έκδοση του <b>Διαχειριστή Betaflight</b>.<br>$t(configuratorUpdateHelp.message)"
+    },
+    "configuratorUpdateHelp": {
+        "message": "Χρησιμοποιώντας μια νέα έκδοση του υλικολογισμικού Betaflight με μια ξεπερασμένη έκδοση του Διαχειριστή σημαίνει ότι πιθανές αλλαγές στις ρυθμίσεις μπορεί να προκαλέσουν <strong>διαφθορά ρυθμίσεων του υλικολογισμικού και μη λειτουργικό σκάφος</strong>. Επιπλέον, μερικά χαρακτηριστικά του υλικολογισμικού θα μπορούν να διαμορφωθούν μόνο από την γραμμή εντολών.<br><strong>Ο Διαχειστής Betaflight έκδοση <b>$1</b> είναι διαθέσιμος για κατέβασμα από το ίντερνετ. </strong>Παρακαλούμε επισκεφθείτε τον ακόλουθο <a href=\"$2\" target=\"_blank\" rel=\"noopener noreferrer\">σύνδεσμο</a> για να φορτώσετε και ακολούθως εγκαταστήσετε την τελευταία έκδοση με όλες τις διορθώσεις και βελτιώσεις.<br>Παρακαλούμε κλείστε το παράθυρο του Διαχειριστή πριν κάνετε την ανανέωση."
+    },
+    "configuratorUpdateWebsite": {
+        "message": "Μετάβαση στη Σελίδα Εκδόσεων"
+    },
+    "tabHelp": {
+        "message": "Τεκμηρίωση και υποστήριξη"
+    },
+    "tabSetupOSD": {
+        "message": "Ρύθμιση Οθόνης Γραφικών"
+    },
+    "tabConfiguration": {
+        "message": "Παραμετροποίηση"
+    },
+    "tabPorts": {
+        "message": "Θύρες"
+    },
+    "tabReceiver": {
+        "message": "Δέκτης"
+    },
+    "tabModeSelection": {
+        "message": "Επιλογή Λειτουργίας"
+    },
+    "tabFailsafe": {
+        "message": "Ασφαλής Αποτυχία"
+    },
+    "tabTransponder": {
+        "message": "Αναμεταδότης αγώνων"
+    },
+    "tabOsd": {
+        "message": "Οθόνη Γραφικών"
+    },
+    "tabVtx": {
+        "message": "Πομπός Βίντεο"
+    },
+    "tabPower": {
+        "message": "Ρεύμα & Μπαταρία"
+    },
+    "tabGPS": {
+        "message": "GPS"
+    },
+    "tabMotorTesting": {
+        "message": "Κινητήρες"
+    },
+    "tabLedStrip": {
+        "message": "Φώτα LED"
+    },
+    "tabRawSensorData": {
+        "message": "Αισθητήρες"
+    },
+    "tabCLI": {
+        "message": "ΔΓΕ"
+    },
+    "tabLogging": {
+        "message": "Καταγραφέας πτήσης"
+    },
+    "tabAdjustments": {
+        "message": "Προσαρμογές"
+    },
+    "tabAuxiliary": {
+        "message": "Λειτουργίες"
+    },
+    "logActionHide": {
+        "message": "Απόκρυψη αρχείου καταγραφής"
+    },
+    "logActionShow": {
+        "message": "Προβολή αρχείου καταγραφής"
+    },
+    "stm32RebootingToBootloader": {
+        "message": "Έναρξη επανεκκίνησης στον φορτωτή εκκίνησης ..."
+    },
+    "stm32RebootingToBootloaderFailed": {
+        "message": "Επανεκκίνηση στον φορτωτή εκκίνησης συσκευής: ΑΠΈΤΥΧΕ"
+    },
+    "stm32TimedOut": {
+        "message": "STM32 - ο χρόνος ανταπόκρισης εξαντλήθηκε, προγραμματισμός: ΑΠΈΤΥΧΕ"
+    },
+    "stm32WrongResponse": {
+        "message": "Ανεπιτυχής επικοινωνία με τον STM32, λανθασμένη απάντηση, αναμενόμενη: $1 (0x$2) λήφθηκε: $3 (0x$4)"
+    },
+    "stm32ContactingBootloader": {
+        "message": "Επικοινωνία με τον φορτωτή εκκίνησης ..."
+    },
+    "stm32ContactingBootloaderFailed": {
+        "message": "Η επικοινωνία με το φορτωτή εκκίνησης απέτυχε"
+    },
+    "stm32GlobalEraseExtended": {
+        "message": "Εκτελείται ολοκληρωτική διαγραφή του μικροελεγκτή (διαμέσου εκτεταμένης διαγραφής) ..."
+    },
+    "stm32LocalEraseExtended": {
+        "message": "Εκτελείται τοπική διαγραφή (διαμέσου εκτεταμένης διαγραφής) ..."
+    },
+    "stm32GlobalErase": {
+        "message": "Εκτελείται ολοκληρωτική διαγραφή μικροελεγκτή ..."
+    },
+    "stm32LocalErase": {
+        "message": "Εκτελείται τοπική διαγραφή ..."
+    },
+    "stm32InvalidHex": {
+        "message": "Μη έγκυρο δεκαεξαδικό"
+    },
+    "notifications_click_here_to_start_app": {
+        "message": "Πατήστε εδώ για να ξεκινήσετε την εφαρμογή"
+    },
+    "defaultDonateHead": {
+        "message": "Ανοιχτό λογισμικό / Ειδοποίηση Δωρεάς"
+    },
+    "defaultDonateText": {
+        "message": "<p>Το <strong>Betaflight</strong> είναι λογισμικό ελεγκτή πτήσης το οποίο είναι <strong>ανοιχτού κώδικα</strong> και είναι διαθέσιμο χωρίς χρέωση <strong> και με καμία εγγύηση</strong> προς όλους τους χρήστες.</p><p>Αν βρίσκετε το Betaflight ή τον Διαχειριστή Betaflight χρήσιμο, παρακαλούμε σκεφτείτε να <strong>υποστηρίξετε</strong> την ανάπτυξή του κάνοντας δωρεά.</p>"
+    },
+    "defaultSponsorsHead": {
+        "message": "Χορηγοί"
+    },
+    "defaultDocumentationHead": {
+        "message": "Τεκμηρίωση / Εγχειρίδιο"
+    },
+    "defaultSupportHead": {
+        "message": "Υποστήριξη"
+    },
+    "defaultSupportSubline2": {
+        "message": "Προγραμματιστής"
+    },
+    "initialSetupButtonCalibrateAccel": {
+        "message": "Βαθμονομήστε το Επιταχυνσιόμετρο"
+    },
+    "initialSetupButtonCalibrateMag": {
+        "message": "Βαθμονομήστε το Μαγνητόμετρο"
+    },
+    "initialSetupButtonCalibratingText": {
+        "message": "Βαθμονόμηση..."
+    },
+    "initialSetupButtonReset": {
+        "message": "Επαναφορά Ρυθμίσεων"
+    },
+    "initialSetupResetText": {
+        "message": "Επαναφορά <strong>προκαθορισμένων</strong> ρυθμίσεων"
+    },
+    "initialSetupButtonBackup": {
+        "message": "Αντίγραφο Ασφαλείας"
+    },
+    "initialSetupButtonRestore": {
+        "message": "Επαναφορά"
+    },
+    "initialSetupButtonRebootBootloader": {
+        "message": "Ενεργοποίηση Φορτωτή Εκκίνησης / DFU"
+    },
+    "initialSetupMinimum": {
+        "message": "Ελάχιστο:"
+    },
+    "initialSetupMaximum": {
+        "message": "Μέγιστο:"
+    },
+    "initialSetupFailsafe": {
+        "message": "Ασφαλής Αποτυχία:"
+    },
+    "initialSetupBatteryHead": {
+        "message": "Μπαταρία"
+    },
+    "initialSetupMinCellV": {
+        "message": "Ελάχιστη Τάση Κελιού:"
+    },
+    "initialSetupMaxCellV": {
+        "message": "Μέγιστη Τάση Κελιού:"
+    },
+    "initialSetupMagHead": {
+        "message": "Μαγνητόμετρο"
+    },
+    "initialSetupInfoHead": {
+        "message": "Πληροφορίες"
+    },
+    "initialSetupBattery": {
+        "message": "Τάση μπαταρίας:"
+    },
+    "initialSetupBatteryValue": {
+        "message": "$1 V"
+    },
+    "initialSetupBatteryMahValue": {
+        "message": "$1 mAh"
+    },
+    "initialSetupArmingDisableFlagsTooltipNO_GYRO": {
+        "message": "Το γυροσκόπιο δε βρέθηκε",
+        "description": "Message that pops up to describe the NO_GYRO arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipFAILSAFE": {
+        "message": "Η ασφαλής αποτυχία είναι ενεργή",
+        "description": "Message that pops up to describe the FAILSAFE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipBOXFAILSAFE": {
+        "message": "Ο διακόπτης 'ΑΣΦΑΛΟΎΣ ΑΠΟΤΥΧΊΑΣ' είναι ενεργός",
+        "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipANGLE": {
+        "message": "Το σκάφος δεν είναι επίπεδο (αρκετά)",
+        "description": "Message that pops up to describe the ANGLE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCALIBRATING": {
+        "message": "Η βαθμονόμηση του αισθητήρα βρίσκεται σε εξέλιξη",
+        "description": "Message that pops up to describe the CALIBRATING arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCLI": {
+        "message": "Η ΔΓΕ είναι ενεργοποιημένη",
+        "description": "Message that pops up to describe the CLI arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipOSD_MENU": {
+        "message": "Το μενού της ΟΑΓ είναι ενεργό",
+        "description": "Message that pops up to describe the OSD_MENU arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipBST": {
+        "message": "Μια συσκευή τηλεμετρίας Black Sheep (πχ TBS Core Pro) αφοπλίθηκε και αποτρέπει επανα-οπλισμό",
+        "description": "Message that pops up to describe the BST arming disable flag"
+    },
+    "initialSetupGPSHead": {
+        "message": "GPS"
+    },
+    "initialSetupInstrumentsHead": {
+        "message": "Όργανα"
+    },
+    "initialSetupButtonSave": {
+        "message": "Αποθήκευση"
+    },
+    "initialSetupAccelCalibStarted": {
+        "message": "Ξεκίνησε η βαθμονόμηση του επιταχυνσιόμετρου"
+    },
+    "featureSONAR": {
+        "message": "Σόναρ"
+    },
+    "featureTELEMETRY": {
+        "message": "Έξοδος τηλεμετρίας"
+    },
+    "featureOSD": {
+        "message": "Οθόνη Απεικόνισης Γραφικών"
+    },
+    "portsFunction_FRSKY_OSD": {
+        "message": "ΟΑΓ (Πρωτόκολλο FrSky)"
+    },
+    "adjustmentsFunction29": {
+        "message": "Επιλογή Προφίλ ΟΑΓ"
+    },
+    "osdSetupTitle": {
+        "message": "ΟΑΓ"
+    },
+    "osdSetupElementsTitle": {
+        "message": "Στοιχεία"
+    },
+    "osdSetupSelectedProfileTitle": {
+        "message": "Ενεργό προφίλ ΟΑΓ",
+        "description": "Title of the box to select the current active OSD profile"
+    },
+    "osdSetupPreviewSelectProfileElement": {
+        "message": "Προφίλ ΟΑΓ {{profileNumber}}",
+        "description": "Content of the selector for the OSD Profile in the preview"
+    },
+    "osdSetupPreviewSelectFontElement": {
+        "message": "Γραμματοσειρά {{fontName}}",
+        "description": "Content of the selector for the OSD Font in the preview"
+    },
+    "osdTextElementTimer": {
+        "message": "Χρονόμετρο",
+        "description": "One of the elements of the OSD"
+    },
+    "osdTextElementArmed": {
+        "message": "Οπλίθηκε",
+        "description": "One of the elements of the OSD"
+    },
+    "osdTextElementDisarmed": {
+        "message": "Αφοπλίθηκε",
+        "description": "One of the elements of the OSD"
+    },
+    "osdTextElementArtificialHorizon": {
+        "message": "Εικονικός ορίζοντας",
+        "description": "One of the elements of the OSD"
+    },
+    "osdTextElementCraftName": {
+        "message": "Όνομα σκάφους",
+        "description": "One of the elements of the OSD"
+    },
+    "osdWarningTextFailsafe": {
+        "message": "Ασφαλής Αποτυχία",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdSectionHelpElements": {
+        "message": "Ενεργοποιήστε ή απενεργοποιήστε στοιχεία στην ΟΑΓ."
+    },
+    "osdSettingsSaved": {
+        "message": "Οι ρυθμίσεις της ΟΑΓ αποθηκεύτηκαν"
+    }
+}

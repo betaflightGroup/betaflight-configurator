@@ -458,9 +458,6 @@
     "firmwareVersionNotSupported": {
         "message": "Betaflight 配置程序<span class=\"message-negative\">不支持</span>该固件版本。请更新固件以确保其API版本为 <strong>$1</strong> 或者更高。更新固件之前，使用 CLI 来备份设置。使用 CLI 进行备份/恢复的具体操作流程请参考Betaflight文档。<br />如果不想将固件更新到最新版本，可以下载使用支持该固件的旧版配置程序。"
     },
-    "firmwareTypeNotSupported": {
-        "message": "<span class=\"message-negative\">不支持</span>该版本的 Cleanflight/Betaflight 固件，只能使用CLI模式。"
-    },
     "firmwareUpgradeRequired": {
         "message": "需要将此设备上的固件更新到新版本，更新固件之前，使用 CLI 来备份设置。用 CLI 进行备份/恢复的具体操作流程请参考 Betaflight 文档。<br />如果不想将固件更新到最新版本，可以下载使用支持该固件的旧版配置程序。"
     },
@@ -1062,6 +1059,9 @@
     },
     "featureVTX": {
         "message": "图传"
+    },
+    "featureANTI_GRAVITY": {
+        "message": "永久启用反重力"
     },
     "featureDYNAMIC_FILTER": {
         "message": "动态陷波滤波"

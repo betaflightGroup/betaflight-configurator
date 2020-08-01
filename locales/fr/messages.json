@@ -458,9 +458,6 @@
     "firmwareVersionNotSupported": {
         "message": "Cette version du microprogramme <span class=\"message-negative\">n'est pas supportée</span>. Veuillez le mettre à jour vers une version compatible avec l'API <strong>$1</strong> ou ultérieure. Utiliser le CLI pour sauvegarder avant de flasher. Les procédures de sauvegarde / restauration par CLI sont décrites dans l'aide.<br /> Téléchargez et utilisez une ancienne version du configurateur si vous n'êtes pas prêt à mettre à jour."
     },
-    "firmwareTypeNotSupported": {
-        "message": "Les microprogrammes autres que Cleanflight/Betaflight  ne sont <span class=\"message-negative\">pas pris en charge et non supportés</span>."
-    },
     "firmwareUpgradeRequired": {
         "message": "Le microprogramme de ce dispositif a besoin d'être mis à jour. Utilisez le CLI pour sauvegarder avant de flasher. Les procédures de sauvegarde/restauration par le CLI sont décrites dans l'aide.<br /> Téléchargez et utilisez une ancienne version du configurateur si vous n'êtes pas prêt à le mettre à jour."
     },

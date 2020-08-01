@@ -1,0 +1,2084 @@
+{
+    "warningTitle": {
+        "message": "Varoitus"
+    },
+    "noticeTitle": {
+        "message": "Huomio"
+    },
+    "options_title": {
+        "message": "Ohjelman asetukset"
+    },
+    "connect": {
+        "message": "Yhdistä"
+    },
+    "connecting": {
+        "message": "Yhdistetään"
+    },
+    "disconnect": {
+        "message": "Katkaise yhteys"
+    },
+    "portsSelectManual": {
+        "message": "Valitse itse"
+    },
+    "portOverrideText": {
+        "message": "Portti:"
+    },
+    "autoConnect": {
+        "message": "Automaattinen yhdistäminen"
+    },
+    "close": {
+        "message": "Sulje"
+    },
+    "autoConnectEnabled": {
+        "message": "Automaattinen yhdistäminen: Käytössä - Configurator yrittää automaattisesti luoda yhteyden kun uusi portti havaitaan"
+    },
+    "autoConnectDisabled": {
+        "message": "Automaattinen yhdistäminen: Pois käytöstä - Käyttäjän tarvitsee itse valita oikea sarjaportti ja painaa \"Yhdistä\"-nappia"
+    },
+    "expertMode": {
+        "message": "Kytke edistynyt tila käyttöön"
+    },
+    "permanentExpertMode": {
+        "message": "Kytke edistynyt tila pysyvästi päälle"
+    },
+    "sensorStatusGyro": {
+        "message": "Gyroskooppi"
+    },
+    "sensorStatusAccel": {
+        "message": "Kiihtyvyysanturi"
+    },
+    "sensorStatusMag": {
+        "message": "Magnetometri"
+    },
+    "sensorStatusBaro": {
+        "message": "Barometri"
+    },
+    "sensorStatusGPS": {
+        "message": "GPS"
+    },
+    "sensorStatusSonar": {
+        "message": "Ultraääni / Etäisyysmittari"
+    },
+    "checkForConfiguratorUnstableVersions": {
+        "message": "Näytä päivitysilmoitukset configuratorin epävakaista versioista"
+    },
+    "configuratorUpdateWebsite": {
+        "message": "Mene julkaisusivulle"
+    },
+    "deviceRebooting": {
+        "message": "Laite - <span class=\"message-negative\">Käynnistyy uudelleen</span>"
+    },
+    "deviceReady": {
+        "message": "Laite - <span class=\"message-positive\">Valmis</span>"
+    },
+    "backupFileIncompatible": {
+        "message": "Avattu varmuuskopiotiedosto on luotu configuratorin edelliselle versiolle ja se ei ole yhteensopiva tämän version kanssa. Pahoittelut."
+    },
+    "backupFileUnmigratable": {
+        "message": "Avattu varmuuskopiotiedosto on luotu configuratorin aikaisemmalla versiolla ja ei ole siirrettävissä tähän versioon. Pahoittelut."
+    },
+    "configMigrationFrom": {
+        "message": "Tuodaan asetustiedostoa, joka on luotu configuratorin versiolla: $1"
+    },
+    "configMigratedTo": {
+        "message": "Asetustiedosto tuotu configuratorin versioon: $1"
+    },
+    "configMigrationSuccessful": {
+        "message": "Asetusten tuonti valmis, muutoksia otettu käyttöön: $1"
+    },
+    "tabFirmwareFlasher": {
+        "message": "Laiteohjelmiston päivittäjä"
+    },
+    "tabLanding": {
+        "message": "Tervetuloa"
+    },
+    "tabHelp": {
+        "message": "Dokumentaatio & Tuki"
+    },
+    "tabSetup": {
+        "message": "Asetukset"
+    },
+    "tabSetupOSD": {
+        "message": "OSD:n Asetukset"
+    },
+    "tabConfiguration": {
+        "message": "Konfiguraatio"
+    },
+    "tabPorts": {
+        "message": "Portit"
+    },
+    "tabPidTuning": {
+        "message": "PID Säädöt"
+    },
+    "tabReceiver": {
+        "message": "Vastaanotin"
+    },
+    "tabModeSelection": {
+        "message": "Tilojen valinta"
+    },
+    "tabServos": {
+        "message": "Servot"
+    },
+    "tabFailsafe": {
+        "message": "Failsafe"
+    },
+    "tabTransponder": {
+        "message": "Kilpatransponderi"
+    },
+    "tabOsd": {
+        "message": "OSD"
+    },
+    "tabPower": {
+        "message": "Virta % Akku"
+    },
+    "tabGPS": {
+        "message": "GPS"
+    },
+    "tabMotorTesting": {
+        "message": "Moottorit"
+    },
+    "tabLedStrip": {
+        "message": "LED nauha"
+    },
+    "tabRawSensorData": {
+        "message": "Anturit"
+    },
+    "tabCLI": {
+        "message": "CLI"
+    },
+    "tabLogging": {
+        "message": "Johdollinen tiedonkeruu"
+    },
+    "tabOnboardLogging": {
+        "message": "Blackbox"
+    },
+    "tabAdjustments": {
+        "message": "Säädöt"
+    },
+    "tabAuxiliary": {
+        "message": "Tilat"
+    },
+    "logActionHide": {
+        "message": "Piilota loki"
+    },
+    "logActionShow": {
+        "message": "Näytä loki"
+    },
+    "serialPortOpened": {
+        "message": "Sarjaportti <span class=\"message-positive\">onnistuneesti</span> avattu ID: $1"
+    },
+    "serialPortOpenFail": {
+        "message": "Sarjaportin avaaminen<span class=\"message-negative\">Epäonnistui</span>"
+    },
+    "serialPortClosedOk": {
+        "message": "Sarjaportti <span class=\"message-positive\">onnistuneesti</span> suljettu"
+    },
+    "serialPortClosedFail": {
+        "message": "Sarjaportin sulkeminen<span class=\"message-negative\">Epäonnistui</span>"
+    },
+    "serialUnrecoverable": {
+        "message": "Palautumaton <span class=\"message-negative\">virhe</span> sarjaliitännässä, yhteys katkaistaan..."
+    },
+    "usbDeviceOpened": {
+        "message": "USB yhteys <span class=\"message-positive\">onnistuneesti</span> avattu laitteeseen ID: $1"
+    },
+    "usbDeviceOpenFail": {
+        "message": "USB -yhteyden avaaminen <span class=\"message-negative\">epäonnistui!</span>"
+    },
+    "usbDeviceClosed": {
+        "message": "USB -yhteys <span class=\"message-positive\">onnistuneesti</span> suljettu"
+    },
+    "usbDeviceCloseFail": {
+        "message": "USB -yhteyden sulkeminen <span class=\"message-negative\">epäonnistui</span>"
+    },
+    "usbDeviceUdevNotice": {
+        "message": "Ovatko <strong>udev säännöt</strong> asennettu oikein? Katso dokumentaatiosta lisää tietoa"
+    },
+    "stm32UsbDfuNotFound": {
+        "message": "USB DFU:ta ei löydy"
+    },
+    "stm32TimedOut": {
+        "message": "STM23 - aikakatkaisu, ohjelmointi: EPÄONNISTUI"
+    },
+    "stm32WrongResponse": {
+        "message": "STM32 Yhteys epäonnistui, väärä vastaus, odotettiin: $1 (0x$2) vastaanotettiin: $3 (0x$4)"
+    },
+    "stm32ContactingBootloader": {
+        "message": "Yhdistetään bootloaderiin ..."
+    },
+    "stm32ContactingBootloaderFailed": {
+        "message": "Yhteys bootloaderin kanssa epäonnistui"
+    },
+    "stm32ResponseBootloaderFailed": {
+        "message": "Ei vastausta bootloaderilta, ohjelmointi: EPÄONNISTUI"
+    },
+    "stm32GlobalEraseExtended": {
+        "message": "Suoritetaan täyttä piirin tyhjennystä (pidennetyn tyhjennyksen kautta) ..."
+    },
+    "stm32LocalEraseExtended": {
+        "message": "Suoritetaan paikallista tyhjennystä (pidennetyn tyhjennyksen kautta) ..."
+    },
+    "stm32GlobalErase": {
+        "message": "Suoritetaan täyttä piirin tyhjennystä ..."
+    },
+    "stm32LocalErase": {
+        "message": "Suoritetaan paikallista tyhjennystä ..."
+    },
+    "stm32Erase": {
+        "message": "Tyhjennetään ..."
+    },
+    "stm32Flashing": {
+        "message": "Ohjelmoidaan ..."
+    },
+    "stm32Verifying": {
+        "message": "Vahvistetaan ..."
+    },
+    "stm32ProgrammingSuccessful": {
+        "message": "Ohjelmointi: ONNISTUI"
+    },
+    "stm32ProgrammingFailed": {
+        "message": "Ohjelmointi: EPÄONNISTUI"
+    },
+    "stm32AddressLoadFailed": {
+        "message": "Asetusbittien sektorin osoitteen lataaminen epäonnistui. Syynä todennäköisesti lukusuojaus."
+    },
+    "stm32AddressLoadSuccess": {
+        "message": "Asetusbittien sektorin osoitteen lataaminen onnistui."
+    },
+    "stm32AddressLoadUnknown": {
+        "message": "Asetusbittien sektorin osoitteen lataaminen epäonnistui tuntemattoman virheen takia. Peruutetaan."
+    },
+    "stm32NotReadProtected": {
+        "message": "Lukusuojaus ei käytössä"
+    },
+    "stm32ReadProtected": {
+        "message": "Laite vaikuttaa kirjoitussuojatulta. Puretaan suojausta. Älä katkaise yhteyttä/irrota laitetta!"
+    },
+    "stm32UnprotectSuccessful": {
+        "message": "Suojauksen purku onnistui!"
+    },
+    "stm32UnprotectUnplug": {
+        "message": "TOIMIA VAADITAAN: Irrota ja kytke lento-ohjain uudelleen DFU-tilassa yrittääksesi ohjelmointia uudestaan!"
+    },
+    "stm32UnprotectFailed": {
+        "message": "Suojauksen purku epäonnistui"
+    },
+    "stm32UnprotectInitFailed": {
+        "message": "Suojauksen purkuprosessin aloittaminen epäonnistui"
+    },
+    "noConfigurationReceived": {
+        "message": "Asetustietoja ei vastaanotettu <span class=\"message-negative\">10 sekunnin</span>sisällä, yhteys <span class=\"message-negative\">epäonnistui</span>"
+    },
+    "firmwareVersionNotSupported": {
+        "message": "Tätä laiteohjelmistoversiota <span class=\"message-negative\">ei tueta</span>. Päivitä laiteohjelmistoversioon joka tukee api-versiota <strong>$1</strong> tai sitä uudempaa. Käytä CLI: tä varmuuskopioimiseen ennen laiteohjelmiston päivitystä. CLI varmuuskopiointi/palautusprosessi lukee dokumentaatiossa.<br />Vaihtoehtoisesti lataa ja käytä configuratorin vanhaa versiota jos et ole valmis päivitykseen."
+    },
+    "firmwareUpgradeRequired": {
+        "message": "Tämän laitteen laiteohjelmisto tarvitsee päivittää uudempaan versioon. Käytä CLI:tä varmuuskopioimiseen ennen päivittämistä.CLI varmuuskopiointi/palautusprosessista lisää tietoa dokumentaatiossa.<br />Vaihtoehtoisesti lataa ja käytä configuratorin vanhaa versiota jos et ole valmis päivitykseen."
+    },
+    "releaseCheckLoaded": {
+        "message": "Ladattu julkaisuinformaatio koskien $1 GitHubista."
+    },
+    "releaseCheckFailed": {
+        "message": "<b>GitHub kysely koskien $1 julkaisuja epäonnistui, käytetään välimuistissa olevaa tietoa. Syy: <code>$2</code></b>"
+    },
+    "releaseCheckCached": {
+        "message": "Käytetään välimuistissa olevaa tietoa $1 julkaisuille."
+    },
+    "releaseCheckNoInfo": {
+        "message": "Julkaisuinformaatiota ei ole saatavilla: $1."
+    },
+    "tabSwitchConnectionRequired": {
+        "message": "Sinun tarvitsee <strong>yhdistää</strong> ennen kuin voit katsella välilehtiä."
+    },
+    "tabSwitchWaitForOperation": {
+        "message": "Et <span class=\"message-negative\">voi</span> tehdä tätä juuri nyt, odota menossa olevan toiminnon valmistumista ..."
+    },
+    "tabSwitchUpgradeRequired": {
+        "message": "<strong>Päivitä</strong> laiteohjelmistosi Betaflightin viimeisimpään versioon ennen kuin voit käyttää $1 välilehteä."
+    },
+    "firmwareVersion": {
+        "message": "Laiteohjelmiston Versio: <strong>$1</strong>"
+    },
+    "apiVersionReceived": {
+        "message": "MultiWii API versio: <strong>$1</strong>"
+    },
+    "uniqueDeviceIdReceived": {
+        "message": "Yksilöllinen laite ID: <strong>0x$1</strong>"
+    },
+    "craftNameReceived": {
+        "message": "Aluksen nimi: <strong>$1</strong>"
+    },
+    "armingDisabled": {
+        "message": "<strong>Viritys Pois</strong>"
+    },
+    "armingEnabled": {
+        "message": "<strong>Viritys Päällä</strong>"
+    },
+    "boardInfoReceived": {
+        "message": "Levy: <strong>$1</strong>, versio: <strong>$2</strong>"
+    },
+    "buildInfoReceived": {
+        "message": "Käytetään laiteohjelmiston julkaisuversiota: <strong>$1</strong>"
+    },
+    "fcInfoReceived": {
+        "message": "Lento-ohjaimen tiedot, tunniste: <strong>$1</strong>, versio: <strong>$2</strong>"
+    },
+    "versionLabelTarget": {
+        "message": "Kohde"
+    },
+    "versionLabelFirmware": {
+        "message": "Laiteohjelmisto"
+    },
+    "versionLabelConfigurator": {
+        "message": "Configurator"
+    },
+    "notifications_app_just_updated_to_version": {
+        "message": "Ohjelma päivitetty versioon: $1"
+    },
+    "notifications_click_here_to_start_app": {
+        "message": "Paina tästä käynnistääksesi ohjelman"
+    },
+    "statusbar_port_utilization": {
+        "message": "Portin käyttöaste:"
+    },
+    "statusbar_usage_download": {
+        "message": "D: $1%"
+    },
+    "statusbar_usage_upload": {
+        "message": "U: $1%"
+    },
+    "statusbar_packet_error": {
+        "message": "Paketti virhe:"
+    },
+    "statusbar_i2c_error": {
+        "message": "I2C virhe:"
+    },
+    "statusbar_cycle_time": {
+        "message": "Sykliaika:"
+    },
+    "statusbar_cpu_load": {
+        "message": "CPU kuorma: $1%"
+    },
+    "dfu_connect_message": {
+        "message": "DFU-laitteiden käyttämiseksi avaa Laiteohjelmiston Päivittäjä"
+    },
+    "dfu_erased_kilobytes": {
+        "message": "Poistettu $1 kB flash-muistia <span class=\"message-positive\">onnistuneesti</span>"
+    },
+    "eeprom_saved_ok": {
+        "message": "EEPROM <span class=\"message-positive\">tallennettu</span>"
+    },
+    "defaultWelcomeIntro": {
+        "message": "Tervetuloa <strong>Betaflight - Configuratoriin!</strong> Tämä ohjelma on suunniteltu yksinkertaistamaan lento-ohjaimesi päivittämistä ja asetuksien säätämistä."
+    },
+    "defaultWelcomeHead": {
+        "message": "Laitteisto"
+    },
+    "defaultContributingHead": {
+        "message": "Avustaminen"
+    },
+    "defaultChangelogHead": {
+        "message": "Configurator - Muutosloki"
+    },
+    "defaultButtonFirmwareFlasher": {
+        "message": "Laiteohjelmiston Päivittäjä"
+    },
+    "defaultDonateHead": {
+        "message": "Avoin lähdekoodi / Lahjoitustiedot"
+    },
+    "defaultDonate": {
+        "message": "Lahjoita"
+    },
+    "defaultSponsorsHead": {
+        "message": "Sponsorit"
+    },
+    "defaultDocumentationHead": {
+        "message": "Dokumentaatio / Käyttöohjeet"
+    },
+    "defaultDocumentation": {
+        "message": "Betaflightin dokumentaatio on saatavilla julkaisutiedoissa ja wikissä.<br /><br />"
+    },
+    "defaultSupportHead": {
+        "message": "Tuki"
+    },
+    "defaultSupportSubline1": {
+        "message": "Tuen lähteet"
+    },
+    "defaultSupportSubline2": {
+        "message": "Kehittäjä"
+    },
+    "defaultSupport": {
+        "message": "Jos tarvitset tukea, hae ensin tietoa foorumeilta  ja wikistä, tai ota yhteyttä laitevalmistajaan.<br /><br />"
+    },
+    "initialSetupBackupAndRestoreApiVersion": {
+        "message": "<span class=\"message-negative\">Varmuuskopiointi ja palautustoiminnallisuus on pois käytöstä.</span> Käytössäsi on laiteohjelmisto, jonka API-versio on <span class=\"message-negative\">$1</span>, varmuuskopiointi ja palautus vaatii toimiakseen version <span class=\"message-positive\">$2</span>.  Ole hyvä ja varmuuskopioi asetuksesi CLI-toiminnon kautta. Katso Betaflightin dokumentaatiosta tarkemmat ohjeet."
+    },
+    "initialSetupButtonCalibrateAccel": {
+        "message": "Kalibroi Kiihtyvyysanturi"
+    },
+    "initialSetupCalibrateAccelText": {
+        "message": "Aseta lento-ohjain tai lennokki <strong>suoralle</strong> alustalle, aloita kalibrointi ja varmistu, että alusta ei liiku kalibroinnin aikana."
+    },
+    "initialSetupButtonCalibrateMag": {
+        "message": "Kalibroi Magnetometri"
+    },
+    "initialSetupCalibrateMagText": {
+        "message": "Käännä multikopteria vähintään <strong>360</strong> astetta kaikkien pyörimisakselien ympäri(pituus, leveys, horisontti). Sinulla on 30 sekuntia aikaa suorittaa tämä operaatio."
+    },
+    "initialSetupButtonCalibratingText": {
+        "message": "Kalibroidaan..."
+    },
+    "initialSetupButtonReset": {
+        "message": "Nollaa asetukset"
+    },
+    "initialSetupResetText": {
+        "message": "Palauta asetukset <strong>vakioiksi</strong>"
+    },
+    "initialSetupButtonBackup": {
+        "message": "Varmuuskopioi"
+    },
+    "initialSetupButtonRestore": {
+        "message": "Palauta"
+    },
+    "initialSetupBackupSuccess": {
+        "message": "Varmuuskopio tallennettu <span class=\"message-positive\">onnistuneesti</span>"
+    },
+    "initialSetupRestoreSuccess": {
+        "message": "Määritykset palautettu <span class=\"message-positive\">onnistuneesti</span>"
+    },
+    "initialSetupButtonResetZaxis": {
+        "message": "Nollaa Z akseli, poikkeama: 0 astetta"
+    },
+    "initialSetupButtonResetZaxisValue": {
+        "message": "Nollaa Z akseli, poikkeama: $1 astetta"
+    },
+    "initialSetupMixerHead": {
+        "message": "Mikserin tyyppi"
+    },
+    "initialSetupThrottleHead": {
+        "message": "Kaasun asetukset"
+    },
+    "initialSetupMinimum": {
+        "message": "Minimi:"
+    },
+    "initialSetupMaximum": {
+        "message": "Maksimi:"
+    },
+    "initialSetupFailsafe": {
+        "message": "Failsafe:"
+    },
+    "initialSetupMinCommand": {
+        "message": "Pienin Komento:"
+    },
+    "initialSetupBatteryHead": {
+        "message": "Akku"
+    },
+    "initialSetupMinCellV": {
+        "message": "Alin kennojännite:"
+    },
+    "initialSetupMaxCellV": {
+        "message": "Ylin kennojännite:"
+    },
+    "initialSetupVoltageScale": {
+        "message": "Jännitteen skaalaus:"
+    },
+    "initialSetupAccelTrimsHead": {
+        "message": "Kiihtyvyysanturin hienosäädöt"
+    },
+    "initialSetupPitch": {
+        "message": "Pituusakseli:"
+    },
+    "initialSetupRoll": {
+        "message": "Leveysakseli:"
+    },
+    "initialSetupMagHead": {
+        "message": "Magnetometri"
+    },
+    "initialSetupInfoHead": {
+        "message": "Info"
+    },
+    "initialSetupBattery": {
+        "message": "Akun jännite:"
+    },
+    "initialSetupBatteryValue": {
+        "message": "$1 V"
+    },
+    "initialSetupDrawn": {
+        "message": "Kapasiteettia käytetty:"
+    },
+    "initialSetupDrawing": {
+        "message": "Virrankulutus:"
+    },
+    "initialSetupBatteryMahValue": {
+        "message": "$1 mAh"
+    },
+    "initialSetupBatteryAValue": {
+        "message": "$1 A"
+    },
+    "initialSetupRSSI": {
+        "message": "RSSI:"
+    },
+    "initialSetupRSSIValue": {
+        "message": "$1 %"
+    },
+    "initialSetupArmingDisableFlags": {
+        "message": "Moottoreiden käynnistykseneston syyt (flags):"
+    },
+    "initialSetupArmingAllowed": {
+        "message": "Moottoreiden käynnistys sallittu"
+    },
+    "initialSetupGPSHead": {
+        "message": "GPS"
+    },
+    "initialSetupInstrumentsHead": {
+        "message": "Instrumentit"
+    },
+    "initialSetupButtonSave": {
+        "message": "Tallenna"
+    },
+    "initialSetupModel": {
+        "message": "Malli: $1"
+    },
+    "initialSetupAttitude": {
+        "message": "$1 astetta"
+    },
+    "initialSetupAccelCalibStarted": {
+        "message": "Kiihtyvyysanturin kalibrointi aloitettu"
+    },
+    "initialSetupAccelCalibEnded": {
+        "message": "Kiihtyvyysanturin kalibrointi <span class=\"message-positive\">valmis</span>"
+    },
+    "initialSetupMagCalibStarted": {
+        "message": "Magnetometrin kalibrointi aloitettu"
+    },
+    "initialSetupMagCalibEnded": {
+        "message": "Magnetometrin kalibrointi <span class=\"message-positive\">valmis</span>"
+    },
+    "initialSetupSettingsRestored": {
+        "message": "Asetukset palautettu <strong>oletuksiin</strong>"
+    },
+    "initialSetupEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">tallennettu</span>"
+    },
+    "featureNone": {
+        "message": "&lt;Valitse yksi&gt;"
+    },
+    "featureRX_PPM": {
+        "message": "PPM RX sisääntulo"
+    },
+    "featureVBAT": {
+        "message": "Akun jännitteen seuranta"
+    },
+    "featureINFLIGHT_ACC_CAL": {
+        "message": "Lennonaikainen suoruuden kalibrointi"
+    },
+    "featureRX_SERIAL": {
+        "message": "Sarjaliikennepohjainen vastaanotin (SPEKSAT, SBUS, SUMD)"
+    },
+    "featureMOTOR_STOP": {
+        "message": "Älä pyöritä moottoreita kun moottorit on aktivoitu"
+    },
+    "featureSERVO_TILT": {
+        "message": "Servogimbaali"
+    },
+    "featureSOFTSERIAL": {
+        "message": "Ota CPU-pohjaiset sarjaportit käyttöön"
+    },
+    "featureSOFTSERIALTip": {
+        "message": "Kytkettyäsi portit käyttöön, sinun tarvitsee määrittää niiden asetukset Portit-välilehdellä."
+    },
+    "featureGPS": {
+        "message": "GPS navigaatiota ja telemetriaa varten"
+    },
+    "featureGPSTip": {
+        "message": "Määritä portin skenaario ensin"
+    },
+    "featureSONAR": {
+        "message": "Kaikuluotain"
+    },
+    "featureTELEMETRY": {
+        "message": "Telemetrian ulostulo"
+    },
+    "featureCURRENT_METER": {
+        "message": "Akun virran seuranta"
+    },
+    "feature3D": {
+        "message": "3D-tila (voidaan käyttää vain kaksisuuntaisten nopeudensäätimien(ESC) kanssa)"
+    },
+    "featureRX_PARALLEL_PWM": {
+        "message": "PWM RX sisääntulo (yksi johto jokaista kanavaa kohti, perinteinen servojohto)"
+    },
+    "featureRX_MSP": {
+        "message": "MSP RX sisääntulo (hallinta MSP portin kautta)"
+    },
+    "featureRSSI_ADC": {
+        "message": "Analoginen RSSI sisääntulo"
+    },
+    "featureLED_STRIP": {
+        "message": "Monivärisen RGB-ledinauhan tuki"
+    },
+    "featureDISPLAY": {
+        "message": "OLED näyttölaite"
+    },
+    "featureDISPLAYTip": {
+        "message": "Jos tämä toiminto on kytketty käyttöön, eikä näyttölaitetta ole yhdistetty (tai näyttölaite ei ole päällä), siitä aiheutuu noin 10 sekunnin viive lento-ohjaimen käynnistymiseen joka käynnistyskerralla."
+    },
+    "featureONESHOT125": {
+        "message": "ONESHOT nopeudensäätimien(ESC) tuki"
+    },
+    "featureONESHOT125Tip": {
+        "message": "Irrota lentoakku ja potkurit ennen tämän toiminnon käyttämistä."
+    },
+    "featureBLACKBOX": {
+        "message": "Blackbox-lentotietotallennin"
+    },
+    "featureBLACKBOXTip": {
+        "message": "Määritä Blackbox-välilehden kautta kun olet kytkenyt tämän käyttöön."
+    },
+    "featureRX_SPI": {
+        "message": "SPI RX tuki"
+    },
+    "featureCHANNEL_FORWARDING": {
+        "message": "Lähetä AUX kanavat eteenpäin servoulostuloille"
+    },
+    "featureTRANSPONDER": {
+        "message": "Kisatransponderi"
+    },
+    "featureTRANSPONDERTip": {
+        "message": "Määritä Kisatransponderi-välilehden kautta kun olet kytkenyt tämän käyttöön."
+    },
+    "featureAIRMODE": {
+        "message": "Ota Airmode pysyvästi käyttöön"
+    },
+    "featureSUPEREXPO_RATES": {
+        "message": "Super Expo Rates"
+    },
+    "featureSDCARD": {
+        "message": "SD-kortin tuki (lokitiedoston keräämistä varten)"
+    },
+    "featureOSD": {
+        "message": "Videon päälle piirtyvä informaationäyttö"
+    },
+    "featureVTX": {
+        "message": "Videolähetin"
+    },
+    "featureDYNAMIC_FILTER": {
+        "message": "Dynaaminen gyron pykälän suodatus"
+    },
+    "featureFAILSAFE": {
+        "message": "Ota Failsafe:n vaihe 2 käyttöön"
+    },
+    "featureFAILSAFEOld": {
+        "message": "Ota Failsafe käyttöön"
+    },
+    "featureFAILSAFETip": {
+        "message": "<strong>Huomaa:</strong> Kun vaihe 2 on POISSA KÄYTÖSTÄ, palautumisasetuksena käytetään <strong>Auto</strong> -tilaa käyttäjän ohjauskanavakohtaisten asetusten sijasta."
+    },
+    "featureFAILSAFEOldTip": {
+        "message": "Ota Failsafe-asetukset käyttöön kun RX(vastaanotin) menettää signaalin"
+    },
+    "configurationFeatureEnabled": {
+        "message": "Käytössä"
+    },
+    "configurationFeatureName": {
+        "message": "Toiminto"
+    },
+    "configurationFeatureDescription": {
+        "message": "Kuvaus"
+    },
+    "configurationMixer": {
+        "message": "Mikseri"
+    },
+    "configurationFeatures": {
+        "message": "Muut toiminnot"
+    },
+    "configurationReceiver": {
+        "message": "Vastaanotin"
+    },
+    "configurationReceiverMode": {
+        "message": "Vastaanottimen käyttötila"
+    },
+    "configurationRSSI": {
+        "message": "RSSI (signaalivahvuus)"
+    },
+    "configurationRSSIHelp": {
+        "message": "RSSI-arvolla mitataan lennokin vastaanottaman ohjaussignaalin vahvuutta. Tämän arvon perusteella voit päätellä milloin lennokkisi on menossa ohjauskantaman ulkopuolelle tai lennätysalueella on paljon radiohäiriöitä."
+    },
+    "configurationEscFeatures": {
+        "message": "Nopeudensäätimien(ESC) / Moottorien toiminnot"
+    },
+    "configurationFeaturesHelp": {
+        "message": "<strong>Huomaa:</strong> Kaikki asetusyhdistelmät eivät välttämättä ole toimivia. Havaitessaan ristiriitaisia asetuksia, lento-ohjain nollaa nämä oletusarvoihinsa.<br /><strong>Huomaa:</strong> Määritä sarjaportit <span class=\"message-negative\">ennen</span> kuin kytket sarjaportteja käyttäviä toimintoja käyttöön."
+    },
+    "configurationSerialRXHelp": {
+        "message": "<strong>Huomaa:</strong> Muista määrittää sarjaportti (Portit-välilehdeltä) ja valita oikea Sarjavastaanottimen tyyppi käyttäessäsi RX_SERIAL toimintoa."
+    },
+    "configurationSpiRxHelp": {
+        "message": "<strong>Huomaa:</strong> SPI RX-vastaanotintyyppi toimii ainoastaan jos tähän vaadittava laitteisto löytyy lento-ohjaimesta, tai sen mahdollistava laitteisto on kytketty SPI-väylään."
+    },
+    "configurationOtherFeaturesHelp": {
+        "message": "<strong>Huomaa:</strong> Kaikki lento-ohjaimet eivät tue kaikkia toimintoja. Jos otat jonkin tietyn toiminnon käyttöön ja se on kytketty pois sen jälkeen kun olet painanut 'Tallenna ja käynnistä uudelleen' -nappia, lento-ohjaimesi ei tue kyseistä toimintoa."
+    },
+    "configurationBoardAlignment": {
+        "message": "Lento-ohjainlevyn ja Anturien suuntaus"
+    },
+    "configurationBoardAlignmentRoll": {
+        "message": "Leveysakselin(vas.-oik.) asteet"
+    },
+    "configurationBoardAlignmentPitch": {
+        "message": "Pituusakselin(etu-taka) asteet"
+    },
+    "configurationBoardAlignmentYaw": {
+        "message": "Horisontaaliakselin(\"peräsin\") asteet"
+    },
+    "configurationSensorAlignmentGyro": {
+        "message": "Gyro:n suuntaus"
+    },
+    "configurationSensorAlignmentAcc": {
+        "message": "Kiihtyvyysanturin suuntaus"
+    },
+    "configurationSensorAlignmentMag": {
+        "message": "Magnetometrin suuntaus"
+    },
+    "configurationSensorAlignmentDefaultOption": {
+        "message": "Oletus"
+    },
+    "configurationAccelTrims": {
+        "message": "Kiihtyvyysanturin hienosäätö"
+    },
+    "configurationAccelTrimRoll": {
+        "message": "Kiihtyvyysanturin leveyssuuntainen hienosäätö"
+    },
+    "configurationAccelTrimPitch": {
+        "message": "Kiihtyvyysanturin pituussuuntainen hienosäätö"
+    },
+    "configurationArming": {
+        "message": "Moottoreiden ja ohjauksen aktivointi"
+    },
+    "configurationArmingHelp": {
+        "message": "Jotkin viritysvaihtoehdot voivat vaatia kiihtyvyysanturin päälle kytkemistä"
+    },
+    "configurationReverseMotorSwitch": {
+        "message": "Moottorin pyörimissuunta on päinvastainen"
+    },
+    "configurationAutoDisarmDelay": {
+        "message": "Kytke moottorit pois päältä aikaviiveen jälkeen [sekuntia] (Vaatii MOTOR_STOP toiminnon)"
+    },
+    "configurationDisarmKillSwitch": {
+        "message": "Kytke moottorit pois päältä riippumatta kaasutikun asennosta (Kun ARM on määritetty Tilat-välilehdellä toimimaan AUX kanavan kautta)"
+    },
+    "configurationDisarmKillSwitchHelp": {
+        "message": "Moottoreiden aktivointi on aina pois päältä kun kaasutikku EI ole alhaalla. Ole varovainen, sillä voit vahingossa sammuttaa moottorit lennon aikana kytkimellä, kun tämä asetus on käytössä."
+    },
+    "configurationDigitalIdlePercent": {
+        "message": "Moottoreiden tyhjäkäyntikaasun määrä [prosenttia]"
+    },
+    "configurationThrottleMinimum": {
+        "message": "Kaasun vähimmäisarvo (Pienin arvo joka lähetetään nopeudensäätimille(ESC), kun moottorit on aktivoitu)"
+    },
+    "configurationThrottleMinimumHelp": {
+        "message": "Tämä on tyhjäkäyntiarvo joka lähetetään nopeudensäätimille(ESC), kun moottorit on aktivoitu ja kaasutikku on minimissä. Kasvata lukua nostaaksesi tyhjäkäyntinopeutta. Tyhjäkäyntiä kannattaa nostaa myös, jos moottorit eivät pysy tahdistettuna nopeudensäätimien kanssa (desync)."
+    },
+    "configurationThrottleMaximum": {
+        "message": "Kaasun enimmäisarvo (Suurin nopeudensäätimille(ESC) lähetettävä arvo kun moottorit on aktivoitu)"
+    },
+    "configurationThrottleMinimumCommand": {
+        "message": "Pienin komentoarvo (nopeudensäätimille(ESC) lähetettävä arvo kun moottorit ovat poissa käytöstä)"
+    },
+    "configurationThrottleMinimumCommandHelp": {
+        "message": "Tämä arvo lähetetään nopeudensäätimille(ESC) kun lennokkin moottorit eivät ole käytössä. Aseta tämä arvo siten, että moottorit ovat pysähdyksissä. (1000 toimii lähes kaikkien nopeudensäätimien kanssa)"
+    },
+    "configurationBeeper": {
+        "message": "Piipparin määritys"
+    },
+    "beeperGYRO_CALIBRATED": {
+        "message": "Toista äänimerkki kun gyro on kalibroitu"
+    },
+    "beeperRX_LOST": {
+        "message": "Toista äänimerkki kun TX(lähetin) on sammutettu tai signaali on menetetty (toistuu kunnes signaali palaa)"
+    },
+    "beeperRX_LOST_LANDING": {
+        "message": "Toista SOS-äänimerkkiä kun moottorit on aktivoitu ja lähetin(TX) on pois päältä tai signaali on menetetty (automaattisen laskeutumisen/moottoreiden sammutuksen yhteydessä)"
+    },
+    "beeperDISARMING": {
+        "message": "Toista äänimerkki kun moottorit kytketään pois"
+    },
+    "beeperARMING": {
+        "message": "Toista äänimerkki kun moottorit kytketään päälle"
+    },
+    "beeperARMING_GPS_FIX": {
+        "message": "Toista erikoisääni kun moottorit kytketään päälle ja GPS on saanut lukon"
+    },
+    "beeperBAT_CRIT_LOW": {
+        "message": "Pidemmät äänimerkit kun akku on erittäin vähissä (toistuva)"
+    },
+    "beeperBAT_LOW": {
+        "message": "Toista äänimerkki varoittaen akun matalasta varauksesta (toistuva)"
+    },
+    "beeperACC_CALIBRATION": {
+        "message": "Vahvistus kiihtyvyysanturin lennonaikaisen kalibroinnin suorituksesta"
+    },
+    "beeperACC_CALIBRATION_FAIL": {
+        "message": "Kiihtyvyysanturin lennonaikainen kalibrointi epäonnistui"
+    },
+    "beeperREADY_BEEP": {
+        "message": "Toista äänimerkki kun GPS on lukittu ja valmiina"
+    },
+    "beeperDISARM_REPEAT": {
+        "message": "Toista äänimerkki kun tikkua pidetään moottoreiden poiskytkentäasennossa"
+    },
+    "beeperSYSTEM_INIT": {
+        "message": "Äänimerkki toistetaan kun lento-ohjaimeen kytketään virrat"
+    },
+    "beeperBLACKBOX_ERASE": {
+        "message": "Toista äänimerkki kun Blackbox:n tyhjennys on valmis"
+    },
+    "configuration3d": {
+        "message": "3D nopeudensäädin(ESC)-/moottoritoiminnot"
+    },
+    "configuration3dDeadbandLow": {
+        "message": "3D ohjausalueen alaosan välys"
+    },
+    "configuration3dDeadbandHigh": {
+        "message": "3D ohjausalueen yläosan välys"
+    },
+    "configuration3dNeutral": {
+        "message": "3D ohjausalueen keskikohta"
+    },
+    "configuration3dDeadbandThrottle": {
+        "message": "3D ohjausalueen välys, Kaasu"
+    },
+    "configurationSystem": {
+        "message": "Järjestelmän määritykset"
+    },
+    "configurationLoopTime": {
+        "message": "Lento-ohjaimen korjaustaajuus (Loop Time)"
+    },
+    "configurationCalculatedCyclesSec": {
+        "message": "Sykliä/Sekunti [Hz]"
+    },
+    "configurationLoopTimeHelp": {
+        "message": "<strong>Huom:</strong> Varmistu, että käyttämäsi lento-ohjain kykenee toimimaan annetuilla nopeuksilla! Tarkista CPU:n ja sykliajan vakaus. Voit joutua säätämään PID-arvoja uudellen jos vaihdat näitä asetuksia. Vihje: Hitaammilla prosessoreilla voit saada lisää suorituskykyä jos kytket kiihtyvyysanturin ja/tai muita sensoreita pois käytöstä."
+    },
+    "configurationGPS": {
+        "message": "GPS"
+    },
+    "configurationGPSProtocol": {
+        "message": "Protokolla"
+    },
+    "configurationGPSBaudrate": {
+        "message": "Baudrate (siirtonopeus)"
+    },
+    "configurationGPSubxSbas": {
+        "message": "Maa-avustuksen tyyppi"
+    },
+    "configurationGPSAutoBaud": {
+        "message": "Automaattinen Baudrate (siirtonopeus)"
+    },
+    "configurationGPSAutoConfig": {
+        "message": "Automaattinen määritys"
+    },
+    "configurationGPSHelp": {
+        "message": "<strong>Huom:</strong> Muista määrittää sarjaportti (Portit-välilehden kautta), kun haluat käyttää GPS-toimintoja."
+    },
+    "configurationSerialRX": {
+        "message": "Sarjaporttivastaanottimen toimittaja"
+    },
+    "configurationSpiRX": {
+        "message": "SPI väylän vastaanottimen toimittaja"
+    },
+    "configurationEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">tallennettu</span>"
+    },
+    "configurationButtonSave": {
+        "message": "Tallenna ja Käynnistä uudelleen"
+    },
+    "portsIdentifier": {
+        "message": "Tunniste"
+    },
+    "portsConfiguration": {
+        "message": "Määritys/MSP"
+    },
+    "portsSerialRx": {
+        "message": "Sarjaliikenne RX(vastaanotin)"
+    },
+    "portsSensorIn": {
+        "message": "Sensori sisääntulo"
+    },
+    "portsTelemetryOut": {
+        "message": "Telemetrian ulostulo"
+    },
+    "portsPeripherals": {
+        "message": "Lisälaitteet"
+    },
+    "portsHelp": {
+        "message": "<strong>Huom:</strong> Kaikki yhdistelmät eivät ole mahdollisia. Lento-ohjain nollaa asetukset jos ilmenee ristiriitoja."
+    },
+    "portsMSPHelp": {
+        "message": "<strong>Huom:</strong><span class=\"message-negative\">ÄLÄ</span> kytke ensimmäisen sarjaportin MSP-asetusta pois, ellet tiedä mitä olet tekemässä. Voit joutua ohjelmoimaan laiteohjelmistosi uudelleen ja nollaamaan kaikki asetukset."
+    },
+    "portsFirmwareUpgradeRequired": {
+        "message": "Laiteohjelmiston päivitys <span class=\"message-negative\">vaaditaan</span>. Sarjaporttien määritystä ei tueta laiteohjelmiston versiossa &lt; 1.8.0."
+    },
+    "portsButtonSave": {
+        "message": "Tallenna ja Käynnistä uudelleen"
+    },
+    "portsTelemetryDisabled": {
+        "message": "Ei käytössä"
+    },
+    "portsFunction_MSP": {
+        "message": "MSP"
+    },
+    "portsFunction_GPS": {
+        "message": "GPS"
+    },
+    "portsFunction_TELEMETRY_FRSKY": {
+        "message": "FrSky"
+    },
+    "portsFunction_TELEMETRY_HOTT": {
+        "message": "HoTT"
+    },
+    "portsFunction_TELEMETRY_LTM": {
+        "message": "LTM"
+    },
+    "portsFunction_TELEMETRY_MAVLINK": {
+        "message": "MAVLink"
+    },
+    "portsFunction_TELEMETRY_MSP": {
+        "message": "MSP"
+    },
+    "portsFunction_TELEMETRY_SMARTPORT": {
+        "message": "SmartPort"
+    },
+    "portsFunction_TELEMETRY_IBUS": {
+        "message": "iBUS"
+    },
+    "portsFunction_TELEMETRY_JETIXBUS": {
+        "message": "JETIXBUS"
+    },
+    "portsFunction_TELEMETRY_CRSF": {
+        "message": "CRSF"
+    },
+    "portsFunction_TELEMETRY_SRXL": {
+        "message": "SRXL"
+    },
+    "portsFunction_ESC_SENSOR": {
+        "message": "ESC"
+    },
+    "portsFunction_RX_SERIAL": {
+        "message": "Sarjaliikenne RX(vastaanotin)"
+    },
+    "portsFunction_BLACKBOX": {
+        "message": "Blackbox lokitiedoston kirjoitus"
+    },
+    "pidTuningUpgradeFirmwareToChangePidController": {
+        "message": "<span class=\"message-negative\">PID-ohjaimen muuttaminen estetty - voit muuttaa sitä CLI-toiminnon kautta.</span> Laiteohjelmistosi API-versio on: <span class=\"message-negative\">$1</span>, mutta tämä toiminnallisuus vaatii: <span class=\"message-positive\">$2</span>."
+    },
+    "pidTuningSubTabFilter": {
+        "message": "Suodattimen asetukset"
+    },
+    "pidTuningShowAllPids": {
+        "message": "Näytä kaikki PID-arvot"
+    },
+    "pidTuningHideUnusedPids": {
+        "message": "Piilota käyttämättömät PID-arvot"
+    },
+    "pidTuningNonProfilePidSettings": {
+        "message": "Profiilista riippumattomat PID-ohjaimen asetukset"
+    },
+    "pidTuningPidSettings": {
+        "message": "PID-ohjaimen asetukset"
+    },
+    "receiverRcInterpolation": {
+        "message": "RC Interpolointi"
+    },
+    "receiverRcInterpolationHelp": {
+        "message": "RC-ohjausjärjestelmät ovat hitaampia kuin PID-loopit. Tästä johtuen PID-loopit sisältävät aukkoja RC-ohjaimelta tulevassa tietovirrassa. Tämä asetus mahdollistaa RC-ohjaussignaalin interpoloinnin (tasoittaa signaalia) silloin, kun uutta ohjausdataa ei vastaanoteta. Tämä asetus mahdollistaa myös puhtaamaan P- ja D-arvojen käytöksen, sillä ohjaussignaalin hitaus ei tuota jyrkkiä ohjauskomentojen vaihteluita."
+    },
+    "receiverRcInterpolationIntervalHelp": {
+        "message": "Interpoloinnin aikaväli manuaaliselle RC interpolointitilalle millisekunteina"
+    },
+    "receiverRcInterpolationOff": {
+        "message": "Pois"
+    },
+    "receiverRcInterpolationDefault": {
+        "message": "Esiasetus"
+    },
+    "receiverRcInterpolationAuto": {
+        "message": "Automaattinen"
+    },
+    "receiverRcInterpolationManual": {
+        "message": "Manuaalinen"
+    },
+    "receiverRcInterpolationInterval": {
+        "message": "RC interpoloinnin aikaväli [ms]"
+    },
+    "pidTuningDtermSetpointTransition": {
+        "message": "D asetuspisteen siirtymä"
+    },
+    "pidTuningDtermSetpoint": {
+        "message": "D asetuspisteen painoarvo"
+    },
+    "pidTuningDtermSetpointTransitionHelp": {
+        "message": "Tällä parametrillä \"D asetuspisteen painoarvoa\", voidaan vähentää ohjaustikkujen keskikohdan lähellä, mikä johtaa volttien ja muiden nopeiden liikkeiden pehmeämpään lopetukseen.<br> Tämä arvo on piste tikun liikeradassa: 0 - tikku keskellä, 1- tikku täysin laidassa. Kun tikku ylittää määritetyn pisteen, \"asetuspisteen painoarvo\" pidetään vakiona, sille määritetyssä arvossa. Kun tikku on alle määritetyn pisteen, \"asetuspisteen painoarvoa\" vähennetään suhteellisesti, kunnes se saavuttaa arvon 0 tikun keskipisteessä.<br> Arvo 1 antaa suurimman tasauksen liikkeeseen, kun taas arvo 0 pitää säädetyn \"asetuspisteen painoarvon\" kiinteänä koko tikun liikeradan alueella."
+    },
+    "pidTuningDtermSetpointHelp": {
+        "message": "Tämä parametri määrittää ohjaustikun liikkeen kiihtyvyyden vaikutuksen johdannaisarvossa (D-voimakkuus).<br> Arvo 0 vastaa vanhaa mittaustapaa, jossa D seuraa ainoastaan gyroa. Arvo 1 vastaa vanhaa virhemetodia, jossa gyron arvojen ja tikun liikkeen eroa seurattiin samassa suhteessa toisiinsa.<br> Matalempi arvo tuottaa hitaamman/pehmeämmän tikkuvasteen, kun taas korkeampi arvo tarjoaa herkemmän vasteen tikun liikkeen kiihtyvyyden muutoksiin.<br> Huom: RC interpolointi on suositeltavaa ottaa käyttöön käytettäessä korkeampia arvoja. Voimakkaat ohjaussyötteet voivat muuten aiheuttaa kohinaa (häiriösignaaleja) PID-looppiin."
+    },
+    "pidTuningProportional": {
+        "message": "Verrannollinen (proportional)"
+    },
+    "pidTuningIntegral": {
+        "message": "Integraali"
+    },
+    "pidTuningDerivative": {
+        "message": "Johdannainen (derivative)"
+    },
+    "pidTuningRcRate": {
+        "message": "RC nopeus (rate)"
+    },
+    "pidTuningMaxVel": {
+        "message": "Suurin kiihtyvyys [astetta/s]"
+    },
+    "pidTuningRate": {
+        "message": "Suhde (rate)"
+    },
+    "pidTuningSuperRate": {
+        "message": "Super suhde (rate)"
+    },
+    "pidTuningRatesPreview": {
+        "message": "Suhteiden (rates) esikatselu"
+    },
+    "pidTuningRcExpo": {
+        "message": "RC exponentiaalisuus"
+    },
+    "pidTuningTPA": {
+        "message": "TPA"
+    },
+    "pidTuningTPABreakPoint": {
+        "message": "TPA keskeytyspiste"
+    },
+    "pidTuningFilter": {
+        "message": "Suodatin"
+    },
+    "pidTuningFilterFrequency": {
+        "message": "Taajuus"
+    },
+    "throttle": {
+        "message": "Kaasu"
+    },
+    "pidTuningButtonSave": {
+        "message": "Tallenna"
+    },
+    "pidTuningButtonRefresh": {
+        "message": "Virkistä"
+    },
+    "pidTuningProfileHead": {
+        "message": "Profiili"
+    },
+    "pidTuningControllerHead": {
+        "message": "PID-ohjain"
+    },
+    "pidTuningCopyProfile": {
+        "message": "Kopioi profiilin arvot"
+    },
+    "pidTuningCopyRateProfile": {
+        "message": "Kopioi suhdeprofiilin arvot"
+    },
+    "dialogCopyProfileTitle": {
+        "message": "Kopioi profiilin arvot"
+    },
+    "dialogCopyProfileNote": {
+        "message": "Kaikki kohdeprofiilin arvot nollataan ja päällekirjoitetaan"
+    },
+    "dialogCopyProfileConfirm": {
+        "message": "Kopioi"
+    },
+    "dialogCopyProfileClose": {
+        "message": "Peruuta"
+    },
+    "pidTuningResetProfile": {
+        "message": "Nollaa kaikki profiilin arvot"
+    },
+    "pidTuningProfileReset": {
+        "message": "Ladattiin profiilin oletusarvot"
+    },
+    "pidTuningReceivedProfile": {
+        "message": "Lento-ohjain asetettu Profiili: <strong class=\"message-positive\">$1</strong>"
+    },
+    "pidTuningReceivedRateProfile": {
+        "message": "Lento-ohjain asetettu Suhdeprofiili: <strong class=\"message-positive\">$1</strong>"
+    },
+    "pidTuningLoadedProfile": {
+        "message": "Ladattiin Profiili: <strong class=\"message-positive\">$1</strong>"
+    },
+    "pidTuningLoadedRateProfile": {
+        "message": "Ladattiin Suhdeprofiili: <strong class=\"message-positive\">$1</strong>"
+    },
+    "pidTuningDataRefreshed": {
+        "message": "PID-data <strong>virkistetty</strong>"
+    },
+    "pidTuningEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">tallennettu</span>"
+    },
+    "receiverHelp": {
+        "message": "Ole hyvä ja lue dokumentaation kappale, joka käsittelee vastaanottimia. Määritä sarjaportti (jos on tarpeen), vastaanottimen tyyppi (sarjaliikenne/ppm/pwm), toimittaja (sarjaliikennevastaanottimille), parita vastaanotin, aseta kanavakartta, määritä kanavien ääripisteet/liikeradat lähettimestä siten, että kaikkien kanavien liikeratojen arvot ovat välillä ~1000 - ~2000.  Aseta keskipiste (oletus 1500), hienosäädä kanavat tähän arvoon, määritä tikkujen kuollut kohta (välys) keskipisteessä, vahvista käytös kun lähetin on pois päältä/kantaman ulkopuolella.<br /><span class=\"message-negative\">TÄRKEÄÄ:</span> Lue ennen lentämistä Failsafe-asetuksia käsittelevä kappale dokumentaatiosta ja määritä Failsafen asetukset."
+    },
+    "receiverThrottleMid": {
+        "message": "Kaasun keskipiste"
+    },
+    "receiverThrottleExpo": {
+        "message": "Kaasun Eksponentti"
+    },
+    "receiverStickMin": {
+        "message": "'Tikku alhaalla' kynnysarvo"
+    },
+    "receiverHelpStickMin": {
+        "message": "Suurin arvo (mikrosekunteina) jolloin tikku tunnistetaan olevan alhaalla / vasemmalla komentosyötetta varten (MIN_CHECK)."
+    },
+    "receiverStickCenter": {
+        "message": "Tikun keskikohta"
+    },
+    "receiverHelpStickCenter": {
+        "message": "Arvo (mikrosekunteina), jolla määritetään tikun olevan keskikohdassa (MID_RC)"
+    },
+    "receiverStickMax": {
+        "message": "'Tikku ylhäällä' kynnysarvo"
+    },
+    "receiverHelpStickMax": {
+        "message": "Alin arvo (mikrosekunteina), jolla tikku havaitaan olevan ylhäällä / oikealla komentosyötettä varten (MAX_CHECK)."
+    },
+    "receiverDeadband": {
+        "message": "RC-ohjaussignaalin välys (deadband)"
+    },
+    "receiverHelpDeadband": {
+        "message": "Näillä arvoilla (mikrosekunteja) määritetään, kuinka paljon RC-ohjaussignaalissa voi olla vaihtelua ennen kuin komentoa pidetään oikeana. Tätä suodatusarvoa voidaan nostaa jos RC-ohjauslaitteiston lähettämä signaali \"elää\" tikkujen ollessa paikallaan."
+    },
+    "receiverYawDeadband": {
+        "message": "\"Peräsimen\" ohjauksen välys"
+    },
+    "receiverHelpYawDeadband": {
+        "message": "Näillä arvoilla (mikrosekunteja) määritetään, kuinka paljon RC-ohjaussignaalissa voi olla vaihtelua ennen kuin komentoa pidetään oikeana. Tätä suodatusarvoa voidaan nostaa jos RC-ohjauslaitteiston lähettämä signaali \"elää\" tikkujen ollessa paikallaan.<strong>Tämä asetus koskee vain \"peräsintä\".</strong>"
+    },
+    "recevier3dDeadbandThrottle": {
+        "message": "3D kaasun välys (deadband)"
+    },
+    "receiverHelp3dDeadbandThrottle": {
+        "message": "Nämä arvot ovat mikrosekunteina. Suurentaaksesi neutraalia aluetta, kasvata arvoa.<strong>Tämä asetus koskee vain 3D-tilan kaasua.</strong>"
+    },
+    "receiverChannelMap": {
+        "message": "Kanavakartta"
+    },
+    "receiverChannelDefaultOption": {
+        "message": "Oletus"
+    },
+    "receiverChannelMapTitle": {
+        "message": "Voit määrittää oman kanavakarttasi napauttamalla laatikon sisällä"
+    },
+    "receiverRssiChannel": {
+        "message": "RSSI kanava"
+    },
+    "receiverRssiChannelDisabledOption": {
+        "message": "Pois käytöstä"
+    },
+    "receiverRefreshRateTitle": {
+        "message": "Käyrän päivitystaajuus"
+    },
+    "receiverButtonSave": {
+        "message": "Tallenna"
+    },
+    "receiverButtonRefresh": {
+        "message": "Virkistä"
+    },
+    "receiverButtonSticks": {
+        "message": "Ohjaustikut"
+    },
+    "receiverDataRefreshed": {
+        "message": "RC säädön tiedot <strong>virkistetty</strong>"
+    },
+    "receiverEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">tallennettu</span>"
+    },
+    "receiverModelPreview": {
+        "message": "Esikatselu"
+    },
+    "auxiliaryMin": {
+        "message": "Min"
+    },
+    "auxiliaryMax": {
+        "message": "Max"
+    },
+    "auxiliaryAddRange": {
+        "message": "Lisää alue"
+    },
+    "auxiliaryButtonSave": {
+        "message": "Tallenna"
+    },
+    "auxiliaryEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">tallennettu</span>"
+    },
+    "auxiliaryAutoChannelSelect": {
+        "message": "AUTO"
+    },
+    "adjustmentsColumnEnable": {
+        "message": "Jos käytössä"
+    },
+    "adjustmentsColumnUsingSlot": {
+        "message": "käyttää paikkaa"
+    },
+    "adjustmentsColumnWhenChannel": {
+        "message": "kun kanava"
+    },
+    "adjustmentsColumnIsInRange": {
+        "message": "on alueella"
+    },
+    "adjustmentsColumnThenApplyFunction": {
+        "message": "sitten toteuta"
+    },
+    "adjustmentsColumnViaChannel": {
+        "message": "kanavan kautta"
+    },
+    "adjustmentsSlot0": {
+        "message": "Paikka 1"
+    },
+    "adjustmentsSlot1": {
+        "message": "Paikka 2"
+    },
+    "adjustmentsSlot2": {
+        "message": "Paikka 3"
+    },
+    "adjustmentsSlot3": {
+        "message": "Paikka 4"
+    },
+    "adjustmentsMin": {
+        "message": "Min"
+    },
+    "adjustmentsMax": {
+        "message": "Max"
+    },
+    "adjustmentsFunction0": {
+        "message": "Ei muutoksia"
+    },
+    "adjustmentsFunction1": {
+        "message": "RC suhteen (rate) säätö"
+    },
+    "adjustmentsFunction2": {
+        "message": "RC Eksponentin säätö"
+    },
+    "adjustmentsFunction3": {
+        "message": "Kaasun Eksponentin säätö"
+    },
+    "adjustmentsFunction4": {
+        "message": "Pituus- ja leveysakselien suhteen(rate) säätö"
+    },
+    "adjustmentsFunction5": {
+        "message": "\"Peräsimen\" suhteen(rate) säätö"
+    },
+    "adjustmentsFunction6": {
+        "message": "Pituus- ja leveysakselien P-arvon säätö"
+    },
+    "adjustmentsFunction7": {
+        "message": "Pituus- ja leveysakselien I-arvon säätö"
+    },
+    "adjustmentsFunction8": {
+        "message": "Pituus- ja leveysakselien D-arvon säätö"
+    },
+    "adjustmentsFunction9": {
+        "message": "\"Peräsimen\" P-arvon säätö"
+    },
+    "adjustmentsFunction10": {
+        "message": "\"Peräsimen\" I-arvon säätö"
+    },
+    "adjustmentsFunction11": {
+        "message": "\"Peräsimen\" D-arvon säätö"
+    },
+    "adjustmentsFunction12": {
+        "message": "Suhde(rate) profiilin valinta"
+    },
+    "adjustmentsFunction13": {
+        "message": "Pituusakselin suhde (rate)"
+    },
+    "adjustmentsFunction14": {
+        "message": "Leveysakselin suhde (rate)"
+    },
+    "adjustmentsFunction15": {
+        "message": "Pituusakselin P-arvon säätö"
+    },
+    "adjustmentsFunction16": {
+        "message": "Pituusakselin I-arvon säätö"
+    },
+    "adjustmentsFunction17": {
+        "message": "Pituusakselin D-arvon säätö"
+    },
+    "adjustmentsFunction18": {
+        "message": "Leveysakselin P-arvon säätö"
+    },
+    "adjustmentsFunction19": {
+        "message": "Leveysakselin I-arvon säätö"
+    },
+    "adjustmentsFunction20": {
+        "message": "Leveysakselin D-arvon säätö"
+    },
+    "adjustmentsFunction21": {
+        "message": "RC suhde (rate) \"peräsin\""
+    },
+    "adjustmentsFunction22": {
+        "message": "D asetuspiste"
+    },
+    "adjustmentsFunction23": {
+        "message": "D asetuspisteen siirtymä"
+    },
+    "adjustmentsFunction24": {
+        "message": "Horizon-tilan voimakkuuden säätö"
+    },
+    "adjustmentsSave": {
+        "message": "Tallenna"
+    },
+    "adjustmentsEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">tallennettu</span>"
+    },
+    "transponderNotSupported": {
+        "message": "Käyttämäsi lento-ohjaimen laiteohjelmisto ei tue transponderin käyttöä."
+    },
+    "transponderInformation": {
+        "message": "Transponderijärjestelmät mahdollistavat kilpailujen järjestäjien mitata osallistujen kierrosaikoja. Kun transponderilla varustettu lennokki kulkee ajanottoportin lävitse, portin vastaanotin tunnistaa lennokin koodin ja tallentaa kierrosajan. Jos käytät IR-pohjaista transponderia, asettele se siten että valonsäde on suunnattu radan vastaanottimia kohti, eikä säteen edessä ole mitään esteitä esim. rungon osia, akkuremmejä, kaapeleita, potkureita yms."
+    },
+    "transponderConfigurationType": {
+        "message": "Transponderin tyyppi"
+    },
+    "transponderType0": {
+        "message": "Ei mitään"
+    },
+    "transponderType1": {
+        "message": "iLap"
+    },
+    "transponderType2": {
+        "message": "aRCiTimer"
+    },
+    "transponderType3": {
+        "message": "ERLT"
+    },
+    "transponderConfiguration1": {
+        "message": "Määritä iLap"
+    },
+    "transponderConfiguration2": {
+        "message": "Määritä aRCiTimer"
+    },
+    "transponderConfiguration3": {
+        "message": "Määritä ERLT"
+    },
+    "transponderData1": {
+        "message": "Data"
+    },
+    "transponderData2": {
+        "message": "Transponderin ID"
+    },
+    "transponderData3": {
+        "message": "Transponderin ID"
+    },
+    "transponderDataHelp1": {
+        "message": "Ainoastaan heksadesimaalisia merkkejä, 0-9, A-F"
+    },
+    "transponderDataHelp3": {
+        "message": "Valitse ERLT ID 0-63"
+    },
+    "transponderButtonSave": {
+        "message": "Tallenna"
+    },
+    "transponderButtonSaveReboot": {
+        "message": "Tallenna ja Käynnistä uudelleen"
+    },
+    "transponderDataInvalid": {
+        "message": "Transponderin data <span class=\"message-negative\">ei kelpaa</span>"
+    },
+    "transponderEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">tallennettu</span>"
+    },
+    "servosFirmwareUpgradeRequired": {
+        "message": "Servot vaativat laiteohjelmiston &gt;= 1.10.0. ja tuen lento-ohjaimen laitteistolta."
+    },
+    "servosChangeDirection": {
+        "message": "Muuta suuntaa lähettimessä samansuuntaiseksi"
+    },
+    "servosName": {
+        "message": "Nimi"
+    },
+    "servosMid": {
+        "message": "KESKI"
+    },
+    "servosMin": {
+        "message": "MIN"
+    },
+    "servosMax": {
+        "message": "MAX"
+    },
+    "servosAngleAtMin": {
+        "message": "Kulma minimissä"
+    },
+    "servosAngleAtMax": {
+        "message": "Kulma maksimissa"
+    },
+    "servosDirectionAndRate": {
+        "message": "Suunta ja suhde (rate)"
+    },
+    "servosLiveMode": {
+        "message": "Ota Live-tila käyttöön"
+    },
+    "servosButtonSave": {
+        "message": "Tallenna"
+    },
+    "servosNormal": {
+        "message": "Normaali"
+    },
+    "servosReverse": {
+        "message": "Käänteinen"
+    },
+    "servosEepromSave": {
+        "message": "EEPROM <span class=\"message-positive\">tallennettu</span>"
+    },
+    "gpsHead": {
+        "message": "GPS"
+    },
+    "gpsMapHead": {
+        "message": "Tämänhetkinen GPS-sijainti"
+    },
+    "gpsMapMessage1": {
+        "message": "Ole hyvä ja tarkista internet-yhteytesi"
+    },
+    "gpsMapMessage2": {
+        "message": "Odotetaan GPS 3D -lukitusta..."
+    },
+    "gps3dFix": {
+        "message": "3D lukko:"
+    },
+    "gpsFixTrue": {
+        "message": "<span class=\"fixtrue\">Tosi</span>"
+    },
+    "gpsFixFalse": {
+        "message": "<span class=\"fixfalse\">Epätosi</span>"
+    },
+    "gpsAltitude": {
+        "message": "Korkeus:"
+    },
+    "gpsLat": {
+        "message": "Leveysasteet:"
+    },
+    "gpsLon": {
+        "message": "Pituusasteet:"
+    },
+    "gpsSpeed": {
+        "message": "Nopeus:"
+    },
+    "gpsSats": {
+        "message": "Satelliitit:"
+    },
+    "gpsDistToHome": {
+        "message": "Etäisyys kotipisteeseen:"
+    },
+    "gpsSignalStrHead": {
+        "message": "GPS-signaalin vahvuus"
+    },
+    "gpsSignalStr": {
+        "message": "Signaalin vahvuus"
+    },
+    "gpsSignalSatId": {
+        "message": "Satelliitin ID"
+    },
+    "gpsSignalQty": {
+        "message": "Määrä"
+    },
+    "motorsText": {
+        "message": "Moottorit"
+    },
+    "motorNumber1": {
+        "message": "Moottori - 1"
+    },
+    "motorNumber2": {
+        "message": "Moottori - 2"
+    },
+    "motorNumber3": {
+        "message": "Moottori - 3"
+    },
+    "motorNumber4": {
+        "message": "Moottori - 4"
+    },
+    "motorNumber5": {
+        "message": "Moottori - 5"
+    },
+    "motorNumber6": {
+        "message": "Moottori - 6"
+    },
+    "motorNumber7": {
+        "message": "Moottori - 7"
+    },
+    "motorNumber8": {
+        "message": "Moottori - 8"
+    },
+    "servosText": {
+        "message": "Servot"
+    },
+    "servoNumber1": {
+        "message": "Servo - 1"
+    },
+    "servoNumber2": {
+        "message": "Servo - 2"
+    },
+    "servoNumber3": {
+        "message": "Servo - 3"
+    },
+    "servoNumber4": {
+        "message": "Servo - 4"
+    },
+    "servoNumber5": {
+        "message": "Servo - 5"
+    },
+    "servoNumber6": {
+        "message": "Servo - 6"
+    },
+    "servoNumber7": {
+        "message": "Servo - 7"
+    },
+    "servoNumber8": {
+        "message": "Servo - 8"
+    },
+    "motorsResetMaximumButton": {
+        "message": "Nollaa"
+    },
+    "motorsResetMaximum": {
+        "message": "Nollaa yliajan maksimi"
+    },
+    "motorsSensorGyroSelect": {
+        "message": "gyro"
+    },
+    "motorsSensorAccelSelect": {
+        "message": "kiihtyvyysanturi"
+    },
+    "motorsMaster": {
+        "message": "Master"
+    },
+    "sensorsInfo": {
+        "message": "Ota huomioon että nopeiden päivitystaajuuksien käyttäminen ja usean käyrän samanaikainen piirtäminen käyttää paljon tehoja ja akkua, jos käytät läppäriä.<br />Suosittelemme kohtuullisten päivitystaajuuksien käyttämistä ja vain tarpeellisten sensorien käyrien piirtämistä."
+    },
+    "sensorsRefresh": {
+        "message": "Päivitystaajuus:"
+    },
+    "sensorsScale": {
+        "message": "Skaala:"
+    },
+    "sensorsGyroSelect": {
+        "message": "Gyroskooppi"
+    },
+    "sensorsAccelSelect": {
+        "message": "Kiihtyvyysanturi"
+    },
+    "sensorsMagSelect": {
+        "message": "Magnetometri"
+    },
+    "sensorsSonarSelect": {
+        "message": "Kaikuluotain"
+    },
+    "sensorsDebugSelect": {
+        "message": "Vianetsintä"
+    },
+    "sensorsGyroTitle": {
+        "message": "Gyroskooppi - astetta/s"
+    },
+    "sensorsAccelTitle": {
+        "message": "Kiihtyvyysanturi - g"
+    },
+    "sensorsMagTitle": {
+        "message": "Magnetometri - Gaussia"
+    },
+    "sensorsSonarTitle": {
+        "message": "Kaikuluotain - cm"
+    },
+    "sensorsDebugTitle": {
+        "message": "Vianetsintä"
+    },
+    "cliEnter": {
+        "message": "CLI-tila havaittu"
+    },
+    "cliReboot": {
+        "message": "CLI uudelleenkäynnistys havaittu"
+    },
+    "cliSaveToFileBtn": {
+        "message": "Tallenna tiedostoon"
+    },
+    "loggingNote": {
+        "message": "<span class=\"message-negative\">Vain</span>tällä välilehdellä tallennetaan dataa lokiin. Välilehden sulkeminen <span class=\"message-negative\">peruuttaa</span> lokitiedoston kirjoittamisen ja ohjelma palaa normaaliin <strong>\"configurator\"</strong> tilaan.<br /> Voit valita globaalin päivitystaajuuden, dataa kijoitetaan lokitiedostoon joka <strong>1</strong> sekunti suorituskyvyllisistä syistä."
+    },
+    "loggingSamplesSaved": {
+        "message": "Näytteitä tallennettu:"
+    },
+    "loggingLogSize": {
+        "message": "Lokitiedoston koko:"
+    },
+    "loggingButtonLogFile": {
+        "message": "Valitse lokitiedosto"
+    },
+    "loggingStart": {
+        "message": "Aloita lokin kirjoittaminen"
+    },
+    "loggingStop": {
+        "message": "Lopeta lokin kirjoittaminen"
+    },
+    "loggingBack": {
+        "message": "Poistu lokitilasta / Katkaise yhtys"
+    },
+    "loggingErrorNotConnected": {
+        "message": "Sinun tarvitsee<strong>yhdistää</strong> ensin"
+    },
+    "loggingErrorLogFile": {
+        "message": "Valitse lokitiedosto"
+    },
+    "loggingErrorOneProperty": {
+        "message": "Valitse vähintään yksi lokiin kirjoitettava ominaisuus"
+    },
+    "loggingAutomaticallyRetained": {
+        "message": "Ladattin automaattisesti edellinen lokitiedosto: <strong>$1</strong>"
+    },
+    "blackboxNotSupported": {
+        "message": "Lento-ohjaimesi ei tue Blackbox lokitoimintoa."
+    },
+    "blackboxMaybeSupported": {
+        "message": "Lento-ohjaimesi on liian vanha tukeakseen tämän välilehden toiminnallisuutta, tai Blackbox-toiminto on kytketty pois Määritykset-välilehdeltä."
+    },
+    "blackboxConfiguration": {
+        "message": "Blackbox-määritykset"
+    },
+    "blackboxButtonSave": {
+        "message": "Tallenna ja Käynnistä uudelleen"
+    },
+    "blackboxLoggingNone": {
+        "message": "Ei lokitiedoston kirjoittamista"
+    },
+    "blackboxLoggingFlash": {
+        "message": "Sisäänrakennettu flash-muisti"
+    },
+    "blackboxLoggingSdCard": {
+        "message": "SD-kortti"
+    },
+    "blackboxLoggingSerial": {
+        "message": "Sarjaportti"
+    },
+    "sdcardNote": {
+        "message": "Lennon lokitiedostot voidaan tallentaa lento-ohjaimesi SD-korttipaikan kautta."
+    },
+    "dataflashUsedSpace": {
+        "message": "Käytetty tila"
+    },
+    "dataflashFreeSpace": {
+        "message": "Vapaa tila"
+    },
+    "dataflashUnavSpace": {
+        "message": "Käyttämättömissä oleva tila"
+    },
+    "dataflashLogsSpace": {
+        "message": "Vapaata tilaa lokitiedostoille"
+    },
+    "dataflashNote": {
+        "message": "Lennon lokitiedostot voidaan tallentaa lento-ohjaimesi sisäänrakennetulle dataflash-muistipiirille."
+    },
+    "dataflashNotPresentNote": {
+        "message": "Lento-ohjaimessasi ei ole yhteensopivaa dataflash-muistipiiriä."
+    },
+    "dataflashFirmwareUpgradeRequired": {
+        "message": "Dataflash vaatii laiteohjelmiston version &gt;= 1.8.0."
+    },
+    "dataflashButtonSaveFile": {
+        "message": "Tallenna flash-piiri tiedostoon..."
+    },
+    "dataflashButtonErase": {
+        "message": "Tyhjennä flash-muisti"
+    },
+    "dataflashConfirmEraseTitle": {
+        "message": "Vahvista dataflash-muistin tyhjennys"
+    },
+    "dataflashConfirmEraseNote": {
+        "message": "Tämä tyhjentää dataflash-piiriltä kaikki Blackbox lokitiedostot tai muun datan. Tämä kestää yleensä noin 20 sekuntia, oletko varma?"
+    },
+    "dataflashSavingTitle": {
+        "message": "Tallennetaan dataflash-muistia tiedostoon"
+    },
+    "dataflashSavingNote": {
+        "message": "Odota rauhassa, tallentamisessa voi kestää useita minuutteja."
+    },
+    "dataflashSavingNoteAfter": {
+        "message": "Tallennus onnistui! Paina \"Ok\" jatkaaksesi."
+    },
+    "dataflashButtonSaveCancel": {
+        "message": "Peruuta"
+    },
+    "dataflashButtonSaveDismiss": {
+        "message": "Ok"
+    },
+    "dataflashButtonEraseConfirm": {
+        "message": "Kyllä, tyhjennä dataflash-muisti"
+    },
+    "dataflashButtonEraseCancel": {
+        "message": "Peruuta"
+    },
+    "dataflashFileWriteFailed": {
+        "message": "Valitsemaasi tiedostoon kirjoittaminen epäonnistui, onko kansio kirjoitussuojattu?"
+    },
+    "sdcardStatusNoCard": {
+        "message": "Korttia ei asetettu"
+    },
+    "sdcardStatusReboot": {
+        "message": "Palautumaton virhe<br>Käynnistä uudelleen ja yritä uudestaan"
+    },
+    "sdcardStatusReady": {
+        "message": "Kortti valmis"
+    },
+    "sdcardStatusStarting": {
+        "message": "Kortti käynnistyy..."
+    },
+    "sdcardStatusFileSystem": {
+        "message": "Tiedostojärjestelmä käynnistyy..."
+    },
+    "sdcardStatusUnknown": {
+        "message": "Tuntematon tila $1"
+    },
+    "firmwareFlasherReleaseSummaryHead": {
+        "message": "Julkaisutiedot"
+    },
+    "firmwareFlasherReleaseVersionUrl": {
+        "message": "Vieraile julkaisusivulla."
+    },
+    "firmwareFlasherReleaseNotes": {
+        "message": "Huomioita julkaisusta:"
+    },
+    "firmwareFlasherReleaseDate": {
+        "message": "Päiväm.:"
+    },
+    "firmwareFlasherReleaseTarget": {
+        "message": "Kohde:"
+    },
+    "firmwareFlasherReleaseFile": {
+        "message": "Binääri:"
+    },
+    "firmwareFlasherReleaseFileUrl": {
+        "message": "Lataa käsin."
+    },
+    "firmwareFlasherTargetWarning": {
+        "message": "<span class=\"message-negative\">TÄRKEÄÄ</span>: Varmistu, että olet ohjelmoimassa kohteen kanssa yhteensopivaa laiteohjelmistoa. Väärän kohteen binääritiedoston ohjelmoiminen voi aiheuttaa<span class=\"message-negative\">ikäviä</span> asioita."
+    },
+    "firmwareFlasherPath": {
+        "message": "Polku:"
+    },
+    "firmwareFlasherSize": {
+        "message": "Koko:"
+    },
+    "firmwareFlasherStatus": {
+        "message": "Tila:"
+    },
+    "firmwareFlasherProgress": {
+        "message": "Edistyminen:"
+    },
+    "firmwareFlasherLoadFirmwareFile": {
+        "message": "Ole hyvä ja lataa laiteohjelmiston sisältävä tiedosto"
+    },
+    "firmwareFlasherNoReboot": {
+        "message": "Ei uudelleenkäynnistystä"
+    },
+    "firmwareFlasherOnlineSelectBoardDescription": {
+        "message": "Valitse lento-ohjaimesi nähdäksesi verkosta saatavilla olevat laiteohjelmistoversiot - Valitse lento-ohjaintasi vastaava laiteohjelmistoversio."
+    },
+    "firmwareFlasherOnlineSelectFirmwareVersionDescription": {
+        "message": "Valitse laiteohjelmiston versio"
+    },
+    "firmwareFlasherNoRebootDescription": {
+        "message": "Ota tämä käyttöön jos lento-ohjain on käynnistystilassa(boot mode). Eli jos olet käynnistänyt lento-ohjaimen bootloaderin nastat yhdessä, tai painaen lento-ohjaimen BOOT-nappia."
+    },
+    "firmwareFlasherFlashOnConnect": {
+        "message": "Aloita ohjelmointi kun yhteys havaitaan"
+    },
+    "firmwareFlasherFlashOnConnectDescription": {
+        "message": "Yrittää ohjelmoida lento-ohjaimen automaattisesti (alkaa kun uusi sarjaportti havaitaan)"
+    },
+    "firmwareFlasherFullChipErase": {
+        "message": "Täysi piirin tyhjennys"
+    },
+    "firmwareFlasherFullChipEraseDescription": {
+        "message": "Tyhjentää kaikki lento-ohjaimeen tallennetut asetukset."
+    },
+    "firmwareFlasherFlashDevelopmentFirmware": {
+        "message": "Käytä laiteohjelmiston kehittäjäversiota"
+    },
+    "firmwareFlasherFlashDevelopmentFirmwareDescription": {
+        "message": "Ohjelmoi kaikkein uusin (testaamaton) kehitysversio laiteohjelmistosta."
+    },
+    "firmwareFlasherManualPort": {
+        "message": "Portti"
+    },
+    "firmwareFlasherManualBaud": {
+        "message": "Manuaalinen baud rate"
+    },
+    "firmwareFlasherManualBaudDescription": {
+        "message": "Manuaalinen baud rate:n valinta lento-ohjaimille, jotka eivät tue vakionopeutta tai bluetoothin kautta ohjelmoimista.<br /><span class=\"message-negative\">Huom:</span> Ei käytössä kun ohjelmoidaan USB DFU -tilan kautta."
+    },
+    "firmwareFlasherBaudRate": {
+        "message": "Baud Rate"
+    },
+    "firmwareFlasherOptionLoading": {
+        "message": "Lataa ..."
+    },
+    "firmwareFlasherOptionLabelSelectFirmware": {
+        "message": "Valitse laiteohjelmisto / Lento-ohjain"
+    },
+    "firmwareFlasherOptionLabelSelectBoard": {
+        "message": "Valitse lento-ohjain"
+    },
+    "firmwareFlasherOptionLabelSelectFirmwareVersion": {
+        "message": "Valitse laiteohjelmiston versio"
+    },
+    "firmwareFlasherOptionLabelSelectFirmwareVersionFor": {
+        "message": "Valitse laiteohjelmiston versio kohteelle"
+    },
+    "firmwareFlasherButtonLoadLocal": {
+        "message": "Lataa laiteohjelmisto [paikallinen]"
+    },
+    "firmwareFlasherButtonLoadOnline": {
+        "message": "Lataa laiteohjelmisto [verkosta]"
+    },
+    "firmwareFlasherButtonDownloading": {
+        "message": "Ladataan..."
+    },
+    "firmwareFlasherFlashFirmware": {
+        "message": "Päivitä Laiteohjelmisto"
+    },
+    "firmwareFlasherGithubInfoHead": {
+        "message": "GitHub tiedot laiteohjelmistosta"
+    },
+    "firmwareFlasherCommiter": {
+        "message": "Lataaja:"
+    },
+    "firmwareFlasherDate": {
+        "message": "Päiväm.:"
+    },
+    "firmwareFlasherHash": {
+        "message": "Hash:"
+    },
+    "firmwareFlasherUrl": {
+        "message": "Mene GitHubiin tarkastellaksesi tätä julkaisua"
+    },
+    "firmwareFlasherMessage": {
+        "message": "Viesti:"
+    },
+    "firmwareFlasherWarningText": {
+        "message": "<span class=\"message-negative\">Ethän</span> yritä päivittää <strong>Betaflight-yhteensopimatonta</strong> laitteistoa tällä laiteohjelmiston päivittäjällä.<br /><span class=\"message-negative\">Älä</span> <strong>katkaise yhteyttä</strong> lento-ohjaimeen tai <strong>sammuta</strong> tietokonettasi kun ohjelmointi on kesken.<br /><br /><strong>Huom: </strong>STM32-piirien bootloader on tallennettu ROM-muistiin, sitä ei saa \"brickattua\" epäonnistuneella ohjelmoinnilla.<br /><strong>Huom: </strong><span class=\"message-negative\">Automaattinen yhdistäminen</span> on aina pois käytöstä laiteohjelmiston päivitysikkunan ollessa auki.<br /><strong>Huom: </strong>Teethän varmuukopion ennen päivitystä; jotkin laiteohjelmistoversiot (up-/downgrade) saattavat nollata asetuksesi.<br /><strong>Huom:</strong> Jos kohtaat ongelmia päivityksessä <strong> yritä ottaa lento-ohjaimesta kaikki ylimääräiset johdot irti.</strong> Yritä ensin kuitenkin uudelleenkäynnistää lento-ohjain ja tietokoneesi, päivitä Chrome ja ajurit.<br /><strong>Huom:</strong> Kun ohjelmoit lento-ohjaimia, jotka ovat suoraan USB-yhteydessä, varmistu että olet lukenut \"USB Flashing\" -osion Betaflightin ohjekirjasta ja että käytät oikeaa ohjelmistoa ja ajureita."
+    },
+    "firmwareFlasherButtonLeave": {
+        "message": "Poistu laiteohjelmiston päivittäjästä"
+    },
+    "firmwareFlasherFirmwareNotLoaded": {
+        "message": "Laiteohjelmistoa ei ladattu"
+    },
+    "firmwareFlasherHexCorrupted": {
+        "message": "HEX tiedosto vaikuttaa olevan korruptoitunut"
+    },
+    "firmwareFlasherRemoteFirmwareLoaded": {
+        "message": "<span class=\"message-positive\">Verkosta ladatun laiteohjelmiston lataus valmis, valmiina ohjelmoimaan</span>"
+    },
+    "firmwareFlasherFailedToLoadOnlineFirmware": {
+        "message": "Laiteohjelmiston verkosta lataaminen epäonnistui"
+    },
+    "firmwareFlasherNoFirmwareSelected": {
+        "message": "<b>Ladattavaa laiteohjelmistoa ei ole valittu</b>"
+    },
+    "firmwareFlasherNoValidPort": {
+        "message": "<span class=\"message-negative\">Valitse käytettävissä oleva sarjaportti</span>"
+    },
+    "firmwareFlasherWritePermissions": {
+        "message": "SInulla ei ole <span class=\"message-negative\">kirjoitusoikeuksia</span> tähän tiedostoon"
+    },
+    "firmwareFlasherFlashTrigger": {
+        "message": "Havaittu: <strong>$1</strong> - yritetään ohjelmointia kun uusi laite havaitaan"
+    },
+    "firmwareFlasherPreviousDevice": {
+        "message": "Havaittu: <strong>$1</strong> - edellisen laitteen ohjelmointi kesken, yritä yhdistää uudelleen."
+    },
+    "ledStripHelp": {
+        "message": "Lento-ohjain voi ohjata LED-nauhan yksittäisten ledien värejä ja efektejä.<br />Määritä ledit ruudukkoon, määritä johdotusjärjestys ja asenna ledit lennokkiisi ruudukon sijaintien mukaan. Jos ledille ei ole määritetty johdotusjärjestystä, sitä ei tallenneta.<br /> Kaksoisklikkaa väriä muokataksesi sen HSV-arvoja."
+    },
+    "ledStripButtonSave": {
+        "message": "Tallenna"
+    },
+    "ledStripEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">tallennettu</span>"
+    },
+    "ledStripVtxOverlay": {
+        "message": "Videolähetin (käyttää videolähettimen taajuutta värin määrittämiseen)"
+    },
+    "ledStripFunctionSection": {
+        "message": "LED toiminnot"
+    },
+    "ledStripFunctionTitle": {
+        "message": "Toiminto"
+    },
+    "ledStripColorModifierTitle": {
+        "message": "Värin muokkaaja"
+    },
+    "ledStripVtxFunction": {
+        "message": "Larson skanneri"
+    },
+    "ledStripBlinkTitle": {
+        "message": "Vilkuta"
+    },
+    "ledStripBlinkAlwaysOverlay": {
+        "message": "Vilkuta aina"
+    },
+    "ledStripBlinkLandingOverlay": {
+        "message": "Vilkuta laskeutuessa"
+    },
+    "ledStripOverlayTitle": {
+        "message": "Päällimmäinen"
+    },
+    "ledStripWarningsOverlay": {
+        "message": "Varoitukset"
+    },
+    "ledStripIndecatorOverlay": {
+        "message": "Indikaattori (käyttää sijaintia ruudokossa)"
+    },
+    "colorBlack": {
+        "message": "musta"
+    },
+    "colorWhite": {
+        "message": "valkoinen"
+    },
+    "colorRed": {
+        "message": "punainen"
+    },
+    "colorOrange": {
+        "message": "oranssi"
+    },
+    "colorYellow": {
+        "message": "keltainen"
+    },
+    "colorLimeGreen": {
+        "message": "limevihreä"
+    },
+    "colorGreen": {
+        "message": "vihreä"
+    },
+    "colorMintGreen": {
+        "message": "mintunvihreä"
+    },
+    "colorCyan": {
+        "message": "syaani"
+    },
+    "colorLightBlue": {
+        "message": "vaaleansininen"
+    },
+    "colorBlue": {
+        "message": "sininen"
+    },
+    "colorDarkViolet": {
+        "message": "tumma violetti"
+    },
+    "colorMagenta": {
+        "message": "magenta"
+    },
+    "colorDeepPink": {
+        "message": "tummempi vaaleanpunainen"
+    },
+    "controlAxisAux1": {
+        "message": "AUX 1"
+    },
+    "controlAxisAux2": {
+        "message": "AUX 2"
+    },
+    "controlAxisAux3": {
+        "message": "AUX 3"
+    },
+    "controlAxisAux4": {
+        "message": "AUX 4"
+    },
+    "controlAxisAux5": {
+        "message": "AUX 5"
+    },
+    "controlAxisAux6": {
+        "message": "AUX 6"
+    },
+    "controlAxisAux7": {
+        "message": "AUX 7"
+    },
+    "controlAxisAux8": {
+        "message": "AUX 8"
+    },
+    "controlAxisAux9": {
+        "message": "AUX 9"
+    },
+    "controlAxisAux10": {
+        "message": "AUX 10"
+    },
+    "controlAxisAux11": {
+        "message": "AUX 11"
+    },
+    "controlAxisAux12": {
+        "message": "AUX 12"
+    },
+    "controlAxisAux13": {
+        "message": "AUX 13"
+    },
+    "controlAxisAux14": {
+        "message": "AUX 14"
+    },
+    "controlAxisAux15": {
+        "message": "AUX 15"
+    },
+    "controlAxisAux16": {
+        "message": "AUX 16"
+    },
+    "pidTuningBasic": {
+        "message": "Normaali/Akro"
+    },
+    "pidTuningYawJumpPrevention": {
+        "message": "\"Peräsimen\" hypyn esto"
+    },
+    "pidTuningYawJumpPreventionHelp": {
+        "message": "Estää lennokkia hyppäämästä ylöspäin \"peräsinliikkeiden\" lopussa. Suurempi luku antaa lisää vaimennusta liikkeiden lopussa (toimii samalla tavalla kuin vanha \"peräsimen\" D-arvo, mikä ei ollut kuitenkaan oikea D-arvo, toisin kuin muilla kääntöakseleilla)"
+    },
+    "pidTuningRcExpoPower": {
+        "message": "RC Eksponentin voimakkuus"
+    },
+    "pidTuningRcExpoPowerHelp": {
+        "message": "Eksponentti jota käytetään RC Eksponentin laskemiseen. Betaflightin versiota 3.0 aikasemmissa versioissa tämä arvo on kiinteästi 3."
+    },
+    "pidTuningLevel": {
+        "message": "Angle/Horizon -tilat"
+    },
+    "pidTuningAltitude": {
+        "message": "Barometri & Kaikuluotain/Korkeus"
+    },
+    "pidTuningMag": {
+        "message": "Magnetometri/Suuntima"
+    },
+    "pidTuningGps": {
+        "message": "GPS Navigointi"
+    },
+    "pidTuningStrength": {
+        "message": "Voimakkuus"
+    },
+    "pidTuningTransition": {
+        "message": "Siirtymä"
+    },
+    "pidTuningHorizon": {
+        "message": "Horizon"
+    },
+    "pidTuningAngle": {
+        "message": "Angle"
+    },
+    "pidTuningLevelAngleLimit": {
+        "message": "Angle raja"
+    },
+    "pidTuningLevelSensitivity": {
+        "message": "Herkkyys"
+    },
+    "pidTuningLevelHelp": {
+        "message": "Alapuolella olevat arvot muuttavat lennokin käyttäytymistä ANGLE ja HORIZON -lentotiloissa. Eri PID-ohjaimet käsittelevät näitä arvoja eri tavoin. Luethan lisää dokumentaatiosta."
+    },
+    "pidTuningNonProfileFilterSettings": {
+        "message": "Profiilista riippumattomat suodattimen asetukset"
+    }
+}

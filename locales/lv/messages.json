@@ -367,9 +367,6 @@
     "firmwareVersionNotSupported": {
         "message": "Šī programmatūras versija <span class=\"message-negative\">netiek atbalstīta</span>. Lūdzu atjaunināties uz programmatūru, kas atbalsta API versiju <strong>$1</strong> vai augstāk. Izmantojiet CLI lai veiktu dublēšanu pirms programmēšanas. CLI dublēšanass/atjaunošanas procedūras aprakstītas dokumentācijā. <br /> Alternatīvi jūs varat lejuplādēt un lietot veco konfiguratora versiju, ja jūs neesat gatavs atjaunināt."
     },
-    "firmwareTypeNotSupported": {
-        "message": "Programmas, kas nav Cleanflight/Betaflight <span class=\"message-negative\">netiek atbalstītas</span>, izņemot CLI režīmu."
-    },
     "firmwareUpgradeRequired": {
         "message": "Šai programmatūrai uz šīs iekārtas nepieciešama atjaunināšana uz jaunāku versiju. Izmantojiet CLI, lai dublētu datus pirms programmēšanas. CLI dublēšanas/atjaunošanas procedūras ir dokumentācijā. <br />Alternatīva ir lejupielādēt un lietot veco konfiguratora versiju, ja jūs neesat gatavs atjaunināt."
     },

@@ -1,0 +1,2090 @@
+{
+    "error": {
+        "message": "Fejl: {{errorMessage}}"
+    },
+    "errorTitle": {
+        "message": "Fejl"
+    },
+    "warningTitle": {
+        "message": "Advarsel"
+    },
+    "noticeTitle": {
+        "message": "Bemærk"
+    },
+    "operationNotSupported": {
+        "message": "Din hardware understøtter ikke denne handling."
+    },
+    "storageDeviceNotReady": {
+        "message": "Lagerenheden er ikke klar. Ved microSD-kort skal du sørge for, at det er korrekt genkendt af din flight controller."
+    },
+    "options_title": {
+        "message": "Programindstillinger"
+    },
+    "connect": {
+        "message": "Tilslut"
+    },
+    "connecting": {
+        "message": "Tilslutter"
+    },
+    "disconnect": {
+        "message": "Afbryd"
+    },
+    "portsSelectManual": {
+        "message": "Manuelt valg"
+    },
+    "portOverrideText": {
+        "message": "Port:"
+    },
+    "autoConnect": {
+        "message": "Autotilslut"
+    },
+    "close": {
+        "message": "Luk"
+    },
+    "autoConnectEnabled": {
+        "message": "Autotilslut: Aktiveret - Opsæt automatiske tilslutningsforsøg, når ny port registreres"
+    },
+    "autoConnectDisabled": {
+        "message": "Autotilslut: Deaktiveret - Bruger skal selv vælge den korrekte serielport og klikke på knappen \"Tilslut\""
+    },
+    "expertMode": {
+        "message": "Aktivér Eksperttilstand"
+    },
+    "expertModeDescription": {
+        "message": "Vis ikke-udgivne og potentielt ustabile builds"
+    },
+    "permanentExpertMode": {
+        "message": "Aktivér Eksperttilstand permanent"
+    },
+    "rememberLastTab": {
+        "message": "Genåbn seneste fane ved tilslutning"
+    },
+    "analyticsOptOut": {
+        "message": "Fravælg anonymiseret statistikdataindsamling"
+    },
+    "sensorDataFlashNotFound": {
+        "message": "Ingen dataflash-<br>chip fundet",
+        "description": "Text of the dataflash image in the header of the page."
+    },
+    "sensorDataFlashFreeSpace": {
+        "message": "Dataflash: Ledig plads",
+        "description": "Text of the dataflash image in the header of the page."
+    },
+    "sensorStatusGyro": {
+        "message": "Gyroskop"
+    },
+    "sensorStatusGyroShort": {
+        "message": "Gyro",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusAccel": {
+        "message": "Accelerometer"
+    },
+    "sensorStatusAccelShort": {
+        "message": "Accel",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusMag": {
+        "message": "Magnetometer"
+    },
+    "sensorStatusMagShort": {
+        "message": "Mag",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusBaro": {
+        "message": "Barometer"
+    },
+    "sensorStatusBaroShort": {
+        "message": "Baro",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusGPS": {
+        "message": "GPS"
+    },
+    "sensorStatusGPSShort": {
+        "message": "GPS",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusSonar": {
+        "message": "Sonar/Afstandsmåler"
+    },
+    "sensorStatusSonarShort": {
+        "message": "Sonar",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "checkForConfiguratorUnstableVersions": {
+        "message": "Vis opdateringsadviseringer for ustabile versioner af konfiguratoren"
+    },
+    "configuratorUpdateWebsite": {
+        "message": "Åbn udgivelseswebsted"
+    },
+    "deviceRebooting": {
+        "message": "Enhed - <span class=\"message-negative\">Genstarter</span>"
+    },
+    "deviceReady": {
+        "message": "Enhed - <span class=\"message-positive\">Klar</span>"
+    },
+    "backupFileIncompatible": {
+        "message": "Beklager, sikkerhedskopifilen er genereret for en tidligere version af konfiguratoren og er inkompatibel med denne version af konfiguratoren"
+    },
+    "backupFileUnmigratable": {
+        "message": "Beklager, sikkerhedskopifilen er genereret af en tidligere version af konfiguratoren og kan ikke migreres."
+    },
+    "configMigrationFrom": {
+        "message": "Migrerer opsætningsfil genereret af konfigurator: $1"
+    },
+    "configMigratedTo": {
+        "message": "Migreret opsætning til konfigurator: $1"
+    },
+    "configMigrationSuccessful": {
+        "message": "Opsætningsmigrering fuldført, migreringer effektueret: $1"
+    },
+    "tabFirmwareFlasher": {
+        "message": "Firmware Flasher"
+    },
+    "tabLanding": {
+        "message": "Velkommen"
+    },
+    "tabHelp": {
+        "message": "Dokumentation og Support"
+    },
+    "tabSetup": {
+        "message": "Opsætning"
+    },
+    "tabSetupOSD": {
+        "message": "OSD-opsætning"
+    },
+    "tabConfiguration": {
+        "message": "Opsætning"
+    },
+    "tabPorts": {
+        "message": "Porte"
+    },
+    "tabPidTuning": {
+        "message": "PID-tuning"
+    },
+    "tabReceiver": {
+        "message": "Modtager"
+    },
+    "tabModeSelection": {
+        "message": "Tilstandsvalg"
+    },
+    "tabServos": {
+        "message": "Servoer"
+    },
+    "tabFailsafe": {
+        "message": "Failsafe"
+    },
+    "tabTransponder": {
+        "message": "Race-transponder"
+    },
+    "tabOsd": {
+        "message": "OSD"
+    },
+    "tabPower": {
+        "message": "Strøm og Batteri"
+    },
+    "tabGPS": {
+        "message": "GPS"
+    },
+    "tabMotorTesting": {
+        "message": "Motorer"
+    },
+    "tabLedStrip": {
+        "message": "LED-strimmel"
+    },
+    "tabRawSensorData": {
+        "message": "Sensorer"
+    },
+    "tabCLI": {
+        "message": "CLI"
+    },
+    "tabLogging": {
+        "message": "Kablet logning"
+    },
+    "tabOnboardLogging": {
+        "message": "Blackbox"
+    },
+    "tabAdjustments": {
+        "message": "Justeringer"
+    },
+    "tabAuxiliary": {
+        "message": "Tilstande"
+    },
+    "logActionHide": {
+        "message": "Skjul log"
+    },
+    "logActionShow": {
+        "message": "Vis log"
+    },
+    "serialPortOpened": {
+        "message": "Serielport <span class=\"message-positive\">åbnet</span> med ID: $1"
+    },
+    "serialPortOpenFail": {
+        "message": "<span class=\"message-negative\">Mislykkedes</span> at åbne serielport"
+    },
+    "serialPortClosedOk": {
+        "message": "Serielport <span class=\"message-positive\">lukket</span>"
+    },
+    "serialPortClosedFail": {
+        "message": "<span class=\"message-negative\">Mislykkedes</span> at lukke serielport"
+    },
+    "serialUnrecoverable": {
+        "message": "Uoprettelig <span class=\"message-negative\">fejl</span> i serielforbindelse, frakobler..."
+    },
+    "usbDeviceOpened": {
+        "message": "USB-enhed <span class=\"message-positive\">åbnet</span> med ID: $1"
+    },
+    "usbDeviceOpenFail": {
+        "message": "<span class=\"message-negative\">Mislykkedes</span> at åbne USB-enhed!"
+    },
+    "usbDeviceClosed": {
+        "message": "USB-enhed <span class=\"message-positive\">lukket</span>"
+    },
+    "usbDeviceCloseFail": {
+        "message": "<span class=\"message-negative\">Mislykkedes</span> at lukke USB-enhed"
+    },
+    "usbDeviceUdevNotice": {
+        "message": "Er <strong>udev-regler</strong> korrekt installeret? Se doks for instruktioner"
+    },
+    "stm32UsbDfuNotFound": {
+        "message": "USB DFU ikke fundet"
+    },
+    "stm32TimedOut": {
+        "message": "STM32 - timeout, programmering: MISLYKKET"
+    },
+    "stm32WrongResponse": {
+        "message": "STM32-kommunikation mislykkedes, forkert svar, forventet: $1 (0x$2) modtaget: $3 (0x$4)"
+    },
+    "stm32ContactingBootloader": {
+        "message": "Kontakter bootloader..."
+    },
+    "stm32ContactingBootloaderFailed": {
+        "message": "Bootloader-kommunikationen mislykkedes"
+    },
+    "stm32ResponseBootloaderFailed": {
+        "message": "Intet svar fra bootloader, programmering: MISLYKKET"
+    },
+    "stm32GlobalEraseExtended": {
+        "message": "Udfører global chip-sletning (via udvidet sletning)..."
+    },
+    "stm32LocalEraseExtended": {
+        "message": "Udfører lokal sletning (via udvidet sletning)..."
+    },
+    "stm32GlobalErase": {
+        "message": "Udfører global chip-sletning..."
+    },
+    "stm32LocalErase": {
+        "message": "Udfører lokal sletning..."
+    },
+    "stm32Erase": {
+        "message": "Sletter..."
+    },
+    "stm32Flashing": {
+        "message": "Flasher..."
+    },
+    "stm32Verifying": {
+        "message": "Verificerer..."
+    },
+    "stm32ProgrammingSuccessful": {
+        "message": "Programmering: LYKKEDES"
+    },
+    "stm32ProgrammingFailed": {
+        "message": "Programmering: MISLYKKEDES"
+    },
+    "stm32NotReadProtected": {
+        "message": "Læsebeskyttelse inaktiv"
+    },
+    "stm32ReadProtected": {
+        "message": "Board synes læsbeskyttet. Afbeskytter. Afbryd ikke/fjern ikke stikket!"
+    },
+    "stm32UnprotectSuccessful": {
+        "message": "Beskyttelse fjernet."
+    },
+    "stm32UnprotectUnplug": {
+        "message": "HANDLING KRÆVES: Frakobl og tilkobl flight controller i DFU-tilstand for at forsøge gen-flashning!"
+    },
+    "infoVersions": {
+        "message": "Kører - OS: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Configurator: <strong>{{configuratorVersion}}</strong>",
+        "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
+    },
+    "buildServerLoaded": {
+        "message": "Indlæst builds-information for $1 fra build-server."
+    },
+    "tabSwitchConnectionRequired": {
+        "message": "Du skal <strong>oprette forbindelse</strong>, inden du kan se faner."
+    },
+    "tabSwitchWaitForOperation": {
+        "message": "Du <span class=\"message-negative\">kan ikke</span> gøre dette lige nu, afvent aktuel operations færdiggørelse..."
+    },
+    "tabSwitchUpgradeRequired": {
+        "message": "Du skal <strong>opgradere</strong> din firmware til seneste version af Betaflight, inden du kan benytte $1-fanen."
+    },
+    "firmwareVersion": {
+        "message": "Firmware-version: <strong>$1</strong>"
+    },
+    "apiVersionReceived": {
+        "message": "MultiWii API-version: <strong>$1</strong>"
+    },
+    "uniqueDeviceIdReceived": {
+        "message": "Unik enheds-ID: <strong>0x$1</strong>"
+    },
+    "armingDisabled": {
+        "message": "<strong>Indkobling deaktiveret</strong>"
+    },
+    "armingEnabled": {
+        "message": "<strong>Indkobling aktiveret</strong>"
+    },
+    "boardInfoReceived": {
+        "message": "Board: <strong>$1</strong>, version: <strong>$2</strong>"
+    },
+    "buildInfoReceived": {
+        "message": "Kørende firmware udgivet: <strong>$1</strong>"
+    },
+    "fcInfoReceived": {
+        "message": "Flight controller info, identifikator: <strong>$1</strong>, version: <strong>$2</strong>"
+    },
+    "versionLabelTarget": {
+        "message": "Mål"
+    },
+    "versionLabelFirmware": {
+        "message": "Firmware"
+    },
+    "versionLabelConfigurator": {
+        "message": "Konfigurator"
+    },
+    "notifications_app_just_updated_to_version": {
+        "message": "Program netop opdateret til version: $1"
+    },
+    "notifications_click_here_to_start_app": {
+        "message": "Klik hér for at starte programmet"
+    },
+    "statusbar_port_utilization": {
+        "message": "Portanvendelse:"
+    },
+    "statusbar_usage_download": {
+        "message": "D: $1%"
+    },
+    "statusbar_usage_upload": {
+        "message": "U: $1%"
+    },
+    "statusbar_packet_error": {
+        "message": "Pakkefejl:"
+    },
+    "statusbar_i2c_error": {
+        "message": "I2C-fejl:"
+    },
+    "dfu_connect_message": {
+        "message": "Benyt Firmware Flasher for at tilgå DFU-enheder"
+    },
+    "dfu_erased_kilobytes": {
+        "message": "$1 kB af flash <span class=\"message-positive\">slettet</span>"
+    },
+    "dfu_error_image_size": {
+        "message": "<span class=\"message-negative\">Fejl</span>: Billede er større end tilgængelig flash på chippen! Billede: $1 KiB, grænse = $2 KiB"
+    },
+    "eeprom_saved_ok": {
+        "message": "EEPROM <span class=\"message-positive\">gemt</span>"
+    },
+    "defaultWelcomeHead": {
+        "message": "Hardware"
+    },
+    "defaultContributingHead": {
+        "message": "Bidrag"
+    },
+    "defaultButtonFirmwareFlasher": {
+        "message": "Firmware-flasher"
+    },
+    "defaultDonate": {
+        "message": "Donere"
+    },
+    "defaultSponsorsHead": {
+        "message": "Sponsorer"
+    },
+    "defaultSupportHead": {
+        "message": "Support"
+    },
+    "defaultSupportSubline1": {
+        "message": "Supportkilder"
+    },
+    "defaultSupportSubline2": {
+        "message": "Udvikler"
+    },
+    "defaultSupport": {
+        "message": "For support bedes du først søge i fora og wiki eller kontakte sælgeren.<br /><br />"
+    },
+    "initialSetupCalibrateMagText": {
+        "message": "Bevæg indenfor 30 sek. multirotoren mindst <strong>360</strong> grader i alle dens rotationsakser"
+    },
+    "initialSetupButtonCalibratingText": {
+        "message": "Kalibrerér..."
+    },
+    "initialSetupButtonReset": {
+        "message": "Nulstil Indstillinger"
+    },
+    "initialSetupResetText": {
+        "message": "Gendan til <strong>standardindstillinger</strong>"
+    },
+    "initialSetupButtonBackup": {
+        "message": "Sikkerhedskopiér"
+    },
+    "initialSetupButtonRestore": {
+        "message": "Gendan"
+    },
+    "initialSetupButtonRebootBootloader": {
+        "message": "Aktivér Boot Loader/DFU"
+    },
+    "initialSetupBackupRestoreText": {
+        "message": "<strong>Sikkerhedskopiér</strong> din opsætning i tilfælde af uheld. <strong>CLI-indstillinger</strong> medtages <span class=\"message-negative\">ikke</span> - benyt kommandoen 'diff all' i CLI til dette."
+    },
+    "initialSetupRebootBootloaderText": {
+        "message": "Reboot til <strong>boot loader-/DFU-tilstand</strong>."
+    },
+    "initialSetupBackupSuccess": {
+        "message": "Sikkerhedskopi er <span class=\"message-positive\">gemt</span>"
+    },
+    "initialSetupRestoreSuccess": {
+        "message": "Opsætning blev <span class=\"message-positive\">gendannet</span>"
+    },
+    "initialSetupButtonResetZaxis": {
+        "message": "Nulstil Z-akse, forskydn.: 0 gr"
+    },
+    "initialSetupButtonResetZaxisValue": {
+        "message": "Nulstil Z-akse, forskydn.: $1 gr"
+    },
+    "initialSetupMixerHead": {
+        "message": "Mixertype"
+    },
+    "initialSetupThrottleHead": {
+        "message": "Gasindstillinger"
+    },
+    "initialSetupMinimum": {
+        "message": "Minimum:"
+    },
+    "initialSetupMaximum": {
+        "message": "Maksimum:"
+    },
+    "initialSetupFailsafe": {
+        "message": "Failsafe:"
+    },
+    "initialSetupMinCommand": {
+        "message": "MinCommand:"
+    },
+    "initialSetupBatteryHead": {
+        "message": "Batteri"
+    },
+    "initialSetupMinCellV": {
+        "message": "Min. Cellespænd.:"
+    },
+    "initialSetupMaxCellV": {
+        "message": "Maks. Cellespænd.:"
+    },
+    "initialSetupVoltageScale": {
+        "message": "Spænd.skala:"
+    },
+    "initialSetupAccelTrimsHead": {
+        "message": "Accelerometer-trims"
+    },
+    "initialSetupPitch": {
+        "message": "Pitch:"
+    },
+    "initialSetupRoll": {
+        "message": "Roll:"
+    },
+    "initialSetupMagHead": {
+        "message": "Magnetometer"
+    },
+    "initialSetupInfoHead": {
+        "message": "Info"
+    },
+    "initialSetupBattery": {
+        "message": "Batterispænd.:"
+    },
+    "initialSetupBatteryValue": {
+        "message": "$1 V"
+    },
+    "initialSetupDrawn": {
+        "message": "Kapacitetsforbrug:"
+    },
+    "initialSetupDrawing": {
+        "message": "Strømforbrug:"
+    },
+    "initialSetupBatteryMahValue": {
+        "message": "$1 mAh"
+    },
+    "initialSetupBatteryAValue": {
+        "message": "$1 A"
+    },
+    "initialSetupRSSI": {
+        "message": "RSSI:"
+    },
+    "initialSetupRSSIValue": {
+        "message": "$1 %"
+    },
+    "initialSetupArmingDisableFlags": {
+        "message": "Indkoblingsdeaktiveringsflag:"
+    },
+    "initialSetupArmingAllowed": {
+        "message": "Indkobling Tilladt"
+    },
+    "initialSetupArmingDisableFlagsTooltip": {
+        "message": "Liste over flag som angiver, hvorfor indkobling pt. ikke er tilladt. Før markøren over flaget, eller se Wiki'en (siden 'Indkoblingssekvens og Sikkerhed'), for mere info."
+    },
+    "initialSetupArmingDisableFlagsTooltipNO_GYRO": {
+        "message": "En gyro blev ikke fundet",
+        "description": "Message that pops up to describe the NO_GYRO arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipFAILSAFE": {
+        "message": "Failsafe er aktiv",
+        "description": "Message that pops up to describe the FAILSAFE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRX_FAILSAFE": {
+        "message": "Intet gyldigt modtagersignal fundet",
+        "description": "Message that pops up to describe the RX_FAILSAFE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipBOXFAILSAFE": {
+        "message": "Kontakten 'FAILSAFE' blev aktiveret",
+        "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRUNAWAY_TAKEOFF": {
+        "message": "Runway Takeoff-beskyttelse er blevet udløst",
+        "description": "Message that pops up to describe the RUNAWAY_TAKEOFF arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCRASH": {
+        "message": "Afkoblet via havaridetektering",
+        "description": "Message that pops up to describe the CRASH arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipTHROTTLE": {
+        "message": "Gaskanalværdi er for høj",
+        "description": "Message that pops up to describe the THROTTLE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipANGLE": {
+        "message": "Fartøj er ikke nivelleret (nok)",
+        "description": "Message that pops up to describe the ANGLE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipBOOT_GRACE_TIME": {
+        "message": "Indkoblet for hurtigt efter Tænd",
+        "description": "Message that pops up to describe the BOOT_GRACE_TIME arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipNOPREARM": {
+        "message": "Præindkoblingskontakt er ikke aktiveret eller er ikke omskiftet efter frakobling",
+        "description": "Message that pops up to describe the NOPREARM arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipLOAD": {
+        "message": "Systembelastning for høj til sikker flyvning",
+        "description": "Message that pops up to describe the LOAD arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCALIBRATING": {
+        "message": "Sensorkalibrering er stadig i gang",
+        "description": "Message that pops up to describe the CALIBRATING arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCLI": {
+        "message": "CLI er aktiv",
+        "description": "Message that pops up to describe the CLI arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCMS_MENU": {
+        "message": "CMS (opsætningsmenu) er Aktiv - via OSD/anden skærm -",
+        "description": "Message that pops up to describe the CMS_MENU arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipOSD_MENU": {
+        "message": "OSD-menu er aktiv",
+        "description": "Message that pops up to describe the OSD_MENU arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipBST": {
+        "message": "En Black Sheep-telemetrienhed (f.eks. TBS Core Pro) er afkoblet og forhindrer indkobling",
+        "description": "Message that pops up to describe the BST arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipMSP": {
+        "message": "MSP-forbindelsen er aktiv, antagelig med denne Betaflight Configurator",
+        "description": "Message that pops up to describe the MSP arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipPARALYZE": {
+        "message": "Paralyze-tilstand er aktivatet",
+        "description": "Message that pops up to describe the PARALYZE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipGPS": {
+        "message": "GPS-redningstilstand er opsat, men nødvendigt satellitantal er ikke fastlåst",
+        "description": "Message that pops up to describe the GPS arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRESC": {
+        "message": "Kontakten 'GPS-redning' er aktiveret",
+        "description": "Message that pops up to describe the RESC arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
+        "message": "Et af de øvrige afkoblingsflag er aktivt under indkobling",
+        "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
+    },
+    "initialSetupGPSHead": {
+        "message": "GPS"
+    },
+    "initialSetupInstrumentsHead": {
+        "message": "Instrumenter"
+    },
+    "initialSetupButtonSave": {
+        "message": "Gem"
+    },
+    "initialSetupModel": {
+        "message": "Model: $1"
+    },
+    "initialSetupAttitude": {
+        "message": "$1 gr"
+    },
+    "initialSetupAccelCalibStarted": {
+        "message": "Accelerometerkalibrering startet"
+    },
+    "initialSetupAccelCalibEnded": {
+        "message": "Accelerometerkalibrering <span class=\"message-positive\">færdig</span>"
+    },
+    "initialSetupMagCalibStarted": {
+        "message": "Magnetometerkalibrering startet"
+    },
+    "initialSetupMagCalibEnded": {
+        "message": "Magnetometerkalibrering <span class=\"message-positive\">færdig</span>"
+    },
+    "initialSetupEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">gemt</span>"
+    },
+    "featureNone": {
+        "message": "&lt;Vælg en&gt;"
+    },
+    "featureRX_PPM": {
+        "message": "PPM RX-input"
+    },
+    "featureVBAT": {
+        "message": "Batterispændingsmonitering"
+    },
+    "featureRX_SERIAL": {
+        "message": "Serielbaseret modtager (SPEKSAT, SBUS, SUMD)"
+    },
+    "featureMOTOR_STOP": {
+        "message": "Rotér ikke motorerer, når indkoblet"
+    },
+    "featureSERVO_TILT": {
+        "message": "Servo-gimbal"
+    },
+    "featureSOFTSERIAL": {
+        "message": "Aktivér CPU-baserede serielporte"
+    },
+    "featureSOFTSERIALTip": {
+        "message": "Opsæt porte på fanen Porte efter aktivering."
+    },
+    "featureGPS": {
+        "message": "GPS til navigation og telemetri"
+    },
+    "featureGPSTip": {
+        "message": "Opsæt først portscenarie"
+    },
+    "featureSONAR": {
+        "message": "Sonar"
+    },
+    "featureTELEMETRY": {
+        "message": "Telemetri-output"
+    },
+    "featureCURRENT_METER": {
+        "message": "Batterstrømmonitering"
+    },
+    "feature3D": {
+        "message": "3D-tilstand (til brug med vendbare ESC'er)"
+    },
+    "featureRX_PARALLEL_PWM": {
+        "message": "PWM RX-input (én ledning pr. kanal)"
+    },
+    "featureRX_MSP": {
+        "message": "MSP RX-input (styring via MSP-port)"
+    },
+    "featureRSSI_ADC": {
+        "message": "Analog RSSI-input"
+    },
+    "featureDISPLAY": {
+        "message": "OLED-skærmvisning"
+    },
+    "featureDISPLAYTip": {
+        "message": "Er denne funktion aktiveret, og er ingen visningsenhed tilsluttet (eller er visningsenheden ikke tændt), vil der være en forsinkelse på ca. 10 sek. ved hver flight controller-genstart."
+    },
+    "featureONESHOT125": {
+        "message": "ONESHOT ESC-understøttelse"
+    },
+    "featureONESHOT125Tip": {
+        "message": "Frakobl flybatteri og fjern propeller inden aktivering."
+    },
+    "featureBLACKBOX": {
+        "message": "Blackbox-flydataoptager"
+    },
+    "featureBLACKBOXTip": {
+        "message": "Efter aktivering, opsæt via fanen BlackBox."
+    },
+    "featureRX_SPI": {
+        "message": "SPI RX-understøttelse"
+    },
+    "featureCHANNEL_FORWARDING": {
+        "message": "Videresend aux-kanaler til servoudgange"
+    },
+    "featureTRANSPONDER": {
+        "message": "Race Transponder"
+    },
+    "featureTRANSPONDERTip": {
+        "message": "Efter aktivering, opsæt via fanen Race Transponder."
+    },
+    "featureAIRMODE": {
+        "message": "Aktivér Airmode permanent"
+    },
+    "featureSUPEREXPO_RATES": {
+        "message": "Super Expo Rates"
+    },
+    "featureSDCARD": {
+        "message": "SD-kortunderstøttelse (til logging)"
+    },
+    "featureOSD": {
+        "message": "On Screen-visning"
+    },
+    "featureVTX": {
+        "message": "Videosender"
+    },
+    "featureDYNAMIC_FILTER": {
+        "message": "Dynamisk gyro notch filtrering"
+    },
+    "featureFAILSAFE": {
+        "message": "Aktivér Failsafe Trin 2"
+    },
+    "featureFAILSAFEOld": {
+        "message": "Aktivér Failsafe"
+    },
+    "featureFAILSAFETip": {
+        "message": "<strong>Bemærk:</strong> Når Triin 2 er DEAKTIVERET, benyttes fejlsikringsindstillingen <strong>Auto</strong> for alle flykanalerne (Roll, Pitch, Yaw og Gas) i stedet for brugerindstillingerne."
+    },
+    "featureFAILSAFEOldTip": {
+        "message": "Anvend Fejlsikringsindstillinger ved RX-signaltab"
+    },
+    "configurationFeatureEnabled": {
+        "message": "Aktiveret"
+    },
+    "configurationFeatureName": {
+        "message": "Funktion"
+    },
+    "configurationFeatureDescription": {
+        "message": "Beskriveslse"
+    },
+    "configurationMixer": {
+        "message": "Mixer"
+    },
+    "configurationFeatures": {
+        "message": "Øvrige funktioner"
+    },
+    "configurationReceiver": {
+        "message": "Modtager"
+    },
+    "configurationReceiverMode": {
+        "message": "Modtagertilstand"
+    },
+    "configurationRSSI": {
+        "message": "RSSI (signalstyrke)"
+    },
+    "configurationRSSIHelp": {
+        "message": "RSSI er en måling af signalstyrke og er meget praktisk for at vide, hvornår dit fly når uden for rækkevidde eller udsættes for RF-interferens."
+    },
+    "configurationEscFeatures": {
+        "message": "ESC-/Motorfunktioner"
+    },
+    "configurationFeaturesHelp": {
+        "message": "<strong>Bemærk:</strong> Ikke alle funktionskombinationer fungerer. Opdager flight controller-firmwaren ugyldige funktionskombinationer, deaktiveres modstridende funktioner.<br /><strong>Bemærk:</strong> Opsæt serielporte <span class=\"message-negative\">inden</span> aktivering af funktioner, som skal benytter portene."
+    },
+    "configurationSerialRXHelp": {
+        "message": "<strong>Bemærk:</strong> Husk at opsætte en serielport (via fanen Porte) og vælg en Serielmodtagerleverandør, når RX_SERIAL-funktionen benyttes."
+    },
+    "configurationSpiRxHelp": {
+        "message": "<strong>Note:</strong> SPI RX-leverandøren vil kun fungere, hvis den nødvendige hardware er on-board eller tilsluttet en SPI-bus."
+    },
+    "configurationOtherFeaturesHelp": {
+        "message": "<strong>Bemærk:</strong> Ikke alle funktioner understøttes af alle flight controllere. Aktiveres en bestemt funktion, og er den derefter deaktiveret, når du har valgt \"Gem og genstart\", er funktionen uunderstøttet af boardet."
+    },
+    "configurationBoardAlignment": {
+        "message": "Board- og Sensorjustering"
+    },
+    "configurationBoardAlignmentRoll": {
+        "message": "Roll-grader"
+    },
+    "configurationBoardAlignmentPitch": {
+        "message": "Pitch-grader"
+    },
+    "configurationBoardAlignmentYaw": {
+        "message": "Yaw-grader"
+    },
+    "configurationSensorAlignmentGyro": {
+        "message": "GYRO-justering"
+    },
+    "configurationSensorGyroToUse": {
+        "message": "GYRO/ACCEL"
+    },
+    "configurationSensorGyroToUseNotFound": {
+        "message": "Advarsel: Ingen Gyro/Acc fundet"
+    },
+    "configurationSensorGyroToUseFirst": {
+        "message": "Første"
+    },
+    "configurationSensorGyroToUseSecond": {
+        "message": "Sekundære"
+    },
+    "configurationSensorGyroToUseBoth": {
+        "message": "Begge"
+    },
+    "configurationSensorAlignmentGyro1": {
+        "message": "Første GYRO"
+    },
+    "configurationSensorAlignmentGyro2": {
+        "message": "Sekundære GYRO"
+    },
+    "configurationSensorAlignmentAcc": {
+        "message": "ACCEL-justering"
+    },
+    "configurationSensorAlignmentMag": {
+        "message": "MAG-justering"
+    },
+    "configurationSensorAlignmentDefaultOption": {
+        "message": "Standard"
+    },
+    "configurationAccelTrims": {
+        "message": "Accelerometertrim"
+    },
+    "configurationAccelTrimRoll": {
+        "message": "Accelerometer Roll-trim"
+    },
+    "configurationAccelTrimPitch": {
+        "message": "Accelerometer Pitch-trim"
+    },
+    "configurationArming": {
+        "message": "Tilkobling"
+    },
+    "configurationArmingHelp": {
+        "message": "Visse Tilkoblingsfunktioner kan kræve aktivt accelerometer"
+    },
+    "configurationReverseMotorSwitch": {
+        "message": "Motorretning er vendt om"
+    },
+    "configurationReverseMotorSwitchHelp": {
+        "message": "Denne mulighed opsætter mixeren til at forvente, at motorretningen skal vendes, og at propellerne er tilsvarende monteret. <strong>Advarsel:</strong> Dette vender ikke motorretningen. Brug opsætningssværktøjet til dine ESC'er eller skift ESC-motorledningsrækkefølgen for at opnå dette. Tjek også, uden propeller, at dine motorer roterer i retningerne vist i diagrammet ovenfor, inden du forsøger at indkoble."
+    },
+    "configurationAutoDisarmDelay": {
+        "message": "Afkobl motorer jf. opsat forsinkelse [seconds] (Kræver MOTOR_STOP-funktion)"
+    },
+    "configurationDisarmKillSwitch": {
+        "message": "Afkobl motorer uanset gasværdi (når ARM er opsat på fanebladet Tilstande via AUX-kanal)"
+    },
+    "configurationDisarmKillSwitchHelp": {
+        "message": "Indkobling er altid deaktiveret, når gas ikke er lav. Vær forsigtig, med denne indstilling aktiv kan du ved et uheld indkoble via en kontakt under flyvning."
+    },
+    "configurationDigitalIdlePercent": {
+        "message": "Motortomgangsniveau [percent]"
+    },
+    "configurationThrottleMinimum": {
+        "message": "Minimumsgas (laveste ESC-værdi, når indkoblet)"
+    },
+    "configurationThrottleMinimumHelp": {
+        "message": "Dette er tomgangsniveauet, der sendes til ESC'erne, når fartøjet er indkoblet, og gaspinden er i minimumsposition. Forøg værdien for højere tomgangshastighed. Forøg også værdien i tilfælde af desyncs!"
+    },
+    "configurationThrottleMaximum": {
+        "message": "Maksimumsgas (højeste ESC-værdi, når indkoblet)"
+    },
+    "configurationThrottleMinimumCommand": {
+        "message": "Minimumskommando (ESC-værdi, når afkoblet)"
+    },
+    "configurationThrottleMinimumCommandHelp": {
+        "message": "Værdien, der sendes til ESC'erne, når fartøjet er afkoblet. Sæt dette til en værdi, der har motorene stoppet (1.000 for de fleste ESC'ere)."
+    },
+    "configurationDshotBeeper": {
+        "message": "Dshot Beacon-opsætning"
+    },
+    "configurationUseDshotBeeper": {
+        "message": "Benyt Dshot-beacon (lad motorer afgive bip, når afkoblede)"
+    },
+    "configurationDshotBeaconTone": {
+        "message": "Beacon-tone"
+    },
+    "configurationDshotBeaconHelp": {
+        "message": "Dshot-beacon'et benytter ESC'erne og motorerne til lydafgivelse. Dette betyder, at Dshot-beacon'et ikke kan benyttes, når motorerne roterer. Fra Betaflight 3.4: Forsøges der indkoblet, mens Dshot-beacon'et er aktivt, forekommer en 2 sekunders forsinkelse efter den seneste Dshot beacon-tone, inden fartøjet indkobles. Dette forhindrer Dshot-beacon funktionen i at forstyrre Dshot-indkoblingskommandoerne. <br/><strong>Advarsel:</strong> Når aktiveret, sender Dshot-beacon'et strøm gennem motorerne, hvilket kan resultere i for høj varmeudvikling og beskadigelse af motorer og/eller ESC'er, hvis beacon-styrken er for høj. Benyt BLHeli Configurator eller BLHeli Suite til at justere og teste beacon-styrken."
+    },
+    "configurationBeeper": {
+        "message": "Bipperopsætning"
+    },
+    "beeperGYRO_CALIBRATED": {
+        "message": "Bipper, når gyro er færdigkalibreret"
+    },
+    "beeperRX_LOST": {
+        "message": "Bipper, når TX er slået fra eller signal mistes (gentages indtil TX er OK)"
+    },
+    "beeperDISARMING": {
+        "message": "Bip, når flight controller afkobles"
+    },
+    "beeperARMING": {
+        "message": "Bip, når flight controller tilkobles"
+    },
+    "beeperARMING_GPS_FIX": {
+        "message": "Særlig biptone ved board-tilkobling og GPS-låsning"
+    },
+    "beeperBAT_CRIT_LOW": {
+        "message": "Længere advarselsbip ved kritisk lavt batteriniveau (gentages)"
+    },
+    "beeperBAT_LOW": {
+        "message": "Advarselsbip ved lavt batteriniveau (gentages)"
+    },
+    "beeperGPS_STATUS": {
+        "message": "Benyt bipantal til at angive antal fundne GPS-satellitter"
+    },
+    "beeperRX_SET": {
+        "message": "Bip, når aux-kanal er sat til at bippe"
+    },
+    "beeperACC_CALIBRATION": {
+        "message": "Bekræftelse for Accelerometer flyvekalibrering afsluttet"
+    },
+    "beeperACC_CALIBRATION_FAIL": {
+        "message": "Mislykket Accelerometer flyvekalibrering"
+    },
+    "beeperREADY_BEEP": {
+        "message": "Afgiv ringetone, når GPS er låst og klar"
+    },
+    "beeperDISARM_REPEAT": {
+        "message": "Biplyd mens pind holdes i afkoblingsposition"
+    },
+    "beeperARMED": {
+        "message": "Advarselbip, når board indkobles med motorer stoppet i tomgang (gentages, indtil board afkobles eller gassen øges)"
+    },
+    "beeperSYSTEM_INIT": {
+        "message": "Initialiseringsbip, når board tændes"
+    },
+    "beeperUSB": {
+        "message": "Bip, når flight controller strømfødes fra USB. Slå evt. bipper fra i servicesituationer (f.eks. når på arbejdsbord)"
+    },
+    "beeperBLACKBOX_ERASE": {
+        "message": "Bip ved fuldført Blackbox-sletning"
+    },
+    "beeperCRASH_FLIP": {
+        "message": "Bip, når crash flip-tistand er aktiv"
+    },
+    "beeperCAM_CONNECTION_OPEN": {
+        "message": "Bip, når 5-tasts kamerakontrol tilgås"
+    },
+    "beeperCAM_CONNECTION_CLOSE": {
+        "message": "Bip, når 5-tasts kamerakontrol forlades"
+    },
+    "beeperRC_SMOOTHING_INIT_FAIL": {
+        "message": "Bip når indkoblet og rc smooting ikke har initialiseret filtre"
+    },
+    "configuration3d": {
+        "message": "3D ESC/Motorfunktioner"
+    },
+    "configuration3dDeadbandLow": {
+        "message": "3D Deadband Lav"
+    },
+    "configuration3dDeadbandHigh": {
+        "message": "3D Deadband Høj"
+    },
+    "configuration3dNeutral": {
+        "message": "3D Neutral"
+    },
+    "configuration3dDeadbandThrottle": {
+        "message": "3D Deadband Gas"
+    },
+    "configurationSystem": {
+        "message": "Systemopsætning"
+    },
+    "configurationLoopTime": {
+        "message": "Flight Controller Loop-tid"
+    },
+    "configurationGPS": {
+        "message": "GPS"
+    },
+    "configurationGPSProtocol": {
+        "message": "Protokol"
+    },
+    "configurationGPSBaudrate": {
+        "message": "Baud-hastighed"
+    },
+    "configurationGPSubxSbas": {
+        "message": "Ground Assistance Type"
+    },
+    "configurationGPSAutoBaud": {
+        "message": "Auto Baud"
+    },
+    "configurationGPSAutoConfig": {
+        "message": "Auto-opsætn."
+    },
+    "configurationGPSHelp": {
+        "message": "<strong>Bemærk:</strong> Husk at opsætte en Serielport (via fanen Porte) ved brug af GPS-funktion."
+    },
+    "configurationSerialRX": {
+        "message": "Serielmodtagerleverandør"
+    },
+    "configurationSpiRX": {
+        "message": "SPI-busmodtagerleverandør"
+    },
+    "configurationEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">gemt</span>"
+    },
+    "configurationButtonSave": {
+        "message": "Gem og Genstart"
+    },
+    "portsIdentifier": {
+        "message": "Identifikator"
+    },
+    "portsConfiguration": {
+        "message": "Opsætning/MSP"
+    },
+    "portsSerialRx": {
+        "message": "Seriel-Rx"
+    },
+    "portsSensorIn": {
+        "message": "Sensor-input"
+    },
+    "portsTelemetryOut": {
+        "message": "Telemetri-output"
+    },
+    "portsPeripherals": {
+        "message": "Tilbehør"
+    },
+    "portsHelp": {
+        "message": "<strong>Bemærk:</strong> Ikke alle kombinationer er gyldige. Når flight controller-firmwaren opdager dette, nulstilles serielportopsætningen."
+    },
+    "portsMSPHelp": {
+        "message": "<strong>Bemærk:</strong> Deaktivér <span class=\"message-negative\">IKKE</span> MSP på den første serielport med mindre du ved, hvad du gør. Du skal måske gen-flashe og slette opsætningen i så tilfælde."
+    },
+    "portsFirmwareUpgradeRequired": {
+        "message": "Firmware-opgradering <span class=\"message-negative\">nødvendig</span>.  Serielportopsætning understøttes ikke af firmware &lt; 1.8.0."
+    },
+    "portsButtonSave": {
+        "message": "Gem og Genstart"
+    },
+    "portsTelemetryDisabled": {
+        "message": "Deaktiveret"
+    },
+    "portsFunction_MSP": {
+        "message": "MSP"
+    },
+    "portsFunction_GPS": {
+        "message": "GPS"
+    },
+    "portsFunction_TELEMETRY_FRSKY": {
+        "message": "FrSky"
+    },
+    "portsFunction_TELEMETRY_HOTT": {
+        "message": "HoTT"
+    },
+    "portsFunction_TELEMETRY_LTM": {
+        "message": "LTM"
+    },
+    "portsFunction_TELEMETRY_MAVLINK": {
+        "message": "MAVLink"
+    },
+    "portsFunction_TELEMETRY_MSP": {
+        "message": "MSP"
+    },
+    "portsFunction_TELEMETRY_SMARTPORT": {
+        "message": "SmartPort"
+    },
+    "portsFunction_TELEMETRY_IBUS": {
+        "message": "iBUS"
+    },
+    "portsFunction_TELEMETRY_JETIXBUS": {
+        "message": "JETIXBUS"
+    },
+    "portsFunction_TELEMETRY_CRSF": {
+        "message": "CRSF"
+    },
+    "portsFunction_TELEMETRY_SRXL": {
+        "message": "SRXL"
+    },
+    "portsFunction_ESC_SENSOR": {
+        "message": "ESC"
+    },
+    "portsFunction_RX_SERIAL": {
+        "message": "Seriel-RX"
+    },
+    "portsFunction_BLACKBOX": {
+        "message": "Blackbox-logning"
+    },
+    "portsFunction_TBS_SMARTAUDIO": {
+        "message": "VTX (TBS SmartAudio)"
+    },
+    "portsFunction_IRC_TRAMP": {
+        "message": "VTX (IRC Tramp)"
+    },
+    "portsFunction_RUNCAM_DEVICE_CONTROL": {
+        "message": "Kamera (RunCam-protokol)"
+    },
+    "pidTuningProfileOption": {
+        "message": "Profil $1"
+    },
+    "pidTuningRateProfileOption": {
+        "message": "Rateprofile $1"
+    },
+    "portsFunction_LIDAR_TF": {
+        "message": "Benewake LIDAR"
+    },
+    "pidTuningUpgradeFirmwareToChangePidController": {
+        "message": "<span class=\"message-negative\">Ændring af PID-controller er deaktiveret - du kan ændre den via CLI.</span> Du har firmware med API-version <span class=\"message-negative\">$1</span>, men denne funktionalitet kræver <span class=\"message-positive\">$2</span>."
+    },
+    "pidTuningSubTabFilter": {
+        "message": "Filterindstillinger"
+    },
+    "pidTuningShowAllPids": {
+        "message": "Vis alle PID'er"
+    },
+    "pidTuningHideUnusedPids": {
+        "message": "Skjul ubenyttede PID'er"
+    },
+    "pidTuningNonProfilePidSettings": {
+        "message": "Profiluafhængige PID-controller indstillinger"
+    },
+    "pidTuningAntiGravityModeOptionSmooth": {
+        "message": "Glidende",
+        "description": "One of the modes of anti gravity"
+    },
+    "pidTuningAntiGravityModeOptionStep": {
+        "message": "Trin",
+        "description": "One of the modes of anti gravity"
+    },
+    "pidTuningDMin": {
+        "message": "D Min",
+        "description": "Table header of the D Min feature in the PIDs tab"
+    },
+    "pidTuningDMinGain": {
+        "message": "Gain",
+        "description": "Gain of the D Min feature"
+    },
+    "pidTuningPidSettings": {
+        "message": "PID Controller-indstillinger"
+    },
+    "receiverRcSmoothing": {
+        "message": "RC-udjævning"
+    },
+    "receiverRcSmoothingAuto": {
+        "message": "Auto"
+    },
+    "receiverRcSmoothingManual": {
+        "message": "Manuel"
+    },
+    "receiverRcDerivativeTypeSelect": {
+        "message": "Afledt Cutoff-type"
+    },
+    "receiverRcInputTypeSelect": {
+        "message": "Input Cutoff-type"
+    },
+    "receiverRcSmoothingInterpolation": {
+        "message": "Interpolation"
+    },
+    "receiverRcSmoothingFilter": {
+        "message": "Filter"
+    },
+    "receiverRcSmoothingTypeHelp": {
+        "message": "Anvendt RC-udjævningstype"
+    },
+    "rcSmoothingInputCutoffHelp": {
+        "message": "Afskæringsfrekvensen i Hz brugt af indgangsfilteret. Lavere værdier vil resultere i jævnere input og er mere passende til langsommere modtagerprotokoller. Bør, for de fleste brugere, bibeholdes på 0, dvs. \"Auto\"."
+    },
+    "rcSmoothingDerivativeCutoffHelp": {
+        "message": "Afskæringsfrekvensen i Hz brugt af det afledte setpoint-filter. Lavere værdier vil resultere i jævnere input og er mere passende til langsommere modtagerprotokoller. Bør, for de fleste brugere, bibeholdes på 0, dvs. \"Auto\"."
+    },
+    "rcSmoothingChannelsSmoothedHelp": {
+        "message": "Kanaludjævningen gælder for"
+    },
+    "rcSmoothingInputTypeHelp": {
+        "message": "Filtreringsmetoden, der benyttes til indput. De fleste brugere bør bruge standardværdien \"BIQUAD\", da den giver en god balance mellem jævnhed og forsinkelse. \"PT1\" reducerer forsinkelsen lidt, men giver mindre udjævning."
+    },
+    "receiverRcSmoothingInputManual": {
+        "message": "Vælger, om inputfilterafskæringsfrekvensen beregnes automatisk (anbefales) eller vælges manuelt af brugeren. Brug af \"Manuel\" anbefales ikke til modtagerprotokoller såsom Crossfire, der kan ændre sig under flyvning."
+    },
+    "receiverRcSmoothingDerivativeManual": {
+        "message": "Vælger, om den afledte setpoint-filterafskæringsfrekvens beregnes automatisk (anbefales) eller vælges manuelt af brugeren. Brug af \"Manuel\" anbefales ikke til modtagerprotokoller såsom Crossfire, der kan ændre sig under flyvning."
+    },
+    "receiverRcSmoothingInputHz": {
+        "message": "Inputafskæringsfrekvens"
+    },
+    "receiverRcSmoothingDerivativeCutoff": {
+        "message": "Afledt Afskæringsfrekvens"
+    },
+    "receiverRcInputType": {
+        "message": "Inputfiltertype"
+    },
+    "receiverRcDerivativeType": {
+        "message": "Afledt Filtertype"
+    },
+    "receiverRcSmoothingDerivativeTypeOff": {
+        "message": "Fra"
+    },
+    "receiverRcSmoothingChannel": {
+        "message": "Kanaler udjævnet"
+    },
+    "receiverRcInterpolation": {
+        "message": "RC-interpolation"
+    },
+    "receiverRcInterpolationHelp": {
+        "message": "RC TX-/RX-systemer er ikke så hurtige som PID-loops. Det betyder, at en PID-loop har huller i informationsstrømmen fra RC-systemer. Denne indstilling muliggør interpolering af RC-inpout på de tidspunkter, hvor der ikke modtages RC-frames. Muligheden giver også renere P- og D-adfærd, da kontrolinput ikke sker rykvist."
+    },
+    "receiverRcInterpolationIntervalHelp": {
+        "message": "Interpoleringsinterval i millisekunder ved manuel RC-interpolationstilstand"
+    },
+    "receiverRcInterpolationOff": {
+        "message": "Fra"
+    },
+    "receiverRcSmoothingType": {
+        "message": "Udjævningstype"
+    },
+    "receiverRcInterpolationDefault": {
+        "message": "Forvalgt"
+    },
+    "receiverRcInterpolationAuto": {
+        "message": "Auto"
+    },
+    "receiverRcInterpolationManual": {
+        "message": "Manuel"
+    },
+    "receiverRcInterpolationInterval": {
+        "message": "RC-interpoleringsinterval [ms]"
+    },
+    "pidTuningFeedforwardTransition": {
+        "message": "Feedforward-overgang"
+    },
+    "pidTuningFeedforwardTransitionHelp": {
+        "message": "Med denne parameter kan Feedforward-tiden reduceres tæt ved pindenes centerpositioner, hvilket betyder en mere glidene afslutning på flips og rolls.<br> Værdien repræsenterer et punkt af pindudslaget: 0 - pind centreret, 1 - fuldt udslag. Når pinden er over dette punkt, holdes Feedforward konstant på den opsattte værdi. Når pinden er placeret under dette punkt, reduceres Feedforward proportionalt og når 0 ved pindens centerposition. <br> Værdien 1 giver maksimal udjævningseffekt, mens værdien 0 holder Feedforward på den opsatte værdi over hele pindområdet."
+    },
+    "pidTuningDtermSetpointTransition": {
+        "message": "D Setpoint-overgang"
+    },
+    "pidTuningDtermSetpoint": {
+        "message": "D Setpoint-vægtning"
+    },
+    "pidTuningDtermSetpointTransitionHelp": {
+        "message": "Med denne parameter kan D Setpoint reduceres tæt ved pindenes centerpositioner, hvilket betyder en mere glidene afslutning på flips og rolls.<br> Værdien repræsenterer et punkt af pindudslaget: 0 - pind centreret, 1 - fuldt udslag. Når pinden er over dette punkt, holdes Setpoint-vægtningen konstant på den opsattte værdi. Når pinden er placeret under dette punkt, reduceres Setpoint-vægtningen proportionalt og når 0 ved pindens centerposition. <br> Værdien 1 giver maksimal udjævningseffekt, mens værdien 0 holder Setpoint-vægtningen på den opsatte værdi over hele pindområdet."
+    },
+    "pidTuningDtermSetpointHelp": {
+        "message": "Denne parameter afgør pindaccelerationseffekt indenfor en afledt komponent.<br> Værdien 0 modsvarer den gamle målemetode, hvor D kun sporer gyro, mens værdien 1 modsvarer den gamle fejlmetode med samme gyro- og pindsporingsforhold.<br> Lavere værdi modsvarer langsommere/jævnere pindrespons, mens højere værdi giver øget pindaccelerationsrespons.<br> Bemærk, at RC-interpolation ambefales aktiveret ved højere værdier for at forhindre støj fra bratte kontrolpulser."
+    },
+    "pidTuningDtermSetpointTransitionWarning": {
+        "message": "<span class=\"message-negative\"><strong>$t(warningTitle.message):</strong> Brug af en D Setpoint-overgang højere end 0 og lavere end 0.1 frarådes kraftigt, da dette kan medføre ustabilitet samt reduceret pindrespons, når pindene krydser centerpositionerne.</span>"
+    },
+    "pidTuningProportional": {
+        "message": "Proportional"
+    },
+    "pidTuningIntegral": {
+        "message": "Integrering"
+    },
+    "pidTuningRate": {
+        "message": "Rate"
+    },
+    "pidTuningTPABreakPoint": {
+        "message": "TPA Breakpoint"
+    },
+    "pidTuningThrottleLimitType": {
+        "message": "Gasbegrænsning"
+    },
+    "pidTuningThrottleLimitPercent": {
+        "message": "Gasbegrænsning %"
+    },
+    "pidTuningThrottleLimitTypeOff": {
+        "message": "FRA"
+    },
+    "pidTuningThrottleLimitTypeScale": {
+        "message": "SKALERING"
+    },
+    "pidTuningThrottleLimitTypeTip": {
+        "message": "Vælg gasbegrænsningstypen. <b>FRA</b> deaktiverer funktionen, <b>SKALÉR</b> inddeler gasområdet fra 0 til den valgte procentdel ift. hele gaspindområdet, <b>CLIP</b> indstiller en maks. gasprocentdel og pindudslag, udover hvilken der ikke vil være nogen yderligere effekt"
+    },
+    "pidTuningThrottleLimitPercentTip": {
+        "message": "Opsætter ønsket gasbegrænsningsprocent. Indstilling til 100% deaktiverer funktionen."
+    },
+    "pidTuningFilter": {
+        "message": "Filter"
+    },
+    "pidTuningFilterFrequency": {
+        "message": "Frekvens"
+    },
+    "throttle": {
+        "message": "Gas"
+    },
+    "pidTuningButtonSave": {
+        "message": "Gem"
+    },
+    "pidTuningButtonRefresh": {
+        "message": "Opfrisk"
+    },
+    "pidTuningProfileHead": {
+        "message": "Profil"
+    },
+    "pidTuningControllerHead": {
+        "message": "PID-controller"
+    },
+    "pidTuningCopyProfile": {
+        "message": "Kopiér profilværdier"
+    },
+    "pidTuningCopyRateProfile": {
+        "message": "Kopiér rate-profilværdier"
+    },
+    "dialogCopyProfileText": {
+        "message": "Kopiér værdier fra aktuel profil til"
+    },
+    "dialogCopyRateProfileText": {
+        "message": "Kopiér værdier fra aktuel rate-profil til"
+    },
+    "dialogCopyProfileTitle": {
+        "message": "Kopiér Profilværdier"
+    },
+    "dialogCopyProfileNote": {
+        "message": "Alle destinationsprofilens værdier bliver ryddes og overskreves"
+    },
+    "dialogCopyProfileConfirm": {
+        "message": "Kopiér"
+    },
+    "dialogCopyProfileClose": {
+        "message": "Annullér"
+    },
+    "pidTuningResetProfile": {
+        "message": "Nulstil alle profilværdier"
+    },
+    "pidTuningProfileReset": {
+        "message": "Standard profilværdier indlæst."
+    },
+    "pidTuningLoadedProfile": {
+        "message": "Indlæst Profil: <strong class=\"message-positive\">$1</strong>"
+    },
+    "pidTuningLoadedRateProfile": {
+        "message": "Indlæst Rate-profil: <strong class=\"message-positive\">$1</strong>"
+    },
+    "pidTuningDataRefreshed": {
+        "message": "PID-data <strong>opfrisket</strong>"
+    },
+    "pidTuningEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">gemt</span>"
+    },
+    "receiverHelp": {
+        "message": "Læs Modtagerkapitlet i dokumentationen. Opsæt serielport (om nødvendigt), modtagertilstand (seriel/ppm/pwm), leverandør (til serielmodtagere), bind modtager, opsæt kanallayout, opsæt kanalendepunkter/område på TX, så alle kanaler går fra ~ 1.000 til ~ 2.000. Opsæt midterpunkt (standard 1.500), trim-kanaler til 1.500, opsæt stick deadband, bekræft adfærd, når TX er slukket eller uden for rækkevidde.<br /><span class=\"message-negative\">VIGTIGT:</span> Før du flyver, læs Failsafe-kapitlet i dokumentation og opsæt fejlsikring."
+    },
+    "filterWarning": {
+        "message": "<span class=\"message-negative\"><b>Advarsel:</b></span> Mængden af anvendt filtrering er farligt lav. Dette vil sandsynligvis gøre fartøjet svært at håndtere, og det kan resultere i flyaways. Det anbefales kraftigt at <b>aktivere mindst ét Gyro Dynamic Lowpass eller Gyro Lowpass 1 filter og mindst ét D Term Dynamic Lowpass eller D Term Lowpass 1 filter</b>."
+    },
+    "receiverThrottleMid": {
+        "message": "Throttle MID"
+    },
+    "receiverThrottleExpo": {
+        "message": "Throttle EXPO"
+    },
+    "receiverStickMin": {
+        "message": "'Pind Lav'-tærskel"
+    },
+    "receiverHelpStickMin": {
+        "message": "Maks. værdi (i μs) for at en pind registreres som lav/venstre kommandoinput (MIN_CHECK)."
+    },
+    "receiverStickCenter": {
+        "message": "Pindcenter"
+    },
+    "receiverHelpStickCenter": {
+        "message": "Værdien (i μs) til bestemmelse af, om en pind er centreret (MID_RC)."
+    },
+    "receiverStickMax": {
+        "message": "'Pind Høj'-tærskel"
+    },
+    "receiverHelpStickMax": {
+        "message": "Minimumsværdien (i μs) for at en pind registreres som høj/højre for kommandoinput (MAX_CHECK)."
+    },
+    "receiverDeadband": {
+        "message": "RC Deadband"
+    },
+    "receiverHelpDeadband": {
+        "message": "Disse er værdier (i μs) af, hvor meget RC-input kan afvige, før det anses som gyldigt. For sendere med output-fluktueringer, kan denne værdi øges, hvis RC-inpur splætter i tomgang."
+    },
+    "receiverYawDeadband": {
+        "message": "Yaw Deadband"
+    },
+    "receiverHelpYawDeadband": {
+        "message": "Disse er værdier (i μs) af, hvor meget RC-input kan afvige, før det anses som gyldigt. For sendere med output-fluktueringer, kan denne værdi øges, hvis RC-inpur splætter i tomgang. <strong>Denne indstilling gælder kun Yaw.</strong>"
+    },
+    "recevier3dDeadbandThrottle": {
+        "message": "3D Gas Deadband"
+    },
+    "receiverHelp3dDeadbandThrottle": {
+        "message": "Disse er værdier (i μs). For at udvide den neutrale zone, forøg værdien. <strong>Denne indstilling gælder kun 3D-gas.</strong>"
+    },
+    "receiverChannelMap": {
+        "message": "Kanalkort"
+    },
+    "receiverChannelDefaultOption": {
+        "message": "Standard"
+    },
+    "receiverChannelMapTitle": {
+        "message": "Du kan definere din egen kanalkortlægning ved at klikke i boksen"
+    },
+    "receiverRssiChannel": {
+        "message": "RSSI-kanal"
+    },
+    "receiverRssiChannelDisabledOption": {
+        "message": "Deaktiveret"
+    },
+    "receiverRefreshRateTitle": {
+        "message": "Grafopfriskningrate"
+    },
+    "receiverButtonSave": {
+        "message": "Gem"
+    },
+    "receiverButtonRefresh": {
+        "message": "Opfrisk"
+    },
+    "receiverButtonSticks": {
+        "message": "Styrpinde"
+    },
+    "receiverDataRefreshed": {
+        "message": "RC-tuningdata <strong>opfrisket</strong>"
+    },
+    "receiverEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">gemt</span>"
+    },
+    "receiverModelPreview": {
+        "message": "Forh.visning"
+    },
+    "receiverMspWarningText": {
+        "message": "Disse pinde tillader indkobling og test af Betaflight, uden en sender/modtager er til stede. Bemærk, <strong>at denne funktion ikke er beregnet til flyvning, og propeller må ikke monteres.</strong><br><br>Denne funktion garanterer ikke pålidelig kontrol med dit fartøj. <strong>Alvorlig skade vil sandsynligvis opstå, hvis propellerne er påsat.</strong>"
+    },
+    "receiverMspEnableButton": {
+        "message": "Aktivér kontroller"
+    },
+    "auxiliaryToggleUnused": {
+        "message": "Skjul ubrugte tilstande"
+    },
+    "auxiliaryMin": {
+        "message": "Min"
+    },
+    "auxiliaryMax": {
+        "message": "Maks"
+    },
+    "auxiliaryAddRange": {
+        "message": "Tilføj Område"
+    },
+    "auxiliaryAddLink": {
+        "message": "Tilføj Link"
+    },
+    "auxiliaryButtonSave": {
+        "message": "Gem"
+    },
+    "auxiliaryEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">gemt</span>"
+    },
+    "auxiliaryAutoChannelSelect": {
+        "message": "AUTO"
+    },
+    "auxiliaryModeLogicOR": {
+        "message": "ELLER"
+    },
+    "auxiliaryModeLogicAND": {
+        "message": "OG"
+    },
+    "adjustmentsColumnEnable": {
+        "message": "Hvis aktiveret"
+    },
+    "adjustmentsColumnUsingSlot": {
+        "message": "vha. plads"
+    },
+    "adjustmentsColumnWhenChannel": {
+        "message": "når kanal"
+    },
+    "adjustmentsColumnIsInRange": {
+        "message": "er i område"
+    },
+    "adjustmentsColumnThenApplyFunction": {
+        "message": "så anvend"
+    },
+    "adjustmentsColumnViaChannel": {
+        "message": "via kanal"
+    },
+    "adjustmentsSlot0": {
+        "message": "Plads 1"
+    },
+    "adjustmentsSlot1": {
+        "message": "Plads 2"
+    },
+    "adjustmentsSlot2": {
+        "message": "Plads 3"
+    },
+    "adjustmentsSlot3": {
+        "message": "Plads 4"
+    },
+    "adjustmentsMin": {
+        "message": "Min"
+    },
+    "adjustmentsMax": {
+        "message": "Maks"
+    },
+    "adjustmentsFunction0": {
+        "message": "Ingen ændringer"
+    },
+    "adjustmentsFunction1": {
+        "message": "RC Rate-justering"
+    },
+    "adjustmentsFunction2": {
+        "message": "RC Expo-justering"
+    },
+    "adjustmentsFunction3": {
+        "message": "Gas Expo-justering"
+    },
+    "adjustmentsFunction4": {
+        "message": "Pitch- og Roll-rate justering"
+    },
+    "adjustmentsFunction5": {
+        "message": "Yaw-rate justering"
+    },
+    "adjustmentsFunction6": {
+        "message": "Pitch- og Roll P-justering"
+    },
+    "adjustmentsFunction7": {
+        "message": "Pitch- og Roll I-justering"
+    },
+    "adjustmentsFunction8": {
+        "message": "Pitch- og Roll D-justering"
+    },
+    "adjustmentsFunction9": {
+        "message": "Yaw P-justering"
+    },
+    "adjustmentsFunction10": {
+        "message": "Yaw I-justering"
+    },
+    "adjustmentsFunction11": {
+        "message": "Yaw D-justering"
+    },
+    "adjustmentsFunction12": {
+        "message": "Rate Profil-valg"
+    },
+    "adjustmentsFunction13": {
+        "message": "Pitch-rate"
+    },
+    "adjustmentsFunction14": {
+        "message": "Roll-rate"
+    },
+    "adjustmentsFunction15": {
+        "message": "Pitch P-justering"
+    },
+    "adjustmentsFunction16": {
+        "message": "Pitch I-justering"
+    },
+    "adjustmentsFunction17": {
+        "message": "Pitch D-justering"
+    },
+    "adjustmentsFunction18": {
+        "message": "Roll P-justering"
+    },
+    "adjustmentsFunction19": {
+        "message": "Roll I-justering"
+    },
+    "adjustmentsFunction20": {
+        "message": "Roll D-justering"
+    },
+    "adjustmentsFunction21": {
+        "message": "RC-rate Yaw"
+    },
+    "adjustmentsFunction22": {
+        "message": "D Setpoint"
+    },
+    "adjustmentsFunction22_2": {
+        "message": "Pitch- og Roll F-justering"
+    },
+    "adjustmentsFunction23": {
+        "message": "D Setpoint-overgang"
+    },
+    "adjustmentsFunction23_2": {
+        "message": "Feedforward-overgang"
+    },
+    "adjustmentsFunction24": {
+        "message": "Horizon Strength-justering"
+    },
+    "adjustmentsFunction25": {
+        "message": "PID-lydvalg"
+    },
+    "adjustmentsFunction26": {
+        "message": "Pitch F-justering"
+    },
+    "adjustmentsFunction27": {
+        "message": "Roll F-justering"
+    },
+    "adjustmentsFunction28": {
+        "message": "Yaw F-justering"
+    },
+    "adjustmentsFunction29": {
+        "message": "OSD-profilvalg"
+    },
+    "adjustmentsFunction30": {
+        "message": "LED-profilvalg"
+    },
+    "adjustmentsSave": {
+        "message": "Gem"
+    },
+    "adjustmentsEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">gemt</span>"
+    },
+    "transponderNotSupported": {
+        "message": "Din flight controller-firmware understøtter ikke transponderfunktionalitet."
+    },
+    "transponderInformation": {
+        "message": "Transpondersystemer gør tidtagning af dine omgange mulig for konkurrencearrangører. Transponderen monteres på fartøjet, og når det passerer tidtagningsporten, registrerer banemodtageren din kode og gemmer din omgangstid. Monteres en IR-baseret transponder, så tjek, at den peger udad fra fartøjet mod banemodtageren, samt at lysstrålen ikke er obstrueres af steldele, batteribefæstigelser, kabler, propeller mv."
+    },
+    "transponderConfigurationType": {
+        "message": "Transpondertype"
+    },
+    "transponderType0": {
+        "message": "Ingen"
+    },
+    "transponderType1": {
+        "message": "iLap"
+    },
+    "transponderType2": {
+        "message": "aRCiTimer"
+    },
+    "transponderType3": {
+        "message": "ERLT"
+    },
+    "transponderConfiguration1": {
+        "message": "iLap-opsætning"
+    },
+    "transponderConfiguration2": {
+        "message": "aRCiTimer-opsætning"
+    },
+    "transponderConfiguration3": {
+        "message": "ERLT-opsætning"
+    },
+    "transponderData1": {
+        "message": "Data"
+    },
+    "transponderData2": {
+        "message": "Transponder-ID"
+    },
+    "transponderData3": {
+        "message": "Transponder-ID"
+    },
+    "transponderDataHelp1": {
+        "message": "Kun hexadecimale cifre, 0-9, A-F"
+    },
+    "transponderDataHelp3": {
+        "message": "Vælg ERLT ID 0-63"
+    },
+    "transponderButtonSave": {
+        "message": "Gem"
+    },
+    "transponderButtonSaveReboot": {
+        "message": "Gem og Genstart"
+    },
+    "transponderDataInvalid": {
+        "message": "Transponderdata er <span class=\"message-negative\">ugyldig</span>"
+    },
+    "transponderEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">gemt</span>"
+    },
+    "servosFirmwareUpgradeRequired": {
+        "message": "Servoer kræver firmware &gt;= 1.10.0 og målunderstøttelse."
+    },
+    "servosChangeDirection": {
+        "message": "Skift retning i TX for at matche"
+    },
+    "servosName": {
+        "message": "Navn"
+    },
+    "servosMid": {
+        "message": "MID"
+    },
+    "servosMin": {
+        "message": "MIN"
+    },
+    "servosMax": {
+        "message": "MAKS"
+    },
+    "servosAngleAtMin": {
+        "message": "Vinkel ved min"
+    },
+    "servosAngleAtMax": {
+        "message": "Vinkel ved maks"
+    },
+    "servosDirectionAndRate": {
+        "message": "Retning og rate"
+    },
+    "servosLiveMode": {
+        "message": "Aktivér Live-tilstand"
+    },
+    "servosButtonSave": {
+        "message": "Gem"
+    },
+    "servosNormal": {
+        "message": "Normal"
+    },
+    "servosReverse": {
+        "message": "Omvendt"
+    },
+    "servosEepromSave": {
+        "message": "EEPROM <span class=\"message-positive\">gemt</span>"
+    },
+    "gpsHead": {
+        "message": "GPS"
+    },
+    "gpsMapHead": {
+        "message": "Aktuel GPS-placering"
+    },
+    "gpsMapMessage1": {
+        "message": "Tjek Internetforbindelsen"
+    },
+    "gpsMapMessage2": {
+        "message": "Afventer GPS 3D-fiksering…"
+    },
+    "gps3dFix": {
+        "message": "3D-fiksering:"
+    },
+    "gpsFixTrue": {
+        "message": "<span class=\"text\">Sand</span>"
+    },
+    "gpsFixFalse": {
+        "message": "<span class=\"text\">Falsk</span>"
+    },
+    "gpsAltitude": {
+        "message": "Højde:"
+    },
+    "gpsLat": {
+        "message": "Breddegrad:"
+    },
+    "gpsLon": {
+        "message": "Længdegrad:"
+    },
+    "gpsSpeed": {
+        "message": "Hastighed:"
+    },
+    "gpsSats": {
+        "message": "Satel.:"
+    },
+    "gpsDistToHome": {
+        "message": "Afst. til Hjem:"
+    },
+    "gpsSignalStrHead": {
+        "message": "GPS-signalstyrke"
+    },
+    "gpsSignalStr": {
+        "message": "Signalstyrke"
+    },
+    "gpsSignalSatId": {
+        "message": "Sat-ID"
+    },
+    "gpsSignalQty": {
+        "message": "Antal"
+    },
+    "motorsVoltage": {
+        "message": "Spænding:"
+    },
+    "motorsADrawing": {
+        "message": "Strøm:"
+    },
+    "motorsmAhDrawn": {
+        "message": "Strømforbr.:"
+    },
+    "motorsVoltageValue": {
+        "message": "$1 V"
+    },
+    "motorsADrawingValue": {
+        "message": "$1 A"
+    },
+    "motorsmAhDrawnValue": {
+        "message": "$1 mAh"
+    },
+    "motorsText": {
+        "message": "Motorer"
+    },
+    "motorNumber1": {
+        "message": "Motor - 1"
+    },
+    "motorNumber2": {
+        "message": "Motor - 2"
+    },
+    "motorNumber3": {
+        "message": "Motor - 3"
+    },
+    "motorNumber4": {
+        "message": "Motor - 4"
+    },
+    "motorNumber5": {
+        "message": "Motor - 5"
+    },
+    "motorNumber6": {
+        "message": "Motor - 6"
+    },
+    "motorNumber7": {
+        "message": "Motor - 7"
+    },
+    "motorNumber8": {
+        "message": "Motor - 8"
+    },
+    "servosText": {
+        "message": "Servoer"
+    },
+    "servoNumber1": {
+        "message": "Servo - 1"
+    },
+    "servoNumber2": {
+        "message": "Servo - 2"
+    },
+    "servoNumber3": {
+        "message": "Servo - 3"
+    },
+    "servoNumber4": {
+        "message": "Servo - 4"
+    },
+    "servoNumber5": {
+        "message": "Servo - 5"
+    },
+    "servoNumber6": {
+        "message": "Servo - 6"
+    },
+    "servoNumber7": {
+        "message": "Servo - 7"
+    },
+    "servoNumber8": {
+        "message": "Servo - 8"
+    },
+    "motorsResetMaximumButton": {
+        "message": "Nulstil"
+    },
+    "motorsResetMaximum": {
+        "message": "Nulstil tidsoverskridelsesmaks."
+    },
+    "motorsSensorGyroSelect": {
+        "message": "gyro"
+    },
+    "motorsSensorAccelSelect": {
+        "message": "accel"
+    },
+    "motorsMaster": {
+        "message": "Master"
+    },
+    "motorsNotice": {
+        "message": "<strong>Motortesttilstand/Indkoblingsnotits:</strong><br/>Bevæges skyderne eller indkobles dit fartøj med senderen,<strong>forøges</strong> motoromdrejningerne.<br/>For at forhindre personskade, så <strong class=\"message-negative\">afmontér ALLE propeller</strong>, før brug af denne funktion.<br/>Aktivering af motortesttilstand vil også midlertidigt deaktivere Runaway Takeoff-beskyttelsen, for at hindre den i at afkoble fartøjet ved værkstedsaftestning uden propeller.<br/>"
+    },
+    "motorsEnableControl": {
+        "message": "<strong>Jeg forstår risikoen,</strong> propellerne er fjernet - aktivér motorkontrol og indkobling, og deaktivér Runaway Takeoff-beskyttelse."
+    },
+    "sensorsInfo": {
+        "message": "Husk at samtidig brug af hurtige opdateringsintervaller og generering af flere grafer er ressourcekrævende og vil opbruge batteriet hurtigere på f.eks. en laptop.<br/>Det anbefales kun at generere grafer for sensorer af interesse og under brug af rimelig opdateringsintervaller."
+    },
+    "sensorsRefresh": {
+        "message": "Opfrisk:"
+    },
+    "sensorsScale": {
+        "message": "Skala:"
+    },
+    "sensorsGyroSelect": {
+        "message": "Gyroskop"
+    },
+    "sensorsAccelSelect": {
+        "message": "Accelerometer"
+    },
+    "sensorsMagSelect": {
+        "message": "Magnetometer"
+    },
+    "sensorsSonarSelect": {
+        "message": "Sonar"
+    },
+    "sensorsDebugSelect": {
+        "message": "Fejlfinding"
+    },
+    "sensorsGyroTitle": {
+        "message": "Gyroskop - gr/s"
+    },
+    "sensorsAccelTitle": {
+        "message": "Accelerometer - g"
+    },
+    "sensorsMagTitle": {
+        "message": "Magnetometer - Ga"
+    },
+    "sensorsSonarTitle": {
+        "message": "Sonar - cm"
+    },
+    "sensorsDebugTitle": {
+        "message": "Fejlfinding"
+    },
+    "firmwareFlasherPreviousDevice": {
+        "message": "Detekteret: <strong>$1</strong> - tidligere enhed flashes stadig, gentilslut og forsøg igen"
+    },
+    "ledStripModeColorsModeDisarmed": {
+        "message": "Afkoblet",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeArmed": {
+        "message": "Indkoblet",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "pidTuningAbsoluteControlGain": {
+        "message": "Absolute Control"
+    },
+    "pidTuningAbsoluteControlGainHelp": {
+        "message": "Denne funktion løser nogle af $t(pidTuningItermRotation.message) underliggende problemer og erstatter den forhåbentlig på et tidspunkt. Denne funktion akkumulerer den absolutte gyrofejl i quadkoordinater og indfører en proportionalkorrektion i setpoint. For at det skal fungere, skal AirMode og $t(pidTuningItermRelax.message) aktiveres (for $t(pidTuningItermRelaxAxesOptionRP.message)). Kombineres denne funktion med $t(pidTuningIntegratedYaw.message), kan du sætte $t(pidTuningItermRelax.message) aktiveret for $t(pidTuningItermRelaxAxesOptionRPY.message)."
+    },
+    "failsafeFeaturesHelpOld": {
+        "message": "Failsafe-opsætning er ændret betydeligt. Benyt Betaflight <strong>v1.12.0+</strong> for at aktivere det forbedrede opsætningspanel."
+    },
+    "failsafePaneTitleOld": {
+        "message": "Modtager-failsafe"
+    },
+    "failsafeFeaturesHelpNew": {
+        "message": "Failsafe har to trin. <strong>Trin 1</strong> tilgås, når en flykanal har en ugyldig pulslængde, modtageren rapporterer fejlsikret tilstand eller der intet signal er fra modtageren, hvorefter kanalreserveindstillingerne for <span class=\"message- negativ\">alle kanaler</span> anvendes, og en lille mængde tid afsættes for at muliggøre gendannelse. <strong>Trin 2</strong> tilgås, når fejltilstanden, mens fartøjet er <span class=\"message-negative\">indkoblet</span>, varer længere end den opsattee Guard-tid, og her forbliver alle kanaler på den anvendte kanalreserveindstilling, medmindre den tilsidesættes af den valgte procedure.<br /><strong>Bemærk:</strong> Inden Trin 1 tilgås, anvendes kanalreserveindstillingerne også på individuelle AUX-kanaler, som har ugyldige impulser."
+    },
+    "failsafePulsrangeTitle": {
+        "message": "Gyldig Pulse Range-indstillinger"
+    },
+    "failsafePulsrangeHelp": {
+        "message": "Pulser kortere end minimum eller længere end maksimum er ugyldige og vil udløse anvendelse af individuelle kanalreserveindstillinger for AUX-kanaler eller effektuering af trin 1 for flykanaler"
+    },
+    "failsafeRxMinUsecItem": {
+        "message": "Minimumslængde"
+    },
+    "failsafeRxMaxUsecItem": {
+        "message": "Maskimumslængde"
+    },
+    "failsafeChannelFallbackSettingsTitle": {
+        "message": "Kanal Fallback-indstillinger"
+    },
+    "failsafeChannelFallbackSettingsHelp": {
+        "message": "Disse indstillinger anvendes på ugyldige individuelle AUX-kanaler eller på alle kanaler, når disse overgår til Trin 1. <strong>Bemærk:</strong> Værdierne gemmes i trin på 25 mikrosek, så små ændringer forsvinder"
+    },
+    "failsafeStageTwoSettingsTitle": {
+        "message": "Trin 2 - Indstillinger"
+    },
+    "failsafeDelayItem": {
+        "message": "Guard-tid til Trin 2-aktivering efter signaltab [1 = 0,1 sec.]"
+    },
+    "failsafeDelayHelp": {
+        "message": "Trin 1-ventetid for gendannelse"
+    },
+    "failsafeThrottleLowItem": {
+        "message": "Failsafe Lav Gas Lav-forsinkelse [1 = 0,1 sek.]"
+    },
+    "failsafeThrottleLowHelp": {
+        "message": "Afkobler blot fartøjet i stedet for at udføre den valgte fejlsikringsprocedure, når gassen har været lav i dette tidsinterval"
+    },
+    "failsafeThrottleItem": {
+        "message": "Gasværdi anvendt under landing"
+    },
+    "failsafeOffDelayItem": {
+        "message": "Forsinkelse for at slukke motorer under Failsafe [1 = 0,1 sek.]"
+    },
+    "failsafeOffDelayHelp": {
+        "message": "Tid at forblive i landingstilstand, indtil motorerne er slået fra, og fartøjet er afkoblet"
+    },
+    "failsafeProcedureItemSelect1": {
+        "message": "Land"
+    },
+    "failsafeProcedureItemSelect2": {
+        "message": "Drop"
+    },
+    "failsafeProcedureItemSelect4": {
+        "message": "GPS-redning"
+    },
+    "failsafeGpsRescueItemAngle": {
+        "message": "Vinkel"
+    },
+    "failsafeGpsRescueItemInitialAltitude": {
+        "message": "Indledende højde (meter)"
+    },
+    "failsafeGpsRescueItemDescentDistance": {
+        "message": "Nedstigningsdistance (meter)"
+    },
+    "failsafeGpsRescueItemGroundSpeed": {
+        "message": "Jordhastighed (meter/sekund)"
+    },
+    "failsafeGpsRescueItemThrottleMin": {
+        "message": "Gas minimum"
+    },
+    "failsafeGpsRescueItemThrottleMax": {
+        "message": "Gas maksimum"
+    },
+    "failsafeGpsRescueItemThrottleHover": {
+        "message": "Gas svævning"
+    },
+    "failsafeGpsRescueItemSanityChecks": {
+        "message": "Sanity checks"
+    },
+    "failsafeGpsRescueItemSanityChecksOff": {
+        "message": "Fra"
+    },
+    "failsafeGpsRescueItemSanityChecksOn": {
+        "message": "Til"
+    },
+    "failsafeGpsRescueItemSanityChecksFSOnly": {
+        "message": "Kun Failsafe"
+    },
+    "failsafeKillSwitchItem": {
+        "message": "Failsafe Kill-kontakt (opsæt Failsafe på fanen Tilstande)"
+    },
+    "failsafeSwitchTitle": {
+        "message": "Failsafe-kontakt"
+    },
+    "failsafeSwitchModeItem": {
+        "message": "Failsafe-kontakthandling"
+    },
+    "failsafeSwitchModeHelp": {
+        "message": "Denne indstilling afgør, hvad der sker, når Failsafe aktiveres via AUX-knappen:<br/><strong>Trin 1</strong> aktiverer Trin 1 Failsafe, der er nyttig til at simulere den nøjagtige fejlsikringsadfærd ved signaltab.<br/><strong>Trin 2</strong> overspringer Trin 1 og aktiverer omgående Trin 2-proceduren <br/><strong>Kill</strong>, der straks afkobler (fartøjet havarerer)"
+    },
+    "failsafeSwitchOptionStage1": {
+        "message": "Trin 1"
+    },
+    "failsafeSwitchOptionStage2": {
+        "message": "Trin 2"
+    },
+    "failsafeSwitchOptionKill": {
+        "message": "Kill"
+    },
+    "osdSetupAlarmsTitle": {
+        "message": "Alarmer"
+    },
+    "osdDescElementMainBattVoltage": {
+        "message": "Aktuel hovedbatterispænding (blinker, når under alarmtærskelværdi)"
+    },
+    "osdDescElementRssiValue": {
+        "message": "Aktuel RSSI-værdi (blinker, når under alarmtærskelværdi)"
+    },
+    "osdDescElementArmed": {
+        "message": "Indkoblingstekstmeddelelse"
+    },
+    "osdDescElementDisarmed": {
+        "message": "Afkoblingstekstmeddelelse"
+    },
+    "osdDescElementCurrentDraw": {
+        "message": "Aktuel batteristrømforbrug"
+    },
+    "osdDescElementAltitude": {
+        "message": "Aktuel højde (blinker, når over alarmtærskelværdi)"
+    },
+    "osdDescElementPIDRoll": {
+        "message": "Roll-akses PID-forøgelser"
+    },
+    "osdDescElementPIDPitch": {
+        "message": "Pitch-akses PID-forøgelser"
+    },
+    "osdDescElementPIDYaw": {
+        "message": "Yaw-akses PID-forøgelser"
+    },
+    "osdDescElementArmedTime": {
+        "message": "Tid siden fartøjets seneste indkobling"
+    },
+    "osdDescStatArmedTime": {
+        "message": "Tid siden fartøjs seneste indkobling"
+    },
+    "osdDescStatTimer1": {
+        "message": "Værdi for timer 1 på afkoblingstidspunkt"
+    },
+    "osdDescStatTimer2": {
+        "message": "Værdi på timer 2 på afkoblingstidspunkt"
+    },
+    "osdTimerAlarm": {
+        "message": "Alarm:"
+    },
+    "osdTimerAlarmTooltip": {
+        "message": "Vælg timeralarmgrænse i minutter. Når tiden overstiger denne værdi, vil OSD-elementet blinke. Angives dette til 0, deaktiveres alarmen"
+    },
+    "osdWarningFailsafe": {
+        "message": "Advarer, når fejlsikring opstår"
+    },
+    "osdWarningRSSI": {
+        "message": "Advarer, når RSSI er under alarmindstilling"
+    },
+    "mainHelpFailsafe": {
+        "message": "Failsafe-tilstand"
+    },
+    "configurationSmallAngleHelp": {
+        "message": "Fartøj vil ikke INDKOBLE, hvis vippet mere end angivet graderværdi. Gælder kun, hvis accelerometer er aktivt. Indstilling til 180 vil deaktivere tjek"
+    }
+}

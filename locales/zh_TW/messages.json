@@ -394,9 +394,6 @@
     "firmwareVersionNotSupported": {
         "message": "Betaflight 配置程式<span class=\"message-negative\">不支援</span>該固件版本。請更新固件以確保其API版本為<strong>$1</strong> 或更高。更新固件之前，使用 CLI 來備份設置。使用 CLI 進行備份/恢復的詳細操作流程請參考Betaflight文檔。<br />如果不想將固件更新到最新版本，可以下載使用支援該固件的舊版配置程式。"
     },
-    "firmwareTypeNotSupported": {
-        "message": "<span class=\"message-negative\">不支援</span>該版本的 Cleanflight/Betaflight 固件，只能使用CLI模式。"
-    },
     "firmwareUpgradeRequired": {
         "message": "需要將此設備上的固件更新到新版本。更新固件之前，使用 CLI 來備份設置。使用 CLI 進行備份/恢復的詳細操作流程請參考Betaflight文檔。<br />如果不想將固件更新到最新版本，可以下載使用支援該固件的舊版配置程式。"
     },

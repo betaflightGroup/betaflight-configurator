@@ -89,6 +89,9 @@
     "analyticsOptOut": {
         "message": "Elimina os datos anónimos das estatísticas"
     },
+    "cordovaForceComputerUI": {
+        "message": "Empregue a interface do computador no canto da interface de teléfonos"
+    },
     "language_changed": {
         "message": "Gardouse o cambio de idioma"
     },
@@ -290,6 +293,9 @@
     "tabHelp": {
         "message": "Documentación e Soporte"
     },
+    "tabOptions": {
+        "message": "Opcións"
+    },
     "tabSetup": {
         "message": "Axuste"
     },
@@ -486,7 +492,7 @@
         "message": "Esta versión de firmware <span class=\"message-negative\">non está soportada</span>. Por favor actualice a un firmware que soporte a versión de api <strong>$1</strong> ou superior. Empregue o CLI para facer un backup antes de flashear. O procedemento CLI de backup/recuperación atópase na documentación.<br />Se o prefire tamén pode descargar e usar unha versión antigua do configurador se non desexa actualizar."
     },
     "firmwareTypeNotSupported": {
-        "message": "Un firmware que non sexa Cleanflight/Betaflight <span class=\"message-negative\">non está soportado</span>, agás para o modo CLI."
+        "message": "O firmware non Betaflight <span class=\"message-negative\"> non é soportado </span>, excepto no modo CLI."
     },
     "firmwareUpgradeRequired": {
         "message": "O firmware neste dispositivo necesita actualización a unha nova versión. Empregue o CLI para backup antes de flashear. O procedemento CLI de backup/recuperación atópase na documentación.<br />Se o prefire tamén pode descargar e usar unha versión antigua do configurador se non desexa actualizar."
@@ -1436,6 +1442,15 @@
     "configurationButtonSave": {
         "message": "Gardar e Reiniciar"
     },
+    "dialogDynFiltersChangeTitle": {
+        "message": "Cambios nos valores do Dynamic Notch"
+    },
+    "dialogDynFiltersChangeNote": {
+        "message": "<span class=\"message-negative\"><b> ADVERTENCIA: algúns valores do Dynamic Notch cambiaron a valores predeterminados </b></span> porque o filtrado RPM foi activado/desactivado.<br> Por favor, comprobe antes de voar."
+    },
+    "dialogDynFiltersConfirm": {
+        "message": "De acordo"
+    },
     "portsIdentifier": {
         "message": "Identificador"
     },
@@ -1732,6 +1747,33 @@
     },
     "pidTuningDtermSetpointTransitionWarning": {
         "message": "<span class=\"message-negative\"><strong> $t(warningTitle.message):</strong> Desaconséllase moito o uso dunha transición de punto de consecuencia maior que 0 e inferior a 0,1. Se o fai, pode levar a inestabilidade e reducir a capacidade de resposta dos stick mentres atravesan o punto central.</span>"
+    },
+    "pidTuningFfInterpolateSp": {
+        "message": "FF Interpolate"
+    },
+    "pidTuningFfInterpolateSpHelp": {
+        "message": "As seguintes opcións permiten avanzar de carreira/agresivo a liso/HD.<br><br> Modo: establecido en Non promedio para carreira, Promedio 2 para carreira/rápida freestyle, Promedio 3 para grabación en HD, Promedio 4 para HD cinemático Suave. <br><br> Suavidade: limita a cantidade de cambios que pode facer calquera paso de radio entrante, aumenta para obter un sinal FF máis suave, diminúe para respostas de FF máis agresivas. <br><br> Impulso: axuda a superar o retraso do motor. as entradas de stick rápido, poden aumentar a inestabilidade. Probe 10 para HD, 20 para pilotos. Ata 30 poden ser útiles para quads de baixa autoridade, pero poden causar microxiros ou sobrecargas."
+    },
+    "pidTuningFfInterpolate": {
+        "message": "Modo"
+    },
+    "pidTuningFfInterpolateSpOptionNoAverage": {
+        "message": "Non promedio"
+    },
+    "pidTuningFfInterpolateSpOptionAverage2": {
+        "message": "Promedio 2"
+    },
+    "pidTuningFfInterpolateSpOptionAverage3": {
+        "message": "Promedio 3"
+    },
+    "pidTuningFfInterpolateSpOptionAverage4": {
+        "message": "Promedio 4"
+    },
+    "pidTuningFfSmoothFactor": {
+        "message": "Suavizado"
+    },
+    "pidTuningFfBoost": {
+        "message": "Impulso"
     },
     "pidTuningProportional": {
         "message": "Proporcional"
@@ -3536,6 +3578,9 @@
     "pidTuningDTermLowpassDynType": {
         "message": "D Term Lowpass 1 Tipo de filtro dinámico"
     },
+    "pidTuningDTermLowpassDynExpo": {
+        "message": "D Term Paso Baixo 1 Dinámico Curve Expo"
+    },
     "pidTuningDTermNotchFiltersGroup": {
         "message": "Filtros Notch de termo D"
     },
@@ -3556,6 +3601,15 @@
     },
     "pidTuningVbatPidCompensationHelp": {
         "message": "Aumente os valores PID para compensar cando Vbat diminúe. Isto dará características de voo máis constantes durante todo o voo. A cantidade de compensación que se aplica calcúlase a partir do $t(powerBatteryMaximum.message) definido na páxina $t(tabPower.message), así que asegúrese de que está axustado a algo apropiado."
+    },
+    "pidTuningVbatSagCompensation": {
+        "message": "Compensación da caída de tensión"
+    },
+    "pidTuningVbatSagCompensationHelp": {
+        "message": "Ofrece un desempeño constante do acelerador e do PID sobre o rango de tensión da batería utilizable, compensando a caída da batería. O importe da compensación pode variarse entre o 0 e o 100%. Recoméndase unha compensación completa (100%). <br><br>Visite <a href=\"https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes#dynamic-battery-sag-compensation\"target=\"_ blank\" rel=\"noopener noreferrer\"> entre na wiki </a> para máis información."
+    },
+    "pidTuningVbatSagValue": {
+        "message": "%"
     },
     "pidTuningItermRotation": {
         "message": "Rotación Término I"
@@ -5644,5 +5698,68 @@
     "gpsSbasNone": {
         "message": "Ningunha",
         "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "dialogFileNameTitle": {
+        "message": "Nome do ficheiro"
+    },
+    "dialogFileNameDescription": {
+        "message": "O arquivo gardarase na carpeta '{{folder}}' no seu almacenamento interno."
+    },
+    "dialogFileAlreadyExistsTitle": {
+        "message": "Este ficheiro xa existe!"
+    },
+    "dialogFileAlreadyExistsDescription": {
+        "message": "¿Desexa sobrescribir?"
+    },
+    "cordovaCheckingWebview": {
+        "message": "Comprobando aplicacións webview..."
+    },
+    "cordovaIncompatibleWebview": {
+        "message": "Visor web incompatible"
+    },
+    "cordovaWebviewTroubleshootingMsg": {
+        "message": "Debes actualizar o visor web do seu dispositivo para poder empregar o configurador."
+    },
+    "cordovaWebviewTroubleshootingMsg2": {
+        "message": "A seguiente ferramenta está deseñada para axudalo a instalar un novo visor web e actualizar o xa instalado."
+    },
+    "cordovaAvailableWebviews": {
+        "message": "Aplicación visor web dispoñible no seu dispositivo"
+    },
+    "cordovaWebviewInstall": {
+        "message": "Instalar a aplicación <b>{{app}}</b> pode resolver este problema de compatibilidade."
+    },
+    "cordovaWebviewInstallBtn": {
+        "message": "Instalar dende Google Play Store"
+    },
+    "cordovaWebviewUninstall": {
+        "message": "Desinstalar a aplicación <b>{{app}}</b> pode axudar a solucionar este problema de compatibilidade. Se non é capaz de desinstalar, intente desactivala dende os axustes da aplicación."
+    },
+    "cordovaWebviewUninstallBtn1": {
+        "message": "Desinstalar dende Google Play Store"
+    },
+    "cordovaWebviewUninstallBtn2": {
+        "message": "Desintalar / desactivado dende as opcións"
+    },
+    "cordovaWebviewUpdate": {
+        "message": "Actualizar a aplicación <b>{{app}}</b> pode axudar a resolver este problema de compatibilidade."
+    },
+    "cordovaWebviewUpdateBtn": {
+        "message": "Actualizar dende Google Play Store"
+    },
+    "cordovaWebviewEnable": {
+        "message": "Entre na pestana de información sobre o dispositivo na configuración e toque 10 veces no número de versión de compilación para habilitar \"Opcións de desenvolvedor\". Despois diso, busque e vaia as opcións de desenvolvedor e seleccione <b>{{app}}</b> como provedor de vista web."
+    },
+    "cordovaWebviewEnableBtn": {
+        "message": "Abrir axustes"
+    },
+    "cordovaWebviewIncompatible": {
+        "message": "O teu dispositivo parece non ser compatible. Tenta buscar outras formas de actualizar o teu visor web"
+    },
+    "cordovaNoWebview": {
+        "message": "Non hai instalada / habilitada a aplicación visor web"
+    },
+    "cordovaWebviewUsed": {
+        "message": "en uso"
     }
 }

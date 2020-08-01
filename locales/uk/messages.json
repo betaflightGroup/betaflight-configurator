@@ -1,0 +1,176 @@
+{
+    "yes": {
+        "message": "Так",
+        "description": "General Yes message to be used across the application"
+    },
+    "no": {
+        "message": "Ні",
+        "description": "General No message to be used across the application"
+    },
+    "on": {
+        "message": "Увімкнути"
+    },
+    "off": {
+        "message": "Вимкнути"
+    },
+    "auto": {
+        "message": "Авто"
+    },
+    "error": {
+        "message": "Помилка: {{errorMessage}}"
+    },
+    "errorTitle": {
+        "message": "Помилка"
+    },
+    "warningTitle": {
+        "message": "Попередження"
+    },
+    "noticeTitle": {
+        "message": "Зверніть увагу"
+    },
+    "operationNotSupported": {
+        "message": "Операція не підтримується пристроєм."
+    },
+    "options_title": {
+        "message": "Параметри додатку"
+    },
+    "connect": {
+        "message": "З'єднати"
+    },
+    "connecting": {
+        "message": "З'єднання"
+    },
+    "disconnect": {
+        "message": "Роз'єднати"
+    },
+    "portsSelectManual": {
+        "message": "Ручний вибір"
+    },
+    "portOverrideText": {
+        "message": "Порт:"
+    },
+    "autoConnect": {
+        "message": "Автоматичне підключення"
+    },
+    "close": {
+        "message": "Закрити"
+    },
+    "cancel": {
+        "message": "Відмінити"
+    },
+    "expertMode": {
+        "message": "Увімкнути режим експерта"
+    },
+    "language_changed": {
+        "message": "Мова змінена"
+    },
+    "language_choice_message": {
+        "message": "Змінити мову:",
+        "description": "Try and be brief"
+    },
+    "sensorStatusGyro": {
+        "message": "Гіроскоп"
+    },
+    "sensorStatusAccel": {
+        "message": "Акселерометр"
+    },
+    "sensorStatusBaro": {
+        "message": "Барометр"
+    },
+    "sensorStatusGPS": {
+        "message": "GPS"
+    },
+    "configuratorUpdateNotice": {
+        "message": "Ви використовуєте застарілу версію <b>Betaflight Configurator</b>.<br>$t(configuratorUpdateHelp.message)"
+    },
+    "deviceRebooting": {
+        "message": "Пристрій - <span class=\"message-negative\">перезавантажується</span>"
+    },
+    "tabLanding": {
+        "message": "Вітальна сторінка"
+    },
+    "tabChangelog": {
+        "message": "Журнал змін"
+    },
+    "tabPrivacyPolicy": {
+        "message": "Політика конфіденційності"
+    },
+    "tabHelp": {
+        "message": "Документація та підтримка"
+    },
+    "tabSetup": {
+        "message": "Налаштування"
+    },
+    "tabConfiguration": {
+        "message": "Конфігурація"
+    },
+    "tabPorts": {
+        "message": "Порти"
+    },
+    "tabReceiver": {
+        "message": "Приймач"
+    },
+    "tabModeSelection": {
+        "message": "Вибір режиму"
+    },
+    "tabPower": {
+        "message": "Живлення та акумулятор"
+    },
+    "tabGPS": {
+        "message": "GPS"
+    },
+    "tabMotorTesting": {
+        "message": "Двигуни"
+    },
+    "tabRawSensorData": {
+        "message": "Датчики"
+    },
+    "tabCLI": {
+        "message": "Інтерфейс командного рядка"
+    },
+    "tabOnboardLogging": {
+        "message": "Чорна скриня"
+    },
+    "tabAdjustments": {
+        "message": "Регулювання"
+    },
+    "tabAuxiliary": {
+        "message": "Режими"
+    },
+    "logActionHide": {
+        "message": "Приховати журнал подій"
+    },
+    "logActionShow": {
+        "message": "Показати журнал подій"
+    },
+    "stm32UsbDfuNotFound": {
+        "message": "USB DFU не знайдено"
+    },
+    "stm32Erase": {
+        "message": "Видалення ..."
+    },
+    "stm32Flashing": {
+        "message": "Прошивання ..."
+    },
+    "stm32Verifying": {
+        "message": "Перевірка..."
+    },
+    "releaseCheckNoInfo": {
+        "message": "Немає інформації про реліз $1."
+    },
+    "versionLabelFirmware": {
+        "message": "Прошивка"
+    },
+    "versionLabelConfigurator": {
+        "message": "Конфігуратор"
+    },
+    "notifications_click_here_to_start_app": {
+        "message": "Натисніть тут, щоб запустити програму"
+    },
+    "statusbar_i2c_error": {
+        "message": "Помилка I2C:"
+    },
+    "defaultDonate": {
+        "message": "Підтримати проект"
+    }
+}

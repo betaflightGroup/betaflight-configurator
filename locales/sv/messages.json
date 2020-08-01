@@ -440,9 +440,6 @@
     "firmwareVersionNotSupported": {
         "message": "Denna firmwareversion<span class=\"message-negative\">stöds inte</span>. Uppgradera till en firmware som stöder api-version <strong>$1</strong> eller högre. Säkerhetskopiera i CLI innan du flashar. CLI-säkerhetskopierings/återställningsförfarandet finns i dokumentationen.<br />Alternativt kan du ladda ner och använda en gammal version av konfiguratorn om du inte vill uppgradera."
     },
-    "firmwareTypeNotSupported": {
-        "message": "Firmware för icke Cleanflight/Betaflight <span class=\"message-negative\">stöds inte</span>, förutom i CLI."
-    },
     "firmwareUpgradeRequired": {
         "message": "Firmwaren på den här enheten behöver uppgraderas till en nyare version. Använd CLI för säkerhetskopiering innan du flashar. CLI-säkerhetskopierings/återställningsförfarandet finns i dokumentationen.<br />Alternativt kan du ladda ner och använda en gammal version av konfiguratorn om du inte vill uppgradera."
     },
