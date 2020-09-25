@@ -237,15 +237,36 @@ FONT.draw = function (charAddress) {
     return cached;
 };
 
+// Returns the font data for a blank character
+FONT.blank = function() {
+    var blank = 0x55; // A byte with all pixels set to transparent
+    var size = FONT.constants.SIZES.MAX_NVM_FONT_CHAR_SIZE;
+    return Array.apply(null, {length: size}).map(function() { return blank; });
+};
+
 FONT.msp = {
     encode: function (charAddress) {
+        if(semver.gte(CONFIG.apiVersion, "1.42.0")) {
+            var addr = [];
+            addr.push8(0);
+            addr.push16(charAddress);
+            var data = FONT.data.characters_bytes[charAddress];
+            if (!data) {
+                data = FONT.blank();
+            }
+            return addr.concat(data.slice(0, FONT.constants.SIZES.MAX_NVM_FONT_CHAR_FIELD_SIZE));
+        }
         return [charAddress].concat(FONT.data.characters_bytes[charAddress].slice(0, FONT.constants.SIZES.MAX_NVM_FONT_CHAR_SIZE));
     }
 };
 
 FONT.upload = function ($progress) {
-    return Promise.mapSeries(FONT.data.characters, function (data, i) {
-        $progress.val((i / FONT.data.characters.length) * 100);
+    var fontSeries = FONT.data.characters;
+    if(semver.lte(CONFIG.apiVersion, "1.41.0") && FONT.data.characters.length > 256) {
+        fontSeries = Array(256);
+    }
+    return Promise.mapSeries(fontSeries, function (data, i) {
+        $progress.val((i / fontSeries.length) * 100);
         return MSP.promise(MSPCodes.MSP_OSD_CHAR_WRITE, FONT.msp.encode(i));
     })
         .then(function () {
