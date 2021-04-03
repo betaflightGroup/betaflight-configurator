@@ -351,7 +351,9 @@ function startProcess() {
                         TABS.vtx.initialize(content_ready);
                         break;
                     case 'power':
-                        TABS.power.initialize(content_ready);
+                        import("./tabs/power").then(({ power }) => {
+                            power.initialize(content_ready);
+                        });
                         break;
                     case 'setup':
                         TABS.setup.initialize(content_ready);
