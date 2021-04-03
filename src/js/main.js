@@ -369,7 +369,11 @@ function startProcess() {
                         break;
 
                     case 'configuration':
-                        TABS.configuration.initialize(content_ready);
+                        import(
+                            "./tabs/configuration"
+                        ).then(({ configuration }) =>
+                            configuration.initialize(content_ready)
+                        );
                         break;
                     case 'pid_tuning':
                         TABS.pid_tuning.initialize(content_ready);
