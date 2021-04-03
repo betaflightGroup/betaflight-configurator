@@ -335,7 +335,9 @@ function startProcess() {
                         TABS.adjustments.initialize(content_ready);
                         break;
                     case 'ports':
-                        TABS.ports.initialize(content_ready);
+                        import("./tabs/ports").then(({ ports }) =>
+                            ports.initialize(content_ready)
+                        );
                         break;
                     case 'led_strip':
                         TABS.led_strip.initialize(content_ready);
