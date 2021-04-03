@@ -324,7 +324,9 @@ function startProcess() {
                         TABS.firmware_flasher.initialize(content_ready);
                         break;
                     case 'help':
-                        import('./tabs/help').then(({ help }) => help.initialize(content_ready));
+                        import("./tabs/help").then(({ help }) =>
+                            help.initialize(content_ready)
+                        );
                         break;
                     case 'auxiliary':
                         TABS.auxiliary.initialize(content_ready);
@@ -351,12 +353,14 @@ function startProcess() {
                         TABS.vtx.initialize(content_ready);
                         break;
                     case 'power':
-                        import("./tabs/power").then(({ power }) => {
-                            power.initialize(content_ready);
-                        });
+                        import("./tabs/power").then(({ power }) =>
+                            power.initialize(content_ready)
+                        );
                         break;
                     case 'setup':
-                        TABS.setup.initialize(content_ready);
+                        import("./tabs/setup").then(({ setup }) =>
+                            setup.initialize(content_ready)
+                        );
                         break;
                     case 'setup_osd':
                         TABS.setup_osd.initialize(content_ready);
