@@ -1,6 +1,6 @@
-'use strict';
+import { i18n } from "../localization";
 
-TABS.vtx = {
+const vtx = {
     supported: false,
     vtxTableSavePending: false,
     vtxTableFactoryBandsSupported: false,
@@ -17,13 +17,13 @@ TABS.vtx = {
     }
 };
 
-TABS.vtx.isVtxDeviceStatusNotReady = function()
+vtx.isVtxDeviceStatusNotReady = function()
 {
     const isReady = (null !== FC.VTX_DEVICE_STATUS) && (FC.VTX_DEVICE_STATUS.deviceIsReady);
     return !isReady;
 };
 
-TABS.vtx.updateVtxDeviceStatus = function()
+vtx.updateVtxDeviceStatus = function()
 {
     MSP.send_message(MSPCodes.MSP2_GET_VTX_DEVICE_STATUS, false, false, vtxDeviceStatusReceived);
 
@@ -33,7 +33,7 @@ TABS.vtx.updateVtxDeviceStatus = function()
     }
 };
 
-TABS.vtx.getVtxTypeString = function()
+vtx.getVtxTypeString = function()
 {
     let result = i18n.getMessage(`vtxType_${FC.VTX_CONFIG.vtx_type}`);
 
@@ -47,7 +47,7 @@ TABS.vtx.getVtxTypeString = function()
     return result;
 };
 
-TABS.vtx.initialize = function (callback) {
+vtx.initialize = function (callback) {
     const self = this;
 
     if (GUI.active_tab !== 'vtx') {
@@ -1004,7 +1004,7 @@ TABS.vtx.initialize = function (callback) {
 
 };
 
-TABS.vtx.cleanup = function (callback) {
+vtx.cleanup = function (callback) {
 
     // Add here things that need to be cleaned or closed before leaving the tab
     this.vtxTableSavePending = false;
@@ -1016,4 +1016,9 @@ TABS.vtx.cleanup = function (callback) {
     if (callback) {
         callback();
     }
+};
+
+window.TABS.vtx = vtx;
+export {
+    vtx,
 };

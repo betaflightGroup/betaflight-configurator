@@ -1,11 +1,10 @@
-'use strict';
+import { i18n } from "../localization";
 
-
-TABS.transponder = {
+const transponder = {
     available: false
 };
 
-TABS.transponder.initialize = function(callback, scrollPosition) {
+transponder.initialize = function(callback, scrollPosition) {
 
     let _persistentInputValues = {};
 
@@ -324,6 +323,11 @@ TABS.transponder.initialize = function(callback, scrollPosition) {
     }
 };
 
-TABS.transponder.cleanup = function(callback) {
+transponder.cleanup = function(callback) {
     if ( callback ) callback();
+};
+
+window.TABS.transponder = transponder;
+export {
+    transponder
 };

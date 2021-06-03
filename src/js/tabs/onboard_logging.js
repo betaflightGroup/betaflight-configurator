@@ -1,8 +1,8 @@
-'use strict';
+import { i18n } from "../localization";
 
 let sdcardTimer;
 
-TABS.onboard_logging = {
+const onboard_logging = {
     blockSize: 128,
     writeError: false,
 
@@ -10,7 +10,8 @@ TABS.onboard_logging = {
     VCP_BLOCK_SIZE_3_0: 512,
     VCP_BLOCK_SIZE: 4096
 };
-TABS.onboard_logging.initialize = function (callback) {
+
+onboard_logging.initialize = function (callback) {
     const self = this;
     let saveCancelled, eraseCancelled;
 
@@ -671,7 +672,7 @@ TABS.onboard_logging.initialize = function (callback) {
     }
 };
 
-TABS.onboard_logging.cleanup = function (callback) {
+onboard_logging.cleanup = function (callback) {
     analytics.setFlightControllerData(analytics.DATA.LOGGING_STATUS, undefined);
     analytics.setFlightControllerData(analytics.DATA.LOG_SIZE, undefined);
 
@@ -685,9 +686,14 @@ TABS.onboard_logging.cleanup = function (callback) {
     }
 };
 
-TABS.onboard_logging.mscRebootFailedCallback = function () {
+onboard_logging.mscRebootFailedCallback = function () {
     $(".tab-onboard_logging")
         .toggleClass("msc-supported", false);
 
     showErrorDialog(i18n.getMessage('operationNotSupported'));
+};
+
+window.TABS.onboard_logging = onboard_logging;
+export {
+    onboard_logging,
 };

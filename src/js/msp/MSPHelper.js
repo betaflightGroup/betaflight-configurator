@@ -70,7 +70,9 @@ MspHelper.prototype.process_data = function(dataHandler) {
                 FC.CONFIG.mode = data.readU32();
                 FC.CONFIG.profile = data.readU8();
 
-                TABS.pid_tuning.checkUpdateProfile(false);
+                if (GUI.active_tab === 'pid_tuning') {
+                    TABS.pid_tuning.checkUpdateProfile(false);
+                }
 
                 sensor_status(FC.CONFIG.activeSensors);
                 break;
@@ -97,7 +99,9 @@ MspHelper.prototype.process_data = function(dataHandler) {
                       FC.CONFIG.armingDisableFlags = data.readU32();
                     }
 
-                    TABS.pid_tuning.checkUpdateProfile(true);
+                    if (GUI.active_tab === 'pid_tuning') {
+                        TABS.pid_tuning.checkUpdateProfile(true);
+                    }
                 }
 
                 sensor_status(FC.CONFIG.activeSensors);

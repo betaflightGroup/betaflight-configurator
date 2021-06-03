@@ -1,8 +1,8 @@
-'use strict';
+import { i18n } from '../localization';
 
-TABS.adjustments = {};
+const adjustments = {};
 
-TABS.adjustments.initialize = function (callback) {
+adjustments.initialize = function (callback) {
     const self = this;
     GUI.active_tab_ref = this;
     GUI.active_tab = 'adjustments';
@@ -282,11 +282,11 @@ TABS.adjustments.initialize = function (callback) {
     }
 };
 
-TABS.adjustments.cleanup = function (callback) {
+adjustments.cleanup = function (callback) {
     if (callback) callback();
 };
 
-TABS.adjustments.adjust_template = function () {
+adjustments.adjust_template = function () {
 
     const selectFunction = $('#functionSelectionSelect');
     let elementsNumber;
@@ -321,4 +321,9 @@ TABS.adjustments.adjust_template = function () {
         element22.insertAfter(selectFunction.find("option[value='25']"));
         element23.insertAfter(selectFunction.find("option[value='28']"));
     }
+};
+
+window.TABS.adjustments = adjustments;
+export {
+    adjustments
 };

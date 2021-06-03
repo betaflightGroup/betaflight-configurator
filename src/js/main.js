@@ -331,10 +331,14 @@ function startProcess() {
                         );
                         break;
                     case 'auxiliary':
-                        TABS.auxiliary.initialize(content_ready);
+                        import("./tabs/auxiliary").then(({ auxiliary }) =>
+                            auxiliary.initialize(content_ready)
+                        );
                         break;
                     case 'adjustments':
-                        TABS.adjustments.initialize(content_ready);
+                        import("./tabs/adjustments").then(({ adjustments }) =>
+                            adjustments.initialize(content_ready)
+                        );
                         break;
                     case 'ports':
                         import("./tabs/ports").then(({ ports }) =>
@@ -342,19 +346,29 @@ function startProcess() {
                         );
                         break;
                     case 'led_strip':
-                        TABS.led_strip.initialize(content_ready);
+                        import("./tabs/led_strip").then(({ led_strip }) =>
+                            led_strip.initialize(content_ready)
+                        );
                         break;
                     case 'failsafe':
-                        TABS.failsafe.initialize(content_ready);
+                        import("./tabs/failsafe").then(({ failsafe }) =>
+                            failsafe.initialize(content_ready)
+                        );
                         break;
                     case 'transponder':
-                        TABS.transponder.initialize(content_ready);
+                        import("./tabs/transponder").then(({ transponder }) =>
+                            transponder.initialize(content_ready)
+                        );
                         break;
                     case 'osd':
-                        TABS.osd.initialize(content_ready);
+                        import("./tabs/osd").then(({ osd }) =>
+                            osd.initialize(content_ready)
+                        );
                         break;
                     case 'vtx':
-                        TABS.vtx.initialize(content_ready);
+                        import("./tabs/vtx").then(({ vtx }) =>
+                            vtx.initialize(content_ready)
+                        );
                         break;
                     case 'power':
                         import("./tabs/power").then(({ power }) =>
@@ -367,7 +381,9 @@ function startProcess() {
                         );
                         break;
                     case 'setup_osd':
-                        TABS.setup_osd.initialize(content_ready);
+                        import("./tabs/setup_osd").then(({ setup_osd }) =>
+                            setup_osd.initialize(content_ready)
+                        );
                         break;
 
                     case 'configuration':
@@ -378,31 +394,49 @@ function startProcess() {
                         );
                         break;
                     case 'pid_tuning':
-                        TABS.pid_tuning.initialize(content_ready);
+                        import("./tabs/pid_tuning").then(({ pid_tuning }) =>
+                            pid_tuning.initialize(content_ready)
+                        );
                         break;
                     case 'receiver':
-                        TABS.receiver.initialize(content_ready);
+                        import("./tabs/receiver").then(({ receiver }) =>
+                            receiver.initialize(content_ready)
+                        );
                         break;
                     case 'servos':
-                        TABS.servos.initialize(content_ready);
+                        import("./tabs/servos").then(({ servos }) =>
+                            servos.initialize(content_ready)
+                        );
                         break;
                     case 'gps':
-                        TABS.gps.initialize(content_ready);
+                        import("./tabs/gps").then(({ gps }) =>
+                            gps.initialize(content_ready)
+                        );
                         break;
                     case 'motors':
-                        TABS.motors.initialize(content_ready);
+                        import("./tabs/motors").then(({ motors }) =>
+                            motors.initialize(content_ready)
+                        );
                         break;
                     case 'sensors':
-                        TABS.sensors.initialize(content_ready);
+                        import("./tabs/sensors").then(({ sensors }) =>
+                            sensors.initialize(content_ready)
+                        );
                         break;
                     case 'logging':
-                        TABS.logging.initialize(content_ready);
+                        import("./tabs/logging").then(({ logging }) =>
+                            logging.initialize(content_ready)
+                        );
                         break;
                     case 'onboard_logging':
-                        TABS.onboard_logging.initialize(content_ready);
+                        import("./tabs/onboard_logging").then(({ onboard_logging }) =>
+                            onboard_logging.initialize(content_ready)
+                        );
                         break;
                     case 'cli':
-                        TABS.cli.initialize(content_ready, GUI.nwGui);
+                        import("./tabs/cli").then(({ cli }) =>
+                            cli.initialize(content_ready)
+                        );
                         break;
 
                     default:

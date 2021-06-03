@@ -1,7 +1,7 @@
-'use strict';
+import { i18n } from "../localization";
 
-TABS.servos = {};
-TABS.servos.initialize = function (callback) {
+const servos = {};
+servos.initialize = function (callback) {
 
     if (GUI.active_tab !== 'servos') {
         GUI.active_tab = 'servos';
@@ -233,8 +233,13 @@ TABS.servos.initialize = function (callback) {
     }
 };
 
-TABS.servos.cleanup = function (callback) {
+servos.cleanup = function (callback) {
     if (callback) {
         callback();
     }
+};
+
+window.TABS.servos = servos;
+export {
+    servos
 };

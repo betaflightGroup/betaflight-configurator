@@ -1,7 +1,7 @@
-'use strict';
+import { i18n } from "../localization";
 
-TABS.gps = {};
-TABS.gps.initialize = function (callback) {
+const gps = {};
+gps.initialize = function (callback) {
 
     if (GUI.active_tab !== 'gps') {
         GUI.active_tab = 'gps';
@@ -160,6 +160,11 @@ TABS.gps.initialize = function (callback) {
 
 };
 
-TABS.gps.cleanup = function (callback) {
+gps.cleanup = function (callback) {
     if (callback) callback();
+};
+
+window.TABS.gps = gps;
+export {
+    gps
 };
