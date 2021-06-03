@@ -321,7 +321,9 @@ function startProcess() {
                         );
                         break;
                     case 'firmware_flasher':
-                        TABS.firmware_flasher.initialize(content_ready);
+                        import("./tabs/firmware_flasher").then(({ firmware_flasher }) =>
+                            firmware_flasher.initialize(content_ready)
+                        );
                         break;
                     case 'help':
                         import("./tabs/help").then(({ help }) =>
