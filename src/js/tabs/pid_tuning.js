@@ -2784,5 +2784,5 @@ pid_tuning.changeRatesTypeLogo = function() {
 
 window.TABS.pid_tuning = pid_tuning;
 export {
-    pid_tuning,
+    pid_tuning
 };

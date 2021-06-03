@@ -1304,5 +1304,5 @@ firmware_flasher.injectTargetInfo = function (targetConfig, targetName, manufact
 TABS.firmware_flasher = firmware_flasher;
 
 export {
-    firmware_flasher,
+    firmware_flasher
 };

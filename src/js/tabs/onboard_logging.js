@@ -695,5 +695,5 @@ onboard_logging.mscRebootFailedCallback = function () {
 
 window.TABS.onboard_logging = onboard_logging;
 export {
-    onboard_logging,
+    onboard_logging
 };

@@ -531,5 +531,5 @@ cli.cleanup = function (callback) {
 
 window.TABS.cli = cli;
 export {
-    cli,
+    cli
 };

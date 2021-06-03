@@ -897,5 +897,5 @@ function updateInterpolationView() {
 
 window.TABS.receiver = receiver;
 export {
-    receiver,
+    receiver
 };

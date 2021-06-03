@@ -1020,5 +1020,5 @@ vtx.cleanup = function (callback) {
 
 window.TABS.vtx = vtx;
 export {
-    vtx,
+    vtx
 };
