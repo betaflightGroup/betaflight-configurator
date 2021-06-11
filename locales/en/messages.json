@@ -5021,6 +5021,13 @@
     "osdDescTotalFlights": {
         "message": "Approximate total number of flights"
     },
+    "osdTextLandNow": {
+        "message": "Land now warning",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescLandNow": {
+        "message": "Land now warning appears when the battery level is critical"
+    },
     "osdTextElementUpDownReference": {
         "message": "Up (Pitch 90 deg)/Down (Pitch -90 deg) Reference",
         "description": "OSD Symbol to show when pitch is approaching vertical (90 deg, U) and D for nose down (-90 deg, D)"
