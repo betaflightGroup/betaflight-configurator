@@ -1,10 +1,10 @@
-'use strict';
+import { i18n } from '../localization';
 
-TABS.setup = {
+const setup = {
     yaw_fix: 0.0
 };
 
-TABS.setup.initialize = function (callback) {
+setup.initialize = function (callback) {
     const self = this;
 
     if (GUI.active_tab != 'setup') {
@@ -324,7 +324,7 @@ TABS.setup.initialize = function (callback) {
     }
 };
 
-TABS.setup.initializeInstruments = function() {
+setup.initializeInstruments = function() {
     const options = {size:90, showBox : false, img_directory: 'images/flightindicators/'};
     const attitude = $.flightIndicator('#attitude', 'attitude', options);
     const heading = $.flightIndicator('#heading', 'heading', options);
@@ -336,13 +336,13 @@ TABS.setup.initializeInstruments = function() {
     };
 };
 
-TABS.setup.initModel = function () {
+setup.initModel = function () {
     this.model = new Model($('.model-and-info #canvas_wrapper'), $('.model-and-info #canvas'));
 
     $(window).on('resize', $.proxy(this.model.resize, this.model));
 };
 
-TABS.setup.renderModel = function () {
+setup.renderModel = function () {
     const x = (FC.SENSOR_DATA.kinematics[1] * -1.0) * 0.017453292519943295,
         y = ((FC.SENSOR_DATA.kinematics[2] * -1.0) - this.yaw_fix) * 0.017453292519943295,
         z = (FC.SENSOR_DATA.kinematics[0] * -1.0) * 0.017453292519943295;
@@ -350,7 +350,7 @@ TABS.setup.renderModel = function () {
     this.model.rotateTo(x, y, z);
 };
 
-TABS.setup.cleanup = function (callback) {
+setup.cleanup = function (callback) {
     if (this.model) {
         $(window).off('resize', $.proxy(this.model.resize, this.model));
         this.model.dispose();
@@ -358,3 +358,8 @@ TABS.setup.cleanup = function (callback) {
 
     if (callback) callback();
 };
+
+// TODO: remove once all tabs are modules
+window.TABS.setup = setup;
+
+export { setup };

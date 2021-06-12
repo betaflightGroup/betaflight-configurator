@@ -1,7 +1,7 @@
-'use strict';
+import { i18n } from "../localization";
 
-TABS.sensors = {};
-TABS.sensors.initialize = function (callback) {
+const sensors = {};
+sensors.initialize = function (callback) {
 
     if (GUI.active_tab != 'sensors') {
         GUI.active_tab = 'sensors';
@@ -472,8 +472,13 @@ TABS.sensors.initialize = function (callback) {
     });
 };
 
-TABS.sensors.cleanup = function (callback) {
+sensors.cleanup = function (callback) {
     serial.emptyOutputBuffer();
 
     if (callback) callback();
+};
+
+window.TABS.sensors = sensors;
+export {
+    sensors
 };

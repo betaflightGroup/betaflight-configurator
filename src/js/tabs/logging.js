@@ -325,3 +325,7 @@ logging.cleanup = function (callback) {
 
 // TODO: only for transition to modules, drop this eventually
 window.TABS.logging = logging;
+
+export {
+    logging
+};

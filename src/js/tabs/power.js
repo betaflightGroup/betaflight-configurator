@@ -1,11 +1,12 @@
-'use strict';
+import semver from 'semver';
+import { i18n } from '../localization';
 
-TABS.power = {
+const power = {
     supported: false,
     analyticsChanges: {},
 };
 
-TABS.power.initialize = function (callback) {
+power.initialize = function (callback) {
     const self = this;
 
     if (GUI.active_tab != 'power') {
@@ -531,7 +532,7 @@ TABS.power.initialize = function (callback) {
     }
 };
 
-TABS.power.cleanup = function (callback) {
+power.cleanup = function (callback) {
     if (callback) callback();
 
     if (GUI.calibrationManager) {
@@ -541,3 +542,6 @@ TABS.power.cleanup = function (callback) {
         GUI.calibrationManagerConfirmation.destroy();
     }
 };
+
+window.TABS.power = power;
+export { power };

@@ -1,8 +1,8 @@
-'use strict';
+import { i18n } from "../localization";
 
-TABS.failsafe = {};
+const failsafe = {};
 
-TABS.failsafe.initialize = function (callback, scrollPosition) {
+failsafe.initialize = function (callback, scrollPosition) {
     const self = this;
 
     if (GUI.active_tab != 'failsafe') {
@@ -432,6 +432,11 @@ TABS.failsafe.initialize = function (callback, scrollPosition) {
     }
 };
 
-TABS.failsafe.cleanup = function (callback) {
+failsafe.cleanup = function (callback) {
     if (callback) callback();
+};
+
+window.TABS.failsafe = failsafe;
+export {
+    failsafe
 };

@@ -1,10 +1,11 @@
-'use strict';
+import semver from 'semver';
+import { i18n } from '../localization';
 
-TABS.configuration = {
+const configuration = {
     analyticsChanges: {},
 };
 
-TABS.configuration.initialize = function (callback) {
+configuration.initialize = function (callback) {
     const self = this;
 
     if (GUI.active_tab != 'configuration') {
@@ -642,6 +643,10 @@ TABS.configuration.initialize = function (callback) {
     }
 };
 
-TABS.configuration.cleanup = function (callback) {
+configuration.cleanup = function (callback) {
     if (callback) callback();
 };
+
+// TODO: remove once all tabs are modules
+window.TABS.configuration = configuration;
+export { configuration };

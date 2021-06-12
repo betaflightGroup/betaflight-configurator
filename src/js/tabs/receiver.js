@@ -1,6 +1,6 @@
-'use strict';
+import { i18n } from "../localization";
 
-TABS.receiver = {
+const receiver = {
     rateChartHeight: 117,
     useSuperExpo: false,
     deadband: 0,
@@ -9,7 +9,7 @@ TABS.receiver = {
     needReboot: false,
 };
 
-TABS.receiver.initialize = function (callback) {
+receiver.initialize = function (callback) {
     const tab = this;
 
     if (GUI.active_tab != 'receiver') {
@@ -787,11 +787,11 @@ TABS.receiver.initialize = function (callback) {
     }
 };
 
-TABS.receiver.getReceiverData = function () {
+receiver.getReceiverData = function () {
     MSP.send_message(MSPCodes.MSP_RC, false, false);
 };
 
-TABS.receiver.initModelPreview = function () {
+receiver.initModelPreview = function () {
     this.keepRendering = true;
     this.model = new Model($('.model_preview'), $('.model_preview canvas'));
 
@@ -813,7 +813,7 @@ TABS.receiver.initModelPreview = function () {
     $(window).on('resize', $.proxy(this.model.resize, this.model));
 };
 
-TABS.receiver.renderModel = function () {
+receiver.renderModel = function () {
     if (this.keepRendering) { requestAnimationFrame(this.renderModel.bind(this)); }
 
     if (!this.clock) { this.clock = new THREE.Clock(); }
@@ -829,8 +829,7 @@ TABS.receiver.renderModel = function () {
     }
 };
 
-
-TABS.receiver.cleanup = function (callback) {
+receiver.cleanup = function (callback) {
     $(window).off('resize', this.resize);
     if (this.model) {
         $(window).off('resize', $.proxy(this.model.resize, this.model));
@@ -842,7 +841,7 @@ TABS.receiver.cleanup = function (callback) {
     if (callback) callback();
 };
 
-TABS.receiver.refresh = function (callback) {
+receiver.refresh = function (callback) {
     const self = this;
 
     GUI.tab_switch_cleanup(function () {
@@ -854,7 +853,7 @@ TABS.receiver.refresh = function (callback) {
     });
 };
 
-TABS.receiver.updateRcInterpolationParameters = function () {
+receiver.updateRcInterpolationParameters = function () {
     if (semver.gte(FC.CONFIG.apiVersion, "1.20.0")) {
         if ($('select[name="rcInterpolation-select"]').val() === '3') {
             $('.tab-receiver .rc-interpolation-manual').show();
@@ -895,3 +894,8 @@ function updateInterpolationView() {
         $('.tab-receiver .rcSmoothing-input-cutoff').hide();
     }
 }
+
+window.TABS.receiver = receiver;
+export {
+    receiver
+};

@@ -1,8 +1,8 @@
-'use strict';
+import { i18n } from '../localization';
 
-TABS.auxiliary = {};
+const auxiliary = {};
 
-TABS.auxiliary.initialize = function (callback) {
+auxiliary.initialize = function (callback) {
     GUI.active_tab_ref = this;
     GUI.active_tab = 'auxiliary';
     let prevChannelsValues = null;
@@ -563,6 +563,11 @@ TABS.auxiliary.initialize = function (callback) {
     }
 };
 
-TABS.auxiliary.cleanup = function (callback) {
+auxiliary.cleanup = function (callback) {
     if (callback) callback();
+};
+
+window.TABS.auxiliary = auxiliary;
+export {
+    auxiliary
 };

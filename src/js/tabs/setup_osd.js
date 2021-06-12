@@ -1,9 +1,9 @@
-'use strict';
+import { i18n } from "../localization";
 
-TABS.setup_osd = {
+const setup_osd = {
 };
 
-TABS.setup_osd.initialize = function (callback) {
+setup_osd.initialize = function (callback) {
 
     if (GUI.active_tab != 'setup_osd') {
         GUI.active_tab = 'setup_osd';
@@ -63,6 +63,11 @@ TABS.setup_osd.initialize = function (callback) {
     }
 };
 
-TABS.setup_osd.cleanup = function (callback) {
+setup_osd.cleanup = function (callback) {
     if (callback) callback();
+};
+
+window.TABS.setup_osd = setup_osd;
+export {
+    setup_osd
 };

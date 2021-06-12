@@ -1,12 +1,12 @@
-'use strict';
+import { i18n } from "../localization";
 
-TABS.led_strip = {
+const led_strip = {
         wireMode: false,
         directions: ['n', 'e', 's', 'w', 'u', 'd']
     };
 
 
-TABS.led_strip.initialize = function (callback, scrollPosition) {
+led_strip.initialize = function (callback, scrollPosition) {
     let selectedColorIndex = null;
     let selectedModeColor = null;
     const functionTag = '.function-';
@@ -1146,6 +1146,11 @@ TABS.led_strip.initialize = function (callback, scrollPosition) {
     }
 };
 
-TABS.led_strip.cleanup = function (callback) {
+led_strip.cleanup = function (callback) {
     if (callback) callback();
+};
+
+window.TABS.led_strip = led_strip;
+export {
+    led_strip
 };
