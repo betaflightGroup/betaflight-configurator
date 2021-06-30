@@ -12,6 +12,7 @@ const PortHandler = new function () {
     this.port_detected_callbacks = [];
     this.port_removed_callbacks = [];
     this.dfu_available = false;
+    this.port_available = false;
 };
 
 PortHandler.initialize = function () {
@@ -118,6 +119,7 @@ PortHandler.removePort = function(currentPorts) {
 
     if (removePorts.length) {
         console.log(`PortHandler - Removed: ${JSON.stringify(removePorts)}`);
+        self.port_available = false;
         // disconnect "UI" - routine can't fire during atmega32u4 reboot procedure !!!
         if (GUI.connected_to) {
             for (let i = 0; i < removePorts.length; i++) {
@@ -170,6 +172,7 @@ PortHandler.detectPort = function(currentPorts) {
             }
         });
 
+        self.port_available = true;
         // Signal board verification
         if (GUI.active_tab === 'firmware_flasher') {
             TABS.firmware_flasher.boardNeedsVerification = true;
@@ -266,6 +269,7 @@ PortHandler.selectPort = function(ports) {
             const legacyDeviceRecognized = portName.includes('usb');
             if (isWindows && deviceRecognized || isTty && (deviceRecognized || legacyDeviceRecognized)) {
                 this.portPickerElement.val(pathSelect);
+                this.port_available = true;
                 console.log(`Porthandler detected device ${portName} on port: ${pathSelect}`);
             }
         }

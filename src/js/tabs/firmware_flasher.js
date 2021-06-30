@@ -317,8 +317,6 @@ firmware_flasher.initialize = function (callback) {
                     $('select[name="board"]').val(boardReleases ? result.selected_board : 0).trigger('change');
                 }
             });
-
-            verifyBoard();
         }
 
         const buildTypes = [
@@ -344,8 +342,8 @@ firmware_flasher.initialize = function (callback) {
                 loader: () => self.jenkinsLoader.loadBuilds(job.name, loadUnifiedBuilds)
             };
         });
-    let buildTypesToShow;
 
+        let buildTypesToShow;
         const buildType_e = $('select[name="build_type"]');
         function buildBuildTypeOptionsList() {
             buildType_e.empty();
@@ -536,9 +534,15 @@ firmware_flasher.initialize = function (callback) {
 
         $('select[name="board"]').change(function() {
             $("a.load_remote_file").addClass('disabled');
-            const target = $(this).val();
+            let target = $(this).val();
 
-            if (!GUI.connect_lock && target) {
+            // exception for board flashed with local custom firmware
+            if (target === null) {
+                target = '0';
+                $(this).val(target).trigger('change');
+            }
+
+            if (!GUI.connect_lock) {
                 if (TABS.firmware_flasher.selectedBoard !== target) {
                     // We're sure the board actually changed
                     if (self.isConfigLocal) {
@@ -547,7 +551,11 @@ firmware_flasher.initialize = function (callback) {
                         self.unifiedTarget = {};
                     }
                 }
-                ConfigStorage.set({'selected_board': target});
+
+                if (target !== '0') {
+                    ConfigStorage.set({'selected_board': target});
+                }
+
                 TABS.firmware_flasher.selectedBoard = target;
                 TABS.firmware_flasher.bareBoard = undefined;
                 console.log('board changed to', target);
@@ -563,7 +571,7 @@ firmware_flasher.initialize = function (callback) {
                 }
 
                 const versions_e = $('select[name="firmware_version"]');
-                if (target === 0) {
+                if (target === '0') {
                     // target is 0 is the "Choose a Board" option. Throw out anything loaded
                     clearBufferedFirmware();
 
@@ -774,7 +782,6 @@ firmware_flasher.initialize = function (callback) {
 
                 function onFinishClose() {
                     MSP.clearListeners();
-                    GUI.connect_lock = false;
                 }
 
                 function onClose() {
@@ -795,18 +802,28 @@ firmware_flasher.initialize = function (callback) {
 
                 function getBoard() {
                     console.log(`Requesting board information`);
-                    MSP.send_message(MSPCodes.MSP_API_VERSION, false, false, () => MSP.send_message(MSPCodes.MSP_BOARD_INFO, false, false, onFinish));
+                    MSP.send_message(MSPCodes.MSP_API_VERSION, false, false, () => {
+                        if (!FC.CONFIG.apiVersion || FC.CONFIG.apiVersion === 'null.null.0') {
+                            FC.CONFIG.apiVersion = '0.0.0';
+                        }
+                        console.log(FC.CONFIG.apiVersion);
+                        if (semver.gte(FC.CONFIG.apiVersion, API_VERSION_1_39)) {
+                            MSP.send_message(MSPCodes.MSP_BOARD_INFO, false, false, onFinish);
+                        } else {
+                            console.log('Firmware version not supported for reading board information');
+                            onClose();
+                        }
+                    });
                 }
 
                 function onConnect(openInfo) {
                     if (openInfo) {
-                        GUI.connect_lock = true;
                         serial.onReceive.addListener(data => MSP.read(data));
                         const mspHelper = new MspHelper();
                         MSP.listen(mspHelper.process_data.bind(mspHelper));
                         getBoard();
                     } else {
-                        console.dir('Failed to open connection:', openInfo);
+                        GUI.log(i18n.getMessage('serialPortOpenFail'));
                     }
                 }
 
@@ -817,7 +834,7 @@ firmware_flasher.initialize = function (callback) {
                     if ($('input.flash_manual_baud').is(':checked')) {
                         baud = parseInt($('#flash_manual_baud_rate').val());
                     }
-                    console.log('Query board information to preselect right firmware');
+                    GUI.log(i18n.getMessage('firmwareFlasherDetectBoardQuery'));
                     if (!(serial.connected || serial.connectionId)) {
                         serial.connect(port, {bitrate: baud}, onConnect);
                     } else {
@@ -825,11 +842,39 @@ firmware_flasher.initialize = function (callback) {
                         serial.disconnect();
                     }
                 } else {
-                    console.log('Please select valid serial port');
                     GUI.log(i18n.getMessage('firmwareFlasherNoValidPort'));
                 }
             }
         }
+
+        const detectBoardElement = $('a.detect-board');
+        let isClickable = true;
+
+        detectBoardElement.on('click', () => {
+            detectBoardElement.addClass('disabled');
+
+            if (isClickable) {
+                isClickable = false;
+                verifyBoard();
+                setTimeout(() => isClickable = true, 1000);
+            }
+        });
+
+        function updateDetectBoardButton() {
+            const board = $('select[name="board"] option:selected').val();
+            const firmwareVersion = $('select[name="firmware_version"] option:selected').val();
+            const isDfu = portPickerElement.val().includes('DFU');
+            const isBusy = GUI.connect_lock;
+            const isLoaded = board !== '0' && firmwareVersion !== '0';
+            const isAvailable = PortHandler.port_available || false;
+            const isButtonDisabled = isDfu || isBusy || !isLoaded || !isAvailable;
+
+            detectBoardElement.toggleClass('disabled', isButtonDisabled);
+        }
+
+        document.querySelector('select[name="build_type"]').addEventListener('change', updateDetectBoardButton);
+        document.querySelector('select[name="board"]').addEventListener('change', updateDetectBoardButton);
+        document.querySelector('select[name="firmware_version"]').addEventListener('change', updateDetectBoardButton);
 
         ConfigStorage.get('erase_chip', function (result) {
             if (result.erase_chip) {
@@ -1092,6 +1137,7 @@ firmware_flasher.initialize = function (callback) {
                     exitDfuElement.addClass('disabled');
                 }
             }
+            updateDetectBoardButton();
         }).change();
 
         $('a.flash_firmware').click(function () {

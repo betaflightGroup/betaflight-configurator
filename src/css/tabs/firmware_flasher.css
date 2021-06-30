@@ -202,6 +202,12 @@
     opacity: 0.5;
 }
 
+.tab-firmware_flasher .default_btn {
+    margin-bottom: 0;
+    margin-left: 100px;
+    width: 100px;
+}
+
 #dialogUnstableFirmwareAcknoledgement .content {
     margin-top: 10px;
 }

@@ -3171,6 +3171,18 @@
     "firmwareFlasherButtonContinue": {
         "message": "Continue"
     },
+    "firmwareFlasherDetectBoardButton": {
+        "message": "Detect Board"
+    },
+    "firmwareFlasherDetectBoardDescription": {
+        "message": "Detect the connected board using MSP"
+    },
+    "firmwareFlasherDetectBoardDescriptionHint": {
+        "message": "This only works when not in DFU mode and when MSP communication is working. Sometimes you have to retry a few times or even reconnect USB. Try connecting as normal first as you could have forgotten to apply custom defaults. Please reboot after flashing - replug your USB."
+    },
+    "firmwareFlasherDetectBoardQuery": {
+        "message": "Query board information to preselect right firmware"
+    },
     "unstableFirmwareAcknoledgementDialog": {
         "message": "You are about to flash a <strong>development build of the firmware</strong>. These builds are a work in progress, and any of the following can be the case:<strong><ul><li>the firmware does not work at all;</li><li>the firmware is not flyable;</li><li>there are safety issues with the firmware, for example flyaways</li><li>the firmware can cause the flight controller to become unresponsive, or damaged</li></ul></strong>If you proceed with flashing this firmware, <strong>you are assuming full responsibility for the risk of any of the above happening</strong>. Furthermore you acknowledge that it is necessary to perform <strong>thorough bench tests with props off</strong> before any attempts to fly this firmware."
     },
