@@ -15,6 +15,7 @@ options.initialize = function (callback) {
         TABS.options.initAnalyticsOptOut();
         TABS.options.initCliAutoComplete();
         TABS.options.initAutoConnectConnectionTimeout();
+        TABS.options.initMacSetHideMinimize();
         TABS.options.initCordovaForceComputerUI();
         TABS.options.initDarkTheme();
 
@@ -116,6 +117,19 @@ options.initAutoConnectConnectionTimeout = function () {
             ConfigStorage.set({'connectionTimeout': value});
         });
     });
+};
+
+options.initMacSetHideMinimize = function () {
+    if (GUI.operating_system === 'MacOS') {
+        ConfigStorage.get('macSetHideMinimize', function (result) {
+            $('div.macSetHideMinimize input')
+                .prop('checked', !!result.macSetHideMinimize)
+                .change(function() { ConfigStorage.set({macSetHideMinimize: $(this).is(':checked')}); })
+                .change();
+        });
+    } else {
+        $('div.macSetHideMinimize').hide();
+    }
 };
 
 options.initCordovaForceComputerUI = function () {

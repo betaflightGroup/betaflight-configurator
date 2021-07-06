@@ -170,21 +170,42 @@ function startProcess() {
         configuratorVersion: CONFIGURATOR.version }));
 
     if (GUI.isNWJS()) {
+        const manifest = nw.App.manifest;
         let nwWindow = GUI.nwGui.Window.get();
         nwWindow.on('new-win-policy', function(frame, url, policy) {
             // do not open the window
             policy.ignore();
+            // use manifest to get window id
+            if (GUI.operating_system === "MacOS") {
+                policy.setNewWindowManifest(manifest.window);
+            }
             // and open it in external browser
             GUI.nwGui.Shell.openExternal(url);
         });
         nwWindow.on('close', closeHandler);
-        // TODO: Remove visibilitychange Listener when upgrading to NW2
-        // capture Command H on MacOS and change it to minimize
-        document.addEventListener("visibilitychange", function() {
-            if (GUI.operating_system === "MacOS" && document.visibilityState === "hidden") {
-                nwWindow.minimize();
-            }
-        }, false);
+        // TODO: Remove this block and associated code when upgrading to NW2 (check storage and filesystem functions)
+        // Taskbar bug workaround: catch hide and focus or minimize otherwise retain functionallity
+        if (GUI.operating_system === "MacOS") {
+            let count = 0;
+            let macSetHideMinimize = false;
+            let minimized = false;
+
+            nwWindow.on('minimize', () => minimized = true);
+            nwWindow.on('restore', () => minimized = false);
+            ConfigStorage.get('macSetHideMinimize', (result) => macSetHideMinimize = result.macSetHideMinimize);
+            document.addEventListener('visibilitychange', () => {
+                if (document.visibilityState === "hidden" && !minimized) {
+                    if (macSetHideMinimize) {
+                        nwWindow.minimize();
+                    } else {
+                        nwWindow.focus(manifest.window.id);
+                        if (!count++) {
+                            showErrorDialog(i18n.getMessage('macSetHideMinimizeDialog'));
+                        }
+                    }
+                }
+            });
+        }
     } else if (GUI.isCordova()) {
         window.addEventListener('beforeunload', closeHandler);
         document.addEventListener('backbutton', function(e) {

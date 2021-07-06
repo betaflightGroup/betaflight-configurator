@@ -89,6 +89,13 @@
     "rememberLastTab": {
         "message": "Reopen last tab on connect"
     },
+    "macSetHideMinimize": {
+        "message": "Instead of blocking hide change into minimize - needs restart of configurator",
+        "description": "On MacOs we are disabling hide by default due to a bug, here the user can set it to minimize if preferred"
+    },
+    "macSetHideMinimizeDialog": {
+        "message": "Hide is disabled on Mac due to problems with implementation of NWJS"
+    },
     "analyticsOptOut": {
         "message": "Opt out of the anonymised collection of statistics data"
     },
