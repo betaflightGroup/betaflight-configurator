@@ -486,9 +486,6 @@
     "dfu_device_flash_info": {
         "message": "Otkriven uređaj s kapacitetom memorije od $1 KiB"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">Greška:</span> Ova slika zauzima više memorije nego što je dostupno na memorijskom čipu! Slika: $1 Kib, limit = $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">spremljen</span>"
     },

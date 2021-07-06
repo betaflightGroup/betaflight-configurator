@@ -598,9 +598,6 @@
     "dfu_device_flash_info": {
         "message": "检测到闪存空间为 $1 KiB 的芯片"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">错误</span>：固件文件大于飞控芯片的闪存。固件大小: $1 KiB，上限 = $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">已保存</span>"
     },

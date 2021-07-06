@@ -557,9 +557,6 @@
     "dfu_device_flash_info": {
         "message": "Detectat dispositiu amb un total de $1 KiB de memòria flash"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">Error</span>: La imatge proporcionada és major a la memòria flash disponible al xip! Imatge: $1 KiB, limit = $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">desada</span>"
     },

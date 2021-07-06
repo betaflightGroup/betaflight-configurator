@@ -565,9 +565,6 @@
     "dfu_device_flash_info": {
         "message": "Apparaat herkend met flash grote $1 KiB"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">Fout</span>: De afbeelding is groter dan de flash die beschikbaar is op de chip! Afbeelding: $1 KiB, limit = $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">opgeslagen</span>"
     },

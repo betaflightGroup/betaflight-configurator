@@ -528,9 +528,6 @@
     "dfu_device_flash_info": {
         "message": "Eszköz felismerve $1 kiB flash mérettel"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">Hiba</span>: A megadott kép nagyobb, mint a chipen elérhető flash! Kép: $1 KiB, limit = $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">elmentve</span>"
     },

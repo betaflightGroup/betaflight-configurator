@@ -628,9 +628,6 @@
     "dfu_device_flash_info": {
         "message": "Dispositivo detectado cun tamaño de flash total $1 KiB"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">Erro</span>: A imaxe estregada é maior que o tamaño do chip! Imaxe: $1 KiB, límite= $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">gardada</span>"
     },

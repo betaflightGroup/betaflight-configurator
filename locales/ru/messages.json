@@ -525,9 +525,6 @@
     "dfu_device_flash_info": {
         "message": "Обнаружено устройство с суммарным размером flash-памяти $1 KiB"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">Ошибка</span>: Этот образ прошивки больше, чем flash-память, доступная в этом чипе! Размер образа: $1 kiB, предельный размер: $2 kiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">сохранён</span>"
     },

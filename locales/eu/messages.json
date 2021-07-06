@@ -540,9 +540,6 @@
     "dfu_device_flash_info": {
         "message": "Gailua detektatuta $1 KiB flash tamaina osoarekin"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">Errorea</span>: Emandako irudia, Chipan erabilgarri dagoen Flash memoria baino handiagoa da! Irudia:$1 KiB, limitea = $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">gordeta</span>"
     },

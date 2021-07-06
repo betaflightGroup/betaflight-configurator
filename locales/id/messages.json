@@ -438,9 +438,6 @@
     "dfu_device_flash_info": {
         "message": "Terdeteksi perangkat dengan ukuran flash total $1 KiB"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">Kesalahan</span>: Ukuran firmware yg diberikan lebih besar dari flash yang ada di chip! firmware: $1 KiB, batas = $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">disimpan</span>"
     },

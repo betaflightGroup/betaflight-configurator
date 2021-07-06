@@ -528,9 +528,6 @@
     "dfu_device_flash_info": {
         "message": "Gerät mit einer Speicherkapazität von $1 KiB erkannt"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">Fehler</span>: Zur Verfügung gestellte Datei ist größer als der Speicherplatz des Chips: $1 KiB, Limit = $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">gespeichert</span>"
     },

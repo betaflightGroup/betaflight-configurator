@@ -504,9 +504,6 @@
     "dfu_device_flash_info": {
         "message": "Dispositivo detectado com memória flash de $1 KiB"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">Erro:</span> A imagem fornecida é maior que memória flash disponível no chip! Imagem: $1 KiB, limite = $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">salvo</span>"
     },

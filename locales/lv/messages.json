@@ -477,9 +477,6 @@
     "dfu_device_flash_info": {
         "message": "Detektēta ierīces ar kopējo atmiņas lielumu $1 KiB"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">Kļūda</span>: Attēls ir lielāks neka uz čipa pieejamā vieta! Attēls: $1 KiB, limits = $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\"> saglabāts</span>"
     },

@@ -534,9 +534,6 @@
     "dfu_device_flash_info": {
         "message": "檢測到快閃記憶體空間為 $1 KiB 的晶片"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">錯誤</span>：固件文件大於飛控晶片的快閃記憶體。固件大小: $1 KiB，上限 = $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">已保存</span>"
     },

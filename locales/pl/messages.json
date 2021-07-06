@@ -528,9 +528,6 @@
     "dfu_device_flash_info": {
         "message": "Wykryto urządzenie z całkowitym rozmiarem pamięci flash $1 KiB"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">Błąd</span>: Dostarczony obraz jest większy niż ilość miejsca dostępna w pamięci flash! Obraz: $1 KiB, limit = $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "<span class=\"message-positive\">Zapisano</span> zmiany w EEPROM"
     },

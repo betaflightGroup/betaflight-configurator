@@ -68,7 +68,7 @@ var STM32DFU_protocol = function () {
 };
 
 STM32DFU_protocol.prototype.connect = function (device, hex, options, callback) {
-    var self = this;
+    const self = this;
     self.hex = hex;
     self.callback = callback;
 
@@ -103,7 +103,7 @@ STM32DFU_protocol.prototype.connect = function (device, hex, options, callback) 
 };
 
 STM32DFU_protocol.prototype.openDevice = function (device) {
-    var self = this;
+    const self = this;
 
     chrome.usb.openDevice(device, function (handle) {
         if (checkChromeRuntimeError()) {
@@ -124,7 +124,7 @@ STM32DFU_protocol.prototype.openDevice = function (device) {
 };
 
 STM32DFU_protocol.prototype.closeDevice = function () {
-    var self = this;
+    const self = this;
 
     chrome.usb.closeDevice(this.handle, function closed() {
         if (checkChromeRuntimeError()) {
@@ -140,7 +140,7 @@ STM32DFU_protocol.prototype.closeDevice = function () {
 };
 
 STM32DFU_protocol.prototype.claimInterface = function (interfaceNumber) {
-    var self = this;
+    const self = this;
 
     chrome.usb.claimInterface(this.handle, interfaceNumber, function claimed() {
         // Don't perform the error check on MacOS at this time as there seems to be a bug
@@ -162,7 +162,7 @@ STM32DFU_protocol.prototype.claimInterface = function (interfaceNumber) {
 };
 
 STM32DFU_protocol.prototype.releaseInterface = function (interfaceNumber) {
-    var self = this;
+    const self = this;
 
     chrome.usb.releaseInterface(this.handle, interfaceNumber, function released() {
         console.log('Released interface: ' + interfaceNumber);
@@ -180,7 +180,7 @@ STM32DFU_protocol.prototype.resetDevice = function (callback) {
 };
 
 STM32DFU_protocol.prototype.getString = function (index, callback) {
-    var self = this;
+    const self = this;
 
     chrome.usb.controlTransfer(self.handle, {
         'direction':    'in',
@@ -208,7 +208,7 @@ STM32DFU_protocol.prototype.getString = function (index, callback) {
 };
 
 STM32DFU_protocol.prototype.getInterfaceDescriptors = function (interfaceNum, callback) {
-    var self = this;
+    const self = this;
 
     chrome.usb.getConfiguration( this.handle, function (config) {
         if (checkChromeRuntimeError()) {
@@ -250,7 +250,7 @@ STM32DFU_protocol.prototype.getInterfaceDescriptors = function (interfaceNum, ca
 
 
 STM32DFU_protocol.prototype.getInterfaceDescriptor = function (_interface, callback) {
-    var self = this;
+    const self = this;
     chrome.usb.controlTransfer(this.handle, {
         'direction':    'in',
         'recipient':    'device',
@@ -284,7 +284,7 @@ STM32DFU_protocol.prototype.getInterfaceDescriptor = function (_interface, callb
 };
 
 STM32DFU_protocol.prototype.getFunctionalDescriptor = function (_interface, callback) {
-    var self = this;
+    const self = this;
     chrome.usb.controlTransfer(this.handle, {
         'direction':    'in',
         'recipient':    'interface',
@@ -316,7 +316,7 @@ STM32DFU_protocol.prototype.getFunctionalDescriptor = function (_interface, call
 };
 
 STM32DFU_protocol.prototype.getChipInfo = function (_interface, callback) {
-    var self = this;
+    const self = this;
 
     self.getInterfaceDescriptors(0, function (descriptors, resultCode) {
         if (resultCode) {
@@ -420,7 +420,7 @@ STM32DFU_protocol.prototype.getChipInfo = function (_interface, callback) {
 };
 
 STM32DFU_protocol.prototype.controlTransfer = function (direction, request, value, _interface, length, data, callback, _timeout) {
-    var self = this;
+    const self = this;
 
     // timeout support was added in chrome v43
     var timeout;
@@ -482,7 +482,7 @@ STM32DFU_protocol.prototype.controlTransfer = function (direction, request, valu
 
 // routine calling DFU_CLRSTATUS until device is in dfuIDLE state
 STM32DFU_protocol.prototype.clearStatus = function (callback) {
-    var self = this;
+    const self = this;
 
     function check_status() {
         self.controlTransfer('in', self.request.GETSTATUS, 0, 0, 6, 0, function (data) {
@@ -504,7 +504,7 @@ STM32DFU_protocol.prototype.clearStatus = function (callback) {
 };
 
 STM32DFU_protocol.prototype.loadAddress = function (address, callback, abort) {
-    var self = this;
+    const self = this;
 
     self.controlTransfer('out', self.request.DNLOAD, 0, 0, 0, [0x21, address & 0xff, (address >> 8) & 0xff, (address >> 16) & 0xff, (address >> 24) & 0xff], function () {
         self.controlTransfer('in', self.request.GETSTATUS, 0, 0, 6, 0, function (data) {
@@ -549,8 +549,49 @@ STM32DFU_protocol.prototype.verify_flash = function (first_array, second_array) 
     return true;
 };
 
+STM32DFU_protocol.prototype.isBlockUsable = function(startAddress, length) {
+    const self = this;
+
+    let result = false;
+
+    let searchAddress = startAddress;
+    let remainingLength = length;
+
+    let restart;
+    do {
+        restart = false;
+
+        for (const sector of self.flash_layout.sectors) {
+            const sectorStart = sector.start_address;
+            const sectorLength = sector.num_pages * sector.page_size;
+            const sectorEnd = sectorStart + sectorLength - 1; // - 1 for inclusive
+
+            const addressInSector = (searchAddress >= sectorStart) && (searchAddress <= sectorEnd);
+
+            if (addressInSector) {
+                const endAddress = searchAddress + remainingLength - 1; // - 1 for inclusive
+
+                const endAddressInSector = (endAddress <= sectorEnd);
+                if (endAddressInSector) {
+                    result = true;
+                    restart = false;
+                    break;
+                }
+
+                // some of the block is in this sector, search for the another sector that contains the next part of the block
+                searchAddress = sectorEnd + 1;
+                remainingLength -= sectorLength;
+                restart = true;
+                break;
+            }
+        }
+    } while (restart);
+
+    return result;
+};
+
 STM32DFU_protocol.prototype.upload_procedure = function (step) {
-    var self = this;
+    const self = this;
 
     switch (step) {
         case 0:
@@ -559,59 +600,52 @@ STM32DFU_protocol.prototype.upload_procedure = function (step) {
                     console.log('Failed to detect chip info, resultCode: ' + resultCode);
                     self.cleanup();
                 } else {
+                    let nextAction;
+
                     if (typeof chipInfo.internal_flash !== "undefined") {
                         // internal flash
+                        nextAction = 1;
+
                         self.chipInfo = chipInfo;
-
                         self.flash_layout = chipInfo.internal_flash;
-                        self.available_flash_size = self.flash_layout.total_size - (self.hex.start_linear_address - self.flash_layout.start_address);
 
-                        GUI.log(i18n.getMessage('dfu_device_flash_info', (self.flash_layout.total_size / 1024).toString()));
-
-                        if (self.hex.bytes_total > self.available_flash_size) {
-                            GUI.log(i18n.getMessage('dfu_error_image_size',
-                                [(self.hex.bytes_total / 1024.0).toFixed(1),
-                                (self.available_flash_size / 1024.0).toFixed(1)]));
-                            self.cleanup();
-                        } else {
-                            self.getFunctionalDescriptor(0, function (descriptor, resultCode) {
-                                self.transferSize = resultCode ? 2048 : descriptor.wTransferSize;
-                                console.log('Using transfer size: ' + self.transferSize);
-                                self.clearStatus(function () {
-                                    self.upload_procedure(1);
-                                });
-                            });
-                        }
                     } else if (typeof chipInfo.external_flash !== "undefined") {
-                        // external flash, flash to the 3rd partition.
+                        // external flash
+                        nextAction = 2; // no option bytes
+
                         self.chipInfo = chipInfo;
                         self.flash_layout = chipInfo.external_flash;
-
-                        var firmware_partition_index = 2;
-                        var firmware_sectors = self.flash_layout.sectors[firmware_partition_index];
-                        var firmware_partition_size = firmware_sectors.total_size;
-
-                        self.available_flash_size = firmware_partition_size;
-
-                        GUI.log(i18n.getMessage('dfu_device_flash_info', (self.flash_layout.total_size / 1024).toString()));
-
-                        if (self.hex.bytes_total > self.available_flash_size) {
-                            GUI.log(i18n.getMessage('dfu_error_image_size',
-                                [(self.hex.bytes_total / 1024.0).toFixed(1),
-                                (self.available_flash_size / 1024.0).toFixed(1)]));
-                            self.cleanup();
-                        } else {
-                            self.getFunctionalDescriptor(0, function (descriptor, resultCode) {
-                                self.transferSize = resultCode ? 2048 : descriptor.wTransferSize;
-                                console.log('Using transfer size: ' + self.transferSize);
-                                self.clearStatus(function () {
-                                    self.upload_procedure(2); // no option bytes to deal with
-                                });
-                            });
-                        }
                     } else {
                         console.log('Failed to detect internal or external flash');
                         self.cleanup();
+                    }
+
+                    if (typeof nextAction !== "undefined") {
+                        GUI.log(i18n.getMessage('dfu_device_flash_info', (self.flash_layout.total_size / 1024).toString()));
+
+                        // verify all addresses in the hex are writable.
+
+                        const unusableBlocks = [];
+
+                        for (const block of self.hex.data) {
+                            const usable = self.isBlockUsable(block.address, block.bytes);
+                            if (!usable) {
+                                unusableBlocks.push(block);
+                            }
+                        }
+
+                        if (unusableBlocks.length > 0) {
+                            GUI.log(i18n.getMessage('dfu_hex_address_errors'));
+                            self.cleanup();
+                        } else {
+                            self.getFunctionalDescriptor(0, function (descriptor, resultCode) {
+                                self.transferSize = resultCode ? 2048 : descriptor.wTransferSize;
+                                console.log('Using transfer size: ' + self.transferSize);
+                                self.clearStatus(function () {
+                                    self.upload_procedure(nextAction);
+                                });
+                            });
+                        }
                     }
                 }
             });

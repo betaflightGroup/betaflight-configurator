@@ -550,9 +550,6 @@
     "dfu_device_flash_info": {
         "message": "Enhet upptäckt med total flashstorlek $1 KiB"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">Fel</span>: Bifogad avbild är större än tillgängligt flashminne på chip! Avbild: $1 KiB, Max = $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">sparad</span>"
     },

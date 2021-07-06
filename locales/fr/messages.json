@@ -601,9 +601,6 @@
     "dfu_device_flash_info": {
         "message": "Mémoire totale de $1 KiB détectée sur le périphérique"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">Erreur</span>: L'image fournie est plus grande que la mémoire disponible! Image: $1 KiB, limite = $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">enregistrée</span>"
     },

@@ -617,9 +617,6 @@
     "dfu_device_flash_info": {
         "message": "전체 플래시 크기 $1 KiB의 기기가 감지됨"
     },
-    "dfu_error_image_size": {
-        "message": "<span class=\"message-negative\">오류</span>: 제공된 이미지가 칩에서 허용가능한 플래시보다 더 큽니다! 이미지: $1 KiB, 제한 = $2 KiB"
-    },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">저장됨</span>"
     },
