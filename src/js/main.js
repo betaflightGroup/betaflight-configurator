@@ -672,37 +672,6 @@ function updateTabList(features) {
 
 }
 
-function zeroPad(value, width) {
-
-    let valuePadded = String(value);
-
-    while (valuePadded.length < width) {
-        valuePadded = `0${value}`;
-    }
-
-    return valuePadded;
-}
-
-function generateFilename(prefix, suffix) {
-    const date = new Date();
-    let filename = prefix;
-
-    if (FC.CONFIG) {
-        if (FC.CONFIG.flightControllerIdentifier) {
-            filename = `${FC.CONFIG.flightControllerIdentifier}_${filename}`;
-        }
-        if(FC.CONFIG.name && FC.CONFIG.name.trim() !== '') {
-            filename = `${filename}_${FC.CONFIG.name.trim().replace(' ', '_')}`;
-        }
-    }
-
-    const yyyymmdd = `${date.getFullYear()}${zeroPad(date.getMonth() + 1, 2)}${zeroPad(date.getDate(), 2)}`;
-    const hhmmss = `${zeroPad(date.getHours(), 2)}${zeroPad(date.getMinutes(), 2)}${zeroPad(date.getSeconds(), 2)}`;
-    filename = `${filename}_${yyyymmdd}_${hhmmss}`;
-
-    return `${filename}.${suffix}`;
-}
-
 function showErrorDialog(message) {
    const dialog = $('.dialogError')[0];
 

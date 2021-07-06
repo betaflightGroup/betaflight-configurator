@@ -139,44 +139,49 @@ TABS.cli.initialize = function (callback) {
                 .focus();
         });
 
-        $('.tab-cli .save').click(function() {
+        function executeFile(text, filename) {
+            const previewArea = $("#snippetpreviewcontent textarea#preview");
+
+            function executeSnippet(fileName) {
+
+                const commands = previewArea.val();
+                analytics.sendEvent(analytics.EVENT_CATEGORIES.FLIGHT_CONTROLLER, 'CliExecuteFromFile', fileName);
+
+                executeCommands(commands);
+                self.GUI.snippetPreviewWindow.close();
+            }
+
+            function previewCommands(result, fileName) {
+                if (!self.GUI.snippetPreviewWindow) {
+                    self.GUI.snippetPreviewWindow = new jBox("Modal", {
+                        id: "snippetPreviewWindow",
+                        width: 'auto',
+                        height: 'auto',
+                        closeButton: 'title',
+                        animation: false,
+                        isolateScroll: false,
+                        title: i18n.getMessage("cliConfirmSnippetDialogTitle", { fileName: fileName }),
+                        content: $('#snippetpreviewcontent'),
+                        onCreated: () => $("#snippetpreviewcontent a.confirm").click(() => executeSnippet(fileName)),
+                    });
+                }
+                previewArea.val(result);
+                self.GUI.snippetPreviewWindow.open();
+            }
+
+            previewCommands(text, filename);
+        }
+
+        $('.tab-cli .save').click(() => {
             const prefix = 'cli';
             const suffix = 'txt';
-
             const filename = generateFilename(prefix, suffix);
 
-            const accepts = [{
-                description: suffix.toUpperCase() + ' files', extensions: [suffix],
-            }];
-
-            chrome.fileSystem.chooseEntry({type: 'saveFile', suggestedName: filename, accepts: accepts}, function(entry) {
-                if (checkChromeRuntimeError()) {
-                    return;
-                }
-
-                if (!entry) {
-                    console.log('No file selected');
-                    return;
-                }
-
-                entry.createWriter(function (writer) {
-                    writer.onerror = function (){
-                        console.error('Failed to write file');
-                    };
-
-                    writer.onwriteend = function () {
-                        if (self.outputHistory.length > 0 && writer.length === 0) {
-                            writer.write(new Blob([self.outputHistory], {type: 'text/plain'}));
-                        } else {
-                            analytics.sendEvent(analytics.EVENT_CATEGORIES.FLIGHT_CONTROLLER, 'CliSave', self.outputHistory.length);
-
-                            console.log('write complete');
-                        }
-                    };
-
-                    writer.truncate(0);
-                }, function (){
-                    console.error('Failed to get file writer');
+            fileSave(filename, File => {
+                fileWrite(File.path, self.outputHistory, error => {
+                    if (error) {
+                        console.error(error);
+                    }
                 });
             });
         });
@@ -187,65 +192,21 @@ TABS.cli.initialize = function (callback) {
         });
 
         if (Clipboard.available) {
-            self.GUI.copyButton.click(function() {
-                copyToClipboard(self.outputHistory);
-            });
+            self.GUI.copyButton.click(() => copyToClipboard(self.outputHistory));
         } else {
             self.GUI.copyButton.hide();
         }
 
-        $('.tab-cli .load').click(function() {
-            const accepts = [
-                {
-                    description: 'Config files', extensions: ["txt", "config"],
-                },
-                {
-                    description: 'All files',
-                },
-            ];
+        $('.tab-cli .load').click(() => {
+            const accept = ".txt, .config, plain/text";
 
-            chrome.fileSystem.chooseEntry({type: 'openFile', accepts: accepts}, function(entry) {
-                if (checkChromeRuntimeError()) {
-                    return;
-                }
-
-                const previewArea = $("#snippetpreviewcontent textarea#preview");
-
-                function executeSnippet(fileName) {
-                    const commands = previewArea.val();
-
-                    analytics.sendEvent(analytics.EVENT_CATEGORIES.FLIGHT_CONTROLLER, 'CliExecuteFromFile', fileName);
-
-                    executeCommands(commands);
-                    self.GUI.snippetPreviewWindow.close();
-                }
-
-                function previewCommands(result, fileName) {
-                    if (!self.GUI.snippetPreviewWindow) {
-                        self.GUI.snippetPreviewWindow = new jBox("Modal", {
-                            id: "snippetPreviewWindow",
-                            width: 'auto',
-                            height: 'auto',
-                            closeButton: 'title',
-                            animation: false,
-                            isolateScroll: false,
-                            title: i18n.getMessage("cliConfirmSnippetDialogTitle", { fileName: fileName }),
-                            content: $('#snippetpreviewcontent'),
-                            onCreated: () =>
-                                $("#snippetpreviewcontent a.confirm").click(() => executeSnippet(fileName))
-                            ,
-                        });
+            fileOpen(accept, File => {
+                fileRead(File.path, (error, data) => {
+                    if (error) {
+                        console.error(error);
+                        return;
                     }
-                    previewArea.val(result);
-                    self.GUI.snippetPreviewWindow.open();
-                }
-
-                entry.file((file) => {
-                    const reader = new FileReader();
-                    reader.onload =
-                        () => previewCommands(reader.result, file.name);
-                    reader.onerror = () => console.error(reader.error);
-                    reader.readAsText(file);
+                    executeFile(data, File.path);
                 });
             });
         });
