@@ -14,6 +14,7 @@ addons:
   apt:
     packages:
       - rpm
+  chrome: stable
 
 git:
   depth: 5
@@ -21,10 +22,7 @@ git:
 language: node_js
 
 node_js:
-  - 10
-
-addons:
-  chrome: stable
+  - 14.15.4
 
 before_install:
   - |
@@ -53,7 +51,7 @@ cache:
 notifications:
   slack:
     rooms:
-      secure: jjGWN5Ap6WinGX86KeIl2azccMWWiXqTf4XfAUteMobme5yn17WpyycD12WNChGLF2ieiNvxS/vsVaAKKx24WN5dZ9eggDMCBYHGqzQmuho26BZ4tc+Tzt+A2fFgJb5z9APThYT2W1lua6XumPzVnoJtrLV+hLU1xWPqF29/W76FC91MjFeLpjLmG51BUqTIBCABw+PVpG2z1+DU1NVT0zV0BoRafyHbn/3ezRRXwC5oV00kRswGHkSehj6+eGWDsUoOwupHJPgV/wl52sX9I+XpoherzjvB0p27820YKtkUiG7EIgriK1WSxT46zcPa+avV4tbqrAR2Jrz/GpNv+QVYN8giYClLqecFiHWYB1/WTNpALG30NzVrjPdEzSHJrtH1EFRmZjXn31i9pAinihsIedfbJfVpNIy6N/lhmu+WBoLnNsU7HE86d6cpMGr6EpGnN4LH5vJOmk2f38x0/VrdiO0EDMyTxBV15rqmVTfZkHU24TXyX4N4q2zI+40M4pGtRrvHx02WiA3GPEYHe/OXICPvlY4YCmzGo79FCqZMcCcBVdg4I1e/M64/982eNREQGmGHvNRtePZesvEoqvp4Ra2Oef9gFyDMx0mpWYkMUYwWEo0FzeoApQNw1ModOcD8QCpS527YODtEpxzfMRs6ILn4kFWdn+NptdPFjeY=
+      - secure: jjGWN5Ap6WinGX86KeIl2azccMWWiXqTf4XfAUteMobme5yn17WpyycD12WNChGLF2ieiNvxS/vsVaAKKx24WN5dZ9eggDMCBYHGqzQmuho26BZ4tc+Tzt+A2fFgJb5z9APThYT2W1lua6XumPzVnoJtrLV+hLU1xWPqF29/W76FC91MjFeLpjLmG51BUqTIBCABw+PVpG2z1+DU1NVT0zV0BoRafyHbn/3ezRRXwC5oV00kRswGHkSehj6+eGWDsUoOwupHJPgV/wl52sX9I+XpoherzjvB0p27820YKtkUiG7EIgriK1WSxT46zcPa+avV4tbqrAR2Jrz/GpNv+QVYN8giYClLqecFiHWYB1/WTNpALG30NzVrjPdEzSHJrtH1EFRmZjXn31i9pAinihsIedfbJfVpNIy6N/lhmu+WBoLnNsU7HE86d6cpMGr6EpGnN4LH5vJOmk2f38x0/VrdiO0EDMyTxBV15rqmVTfZkHU24TXyX4N4q2zI+40M4pGtRrvHx02WiA3GPEYHe/OXICPvlY4YCmzGo79FCqZMcCcBVdg4I1e/M64/982eNREQGmGHvNRtePZesvEoqvp4Ra2Oef9gFyDMx0mpWYkMUYwWEo0FzeoApQNw1ModOcD8QCpS527YODtEpxzfMRs6ILn4kFWdn+NptdPFjeY=
   webhooks:
     urls:
       - secure: FKa1zx+QP/3Z66b7rsKnKkMcn/0yvqefhGNl85bXhOPusZJS09DZnFSmrz2nXtOTnDdxsh/pT+Xj29782aVy7ByV0ul+fBAqKAYbkOPsnDmkxZizxrHumY99hzdK+0EorOZSQLAkpaSpz46NE5Fm2pJTc67MP5ZpfNVPCCXq0SYIEBNt3D745tfEda9fJjc0g+8zjed2YqMqC3Gqbnq8ebQZ7vBbIFfTtn4wrYfrWeS1kv6MX8dndVDueuKgRH1o/h2DPYDCk9WpHDniQ1TtPiwhMXOEH8G0dMkcR9VbBCz3n28JjjrxpIpXY1Ulk5wF3Aj0/jxf5yH6kpu4XdBINsMHE6GFCKJ/pnBf6RbggMUUuU66F2DWb6oxcdVEpTkixaFrXBqbsfM+UYj+QYoLvyxHqB/XKL3AzwPrUqys4NU3RQTOAFn5YXxzFWzjKovMeq+6S6lDA4E/L4OvO7+iCghjmFFdE0FF30GTue/Q79RmNXRZAJh9uR1UOtppc1iMn+QardzfRJ20qaohvP++ODCMnDfYLKzTXaZS+xCpUpZplwbV9wJMGUVSEwSuOX2L0RH5oIHceFqflKpKAIVlxMMy33AmoVclDCenaCwSHgGBtY94JunGQSBB+nsZz2YEWKecdBeICMZ7VWG9NAZkYOzphothFZYiwJFCykprjIg=

@@ -50,9 +50,9 @@ stages:
     steps:
     - task: UseNode@1
       inputs:
-        version: '10.16.3'
-      displayName: 'Install Node.js 10.16.3'
-    - script: yarn install
+        version: '14.15.4'
+      displayName: 'Install Node.js 14.15.4'
+    - script: yarn install --ignore-optional
       displayName: 'Run yarn install'
     - script: yarn test
       displayName: 'Run yarn test'
@@ -82,9 +82,9 @@ stages:
     steps:
     - task: UseNode@1
       inputs:
-        version: '10.16.3'
-      displayName: 'Install Node.js 10.16.3'
-    - script: yarn install
+        version: '14.15.4'
+      displayName: 'Install Node.js 14.15.4'
+    - script: yarn install --ignore-optional
       displayName: 'Run yarn install'
     - script: yarn gulp release --android
       displayName: 'Run yarn release for android'
@@ -101,8 +101,8 @@ stages:
     steps:
     - task: UseNode@1
       inputs:
-        version: '10.16.3'
-      displayName: 'Install Node.js 10.16.3'
+        version: '14.15.4'
+      displayName: 'Install Node.js 14.15.4'
     - script: npm install -g gulp
       displayName: 'Install Gulp'
     - script: yarn install
@@ -126,9 +126,9 @@ stages:
     steps:
     - task: UseNode@1
       inputs:
-        version: '10.16.3'
-      displayName: 'Install Node.js 10.16.3'
-    - script: yarn install
+        version: '14.15.4'
+      displayName: 'Install Node.js 14.15.4'
+    - script: yarn install --ignore-optional
       displayName: 'Run yarn install'
     - script: yarn gulp release --linux64
       displayName: 'Run yarn release for linux64'
