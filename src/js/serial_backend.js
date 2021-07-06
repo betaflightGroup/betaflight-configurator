@@ -390,7 +390,9 @@ function checkReportProblems() {
 
     function checkReportProblem(problemName, problemDialogList) {
         if (bit_check(FC.CONFIG.configurationProblems, FC.CONFIGURATION_PROBLEM_FLAGS[problemName])) {
-            problemItemTemplate.clone().html(i18n.getMessage(`reportProblemsDialog${problemName}`)).appendTo(problemDialogList);
+            const problemMessage = i18n.getMessage(`reportProblemsDialog${problemName}`);
+            GUI.log(i18n.getMessage(`reportProblemsLog`) + problemMessage);
+            problemItemTemplate.clone().html(problemMessage).appendTo(problemDialogList);
 
             analytics.sendEvent(analytics.EVENT_CATEGORIES.FLIGHT_CONTROLLER, PROBLEM_ANALYTICS_EVENT, problemName);
 
@@ -407,8 +409,11 @@ function checkReportProblems() {
 
         if (semver.gt(FC.CONFIG.apiVersion, CONFIGURATOR.API_VERSION_MAX_SUPPORTED)) {
             const problemName = 'API_VERSION_MAX_SUPPORTED';
-            problemItemTemplate.clone().html(i18n.getMessage(`reportProblemsDialog${problemName}`,
-                [CONFIGURATOR.latestVersion, CONFIGURATOR.latestVersionReleaseUrl, CONFIGURATOR.version, FC.CONFIG.flightControllerVersion])).appendTo(problemDialogList);
+            const problemMessage = i18n.getMessage(`reportProblemsDialog${problemName}`,
+                [CONFIGURATOR.latestVersion, CONFIGURATOR.latestVersionReleaseUrl, CONFIGURATOR.version, FC.CONFIG.flightControllerVersion]);
+            GUI.log(i18n.getMessage(`reportProblemsLog`) + problemMessage);
+            problemItemTemplate.clone().html(problemMessage).appendTo(problemDialogList);
+
             needsProblemReportingDialog = true;
 
             analytics.sendEvent(analytics.EVENT_CATEGORIES.FLIGHT_CONTROLLER, PROBLEM_ANALYTICS_EVENT,
@@ -419,6 +424,10 @@ function checkReportProblems() {
 
         if (have_sensor(FC.CONFIG.activeSensors, 'acc')) {
             needsProblemReportingDialog = checkReportProblem('ACC_NEEDS_CALIBRATION', problemDialogList) || needsProblemReportingDialog;
+        }
+
+        if (isExpertModeEnabled()) {
+            needsProblemReportingDialog = false;
         }
 
         if (needsProblemReportingDialog) {
