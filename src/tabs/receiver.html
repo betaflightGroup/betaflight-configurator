@@ -156,14 +156,17 @@
                         <tr class="rc-smoothing-type">
                             <td>
                                 <select name="rcSmoothing-select">
-                                    <option value="0" i18n="receiverRcSmoothingInterpolation"></option>
-                                    <option value="1" i18n="receiverRcSmoothingFilter"></option>
+                                    <option class="rcSmoothingOff" value="0" i18n="receiverRcSmoothingInterpolation"></option>
+                                    <option class="rcSmoothingOn" value="1" i18n="receiverRcSmoothingFilter"></option>
                                 </select>
                             </td>
                             <td colspan="2">
                                 <div>
-                                    <label>
+                                    <label class="rcSmoothingType">
                                         <span i18n="receiverRcSmoothingType"></span>
+                                    </label>
+                                    <label class="rcSmoothingMode">
+                                        <span i18n="receiverRcSmoothingMode"></span>
                                     </label>
                                 </div>
                             </td>
@@ -186,9 +189,9 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr class="rcSmoothing-input-manual">
+                        <tr class="rcSmoothing-setpoint-manual">
                             <td>
-                                <select name="rcSmoothing-input-manual-select">
+                                <select name="rcSmoothing-setpoint-manual-select">
                                     <option value="0" i18n="receiverRcSmoothingAuto"></option>
                                     <option value="1" i18n="receiverRcSmoothingManual"></option>
                                 </select>
@@ -196,28 +199,28 @@
                             <td>
                                 <div>
                                     <label>
-                                        <span i18n="receiverRcInputTypeSelect"></span>
+                                        <span i18n="receiverRcSetpointTypeSelect"></span>
                                     </label>
                                 </div>
                             </td>
                             <td>
-                                <div class="helpicon cf_tip" i18n_title="receiverRcSmoothingInputManual"></div>
+                                <div class="helpicon cf_tip" i18n_title="receiverRcSmoothingSetpointManual"></div>
                             </td>
                         </tr>
-                        <tr class="rcSmoothing-input-manual">
-                            <td class="rcSmoothing-input-cutoff"><input type="number" name="rcSmoothingInputHz-number" step="1" min="1" max="255"/></td>
-                            <td class="rcSmoothing-input-cutoff" colspan="2">
+                        <tr class="rcSmoothing-setpoint-manual">
+                            <td class="rcSmoothing-setpoint-cutoff"><input type="number" name="rcSmoothingSetpointHz-number" step="1" min="1" max="255"/></td>
+                            <td class="rcSmoothing-setpoint-cutoff" colspan="2">
                                 <div>
                                     <label>
-                                        <span i18n="receiverRcSmoothingInputHz"></span>
+                                        <span i18n="receiverRcSmoothingSetpointHz"></span>
                                     </label>
-                                    <div class="helpicon cf_tip" i18n_title="rcSmoothingInputCutoffHelp"></div>
+                                    <div class="helpicon cf_tip" i18n_title="rcSmoothingSetpointCutoffHelp"></div>
                                 </div>
                             </td>
                         </tr>
-                        <tr class="rcSmoothing-input-type">
+                        <tr class="rcSmoothing-setpoint-type">
                             <td>
-                                <select name="rcSmoothingInputType-select">
+                                <select name="rcSmoothingSetpointType-select">
                                     <option value="0">PT1</option>
                                     <option value="1">BIQUAD</option>
                                 </select>
@@ -225,17 +228,17 @@
                             <td>
                                 <div>
                                     <label>
-                                        <span i18n="receiverRcInputType"></span>
+                                        <span i18n="receiverRcSetpointType"></span>
                                     </label>
                                 </div>
                             </td>
                             <td>
-                                <div class="helpicon cf_tip" i18n_title="rcSmoothingInputTypeHelp"></div>
+                                <div class="helpicon cf_tip" i18n_title="rcSmoothingSetpointTypeHelp"></div>
                             </td>
                         </tr>
-                        <tr class="rcSmoothing-derivative-manual">
+                        <tr class="rcSmoothing-feedforward-manual">
                             <td>
-                                <select name="rcSmoothing-input-derivative-select">
+                                <select name="rcSmoothing-feedforward-select">
                                     <option value="0" i18n="receiverRcSmoothingAuto"></option>
                                     <option value="1" i18n="receiverRcSmoothingManual"></option>
                                 </select>
@@ -243,29 +246,29 @@
                             <td>
                                 <div>
                                     <label>
-                                        <span i18n="receiverRcDerivativeTypeSelect"></span>
+                                        <span i18n="receiverRcFeedforwardTypeSelect"></span>
                                     </label>
                                 </div>
                             </td>
                             <td>
-                                <div class="helpicon cf_tip" i18n_title="receiverRcSmoothingDerivativeManual"></div>
+                                <div class="helpicon cf_tip" i18n_title="receiverRcSmoothingFeedforwardManual"></div>
                             </td>
                         </tr>
-                        <tr class="rcSmoothing-derivative-manual">
-                            <td class="rcSmoothing-derivative-cutoff"><input type="number" name="rcSmoothingDerivativeCutoff-number" step="1" min="1" max="255"/></td>
-                            <td colspan="2" class="rcSmoothing-derivative-cutoff">
+                        <tr class="rcSmoothing-feedforward-manual">
+                            <td class="rcSmoothing-feedforward-cutoff"><input type="number" name="rcSmoothingFeedforwardCutoff-number" step="1" min="1" max="255"/></td>
+                            <td colspan="2" class="rcSmoothing-feedforward-cutoff">
                                 <div>
                                     <label>
-                                        <span i18n="receiverRcSmoothingDerivativeCutoff"></span>
+                                        <span i18n="receiverRcSmoothingFeedforwardCutoff"></span>
                                     </label>
-                                    <div class="helpicon cf_tip" i18n_title="rcSmoothingDerivativeCutoffHelp"></div>
+                                    <div class="helpicon cf_tip" i18n_title="rcSmoothingFeedforwardCutoffHelp"></div>
                                 </div>
                             </td>
                         </tr>
-                        <tr class="rcSmoothing-input-type">
+                        <tr class="rcSmoothing-setpoint-type">
                             <td>
-                                <select name="rcSmoothingDerivativeType-select">
-                                    <option value="0" i18n="receiverRcSmoothingDerivativeTypeOff"></option>
+                                <select name="rcSmoothingFeedforwardType-select">
+                                    <option value="0" i18n="receiverRcSmoothingFeedforwardTypeOff"></option>
                                     <option value="1">PT1</option>
                                     <option value="2">BIQUAD</option>
                                 </select>
@@ -273,27 +276,27 @@
                             <td>
                                 <div>
                                     <label>
-                                        <span i18n="receiverRcDerivativeType"></span>
+                                        <span i18n="receiverRcFeedforwardType"></span>
                                     </label>
                                 </div>
                             </td>
                             <td>
-                                <div class="helpicon cf_tip" i18n_title="rcSmoothingDerivativeTypeHelp"></div>
+                                <div class="helpicon cf_tip" i18n_title="rcSmoothingFeedforwardTypeHelp"></div>
                             </td>
                         </tr>
-                        <tr class="rcSmoothing-auto-smoothness">
+                        <tr class="rcSmoothing-auto-factor">
                             <td>
-                                <input type="number" name="rcSmoothingAutoSmoothness-number" step="1" min="0" max="50">
+                                <input type="number" name="rcSmoothingAutoFactor-number" step="1" min="0" max="50">
                             </td>
                             <td>
                                 <div>
                                     <label>
-                                        <span i18n="receiverRcSmoothingAutoSmoothness"></span>
+                                        <span i18n="receiverRcSmoothingAutoFactor"></span>
                                     </label>
                                 </div>
                             </td>
                             <td>
-                                <div class="helpicon cf_tip" i18n_title="receiverRcSmoothingAutoSmoothnessHelp"></div>
+                                <div class="helpicon cf_tip" i18n_title="receiverRcSmoothingAutoFactorHelp"></div>
                             </td>
                         </tr>
                         <tr class="rcInterpolation">

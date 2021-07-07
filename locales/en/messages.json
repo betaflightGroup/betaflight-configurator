@@ -1679,19 +1679,19 @@
     "receiverRcSmoothingManual": {
         "message": "Manual"
     },
-    "receiverRcSmoothingAutoSmoothness": {
-        "message": "Auto Smoothness",
-        "description": "Auto Smoothness parameter for RC smoothing"
+    "receiverRcSmoothingAutoFactor": {
+        "message": "Auto Factor",
+        "description": "Auto Factor parameter for RC smoothing"
     },
-    "receiverRcSmoothingAutoSmoothnessHelp": {
-        "message": "Adjusts the Auto smoothing calculation, 10 is the default smoothing to delay ratio. Increasing the number will smooth RC inputs more, while also adding delay. This may be useful for unreliable RC connections or for cinematic flying.<br>Be careful with numbers approaching 50, input delay will become noticeable.<br>Use the CLI command rc_smoothing_info while TX and RX are powered to see the automatically calculated RC smoothing cutoffs. ",
-        "description": "Auto Smoothness parameter help message"
+    "receiverRcSmoothingAutoFactorHelp": {
+        "message": "Adjusts the Auto factor calculation, 10 is the default factor to delay ratio. Increasing the number will smooth RC inputs more, while also adding delay. This may be useful for unreliable RC connections or for cinematic flying.<br>Be careful with numbers approaching 50, input delay will become noticeable.<br>Use the CLI command rc_smoothing_info while TX and RX are powered to see the automatically calculated RC smoothing cutoffs. ",
+        "description": "Auto Factor parameter help message"
     },
-    "receiverRcDerivativeTypeSelect": {
-        "message": "Derivative Cutoff Type"
+    "receiverRcFeedforwardTypeSelect": {
+        "message": "FeedForward Cutoff Type"
     },
-    "receiverRcInputTypeSelect": {
-        "message": "Input Cutoff Type"
+    "receiverRcSetpointTypeSelect": {
+        "message": "Setpoint Cutoff Type"
     },
     "receiverRcSmoothingInterpolation": {
         "message": "Interpolation"
@@ -1702,43 +1702,43 @@
     "receiverRcSmoothingTypeHelp": {
         "message": "Type of RC smoothing used"
     },
-    "rcSmoothingInputCutoffHelp": {
-        "message": "The cutoff frequency in Hz used by the input filter. Using lower values will result in smoother inputs and are more appropriate for slower receiver protocols. Most users should leave this at 0 corresponding to \"Auto\"."
+    "rcSmoothingSetpointCutoffHelp": {
+        "message": "The cutoff frequency in Hz used by the setpoint filter. Using lower values will result in smoother inputs and are more appropriate for slower receiver protocols. Most users should leave this at 0 corresponding to \"Auto\"."
     },
-    "rcSmoothingDerivativeCutoffHelp": {
-        "message": "The cutoff frequency in Hz used by the setpoint derivative filter. Using lower values will result in smoother inputs and are more appropriate for slower receiver protocols. Most users should leave this at 0 corresponding to \"Auto\"."
+    "rcSmoothingFeedforwardCutoffHelp": {
+        "message": "The cutoff frequency in Hz used by the feedforward filter. Using lower values will result in smoother inputs and are more appropriate for slower receiver protocols. Most users should leave this at 0 corresponding to \"Auto\"."
     },
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "The channels smoothing applies to"
     },
-    "rcSmoothingDerivativeTypeHelp": {
-        "message": "The type of filtering method used for the setpoint derivative. Starting with 4.2 the default value of \"Auto\" is recommended. For 4.1 and earlier most users should use the default \"BIQUAD\" value as it provides a good balance between smoothness and delay. \"PT1\" reduces the delay slightly but provides less smoothing."
+    "rcSmoothingFeedforwardTypeHelp": {
+        "message": "The type of filtering method used for the feedforward. Starting with 4.2 the default value of \"Auto\" is recommended. For 4.1 and earlier most users should use the default \"BIQUAD\" value as it provides a good balance between smoothness and delay. \"PT1\" reduces the delay slightly but provides less smoothing."
     },
-    "rcSmoothingInputTypeHelp": {
-        "message": "The type of filtering method used for the input. Most users should use the default \"BIQUAD\" value as it provides a good balance between smoothness and delay. \"PT1\" reduces the delay slightly but provides less smoothing."
+    "rcSmoothingSetpointTypeHelp": {
+        "message": "The type of filtering method used for the setpoint. Most users should use the default \"BIQUAD\" value as it provides a good balance between smoothness and delay. \"PT1\" reduces the delay slightly but provides less smoothing."
     },
-    "receiverRcSmoothingInputManual": {
-        "message": "Selects whether the input filter cutoff frequency is automatically calculated (recommended) or manually selected by the user. Using \"Manual\" is not recommended for receiver protocols like Crossfire which can change in flight."
+    "receiverRcSmoothingSetpointManual": {
+        "message": "Selects whether the setpoint filter cutoff frequency is automatically calculated (recommended) or manually selected by the user. Using \"Manual\" is not recommended for receiver protocols like Crossfire which can change in flight."
     },
-    "receiverRcSmoothingDerivativeManual": {
-        "message": "Selects whether the setpoint derivative filter cutoff frequency is automatically calculated (recommended) or manually selected by the user. Using \"Manual\" is not recommended for receiver protocols like Crossfire which can change in flight."
+    "receiverRcSmoothingFeedforwardManual": {
+        "message": "Selects whether the feedforward filter cutoff frequency is automatically calculated (recommended) or manually selected by the user. Using \"Manual\" is not recommended for receiver protocols like Crossfire which can change in flight."
     },
-    "receiverRcSmoothingInputHz": {
-        "message": "Input Cutoff Frequency"
+    "receiverRcSmoothingSetpointHz": {
+        "message": "Setpoint Cutoff Frequency"
     },
-    "receiverRcSmoothingDerivativeCutoff": {
-        "message": "Derivative Cutoff Frequency"
+    "receiverRcSmoothingFeedforwardCutoff": {
+        "message": "FeedForward Cutoff Frequency"
     },
-    "receiverRcInputType": {
-        "message": "Input Filter Type"
+    "receiverRcSetpointType": {
+        "message": "Setpoint Filter Type"
     },
-    "receiverRcDerivativeType": {
-        "message": "Derivative Filter Type"
+    "receiverRcFeedforwardType": {
+        "message": "Feedforward Filter Type"
     },
-    "receiverRcSmoothingDerivativeTypeOff": {
+    "receiverRcSmoothingFeedforwardTypeOff": {
         "message": "Off"
     },
-    "receiverRcSmoothingDerivativeTypeAuto": {
+    "receiverRcSmoothingFeedforwardTypeAuto": {
         "message": "Auto"
     },
     "receiverRcSmoothingChannel": {
@@ -1770,6 +1770,9 @@
     },
     "receiverRcInterpolationInterval": {
         "message": "RC Interpolation Interval [ms]"
+    },
+    "receiverRcSmoothingMode": {
+        "message": "Smoothing Mode"
     },
     "pidTuningFeedforwardTransition": {
         "message": "Transition"

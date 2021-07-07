@@ -540,12 +540,13 @@ const FC = {
             rxSpiRfChannelCount:          0,
             fpvCamAngleDegrees:           0,
             rcSmoothingType:              0,
-            rcSmoothingInputCutoff:       0,
-            rcSmoothingDerivativeCutoff:  0,
+            rcSmoothingSetpointCutoff:    0,
+            rcSmoothingFeedforwardCutoff: 0,
             rcSmoothingInputType:         0,
             rcSmoothingDerivativeType:    0,
-            rcSmoothingAutoSmoothness:    0,
+            rcSmoothingAutoFactor:        0,
             usbCdcHidType:                0,
+            rcSmoothingMode:              0,
         };
 
         this.FAILSAFE_CONFIG = {

@@ -976,13 +976,16 @@ MspHelper.prototype.process_data = function(dataHandler) {
                         if (semver.gte(FC.CONFIG.apiVersion, API_VERSION_1_40)) {
                             FC.RX_CONFIG.rcInterpolationChannels = data.readU8();
                             FC.RX_CONFIG.rcSmoothingType = data.readU8();
-                            FC.RX_CONFIG.rcSmoothingInputCutoff = data.readU8();
-                            FC.RX_CONFIG.rcSmoothingDerivativeCutoff = data.readU8();
+                            FC.RX_CONFIG.rcSmoothingSetpointCutoff = data.readU8();
+                            FC.RX_CONFIG.rcSmoothingFeedforwardCutoff = data.readU8();
                             FC.RX_CONFIG.rcSmoothingInputType = data.readU8();
                             FC.RX_CONFIG.rcSmoothingDerivativeType = data.readU8();
                             if (semver.gte(FC.CONFIG.apiVersion, API_VERSION_1_42)) {
                                 FC.RX_CONFIG.usbCdcHidType = data.readU8();
-                                FC.RX_CONFIG.rcSmoothingAutoSmoothness = data.readU8();
+                                FC.RX_CONFIG.rcSmoothingAutoFactor = data.readU8();
+                                if (semver.gte(FC.CONFIG.apiVersion, API_VERSION_1_44)) {
+                                    FC.RX_CONFIG.rcSmoothingMode = data.readU8();
+                                }
                             }
                         }
                     } else {
@@ -1882,13 +1885,16 @@ MspHelper.prototype.crunch = function(code) {
                     if (semver.gte(FC.CONFIG.apiVersion, API_VERSION_1_40)) {
                         buffer.push8(FC.RX_CONFIG.rcInterpolationChannels)
                             .push8(FC.RX_CONFIG.rcSmoothingType)
-                            .push8(FC.RX_CONFIG.rcSmoothingInputCutoff)
-                            .push8(FC.RX_CONFIG.rcSmoothingDerivativeCutoff)
+                            .push8(FC.RX_CONFIG.rcSmoothingSetpointCutoff)
+                            .push8(FC.RX_CONFIG.rcSmoothingFeedforwardCutoff)
                             .push8(FC.RX_CONFIG.rcSmoothingInputType)
                             .push8(FC.RX_CONFIG.rcSmoothingDerivativeType);
                         if (semver.gte(FC.CONFIG.apiVersion, API_VERSION_1_42)) {
                             buffer.push8(FC.RX_CONFIG.usbCdcHidType)
-                                  .push8(FC.RX_CONFIG.rcSmoothingAutoSmoothness);
+                                .push8(FC.RX_CONFIG.rcSmoothingAutoFactor);
+                            if (semver.gte(FC.CONFIG.apiVersion, API_VERSION_1_44)) {
+                                buffer.push8(FC.RX_CONFIG.rcSmoothingMode);
+                            }
                         }
                     }
                 }
