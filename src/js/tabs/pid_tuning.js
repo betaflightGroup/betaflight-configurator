@@ -329,7 +329,7 @@ TABS.pid_tuning.initialize = function (callback) {
             // Feedforward column
             $('#pid_main tr :nth-child(6)').hide();
 
-            $('#pid-tuning .feedforwardTransition').hide();
+            $('#pid-tuning .feedforwardGroup').hide();
         }
 
         if (semver.gte(FC.CONFIG.apiVersion, API_VERSION_1_41)) {
@@ -531,6 +531,8 @@ TABS.pid_tuning.initialize = function (callback) {
             $('.feedforwardOption').hide();
             $('.vbatSagCompensation').hide();
             $('.thrustLinearization').hide();
+            $('.feedforwardGroupCheckbox').addClass('switchery-disabled');
+            $('input[id="feedforwardGroup"]').prop('checked', true);
         }
 
         $('input[id="useIntegratedYaw"]').change(function() {
