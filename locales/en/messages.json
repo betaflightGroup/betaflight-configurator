@@ -5080,6 +5080,13 @@
     "osdDescTotalFlights": {
         "message": "Approximate total number of flights"
     },
+    "osdTextTotalPacks": {
+        "message": "Total packs",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescTotalPacks": {
+        "message": "Number of used packs"
+    },
     "osdTextElementUpDownReference": {
         "message": "Up (Pitch 90 deg)/Down (Pitch -90 deg) Reference",
         "description": "OSD Symbol to show when pitch is approaching vertical (90 deg, U) and D for nose down (-90 deg, D)"
@@ -5262,6 +5269,13 @@
     },
     "osdDescStatTotalFlights": {
         "message": "Total number of flights"
+    },
+    "osdTextStatTotalPacks": {
+        "message": "Packs count total",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalPacks": {
+        "message": "Total number of used packs"
     },
     "osdTextStatTotalFlightTime": {
         "message": "Fly time total",

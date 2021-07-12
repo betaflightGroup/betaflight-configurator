@@ -1268,12 +1268,21 @@ OSD.loadDisplayFields = function() {
             positionable: true,
             preview: "#9876",
         },
+        TOTAL_PACKS: {
+            name: 'OSD_TOTAL_PACKS',
+            text: 'osdTextTotalPacks',
+            desc: 'osdDescTotalPacks',
+            defaultPosition: -1,
+            draw_order: 465,
+            positionable: true,
+            preview: "#123",
+        },
         OSD_UP_DOWN_REFERENCE: {
             name: 'OSD_UP_DOWN_REFERENCE',
             text: 'osdTextElementUpDownReference',
             desc: 'osdDescUpDownReference',
             defaultPosition: 238,
-            draw_order: 465,
+            draw_order: 470,
             positionable: true,
             preview: 'U',
         },
@@ -1282,7 +1291,7 @@ OSD.loadDisplayFields = function() {
             text: 'osdTextElementTxUplinkPower',
             desc: 'osdDescTxUplinkPower',
             defaultPosition: -1,
-            draw_order: 470,
+            draw_order: 475,
             positionable: true,
             preview: `${FONT.symbol(SYM.RSSI)}250MW`,
         },
@@ -1441,6 +1450,11 @@ OSD.constants = {
             name: 'STAT_TOTAL_FLIGHTS',
             text: 'osdTextStatTotalFlights',
             desc: 'osdDescStatTotalFlights',
+        },
+        STAT_TOTAL_PACKS: {
+            name: 'STAT_TOTAL_PACKS',
+            text: 'osdTextStatTotalPacks',
+            desc: 'osdDescStatTotalPacks',
         },
         STAT_TOTAL_FLIGHT_TIME: {
             name: 'STAT_TOTAL_FLIGHT_TIME',
@@ -1710,6 +1724,7 @@ OSD.chooseFields = function() {
                                                         F.TOTAL_FLIGHTS,
                                                         F.OSD_UP_DOWN_REFERENCE,
                                                         F.OSD_TX_UPLINK_POWER,
+                                                        F.TOTAL_PACKS,
                                                     ]);
                                                 }
                                             }
@@ -1808,6 +1823,11 @@ OSD.chooseFields = function() {
                 F.STAT_TOTAL_FLIGHT_TIME,
                 F.STAT_TOTAL_FLIGHT_DIST,
                 F.MIN_RSSI_DBM,
+            ]);
+        }
+        if (semver.gte(FC.CONFIG.apiVersion, API_VERSION_1_44)) {
+            OSD.constants.STATISTIC_FIELDS = OSD.constants.STATISTIC_FIELDS.concat([
+                F.STAT_TOTAL_PACKS,
             ]);
         }
     }
