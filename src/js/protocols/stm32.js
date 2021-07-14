@@ -89,7 +89,12 @@ STM32_protocol.prototype.connect = function (port, baud, hex, options, callback)
         });
     } else {
 
-        var startFlashing = function() {
+        let rebootMode = 0; // FIRMWARE
+        const startFlashing = () => {
+            if (rebootMode === 0) {
+                return;
+            }
+
             // refresh device list
             PortHandler.check_usb_devices(function(dfu_available) {
                 if (dfu_available) {
@@ -144,7 +149,6 @@ STM32_protocol.prototype.connect = function (port, baud, hex, options, callback)
             GUI.log(i18n.getMessage('apiVersionReceived', [FC.CONFIG.apiVersion]));
 
             if (semver.lt(FC.CONFIG.apiVersion, API_VERSION_1_42)) {
-
                 self.msp_connector.disconnect(function (disconnectionResult) {
 
                     // need some time for the port to be closed, serial port does not open if tried immediately
@@ -154,7 +158,6 @@ STM32_protocol.prototype.connect = function (port, baud, hex, options, callback)
                 console.log('Looking for capabilities via MSP');
 
                 MSP.send_message(MSPCodes.MSP_BOARD_INFO, false, false, () => {
-                    var rebootMode = 0; // FIRMWARE
                     if (bit_check(FC.CONFIG.targetCapabilities, FC.TARGET_CAPABILITIES_FLAGS.HAS_FLASH_BOOTLOADER)) {
                         // Board has flash bootloader
                         GUI.log(i18n.getMessage('deviceRebooting_flashBootloader'));
@@ -166,7 +169,7 @@ STM32_protocol.prototype.connect = function (port, baud, hex, options, callback)
                         rebootMode = 1; // MSP_REBOOT_BOOTLOADER_ROM;
                     }
 
-                    const selectedBoard = TABS.firmware_flasher.selectedBoard;
+                    const selectedBoard = TABS.firmware_flasher.selectedBoard !== '0' ? TABS.firmware_flasher.selectedBoard : 'NONE';
                     const connectedBoard = FC.CONFIG.boardName ? FC.CONFIG.boardName : 'UNKNOWN';
 
                     function reboot() {
@@ -179,7 +182,6 @@ STM32_protocol.prototype.connect = function (port, baud, hex, options, callback)
                             self.msp_connector.disconnect(disconnectionResult => onDisconnect(disconnectionResult));
 
                         }, () => console.log('Reboot request received by device'));
-
                     }
 
                     function onAbort() {
@@ -190,12 +192,11 @@ STM32_protocol.prototype.connect = function (port, baud, hex, options, callback)
                         TABS.firmware_flasher.refresh();
                     }
 
-                    if (selectedBoard !== connectedBoard) {
+                    if (selectedBoard !== connectedBoard && !TABS.firmware_flasher.localFirmwareLoaded) {
                         TABS.firmware_flasher.showDialogVerifyBoard(selectedBoard, connectedBoard, onAbort, reboot);
                     } else {
                         reboot();
                     }
-
                 });
             }
         };
@@ -209,6 +210,7 @@ STM32_protocol.prototype.connect = function (port, baud, hex, options, callback)
 
         var onFailureHandler = function() {
             GUI.connect_lock = false;
+            TABS.firmware_flasher.refresh();
         };
 
         GUI.connect_lock = true;
@@ -323,7 +325,6 @@ STM32_protocol.prototype.send = function (bytes_to_send, bytes_to_read, callback
 // data = response of n bytes from mcu (array)
 // result = true/false
 STM32_protocol.prototype.verify_response = function (val, data) {
-    var self = this;
 
     if (val != data[0]) {
         var message = 'STM32 Communication failed, wrong response, expected: ' + val + ' (0x' + val.toString(16) + ') received: ' + data[0] + ' (0x' + data[0].toString(16) + ')';

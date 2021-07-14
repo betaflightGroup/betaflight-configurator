@@ -18,10 +18,7 @@ const serial = {
     connect: function (path, options, callback) {
         const self = this;
         const testUrl = path.match(/^tcp:\/\/([A-Za-z0-9\.-]+)(?:\:(\d+))?$/);
-        if (self.connectionId || self.connected) {
-            console.warn('We already connected. Aborting', self.connectionId, self.connected);
-            return;
-        }
+
         if (testUrl) {
             self.connectTcp(testUrl[1], testUrl[2], options, callback);
         } else if (path === 'virtual') {
