@@ -392,6 +392,9 @@ function startProcess() {
                     case 'cli':
                         TABS.cli.initialize(content_ready, GUI.nwGui);
                         break;
+                    case 'presets':
+                        TABS.presets.initialize(content_ready, GUI.nwGui);
+                        break;
 
                     default:
                         console.log(`Tab not found: ${tab}`);

@@ -5854,6 +5854,11 @@ multipipe@^0.1.2:
   dependencies:
     duplexer2 "0.0.2"
 
+multiple-select@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/multiple-select/-/multiple-select-1.5.2.tgz#a7290785fc10fa4b9f26d2a92937effc63648bc8"
+  integrity sha512-sTNNRrjnTtB1b1+HTKcjQ/mjWY7Gvigo9F3C/3oTQCTFEpYzwaRYFPRAOu2SogfA1hEfyJTXjyS1VAbanJMsmA==
+
 murmur-32@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/murmur-32/-/murmur-32-0.1.0.tgz#c1a79d4fc5fabf0405749d0aff77c41402055861"

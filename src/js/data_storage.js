@@ -29,6 +29,8 @@ const CONFIGURATOR = {
     virtualApiVersion: '0.0.1',
     cliActive: false,
     cliValid: false,
+    cliEngineActive: false,
+    cliEngineValid: false,
     gitChangesetId: 'unknown',
     version: '0.0.1',
     latestVersion: '0.0.1',

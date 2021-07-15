@@ -1,0 +1,53 @@
+.preset_detailed_dialog_title {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.presets-detailed-dialog-property-table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.presets-detailed-dialog-property-table td {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.presets-detailed-dialog-property-table-first-col {
+    width: 150px;
+}
+
+.preset_detailed_dialog_description {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 18px;
+    overflow-y: scroll;
+    height: 240px;
+}
+
+#presets_detailed_dialog_properties {
+    height: 360px;
+}
+
+.presets_github_link_div {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+}
+
+#preset_detailed_dialog_bottom_buttons {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+}
+
+#presets_detailed_dialog_applybtn {
+    margin: 0;
+    margin-right: 12px;
+}
+
+#presets_detailed_dialog_closebtn {
+    margin: 0;
+}

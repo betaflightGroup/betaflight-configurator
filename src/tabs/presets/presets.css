@@ -1,0 +1,240 @@
+.tab-presets {
+    height: 100%;
+}
+
+.tab-presets .content_wrapper {
+    height: calc(100% - 92px);
+    overflow-y: scroll;
+}
+
+.tab-presets p {
+    padding: 0;
+    border: 0 dotted var(--subtleAccent);
+}
+
+#presets_global_loading {
+    display: none;
+}
+
+#presets_global_loading_error {
+    display: none;
+}
+
+#presets_main_content {
+    display: none;
+}
+
+#presets_cli {
+    margin-top: 20px;
+    display: none;
+}
+
+.presets_filter_select {
+    width: 100%;
+    background-color: var(--boxBackground);
+    color: var(--defaultText);
+}
+
+.tab-presets .ms-choice,.ms-drop {
+    background-color: var(--boxBackground)!important;
+    color: var(--defaultText)!important;
+}
+
+.presets_text_input {
+    border: 1px solid var(--subtleAccent);
+    border-radius: 3px;
+    background-color: var(--boxBackground);
+    color: var(--defaultText);
+}
+
+#presets_filter_text {
+    height: 26px;
+    flex: 1;
+    padding-left: 5px;
+}
+
+#presets_cli {
+    height: 200px;
+    width: 100%;
+}
+
+#presets_filter_official_only_wrapper {
+    float: left; height: 20px; margin-right: 15px; margin-left: 3px;
+}
+
+#presets_search_hint {
+    float: left;
+    width: 100px;
+    padding: 6px;
+}
+
+#presets_search_bar_wrapper {
+    display: flex;
+    padding-right: 2px;
+    margin-top: 6px;
+}
+
+#presets_cli_background {
+    border: 1px solid var(--subtleAccent);
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-top: 0;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.80);
+}
+
+.tab-presets .window {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: monospace;
+    color: white;
+    box-sizing: border-box;
+    -webkit-user-select: text;
+    float: left;
+}
+
+.presets_fitler_table_header
+{
+    background: var(--quietHeader);
+    color: var(--quietText);
+    border-right: 1px solid var(--subtleAccent);
+    font-weight: normal;
+    text-align: left;
+    padding: 4px 4px 4px 6px;
+}
+
+.presets_fitler_table_value {
+    background-color: var(--alternativeBackground);
+    width: 100%;
+}
+
+.tab-presets textarea[name='commands'] {
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    margin-top: 8px;
+    height: 22px;
+    line-height: 20px;
+    padding-left: 5px;
+    border: 1px solid var(--subtleAccent);
+    resize: none;
+}
+
+.jBox-container textarea#preview {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    resize: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: monospace;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.tab-presets #content-watermark {
+    z-index: 0;
+}
+
+.tab-presets .window .wrapper {
+    white-space: pre-wrap;
+}
+
+.tab-presets .window .error_message {
+    color: red;
+    font-weight: bold;
+}
+
+.tab-presets .save {
+    color: white;
+}
+
+@media only screen and (max-width: 1055px) , only screen and (max-device-width: 1055px) {
+
+.tab-presets .content_wrapper {
+    height: calc(100% - 87px);
+}
+.tab-presets .content_toolbar {
+    margin-top: 5px;
+}
+
+}
+
+
+/* AutoComplete */
+.cli-textcomplete-dropdown {
+    border: 1px solid var(--subtleAccent);
+    background-color: white;
+    border-radius: 5px;
+    max-height: 50%;
+    overflow: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cli-textcomplete-dropdown::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cli-textcomplete-dropdown::-webkit-scrollbar-track {
+    background: lightgrey;
+    border-radius: 3px;
+}
+
+.cli-textcomplete-dropdown::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 3px;
+}
+
+.cli-textcomplete-dropdown li {
+    padding: 2px 5px;
+}
+
+.cli-textcomplete-dropdown .active {
+    background-color: rgb(255, 187, 0);
+}
+
+.cli-textcomplete-dropdown a:hover {
+    cursor: pointer;
+}
+
+.cli-textcomplete-dropdown a {
+    font-family: monospace;
+}
+
+.cli-textcomplete-dropdown a b {
+    font-family: monospace;
+    font-weight: bold;
+}
+
+@media all and (max-width: 575px) {
+    .tab-presets .backdrop {
+        background-size: 100%;
+    }
+}
+
+#presets_detailed_dialog {
+    width : 400px;
+    height : 440px;
+    padding: 24px;
+}
+
+/* fix making drop down list above toggle button, which is at z-index: 1000 */
+.tab-presets .ms-drop {
+    z-index: 1001;
+}
+
+/* hack-fix for multiple-select with small font size. Originally checkboxes are not ligned with the text options when the font size is smaller than 0.7em */
+.tab-presets
+.ms-drop input[type="radio"], .ms-drop input[type="checkbox"] {
+    margin-top: 0.1rem !important;
+}
+
+.presets_filter_table_wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}

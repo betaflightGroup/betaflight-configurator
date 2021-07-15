@@ -36,6 +36,7 @@ const GuiControl = function () {
         'power',
         'adjustments',
         'auxiliary',
+        'presets',
         'cli',
         'configuration',
         'gps',

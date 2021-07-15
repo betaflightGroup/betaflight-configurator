@@ -1,0 +1,88 @@
+<div class="tab-presets toolbar_fixed_bottom">
+    <div class="content_wrapper">
+        <div class="tab_title" i18n="tabPresets"></div>
+        <div id="presets_global_loading">
+            <h1>LOADING</h1>
+        </div>
+
+        <div id="presets_global_loading_error">
+            <h1>ERROR LOADING PRESETS</h1>
+        </div>
+        <div id="presets_main_content">
+            <div class="presets_filter_table_wrapper">
+                <div>
+                    <div class = "presets_fitler_table_header">Categories</div>
+                    <div class = "presets_fitler_table_value">
+                        <select multiple="multiple" class="presets_filter_select" id="presets_filter_category"></select>
+                    </div>
+                </div>
+                <div>
+                    <div class = "presets_fitler_table_header">Keywords</div>
+                    <div class = "presets_fitler_table_value">
+                        <select multiple="multiple" class="presets_filter_select" id="presets_filter_keyword"></select>
+                    </div>
+                </div>
+                <div>
+                    <div class = "presets_fitler_table_header">Authors</div>
+                    <div class = "presets_fitler_table_value">
+                        <select multiple="multiple" class="presets_filter_select" id="presets_filter_author"></select>
+                    </div>
+                </div>
+                <div>
+                    <div class = "presets_fitler_table_header">Firmwares</div>
+                    <div class = "presets_fitler_table_value">
+                        <select multiple="multiple" class="presets_filter_select" id="presets_filter_firmware_version"></select>
+                    </div>
+                </div>
+                <div>
+                    <div class = "presets_fitler_table_header">Official</div>
+                    <div class = "presets_fitler_table_value">
+                        <div id="presets_filter_official_only_wrapper">
+                            <input type="checkbox" id="presets_filter_official_only" class="toggle"/>
+                        </div>
+                        <span class="freelabel" i18n="presetsFilterIncludeOfficialOnly"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="presets_search_bar_wrapper">
+                <div i18n="tabPresetsSearch" id="presets_search_hint">
+                </div>
+                <input type="text" class="presets_text_input" id="presets_filter_text"/>
+            </div>
+            <div id="presets_list">
+            </div>
+        </div>
+
+        <div id="presets_cli">
+            <div id="presets_cli_background">
+                <div class="window" id="presets_cli_window">
+                    <div class="wrapper" id="presets_cli_window_wrapper"></div>
+                </div>
+            </div>
+            <textarea name="commands" id="presets_cli_command" i18n_placeholder="presetsInputPlaceholder" rows="1" cols="0"></textarea>
+        </div>
+    </div>
+
+    <!-- Snippet preview dialog -->
+    <div id="snippetpreviewcontent" style="display: none">
+        <div class="note">
+            <p i18n="presetsConfirmSnippetNote"></p>
+        </div>
+        <textarea id="preview" cols="120" rows="20"></textarea>
+        <div class="default_btn">
+            <a class="confirm" href="#" i18n="presetsConfirmSnippetBtn"></a>
+        </div>
+    </div>
+
+    <div class="content_toolbar">
+        <div class="btn">
+            <a href="#" id="presets_show_hide_cli" class="tool regular-button" i18n="presetsShowHideCli"></a>
+            <a href="#" id="presets_cancel_button" class="tool regular-button" i18n="cancel"></a>
+            <a href="#" id="presets_save_button" class="tool regular-button" i18n="initialSetupButtonSave"></a>
+        </div>
+    </div>
+
+    <dialog id="presets_detailed_dialog">
+    </dialog>
+
+</div>

@@ -507,6 +507,7 @@ TABS.cli.send = function (line, callback) {
 };
 
 TABS.cli.cleanup = function (callback) {
+    console.log("TABS.cli.cleanup TABS.cli.cleanup TABS.cli.cleanup");
     if (TABS.cli.GUI.snippetPreviewWindow) {
         TABS.cli.GUI.snippetPreviewWindow.destroy();
         TABS.cli.GUI.snippetPreviewWindow = null;

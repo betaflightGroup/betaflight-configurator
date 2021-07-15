@@ -1,0 +1,62 @@
+.preset_title_panel_border {
+    border: 1px solid var(--subtleAccent);
+    margin-top: 8px;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.preset_title_panel_firts_col {
+    width: 100px;
+    display: inline-block;
+}
+
+.preset_title_panel_border:hover {
+    background-color: var(--subtleAccent);
+}
+
+.preset_title_panel {
+    color: var(--defaultText);
+}
+
+.preset_title_panel_category {
+    color: var(--mutedText);
+    font-size: 1.5em;
+}
+
+.preset_title_panel_title {
+    font-size: 1.5em;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.preset_title_panel_official {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+}
+
+.preset_title_panel_official_true {
+    background-color: green;
+}
+
+.preset_title_panel_official_false {
+    background-color: var(--accent);
+}
+
+.preset_title_panel_author_text {
+    font-size: 1.3em;
+}
+
+.preset_title_panel_versions_text {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.preset_title_panel_keywords_text {
+    font-size: 1.2em;
+}
