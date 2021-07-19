@@ -898,6 +898,15 @@ TABS.motors.initialize = function (callback) {
             $('div.sliders input:not(:last):first').trigger('input');
         });
 
+        // After moving from NWjs 0.50.2 to 0.54.x Home and End buttons are swapped. Disable to avoid confusion
+        const disableHomeEndKey = event => {
+            if (event.key === 'Home' || event.key === 'End') {
+                event.preventDefault();
+            }
+        };
+
+        document.querySelectorAll('div.sliders input').forEach(e => e.addEventListener('keydown', event => disableHomeEndKey(event)));
+
         // check if motors are already spinning
         let motorsRunning = false;
 
